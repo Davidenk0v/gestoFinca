@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import image from '../../public/building.jpg'
+import OurServices from "../components/OurServices.astro";
+---
+
+<Layout title="Nosotros">
+    
+
+    <img class="absolute h-70 w-full object-cover opacity-30" src={image.src} alt="image description">
+    <div class="z-10 relative max-w-2xl mx-auto text-center">
+        <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Quienes son <span class="text-green-700 dark:text-green-700">Property admin</span> S.L.</h1>
+        <p class="text-lg font-normal text-black lg:text-xl dark:text-black">En Property admin S.L., contamos con años de experiencia en la administración de propiedades inmobiliarias y asesoramiento en procesos de compraventa de inmuebles. Gestionamos desde fincas en régimen de propiedad horizontal (Comunidades de Propietarios) en pequeños edificios, como en grandes complejos inmobiliarios y de oficinas. Nos distinguimos por nuestra profesionalidad y dedicación al cliente, observando los más altos estándares de calidad para conservar e incrementar el valor de su finca.</p>
+    </div>
+    <div class="relative">
+        <OurServices />
+    </div>
+  
+</Layout>
