@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LanguageSelector from "./LenguageSelector";
 const Header = () => {
   const [isOpenPhone, setIsOpenPhone] = useState<boolean>(false);
 
@@ -9,7 +10,7 @@ const Header = () => {
   return (
     <header className="bg-slate-200 sticky top-0 z-50 bg-opacity-90">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-full items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -49,14 +50,14 @@ const Header = () => {
         <div className="hidden lg:flex lg:gap-x-12">
           <a
             href="/administracion-fincas"
-            className="text-sm/6 border-b-2 border-transparent font-semibold text-gray-900 focus:border-b-2 focus:border-b-green-700"
+            className="whitespace-nowrap text-sm/6 border-b-2 border-transparent font-semibold text-gray-900 focus:border-b-2 focus:border-b-green-700"
           >
             Administración de fincas
           </a>
 
           <a
             href="/alquileres-vacacionales"
-            className="text-sm/6 border-b-2 border-transparent font-semibold text-gray-900 focus:border-b-2 focus:border-b-green-700"
+            className="whitespace-nowrap text-sm/6 border-b-2 border-transparent font-semibold text-gray-900 focus:border-b-2 focus:border-b-green-700"
           >
             Alquileres vacacionales
           </a>
@@ -79,6 +80,7 @@ const Header = () => {
           >
             Contacto
           </a>
+          <LanguageSelector />
         </div>
       </nav>
       <div className="lg:hidden" role="dialog" aria-modal="true">
