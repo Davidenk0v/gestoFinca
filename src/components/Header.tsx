@@ -47,7 +47,7 @@ const Header = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 items-center">
           <a
             href="/administracion-fincas"
             className="whitespace-nowrap text-sm/6 border-b-2 border-transparent font-semibold text-gray-900 focus:border-b-2 focus:border-b-green-700"
@@ -182,6 +182,7 @@ const Header = () => {
                 >
                   Contacto
                 </a>
+                <LanguageSelector />
               </div>
             </div>
           </div>
