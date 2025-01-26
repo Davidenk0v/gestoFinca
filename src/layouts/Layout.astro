@@ -3,6 +3,7 @@ import { ClientRouter } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.jsx"
 import WhatsAppIcon from "../components/WhatsappIcon";
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -12,7 +13,7 @@ import WhatsAppIcon from "../components/WhatsappIcon";
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>GestoFinca - Administradores de fincas</title>
+		<title>{title}</title>
 		<ClientRouter />
 	</head>
 	<body>

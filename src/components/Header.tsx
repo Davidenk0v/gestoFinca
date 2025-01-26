@@ -34,14 +34,13 @@ const Header = () => {
               className="size-6 z-0"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="1.5"
               stroke="currentColor"
               aria-hidden="true"
               data-slot="icon"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
@@ -108,14 +107,13 @@ const Header = () => {
                 className="size-6 bg-white"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
                 stroke="currentColor"
                 aria-hidden="true"
                 data-slot="icon"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M6 18 18 6M6 6l12 12"
                 />
               </svg>
@@ -140,9 +138,9 @@ const Header = () => {
                       data-slot="icon"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </button>
