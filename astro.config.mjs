@@ -3,12 +3,12 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 
-import vercelServerless from "@astrojs/vercel";
+import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
   output: "server",
-  adapter: vercelServerless(),
+  adapter: vercel(),
   i18n: {
     defaultLocale: "es",
     locales: ["en", "es", "de"],
