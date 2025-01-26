@@ -29,7 +29,7 @@ const Carrousel = () => {
         <div>
           <div className="z-10 absolute inset-0 flex flex-col items-center justify-center w-full h-full px-6 text-center">
             <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-              Cuidamos de tu hogar, mimamos a tus huéspedes
+              Tu tranquilidad, nuestra prioridad
             </h1>
             <a
               href="/alquileres-vacacionales"
@@ -47,8 +47,8 @@ const Carrousel = () => {
         {/* Imagen 3 */}
         <div>
           <div className="z-10 absolute inset-0 flex flex-col items-center justify-center w-full h-full px-6 text-center">
-            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-              Tu tranquilidad, nuestra prioridad
+            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+              Cuidamos de tu hogar, mimamos a tus huéspedes
             </h1>
             <a
               href="/administracion-fincas"
@@ -66,7 +66,7 @@ const Carrousel = () => {
         {/* Imagen 4 */}
         <div>
           <div className="z-10 absolute inset-0 flex flex-col items-center justify-center w-full h-full px-6 text-center">
-            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
               Cuidamos de tus propiedades como si fueran nuestras
             </h1>
             <a
