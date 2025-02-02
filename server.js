@@ -2,9 +2,12 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import { Resend } from "resend";
-
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
-const resend = new Resend("re_gQusCgDr_GFX6kHRgxVpdoAGko4zXzCT2");
+
+const API_KEY = process.env.RESEND_API_KEY;
+const resend = new Resend(API_KEY);
 
 app.use(cors());
 app.use(bodyParser.json());
