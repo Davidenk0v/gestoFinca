@@ -6,7 +6,14 @@ export default {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: {
+          greenFinca: "#7EDA55",
+          blueFinca: "#25C0D8",
+        },
+      },
+    },
   },
   plugins: [flowbite.plugin()],
 };
