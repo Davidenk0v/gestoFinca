@@ -14,7 +14,7 @@ const ContactFormReact = () => {
     console.log(formData);
     try {
       const response = await fetch(
-        "https://gesto-finca-embn2vtvg-davidenk0vs-projects.vercel.app/send-email",
+        "https://gesto-finca.vercel.app/send-email",
         {
           method: "POST",
           headers: {
