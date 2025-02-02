@@ -20,7 +20,6 @@ const ContactFormReact = () => {
         },
         body: JSON.stringify(formData),
       });
-      console.log(response);
     } catch (error) {
       console.error(error);
     }
