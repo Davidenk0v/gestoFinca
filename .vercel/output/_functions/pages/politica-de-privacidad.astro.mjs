@@ -1,0 +1,54 @@
+/* empty css                                                 */
+import { c as createComponent, r as renderTemplate, a as renderComponent, m as maybeRenderHead } from '../chunks/astro/server_BpOPKp44.mjs';
+import 'kleur/colors';
+import { $ as $$Layout } from '../chunks/Layout_T-ophOXN.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$PoliticaDePrivacidad = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Pol\xEDticas de privacidad" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<article class="prose lg:prose-xl mx-auto py-8 px-4"> <h1 class="text-4xl font-bold text-center mb-8">Política de Privacidad</h1> <p class="mb-6">
+En <span class="font-semibold">GestoFinca</span>, nos comprometemos a proteger la privacidad y los datos
+                personales de nuestros usuarios. Esta política de privacidad explica cómo
+                recopilamos, usamos, y protegemos tu información de acuerdo con la legislación
+                vigente en España, incluyendo el Reglamento General de Protección de Datos (RGPD)
+                y la Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales
+                (LOPDGDD).
+</p> <h2 class="text-2xl font-semibold mt-8 mb-4">1. Responsable del Tratamiento</h2> <p class="mb-4"> <strong>Nombre:</strong> [Nombre de la Empresa] <br> <strong>Dirección:</strong> [Dirección de la Empresa] <br> <strong>Correo electrónico:</strong> [Correo electrónico de contacto] <br> <strong>Teléfono:</strong> [Número de teléfono]
+</p> <h2 class="text-2xl font-semibold mt-8 mb-4">2. Datos que Recopilamos</h2> <p class="mb-4">Recopilamos los siguientes datos personales:</p> <ul class="list-disc list-inside mb-6"> <li>Información de contacto: nombre, dirección de correo electrónico, número de teléfono.</li> <li>Información de navegación: dirección IP, tipo de dispositivo, sistema operativo, navegador.</li> <li>Otros datos que nos proporciones directamente a través de formularios o comunicaciones.</li> </ul> <h2 class="text-2xl font-semibold mt-8 mb-4">3. Finalidad del Tratamiento</h2> <p class="mb-4">Usamos tus datos para:</p> <ul class="list-disc list-inside mb-6"> <li>Proveer nuestros servicios y productos.</li> <li>Responder a tus consultas y solicitudes.</li> <li>Mejorar nuestro sitio web y personalizar tu experiencia.</li> <li>Cumplir con nuestras obligaciones legales.</li> </ul> <h2 class="text-2xl font-semibold mt-8 mb-4">4. Legitimación para el Tratamiento</h2> <p class="mb-4">
+El tratamiento de tus datos se basa en:
+</p> <ul class="list-disc list-inside mb-6"> <li>El consentimiento explícito que nos has otorgado.</li> <li>La necesidad de procesar tus datos para la ejecución de un contrato.</li> <li>El cumplimiento de obligaciones legales.</li> <li>Nuestro interés legítimo para mejorar nuestros servicios.</li> </ul> <h2 class="text-2xl font-semibold mt-8 mb-4">5. Derechos de los Usuarios</h2> <p class="mb-4">Tienes derecho a:</p> <ul class="list-disc list-inside mb-6"> <li>Acceder a tus datos personales.</li> <li>Solicitar la rectificación de datos inexactos.</li> <li>Solicitar la supresión de tus datos personales.</li> <li>Oponerte al tratamiento de tus datos.</li> <li>Solicitar la limitación del tratamiento de tus datos.</li> <li>Portar tus datos a otro proveedor.</li> </ul> <p class="mb-6">
+Puedes ejercer estos derechos enviando una solicitud a nuestro correo electrónico:
+<a href="mailto:[Correo electrónico de contacto]" class="text-blue-600 hover:underline">[Correo electrónico de contacto]</a>.
+</p> <h2 class="text-2xl font-semibold mt-8 mb-4">6. Plazo de Conservación</h2> <p class="mb-6">
+Conservaremos tus datos personales mientras sean necesarios para los fines descritos
+                en esta política de privacidad, salvo que la ley exija o permita un período de
+                conservación más largo.
+</p> <h2 class="text-2xl font-semibold mt-8 mb-4">7. Transferencias Internacionales</h2> <p class="mb-6">
+No transferimos tus datos personales fuera del Espacio Económico Europeo (EEE).
+                En caso de hacerlo, nos aseguraremos de que estén protegidos adecuadamente.
+</p> <h2 class="text-2xl font-semibold mt-8 mb-4">8. Seguridad de los Datos</h2> <p class="mb-6">
+Implementamos medidas técnicas y organizativas para garantizar la seguridad de
+                tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no
+                autorizado.
+</p> <h2 class="text-2xl font-semibold mt-8 mb-4">9. Cambios en la Política de Privacidad</h2> <p class="mb-6">
+Podemos actualizar esta política de privacidad ocasionalmente. Publicaremos
+                cualquier cambio en esta página e indicaremos la fecha de la última actualización.
+</p> <h2 class="text-2xl font-semibold mt-8 mb-4">10. Contacto</h2> <p class="mb-6">
+Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en:
+<a href="mailto:[Correo electrónico de contacto]" class="text-blue-600 hover:underline">[Correo electrónico de contacto]</a>.
+</p> <p class="text-sm text-gray-500 mt-8">
+Fecha de última actualización: <span class="font-semibold">[Fecha de la última actualización]</span> </p> </article> ` })}`;
+}, "/home/davidenkov/Documentos/gesto-finca/src/pages/politica-de-privacidad.astro", undefined);
+
+const $$file = "/home/davidenkov/Documentos/gesto-finca/src/pages/politica-de-privacidad.astro";
+const $$url = "/politica-de-privacidad";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+        __proto__: null,
+        default: $$PoliticaDePrivacidad,
+        file: $$file,
+        url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };
