@@ -1,0 +1,24 @@
+---
+import Image from "astro/components/Image.astro"
+import phone from '../assets/icons/phone.png'
+import email from '../assets/icons/email.png'
+---
+
+
+<div class="bg-gradient-to-r from-brand-blueFinca to-brand-greenFinca">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+      <div class="flex flex-row gap-4 md:flex-row md:items-center md:justify-between items-center">
+        <div class="">
+            <p class="text-xl font-bold text-gray-800">Contáctanos sin compromiso</p>
+        </div>
+        <div class="flex">
+            <Image src={phone} alt="Teléfono" class="w-8 h-8 mx-6" />
+            <h3 class="text-2xl font-bold text-gray-800 sm:text-3xl"><span class="">+34 666 555 444</span></h3>
+        </div>
+        <div class="flex">
+            <Image src={email} alt="email" class="w-8 h-8 mx-6" />
+            <h3 class="text-2xl font-bold text-gray-800 sm:text-3xl"><span class="">gestofinca@test.com</span></h3>
+        </div>
+      </div>
+    </div>
+  </div>
