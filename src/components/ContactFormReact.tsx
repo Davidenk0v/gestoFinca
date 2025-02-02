@@ -13,13 +13,16 @@ const ContactFormReact = () => {
     event.preventDefault();
     console.log(formData);
     try {
-      const response = await fetch("http://localhost:3000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://gesto-finca-embn2vtvg-davidenk0vs-projects.vercel.app/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
     } catch (error) {
       console.error(error);
     }
