@@ -1,5 +1,6 @@
-import { useRef, useState } from "react";
-import { Resend } from "resend";
+import { useState } from "react";
+import sendEmail from "../services/emailService";
+
 const ContactFormReact = () => {
   const dataUser = {
     name: "",
@@ -40,18 +41,7 @@ const ContactFormReact = () => {
       }, 5000);
       return;
     } else {
-      try {
-        const response = await fetch("http://localhost:3000/send-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-        setMessage("Mensaje enviado. Pronto nos pondremos en contacto.");
-      } catch (error) {
-        console.error(error);
-      }
+      const data = await sendEmail(formData);
     }
   };
 
@@ -60,7 +50,7 @@ const ContactFormReact = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center bg-slate-100">
       <form onSubmit={handleSubmit} className="max-w-sm mx-4">
         {error && (
           <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-center">
@@ -177,7 +167,7 @@ const ContactFormReact = () => {
         <div className="flex justify-center m-2">
           <button
             type="submit"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:ring-blue-300"
+            className="inline-flex items-center justify-center px-5 py-3 text-base text-center text-white font-semibold bg-orange-500 rounded-lg hover:bg-orange-800 focus:ring-4 focus:ring-blue-300"
           >
             Contactar
           </button>

@@ -47,6 +47,12 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12 items-center">
           <a
+            href="/"
+            className="whitespace-nowrap text-sm/6 border-b-2 border-transparent font-semibold text-gray-900 focus:border-b-2 focus:border-b-brand-blueFinca"
+          >
+            Inicio
+          </a>
+          <a
             href="/administracion-fincas"
             className="whitespace-nowrap text-sm/6 border-b-2 border-transparent font-semibold text-gray-900 focus:border-b-2 focus:border-b-brand-blueFinca"
           >
