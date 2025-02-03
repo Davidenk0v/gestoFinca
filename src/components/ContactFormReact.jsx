@@ -1,5 +1,5 @@
 import { useState } from "react";
-import sendEmail from "../services/emailService";
+import sendEmail from "../services/emailService.js";
 
 const ContactFormReact = () => {
   const dataUser = {
