@@ -3,11 +3,17 @@ import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import Layout from "../layouts/Layout.astro";
+
+import { loadTranslations } from "../utils/i18n";
+const params = Astro.url.searchParams;
+const lang = params.get("lang") || "es";
+
+const translations = await loadTranslations(lang);
 ---
 
 <Layout title="Administración de fincas">  
         <section>
-            <Carrousel titleStart={'Administración '} titleEnd={'de fincas'} text={'texto sobre administración de fincas'}/>
+            <Carrousel titleStart={translations.title} titleEnd={'de fincas'} text={'texto sobre administración de fincas'}/>
         </section>
         <section class="bg-white dark:bg-gray-900">
             <ContactBanner/>
