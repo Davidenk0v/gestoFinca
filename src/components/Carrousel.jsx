@@ -5,7 +5,7 @@ import edf2 from "../assets/images/edificio1.webp";
 import edf3 from "../assets/images/puerta.webp";
 import logo from "../assets/logos/imagen_logo_negativo.png";
 
-const Carrousel = () => {
+const Carrousel = ({ titleStart, titleEnd, text }) => {
   const images = [edf1.src, edf2.src, edf3.src];
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [animations, setAnimations] = useState("slideIn");
@@ -38,16 +38,23 @@ const Carrousel = () => {
 
       <div className="relative flex justify-center mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">
         <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h1 className="text-6xl font-extrabold text-brand-blueFinca sm:text-5xl">
-            Gesto
-            <strong className="font-extrabold text-brand-greenFinca">
-              Finca.
-            </strong>
-          </h1>
-          <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            illo tenetur fuga ducimus numquam ea!
-          </p>
+          {titleStart && titleEnd ? (
+            <h1 className="text-6xl font-extrabold text-brand-blueFinca sm:text-5xl">
+              {titleStart}
+              <strong className="font-extrabold text-brand-greenFinca">
+                {titleEnd}
+              </strong>
+            </h1>
+          ) : (
+            <h1 className="text-6xl font-extrabold text-brand-blueFinca sm:text-5xl">
+              Gesto
+              <strong className="font-extrabold text-brand-greenFinca">
+                Finca.
+              </strong>
+            </h1>
+          )}
+
+          <p className="mt-4 max-w-lg text-white sm:text-xl/relaxed">{text}</p>
           <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
             <a
               href="/contacto"
