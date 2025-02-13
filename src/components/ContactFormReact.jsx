@@ -1,5 +1,4 @@
 import { useState } from "react";
-import sendEmail from "../services/emailService";
 
 const ContactFormReact = () => {
   const dataUser = {
@@ -41,7 +40,20 @@ const ContactFormReact = () => {
       }, 5000);
       return;
     } else {
-      const data = await sendEmail(formData);
+      try {
+        const response = await fetch("/api/send-emails", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+        setMessage(
+          "Mensaje enviado correctamente. Pronto nos pondremos en contacto con usted."
+        );
+      } catch (error) {
+        console.error(error);
+      }
     }
   };
 
