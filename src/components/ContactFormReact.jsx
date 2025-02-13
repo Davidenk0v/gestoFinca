@@ -41,7 +41,7 @@ const ContactFormReact = () => {
       return;
     } else {
       try {
-        const response = await fetch("http://localhost:3000/send-email", {
+        const response = await fetch("/api/send-emails", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
