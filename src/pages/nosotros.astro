@@ -5,20 +5,25 @@ import ServicesInfo from "../components/ServicesInfo.astro";
 import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
+import { loadTranslations } from "../utils/i18n";
+const url = new URL(Astro.request.url);
+const lang = url.searchParams.get("lang") || "es";
+
+const translations = await loadTranslations(lang);
 ---
 
 <Layout title="Nosotros">
     
 
     <section class="bg-white">
-        <Carrousel  titleStart={'Quienes '} titleEnd={'Somos'} text={'Conócenos más texto'}/>
+        <Carrousel client:load data={translations.about_us} lang={lang}/>
     </section>
     <div class="relative">
-        <ServicesInfo />
+        <ServicesInfo text={translations.contact.phrases[0]}/>
     </div>
     <div>
         <ContactBanner />
-        <ContactFormReact />
+        <ContactFormReact lang={translations.forms}/>
     </div>
   
 </Layout>

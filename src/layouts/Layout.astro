@@ -8,6 +8,7 @@ import { loadTranslations } from "../utils/i18n";
 const params = Astro.url.searchParams;
 const lang = params.get("lang") || "es";
 
+
 const translations = await loadTranslations(lang);
 ---
 
@@ -23,12 +24,12 @@ const translations = await loadTranslations(lang);
 	</head>
 	<body>
 		<div class="flex flex-col min-h-screen bg-slate-100">
-			<Header client:load transition:persist/>
+			<Header client:load transition:persist lang={lang} data={translations}/>
 			<main class="flex-grow">
 				<slot />
 			</main>
-			<WhatsAppIcon client:load/>
-			<Footer />
+			<WhatsAppIcon transition:persist client:load/>
+			<Footer client:load transition:persist texts={translations.footer}/>
 		</div>
 	</body>
 </html>

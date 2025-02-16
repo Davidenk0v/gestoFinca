@@ -3,14 +3,20 @@ import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import Layout from "../layouts/Layout.astro";
+
+import { loadTranslations } from "../utils/i18n";
+const url = new URL(Astro.request.url);
+const lang = url.searchParams.get("lang") || "es";
+
+const translations = await loadTranslations(lang);
 ---
 
 <Layout title="Presupuestos">
     <section class="bg-white">
-        <Carrousel titleStart={'Solicita tu '} titleEnd={'presupuesto'} text={'texto sobre los presupuestos '}/>
+        <Carrousel client:load data={translations.quotes} lang={lang}/>
     </section>
     <section>
-        <ContactBanner/>
+        <ContactBanner text={translations.contact.phrases[0]}/>
     </section>
-    <ContactFormReact/>
+    <ContactFormReact lang={translations.forms}/>
 </Layout>

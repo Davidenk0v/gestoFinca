@@ -1,3 +1,157 @@
 {
-  "title": "Gestión de propiedades"
+  "property_management": {
+    "title": "Administración de Fincas",
+    "description": "Ofrecemos servicios profesionales en la gestión y administración de comunidades de propietarios y fincas urbanas.",
+    "text": "Nos encargamos de la gestión integral de su propiedad, asegurando su correcta administración y optimización.",
+    "buttons": {
+      "about_us": "Saber más",
+      "contact_us": "Contáctanos"
+    },
+    "phrases": [
+      "Confía en nuestra experiencia.",
+      "Gestión eficiente y transparente."
+    ]
+  },
+  "vacation_rentals": {
+    "title": "Alquileres Vacacionales",
+    "description": "Disfruta de unas vacaciones únicas con nuestra selección de propiedades en alquiler para estancias cortas.",
+    "text": "Descubre apartamentos y casas que ofrecen comodidad, ubicación excelente y una experiencia memorable.",
+    "buttons": {
+      "about_us": "Saber más",
+      "contact_us": "Contáctanos"
+    },
+    "phrases": [
+      "Haz de tus vacaciones un momento inolvidable.",
+      "Propiedades para todo tipo de viajes."
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Estamos a tu disposición para resolver cualquier duda o consulta. Ponte en contacto con nosotros.",
+    "text": "Nuestro equipo está disponible para ofrecerte la atención personalizada que necesitas.",
+    "buttons": {
+      "about_us": "Saber más",
+      "contact_us": "Contáctanos"
+    },
+    "phrases": [
+      "No dudes en contactarnos.",
+      "Tu satisfacción es nuestra prioridad."
+    ]
+  },
+  "index": {
+    "title": "GestoFinca",
+    "description": "La mejor opción para la gestión de fincas, alquileres vacacionales y mucho más.",
+    "text": "Con años de experiencia, ofrecemos soluciones personalizadas para cada cliente.",
+    "buttons": {
+      "about_us": "Saber más",
+      "contact_us": "Contáctanos"
+    },
+    "phrases": [
+      "Tu tranquilidad es nuestra misión.",
+      "Soluciones integrales para ti."
+    ]
+  },
+  "about_us": {
+    "title": "Nosotros",
+    "description": "Somos un equipo comprometido con ofrecerte la mejor gestión de propiedades y servicios inmobiliarios.",
+    "text": "Con un enfoque profesional y cercano, buscamos garantizar la satisfacción de nuestros clientes.",
+    "buttons": {
+      "about_us": "Saber más",
+      "contact_us": "Contáctanos"
+    },
+    "phrases": [
+      "Más de 10 años de experiencia.",
+      "Comprometidos con el servicio y la calidad."
+    ]
+  },
+  "quotes": {
+    "title": "Presupuestos",
+    "description": "Solicita un presupuesto personalizado para la administración de tu finca o alquiler vacacional.",
+    "text": "Te ofrecemos un presupuesto sin compromiso, ajustado a tus necesidades y exigencias.",
+    "buttons": {
+      "about_us": "Saber más",
+      "contact_us": "Contáctanos"
+    },
+    "phrases": [
+      "Transparencia y precios justos.",
+      "Presupuestos adaptados a tus necesidades."
+    ]
+  },
+  "privacy_policy": {
+    "title": "Política de Privacidad",
+    "description": "Protegemos tu información personal de acuerdo con las leyes y regulaciones vigentes.",
+    "text": "Lee nuestra política de privacidad para conocer cómo gestionamos tus datos personales.",
+    "buttons": {
+      "read_policy": "Leer política",
+      "accept": "Aceptar"
+    },
+    "phrases": [
+      "Tu privacidad es importante para nosotros.",
+      "Cumplimos con las normativas de protección de datos."
+    ]
+  },
+  "forms": {
+    "title": "Formularios",
+    "description": "Accede a nuestros formularios para realizar diversas gestiones de manera fácil y rápida.",
+    "text": "Desde formularios de contacto hasta solicitudes de presupuesto, tenemos todo lo que necesitas.",
+    "fields": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Introduce tu nombre"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "Introduce tu correo electrónico"
+      },
+      "phone": {
+        "label": "Teléfono",
+        "placeholder": "Introduce tu número de teléfono"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Escribe tu mensaje"
+      },
+      "subject": {
+        "label": "Asunto",
+        "placeholder": "Introduce el asunto"
+      },
+      "privacy_policy": {
+        "label": "He leído y acepto la política de privacidad",
+        "link": "/politica-de-privacidad"
+      }
+    },
+    "buttons": {
+      "send_form": "Enviar",
+      "learn_more": "Saber más"
+    },
+    "phrases": [
+      "Gestiona tu solicitud de forma rápida.",
+      "Formularios sencillos y fáciles de usar."
+    ]
+  },
+  "footer": {
+    "phrase": "Tu tranquilidad es nuestra misión.",
+    "pages": [
+      "Páginas",
+      "Nosotros",
+      "Administración de Fincas",
+      "Alquileres Vacacionales",
+      "Presupuestos"
+    ],
+    "useful_links": [
+      "Enlaces de interés",
+      "Contáctanos",
+      "Términos y Condiciones",
+      "Política de Privacidad",
+      "Uso de Cookies"
+    ]
+  },
+  "header": {
+    "home": "Inicio",
+    "about_us": "Nosotros",
+    "property_management": "Administración de Fincas",
+    "vacation_rentals": "Alquileres Vacacionales",
+    "quotes": "Presupuestos",
+    "contact": "Contacto"
+  }
 }

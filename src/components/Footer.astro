@@ -1,12 +1,13 @@
 ---
 import Image from "astro/components/Image.astro"
 import logoadmin from '../assets/logos/imagen_logo.png'
+const texts = Astro.props.texts;
+const { phrase, pages, useful_links } = texts;
+
 ---
 
 
 <!-- component -->
-<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
-<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
 
 <footer class="relative bg-slate-200 pt-8 pb-6">
   <div class="container mx-auto px-4">
@@ -14,7 +15,7 @@ import logoadmin from '../assets/logos/imagen_logo.png'
       <div class="w-full lg:w-6/12 px-4">
         <h4 class="text-3xl font-semibold text-brand-blueFinca">Gesto<span class="text-brand-greenFinca">Finca</span></h4>
         <h5 class="text-lg mt-0 mb-2 text-gray-900">
-          Cuidamos de tu propiedad, gestionamos tu tranquilidad.
+          {phrase}
         </h5>
         <div class="mt-6 lg:mb-0 mb-6">
           <button class="items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
@@ -28,36 +29,36 @@ import logoadmin from '../assets/logos/imagen_logo.png'
       <div class="w-full lg:w-6/12 px-4">
         <div class="flex flex-wrap items-top mb-6">
           <div class="w-full lg:w-4/12 px-4 ml-auto">
-            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Páginas</span>
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">{pages[0]}</span>
             <ul class="list-unstyled">
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/nosotros">Nosotros</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/nosotros">{pages[1]}</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/administracion-fincas">Administración de fincas</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/administracion-fincas">{pages[2]}</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/alquileres-vacacionales">Alquileres vacacionales</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/alquileres-vacacionales">{pages[3]}</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/presupuestos">Presupuestos</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/presupuestos">{pages[4]}</a>
               </li>
             </ul>
           </div>
           <div class="w-full lg:w-4/12 px-4">
-            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Enlaces de interés</span>
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">{useful_links[0]}</span>
             <ul class="list-unstyled">
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/contacto">Contáctanos</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/contacto">{useful_links[1]}</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Terminos &amp; Condiciones</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">{useful_links[2]}</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/politica-de-privacidad">Política de privacidad</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/politica-de-privacidad">{useful_links[3]}</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Uso de cookies</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">{useful_links[4]}</a>
               </li>
             </ul>
           </div>

@@ -3,16 +3,22 @@ import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import Layout from "../layouts/Layout.astro";
+
+import { loadTranslations } from "../utils/i18n";
+const url = new URL(Astro.request.url);
+const lang = url.searchParams.get("lang") || "es";
+
+const translations = await loadTranslations(lang);
 ---
 
 <Layout title="Alquileres vacacionales">
     <section class="bg-white">
-        <Carrousel titleStart={'Gestión de alquileres '} titleEnd={'vacacionales'} text={'Texto sobre alquileres vacaciones'}/>
+        <Carrousel client:load data={translations.vacation_rentals} lang={lang}/>
     </section>
     <section>
-        <ContactBanner/>
+        <ContactBanner text={translations.contact.phrases[0]}/>
     </section>
     <section>
-        <ContactFormReact/>
+        <ContactFormReact lang={translations.forms}/>
     </section>
 </Layout>

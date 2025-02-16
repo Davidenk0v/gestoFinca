@@ -1,25 +1,27 @@
 ---
-import Image from "astro/components/Image.astro"
-import phone from '../assets/icons/phone.png'
-import email from '../assets/icons/email.png'
+import phoneIcon from "../assets/icons/phone.png";
+import emailIcon from "../assets/icons/email.png";
+
+const text = Astro.props.text;
 ---
-
-
-
-<div class="bg-gradient-to-r from-brand-blueFinca to-brand-greenFinca">
-  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-      <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between items-center">
-          <div class="flex items-center">
-              <p class="text-xl font-bold text-gray-800">Contáctanos sin compromiso</p>
+    <div class="bg-gradient-to-r from-brand-blueFinca to-brand-greenFinca">
+      <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
+        <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between text-center md:text-left">
+          {/* Text Section */}
+          <p class="text-lg sm:text-xl font-bold text-gray-800">{text}</p>
+          
+          {/* Phone Section */}
+          <div class="flex items-center justify-center md:justify-start gap-4">
+            <img src={phoneIcon.src} alt="Teléfono" class="w-6 h-6 sm:w-8 sm:h-8" />
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800">+34 666 555 444</h3>
           </div>
-          <div class="flex items-center">
-              <Image src={phone} alt="Teléfono" class="w-8 h-8 mx-6" />
-              <h3 class="text-2xl font-bold text-gray-800 sm:text-3xl"><span>+34 666 555 444</span></h3>
+          
+          {/* Email Section */}
+          <div class="flex items-center justify-center md:justify-start gap-4">
+            <img src={emailIcon.src} alt="Email" class="w-6 h-6 sm:w-8 sm:h-8" />
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-800">gestofinca@test.com</h3>
           </div>
-          <div class="flex items-center">
-              <Image src={email} alt="email" class="w-8 h-8 mx-6" />
-              <h3 class="text-2xl font-bold text-gray-800 sm:text-3xl"><span>gestofinca@test.com</span></h3>
-          </div>
+        </div>
       </div>
-  </div>
-</div>
+    </div>
+

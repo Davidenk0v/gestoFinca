@@ -1,24 +1,27 @@
 ---
+import { late, transformer } from "astro:schema";
 import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import Layout from "../layouts/Layout.astro";
+import type { PropertyManagementData } from "../utils/types";
 
 import { loadTranslations } from "../utils/i18n";
-const params = Astro.url.searchParams;
-const lang = params.get("lang") || "es";
+const url = new URL(Astro.request.url);
+const lang = url.searchParams.get("lang") || "es";
 
 const translations = await loadTranslations(lang);
+
 ---
 
 <Layout title="Administración de fincas">  
         <section>
-            <Carrousel titleStart={translations.title} titleEnd={'de fincas'} text={'texto sobre administración de fincas'}/>
+            <Carrousel client:load data={translations.property_management} lang={lang}/>
         </section>
         <section class="bg-white dark:bg-gray-900">
-            <ContactBanner/>
+            <ContactBanner text={translations.contact.phrases[0]}>
         </section>
         <section>
-            <ContactFormReact/>
+            <ContactFormReact client:load lang={translations.forms}/>
         </section>
 </Layout>

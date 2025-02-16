@@ -1,3 +1,154 @@
 {
-  "title:": "Property Management"
+  "property_management": {
+    "title": "Property Management",
+    "description": "We offer professional services in the management and administration of homeowners' associations and urban properties.",
+    "text": "We handle the comprehensive management of your property, ensuring its proper administration and optimization.",
+    "buttons": {
+      "about_us": "Learn more",
+      "contact_us": "Contact us"
+    },
+    "phrases": [
+      "Trust in our experience.",
+      "Efficient and transparent management."
+    ]
+  },
+  "vacation_rentals": {
+    "title": "Vacation Rentals",
+    "description": "Enjoy a unique vacation with our selection of properties for short-term rentals.",
+    "text": "Discover apartments and homes offering comfort, great location, and a memorable experience.",
+    "buttons": {
+      "about_us": "Learn more",
+      "contact_us": "Contact us"
+    },
+    "phrases": [
+      "Make your vacation unforgettable.",
+      "Properties for all types of trips."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "We are available to resolve any questions or inquiries. Get in touch with us.",
+    "text": "Our team is available to offer you the personalized attention you need.",
+    "buttons": {
+      "about_us": "Learn more",
+      "contact_us": "Contact us"
+    },
+    "phrases": [
+      "Feel free to reach out to us.",
+      "Your satisfaction is our priority."
+    ]
+  },
+  "index": {
+    "title": "GestoFinca",
+    "description": "The best choice for property management, vacation rentals, and much more.",
+    "text": "With years of experience, we offer personalized solutions for every client.",
+    "buttons": {
+      "about_us": "Learn more",
+      "contact_us": "Contact us"
+    },
+    "phrases": [
+      "Your peace of mind is our mission.",
+      "Comprehensive solutions for you."
+    ]
+  },
+  "about_us": {
+    "title": "About Us",
+    "description": "We are a team committed to offering the best property management and real estate services.",
+    "text": "With a professional and close approach, we aim to guarantee the satisfaction of our clients.",
+    "buttons": {
+      "about_us": "Learn more",
+      "contact_us": "Contact us"
+    },
+    "phrases": [
+      "Over 10 years of experience.",
+      "Committed to service and quality."
+    ]
+  },
+  "quotes": {
+    "title": "Quotes",
+    "description": "Request a personalized quote for the management of your property or vacation rental.",
+    "text": "We offer a no-obligation quote tailored to your needs and requirements.",
+    "buttons": {
+      "about_us": "Learn more",
+      "contact_us": "Contact us"
+    },
+    "phrases": [
+      "Transparency and fair prices.",
+      "Quotes tailored to your needs."
+    ]
+  },
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "description": "We protect your personal information in accordance with current laws and regulations.",
+    "text": "Read our privacy policy to understand how we manage your personal data.",
+    "buttons": {
+      "read_policy": "Read policy",
+      "accept": "Accept"
+    },
+    "phrases": [
+      "Your privacy is important to us.",
+      "We comply with data protection regulations."
+    ]
+  },
+  "forms": {
+    "title": "Forms",
+    "description": "Access our forms to perform various tasks easily and quickly.",
+    "text": "From contact forms to quote requests, we have everything you need.",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Enter your phone number"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter your message"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Enter the subject"
+      },
+      "privacy_policy": {
+        "label": "I have read and accept the privacy policy",
+        "link": "/privacy-policy"
+      }
+    },
+    "buttons": {
+      "send_form": "Send",
+      "learn_more": "Learn more"
+    },
+    "phrases": ["Manage your request quickly.", "Simple and easy-to-use forms."]
+  },
+  "footer": {
+    "phrase": "Your peace of mind is our mission.",
+    "pages": [
+      "Pages",
+      "About Us",
+      "Property Management",
+      "Vacation Rentals",
+      "Quotes"
+    ],
+    "useful_links": [
+      "Useful links",
+      "Contact us",
+      "Terms and Conditions",
+      "Privacy Policy",
+      "Cookie Usage"
+    ]
+  },
+  "header": {
+    "home": "Home",
+    "about_us": "About Us",
+    "property_management": "Property Management",
+    "vacation_rentals": "Vacation Rentals",
+    "quotes": "Quotes",
+    "contact": "Contact"
+  }
 }

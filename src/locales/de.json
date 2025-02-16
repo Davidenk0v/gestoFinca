@@ -1,3 +1,154 @@
 {
-  "title": "Immobilienverwaltung"
+  "property_management": {
+    "title": "Immobilienverwaltung",
+    "description": "Wir bieten professionelle Dienstleistungen in der Verwaltung und Organisation von Eigentümergemeinschaften und städtischen Immobilien.",
+    "text": "Wir kümmern uns um die umfassende Verwaltung Ihrer Immobilie, um eine korrekte Verwaltung und Optimierung zu gewährleisten.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Vertrauen Sie auf unsere Erfahrung.",
+      "Effiziente und transparente Verwaltung."
+    ]
+  },
+  "vacation_rentals": {
+    "title": "Ferienwohnungen",
+    "description": "Genießen Sie einen einzigartigen Urlaub mit unserer Auswahl an Ferienwohnungen zur Kurzzeitmiete.",
+    "text": "Entdecken Sie Apartments und Häuser, die Komfort, eine hervorragende Lage und ein unvergessliches Erlebnis bieten.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Machen Sie Ihren Urlaub unvergesslich.",
+      "Immobilien für alle Arten von Reisen."
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Wir stehen Ihnen zur Verfügung, um alle Fragen oder Anfragen zu beantworten. Kontaktieren Sie uns.",
+    "text": "Unser Team ist bereit, Ihnen die persönliche Betreuung zu bieten, die Sie benötigen.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Zögern Sie nicht, uns zu kontaktieren.",
+      "Ihre Zufriedenheit ist unsere Priorität."
+    ]
+  },
+  "index": {
+    "title": "GestoFinca",
+    "description": "Die beste Wahl für Immobilienverwaltung, Ferienwohnungen und vieles mehr.",
+    "text": "Mit jahrelanger Erfahrung bieten wir maßgeschneiderte Lösungen für jeden Kunden.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": ["Ihre Ruhe ist unsere Mission.", "Umfassende Lösungen für Sie."]
+  },
+  "about_us": {
+    "title": "Über uns",
+    "description": "Wir sind ein Team, das sich verpflichtet hat, die beste Immobilienverwaltung und Immobilienservices anzubieten.",
+    "text": "Mit einem professionellen und nahen Ansatz streben wir an, die Zufriedenheit unserer Kunden zu gewährleisten.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Mehr als 10 Jahre Erfahrung.",
+      "Verpflichtet zu Service und Qualität."
+    ]
+  },
+  "quotes": {
+    "title": "Angebote",
+    "description": "Fordern Sie ein maßgeschneidertes Angebot für die Verwaltung Ihrer Immobilie oder Ferienwohnung an.",
+    "text": "Wir bieten ein unverbindliches Angebot, das auf Ihre Bedürfnisse und Anforderungen zugeschnitten ist.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Transparenz und faire Preise.",
+      "Angebote, die auf Ihre Bedürfnisse abgestimmt sind."
+    ]
+  },
+  "privacy_policy": {
+    "title": "Datenschutzrichtlinie",
+    "description": "Wir schützen Ihre persönlichen Daten gemäß den geltenden Gesetzen und Vorschriften.",
+    "text": "Lesen Sie unsere Datenschutzrichtlinie, um zu erfahren, wie wir Ihre persönlichen Daten verwalten.",
+    "buttons": {
+      "read_policy": "Richtlinie lesen",
+      "accept": "Akzeptieren"
+    },
+    "phrases": [
+      "Ihre Privatsphäre ist uns wichtig.",
+      "Wir halten die Datenschutzbestimmungen ein."
+    ]
+  },
+  "forms": {
+    "title": "Formulare",
+    "description": "Greifen Sie auf unsere Formulare zu, um verschiedene Aufgaben einfach und schnell zu erledigen.",
+    "text": "Von Kontaktformularen bis hin zu Angebotsanfragen haben wir alles, was Sie brauchen.",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Geben Sie Ihren Namen ein"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "Geben Sie Ihre Telefonnummer ein"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Geben Sie Ihre Nachricht ein"
+      },
+      "subject": {
+        "label": "Betreff",
+        "placeholder": "Geben Sie den Betreff ein"
+      },
+      "privacy_policy": {
+        "label": "Ich habe die Datenschutzrichtlinie gelesen und akzeptiere sie",
+        "link": "/datenschutzrichtlinie"
+      }
+    },
+    "buttons": {
+      "send_form": "Absenden",
+      "learn_more": "Mehr erfahren"
+    },
+    "phrases": [
+      "Verwalten Sie Ihre Anfrage schnell.",
+      "Einfache und benutzerfreundliche Formulare."
+    ]
+  },
+  "footer": {
+    "phrase": "Ihre Ruhe ist unsere Mission.",
+    "pages": [
+      "Seiten",
+      "Über uns",
+      "Immobilienverwaltung",
+      "Ferienwohnungen",
+      "Angebote"
+    ],
+    "useful_links": [
+      "Nützliche Links",
+      "Kontaktieren Sie uns",
+      "Allgemeine Geschäftsbedingungen",
+      "Datenschutzrichtlinie",
+      "Cookies Verwendung"
+    ]
+  },
+  "header": {
+    "home": "Startseite",
+    "about_us": "Über uns",
+    "property_management": "Immobilienverwaltung",
+    "vacation_rentals": "Ferienwohnungen",
+    "quotes": "Angebote",
+    "contact": "Kontakt"
+  }
 }
