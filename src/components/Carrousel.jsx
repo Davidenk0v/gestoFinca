@@ -3,6 +3,7 @@ import edf1 from "@/assets/images/building.webp";
 import edf2 from "@/assets/images/edificio1.webp";
 import edf3 from "@/assets/images/puerta.webp";
 import logo from "@/assets/logos/imagen_logo_negativo.png";
+import Image from "astro/components/Image.astro";
 
 const images = [edf1, edf2, edf3];
 
@@ -60,7 +61,7 @@ const Carousel = ({ data, lang }) => {
           </a>
         </div>
         <div className="mt-6 flex justify-center">
-          <img src={logo.src} alt="Logo" className="w-50 h-20" />
+          <Image src={logo} alt="Logo" className="w-50 h-20" />
         </div>
       </div>
     </section>
