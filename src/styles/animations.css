@@ -16,3 +16,9 @@
     transform: translateX(-100%);
   }
 }
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.842); /* Color negro con 50% de opacidad */
+}

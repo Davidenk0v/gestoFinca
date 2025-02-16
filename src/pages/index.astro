@@ -4,19 +4,28 @@ import ContactFormReact from '../components/ContactFormReact';
 import ServicesInfo from '../components/ServicesInfo.astro';
 import Layout from '../layouts/Layout.astro';
 import ContactBanner from '../components/ContactBanner.astro';
+
+import { loadTranslations } from '../utils/i18n';
+const params = Astro.url.searchParams;
+const lang = params.get('lang')
+if(!lang && typeof window !== 'undefined') {
+	localStorage.getItem('lang') || 'es';
+}
+
+const translation = await loadTranslations(lang);
 ---
 
-<Layout title="GestoFinca - Administradores de fincas">
+<Layout title={translation.title}>
 	<div class="snap-y snap-mandatory">
 		<div class="snap-start">
-			<Carrousel client:load/>
+			<Carrousel data={translation.index} client:load lang={lang}/>
 		</div>
 		<section class="snap-start">
 			<ServicesInfo />
 		</section>
-		<ContactBanner />
+		<ContactBanner text={translation.contact.phrases[0]}/>
 		<section class="my-4">
-			<ContactFormReact client:load/>
+			<ContactFormReact client:load lang={translation.forms}/>
 		</section>
 	</div>
 </Layout>
