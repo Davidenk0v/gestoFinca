@@ -1,7 +1,4 @@
-import React, { use, useEffect, useRef, useState } from "react";
-import i18n from "i18next";
-import espanaImg from "../../public/flags/espana.png";
-import type { PropertyManagementData } from "../utils/types";
+import { useEffect, useRef } from "react";
 
 const LanguageSelector = () => {
   const es = useRef(null);
