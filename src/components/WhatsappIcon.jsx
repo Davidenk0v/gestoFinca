@@ -1,7 +1,7 @@
 import React from "react";
 const WhatsAppIcon = () => {
   const handleClick = () => {
-    const message = "¡Hola! Estoy interesado en tus servicios";
+    const message = "¡Hola! Estoy interesado en recibir más información.";
 
     const phoneNumber = "+34672277520";
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;

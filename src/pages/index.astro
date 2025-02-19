@@ -7,15 +7,14 @@ import ContactBanner from '../components/ContactBanner.astro';
 
 import { loadTranslations } from '../utils/i18n';
 const params = Astro.url.searchParams;
-const lang = params.get('lang')
-if(!lang && typeof window !== 'undefined') {
-	localStorage.getItem('lang') || 'es';
-}
+const url = new URL(Astro.request.url);
+const lang = url.searchParams.get('lang') || (typeof window !== 'undefined' ? localStorage.getItem('lang') : 'es');
+
 
 const translation = await loadTranslations(lang);
 ---
 
-<Layout title={translation.title}>
+<Layout title={translation.index.title}>
 	<div class="snap-y snap-mandatory">
 		<div class="snap-start">
 			<Carrousel data={translation.index} client:load lang={lang}/>

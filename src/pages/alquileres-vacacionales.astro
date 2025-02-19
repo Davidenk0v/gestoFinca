@@ -11,7 +11,7 @@ const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
 ---
 
-<Layout title="Alquileres vacacionales">
+<Layout title={translations.vacation_rentals.title}>
     <section class="bg-white">
         <Carrousel client:load data={translations.vacation_rentals} lang={lang}/>
     </section>

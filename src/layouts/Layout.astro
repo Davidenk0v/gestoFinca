@@ -2,7 +2,7 @@
 import { ClientRouter } from "astro:transitions";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.jsx"
-import WhatsAppIcon from "../components/WhatsappIcon";
+import WhatsAppIcon from "../components/WhatsappIcon.jsx";
 const { title } = Astro.props;
 import { loadTranslations } from "../utils/i18n";
 const params = Astro.url.searchParams;
@@ -19,7 +19,7 @@ const translations = await loadTranslations(lang);
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{translations.title}</title>
+		<title>{title}</title>
 		<ClientRouter />
 	</head>
 	<body>

@@ -1,76 +1,88 @@
 ---
-import Image from "astro/components/Image.astro"
-import logoadmin from '../assets/logos/imagen_logo.png'
+import Image from "astro/components/Image.astro";
+import logoadmin from "../assets/logos/imagen_logo.png";
 const texts = Astro.props.texts;
 const { phrase, pages, useful_links } = texts;
-
 ---
 
-
-<!-- component -->
-
-<footer class="relative bg-slate-200 pt-8 pb-6">
+<footer class="bg-slate-200 py-8">
   <div class="container mx-auto px-4">
-    <div class="flex flex-wrap text-left lg:text-left">
-      <div class="w-full lg:w-6/12 px-4">
-        <h4 class="text-3xl font-semibold text-brand-blueFinca">Gesto<span class="text-brand-greenFinca">Finca</span></h4>
-        <h5 class="text-lg mt-0 mb-2 text-gray-900">
-          {phrase}
-        </h5>
-        <div class="mt-6 lg:mb-0 mb-6">
-          <button class="items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <!-- OTRO Logo?? -->
-          </button>
-            <a href="/nosotros" class="items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-            <Image src={logoadmin} alt="GestoFinca" class="w-52 h-20" />
+    <div class="flex flex-wrap justify-between text-left lg:text-left">
+      <!-- Columna de texto y logo -->
+      <div class="w-full lg:w-6/12 px-4 mb-6 lg:mb-0">
+        <h4 class="text-3xl font-semibold text-brand-blueFinca">
+          Gesto<span class="text-brand-greenFinca">Finca</span>
+        </h4>
+        <p class="text-lg mt-0 mb-4 text-gray-900">{phrase}</p>
+        <div class="flex flex-wrap items-center justify-start">
+          <a href="/nosotros" class="inline-block mr-4">
+            <Image
+              src={logoadmin}
+              alt="GestoFinca"
+              class="w-52 h-20 object-contain"
+            />
           </a>
         </div>
       </div>
+
+      <!-- Columna de enlaces -->
       <div class="w-full lg:w-6/12 px-4">
-        <div class="flex flex-wrap items-top mb-6">
-          <div class="w-full lg:w-4/12 px-4 ml-auto">
-            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">{pages[0]}</span>
+        <div class="flex flex-wrap mb-6">
+          <!-- Páginas -->
+          <div class="w-full lg:w-6/12 px-4 mb-4 lg:mb-0">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+              {pages[0]}
+            </span>
             <ul class="list-unstyled">
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/nosotros">{pages[1]}</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/administracion-fincas">{pages[2]}</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/alquileres-vacacionales">{pages[3]}</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/presupuestos">{pages[4]}</a>
-              </li>
+              {pages.slice(1).map((page, index) => (
+                <li key={index}>
+                  <a
+                    href={`/${page.toLowerCase().replace(" ", "-")}`}
+                    class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                  >
+                    {page}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
-          <div class="w-full lg:w-4/12 px-4">
-            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">{useful_links[0]}</span>
+
+          <!-- Enlaces útiles -->
+          <div class="w-full lg:w-6/12 px-4">
+            <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+              {useful_links[0]}
+            </span>
             <ul class="list-unstyled">
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/contacto">{useful_links[1]}</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">{useful_links[2]}</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/politica-de-privacidad">{useful_links[3]}</a>
-              </li>
-              <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">{useful_links[4]}</a>
-              </li>
+              {useful_links.slice(1).map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={`/${link.toLowerCase().replace(" ", "-")}`}
+                    class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
     </div>
-    <hr class="my-6 border-blueGray-300">
-    <div class="flex flex-wrap items-center md:justify-between justify-center">
+
+    <!-- Línea divisoria -->
+    <hr class="my-6 border-blueGray-300" />
+
+    <!-- Copyright -->
+    <div class="flex flex-wrap items-center justify-center md:justify-between">
       <div class="w-full md:w-4/12 px-4 mx-auto text-center">
         <div class="text-sm text-blueGray-500 font-semibold py-1">
           Copyright © <span id="get-current-year">2025</span>
-          <a href="/" class="text-blueGray-500 hover:text-blueGray-800"> GestoFinca S.L</a>.
+          <a
+            href="/"
+            class="text-blueGray-500 hover:text-blueGray-800"
+            >GestoFinca S.L</a
+          >
+          .
         </div>
       </div>
     </div>

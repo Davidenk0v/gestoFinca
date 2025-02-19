@@ -14,7 +14,7 @@ const translations = await loadTranslations(lang);
 
 ---
 
-<Layout title="Administración de fincas">  
+<Layout title={translations.property_management.title}>  
         <section>
             <Carrousel client:load data={translations.property_management} lang={lang}/>
         </section>

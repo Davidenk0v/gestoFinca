@@ -12,7 +12,7 @@ const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
 ---
 
-<Layout title="Nosotros">
+<Layout title={translations.about_us.title}>
     
 
     <section class="bg-white">
