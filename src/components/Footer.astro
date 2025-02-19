@@ -1,6 +1,6 @@
 ---
 import Image from "astro/components/Image.astro";
-import logoadmin from "../assets/logos/imagen_logo.png";
+import logoadmin from "@/assets/logos/imagen_logo.png";
 const texts = Astro.props.texts;
 const { phrase, pages, useful_links } = texts;
 console.log(pages)
@@ -36,7 +36,7 @@ console.log(useful_links)
               {pages.title}
             </span>
             <ul class="list-unstyled">
-              {pages.links.map((page) => (
+              {pages.links.map((page: any) => (
                 <li>
                   <a
                     href={page.link}
@@ -55,7 +55,7 @@ console.log(useful_links)
               {useful_links.title}
             </span>
             <ul class="list-unstyled">
-              {useful_links.links.map((link) => (
+              {useful_links.links.map((link:any) => (
                 <li>
                   <a
                     href={link.link}
