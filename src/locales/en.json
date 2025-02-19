@@ -128,20 +128,24 @@
   },
   "footer": {
     "phrase": "Your peace of mind is our mission.",
-    "pages": [
-      "Pages",
-      "About Us",
-      "Property Management",
-      "Vacation Rentals",
-      "Quotes"
-    ],
-    "useful_links": [
-      "Useful links",
-      "Contact us",
-      "Terms and Conditions",
-      "Privacy Policy",
-      "Cookie Usage"
-    ]
+    "pages": {
+      "title": "Pages",
+      "links": [
+        { "name": "About Us", "link": "/nosotros" },
+        { "name": "Property Management", "link": "/administracion-fincas" },
+        { "name": "Holiday Rentals", "link": "/alquileres-vacacionales" },
+        { "name": "Quotes", "link": "/presupuestos" }
+      ]
+    },
+    "useful_links": {
+      "title": "Useful Links",
+      "links": [
+        { "name": "Contact Us", "link": "/contacto" },
+        { "name": "Terms and Conditions", "link": "/terms-conditions" },
+        { "name": "Privacy Policy", "link": "/politica-de-privacidad" },
+        { "name": "Cookie Policy", "link": "/cookie-policy" }
+      ]
+    }
   },
   "header": {
     "home": "Home",

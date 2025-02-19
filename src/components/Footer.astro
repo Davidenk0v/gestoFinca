@@ -3,8 +3,10 @@ import Image from "astro/components/Image.astro";
 import logoadmin from "../assets/logos/imagen_logo.png";
 const texts = Astro.props.texts;
 const { phrase, pages, useful_links } = texts;
----
+console.log(pages)
+console.log(useful_links)
 
+---
 <footer class="bg-slate-200 py-8">
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap justify-between text-left lg:text-left">
@@ -31,16 +33,16 @@ const { phrase, pages, useful_links } = texts;
           <!-- Páginas -->
           <div class="w-full lg:w-6/12 px-4 mb-4 lg:mb-0">
             <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-              {pages[0]}
+              {pages.title}
             </span>
             <ul class="list-unstyled">
-              {pages.slice(1).map((page, index) => (
-                <li key={index}>
+              {pages.links.map((page) => (
+                <li>
                   <a
-                    href={`/${page.toLowerCase().replace(" ", "-")}`}
+                    href={page.link}
                     class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                   >
-                    {page}
+                    {page.name}
                   </a>
                 </li>
               ))}
@@ -50,16 +52,16 @@ const { phrase, pages, useful_links } = texts;
           <!-- Enlaces útiles -->
           <div class="w-full lg:w-6/12 px-4">
             <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-              {useful_links[0]}
+              {useful_links.title}
             </span>
             <ul class="list-unstyled">
-              {useful_links.slice(1).map((link, index) => (
-                <li key={index}>
+              {useful_links.links.map((link) => (
+                <li>
                   <a
-                    href={`/${link.toLowerCase().replace(" ", "-")}`}
+                    href={link.link}
                     class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                   >
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               ))}

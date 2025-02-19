@@ -128,20 +128,30 @@
   },
   "footer": {
     "phrase": "Ihre Ruhe ist unsere Mission.",
-    "pages": [
-      "Seiten",
-      "Über uns",
-      "Immobilienverwaltung",
-      "Ferienwohnungen",
-      "Angebote"
-    ],
-    "useful_links": [
-      "Nützliche Links",
-      "Kontaktieren Sie uns",
-      "Allgemeine Geschäftsbedingungen",
-      "Datenschutzrichtlinie",
-      "Cookies Verwendung"
-    ]
+    "pages": {
+      "title": "Seiten",
+      "links": [
+        { "name": "Über uns", "link": "/nosotros" },
+        {
+          "name": "Verwaltung von Immobilien",
+          "link": "/administracion-fincas"
+        },
+        { "name": "Ferienvermietungen", "link": "/alquileres-vacacionales" },
+        { "name": "Angebote", "link": "/presupuestos" }
+      ]
+    },
+    "useful_links": {
+      "title": "Nützliche Links",
+      "links": [
+        { "name": "Kontaktieren Sie uns", "link": "/contacto" },
+        {
+          "name": "Allgemeine Geschäftsbedingungen",
+          "link": "/allgemeine-geschaeftsbedingungen"
+        },
+        { "name": "Datenschutzrichtlinie", "link": "/politica-de-privacidad" },
+        { "name": "Cookie-Richtlinie", "link": "/cookie-richtlinie" }
+      ]
+    }
   },
   "header": {
     "home": "Startseite",

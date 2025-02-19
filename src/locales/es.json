@@ -131,20 +131,30 @@
   },
   "footer": {
     "phrase": "Tu tranquilidad es nuestra misión.",
-    "pages": [
-      "Páginas",
-      "Nosotros",
-      "Administración de Fincas",
-      "Alquileres Vacacionales",
-      "Presupuestos"
-    ],
-    "useful_links": [
-      "Enlaces de interés",
-      "Contáctanos",
-      "Términos y Condiciones",
-      "Política de Privacidad",
-      "Uso de Cookies"
-    ]
+    "pages": {
+      "title": "Páginas",
+      "links": [
+        { "name": "Nosotros", "link": "/nosotros" },
+        {
+          "name": "Administración de Fincas",
+          "link": "/administracion-de-fincas"
+        },
+        {
+          "name": "Alquileres Vacacionales",
+          "link": "/alquileres-vacacionales"
+        },
+        { "name": "Presupuestos", "link": "/presupuestos" }
+      ]
+    },
+    "useful_links": {
+      "title": "Enlaces de interés",
+      "links": [
+        { "name": "Contáctanos", "link": "/contacto" },
+        { "name": "Términos y Condiciones", "link": "/terminos-condiciones" },
+        { "name": "Política de Privacidad", "link": "/politica-privacidad" },
+        { "name": "Uso de Cookies", "link": "/uso-cookies" }
+      ]
+    }
   },
   "header": {
     "home": "Inicio",
