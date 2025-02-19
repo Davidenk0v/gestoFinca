@@ -1,6 +1,13 @@
 import LanguageSelector from "./LenguageSelector";
 
 const PhoneMenu = ({ togglePhoneMenu, data, lang }) => {
+  const links = [
+    { href: "/administracion-fincas", label: data.property_management },
+    { href: "/alquileres-vacacionales", label: data.vacation_rentals },
+    { href: "/nosotros", label: data.about_us },
+    { href: "/presupuestos", label: data.quotes },
+    { href: "/contacto", label: data.contact },
+  ];
   return (
     <div className="lg:hidden" role="dialog" aria-modal="true">
       <div className="fixed inset-0 z-10"></div>
@@ -37,42 +44,17 @@ const PhoneMenu = ({ togglePhoneMenu, data, lang }) => {
         </div>
         <div className="mt-6 flow-root">
           <div className="-my-6 divide-y divide-gray-500/10">
-            <div className="space-y-2 py-6">
-              <a
-                href={`/administracion-fincas?lang=${lang}`}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                onClick={togglePhoneMenu}
-              >
-                {data.property_management}
-              </a>
-              <a
-                href={`/alquileres-vacacionales?lang=${lang}`}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                onClick={togglePhoneMenu}
-              >
-                {data.vacation_rentals}
-              </a>
-              <a
-                href={`/nosotros?lang=${lang}`}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                onClick={togglePhoneMenu}
-              >
-                {data.about_us}
-              </a>
-              <a
-                href={`/presupuestos?lang=${lang}`}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                onClick={togglePhoneMenu}
-              >
-                {data.quotes}
-              </a>
-              <a
-                href={`/contacto?lang=${lang}`}
-                className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                onClick={togglePhoneMenu}
-              >
-                {data.contact}
-              </a>
+            <div className="space-y-4">
+              {links.map((item) => (
+                <a
+                  key={item.href}
+                  href={`${item.href}?lang=${lang}`}
+                  onClick={togglePhoneMenu}
+                  className="block px-3 py-2 text-gray-900 font-semibold hover:bg-gray-50 rounded-lg"
+                >
+                  {item.label}
+                </a>
+              ))}
               <LanguageSelector />
             </div>
           </div>
