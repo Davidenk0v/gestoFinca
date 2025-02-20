@@ -1,6 +1,7 @@
 # GestoFinca
 
-![GestoFinca Inicio](https://github.com/user-attachments/assets/29708360-4287-4735-a3c4-675e3bed174a)
+![GestoFinca Inicio](https://github.com/user-attachments/assets/2a443632-841a-490e-9046-b51e3f021f01)
+
 [Ir a la página](https://gesto-finca.vercel.app/)
 
 GestoFinca es una plataforma de gestión de propiedades y administración de alquileres vacacionales. Desarrollada con [Astro](https://astro.build/), [React](https://react.dev/) y [TailwindCSS](https://tailwindcss.com/), ofrece una experiencia rápida, moderna y adaptable para propietarios y administradores de fincas.
