@@ -131,25 +131,31 @@
     "pages": {
       "title": "Seiten",
       "links": [
-        { "name": "Über uns", "link": "/nosotros" },
+        { "name": "Über uns", "link": "/nosotros?lang=de" },
         {
           "name": "Verwaltung von Immobilien",
           "link": "/administracion-fincas"
         },
-        { "name": "Ferienvermietungen", "link": "/alquileres-vacacionales" },
-        { "name": "Angebote", "link": "/presupuestos" }
+        {
+          "name": "Ferienvermietungen",
+          "link": "/alquileres-vacacionales?lang=de"
+        },
+        { "name": "Angebote", "link": "/presupuestos?lang=de" }
       ]
     },
     "useful_links": {
       "title": "Nützliche Links",
       "links": [
-        { "name": "Kontaktieren Sie uns", "link": "/contacto" },
+        { "name": "Kontaktieren Sie uns", "link": "/contacto?lang=de" },
         {
           "name": "Allgemeine Geschäftsbedingungen",
           "link": "/allgemeine-geschaeftsbedingungen"
         },
-        { "name": "Datenschutzrichtlinie", "link": "/politica-de-privacidad" },
-        { "name": "Cookie-Richtlinie", "link": "/cookie-richtlinie" }
+        {
+          "name": "Datenschutzrichtlinie",
+          "link": "/politica-de-privacidad?lang=de"
+        },
+        { "name": "Cookie-Richtlinie", "link": "/cookie-richtlinie?lang=de" }
       ]
     }
   },
@@ -160,5 +166,8 @@
     "vacation_rentals": "Ferienwohnungen",
     "quotes": "Angebote",
     "contact": "Kontakt"
+  },
+  "seo": {
+    "description": "Wir sind ein Unternehmen, das auf die Verwaltung von Immobilien spezialisiert ist und maßgeschneiderte Lösungen für Eigentümer und Gemeinschaften anbietet. Wir verwalten Ihre Immobilie mit Effizienz, Transparenz und Engagement. Entdecken Sie unsere professionellen Dienstleistungen für eine umfassende und sorgenfreie Immobilienverwaltung."
   }
 }

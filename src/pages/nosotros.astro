@@ -1,29 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import edificio from '../assets/images/edificio1.webp';
 import ServicesInfo from "../components/ServicesInfo.astro";
 import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import { loadTranslations } from "../utils/i18n";
+
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 
 const translations = await loadTranslations(lang);
 ---
 
-<Layout title={translations.about_us.title}>
-    
+<Layout 
+    title={translations.about_us.title} 
+    description={translations.about_us.description}
+    lang={lang}
+>
 
-    <section class="bg-white">
+    <!-- Sección del carrusel -->
+    <section aria-labelledby="about-us-carousel-section" class="bg-white">
+        <h2 id="about-us-carousel-section" class="sr-only">Galería de imágenes de nosotros</h2>
         <Carrousel client:load data={translations.about_us} lang={lang}/>
     </section>
-    <div class="relative">
-        <ServicesInfo text={translations.contact.phrases[0]}/>
-    </div>
-    <div>
-        <ContactBanner />
+
+    <!-- Sección de información de servicios -->
+    <section aria-labelledby="services-info-section" class="relative">
+        <h2 id="services-info-section" class="sr-only">Nuestros servicios</h2>
+        <ServicesInfo data={translations} />
+    </section>
+
+    <!-- Sección de contacto -->
+    <section aria-labelledby="contact-section">
+        <h2 id="contact-section" class="sr-only">Contáctanos</h2>
+        <ContactBanner text={translations.contact.phrases[0]}/>
         <ContactFormReact lang={translations.forms}/>
-    </div>
-  
+    </section>
+
 </Layout>

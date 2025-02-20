@@ -2,9 +2,14 @@
 import CardService from './CardService.astro'
 import Vacation from '../assets/icons/vacation.svg'
 import House from '../assets/icons/house.svg'
+
+const data = Astro.props.data
+
+const {footer} = data;
+const {property_management, vacation_rentals} = data;
 ---
 
 <section class="bg-slate-100 flex flex-col md:flex-row gap-4 justify-center m-4">
-  <CardService title="Administración de comunidades" text="Gestión integral de comunidades de propietarios, con un trato personalizado y profesional." img={House} route="administracion-fincas"/>
-  <CardService title="Gestión de alquileres vacacionales" text="Gestión integral de alquileres vacacionales. Aseguramos lo mejor para su huésped y su vivienda." img={Vacation} route="alquileres-vacacionales"/>
+  <CardService link={footer.pages[1]} button={property_management.buttons.about_us} text={property_management.description} title={property_management.title} img={House} />
+  <CardService link={footer.pages[2]} button={property_management.buttons.about_us} text={vacation_rentals.description} title={vacation_rentals.title}  img={Vacation} >
 </section>

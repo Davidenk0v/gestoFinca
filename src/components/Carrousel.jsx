@@ -25,7 +25,8 @@ const Carousel = ({ data, lang }) => {
   }, []);
 
   return (
-    <section className="relative h-[50vh] overflow-hidden flex items-center justify-center">
+    <section className="relative h-[40vh] md:h-[60vh] lg:h-[70vh] overflow-hidden flex items-center justify-center">
+      {/* Imagen de fondo responsiva */}
       <div
         className={`absolute inset-0 bg-cover bg-center transition-transform duration-500 ${animation}`}
         style={{ backgroundImage: `url(${images[currentIndex].src})` }}
@@ -34,7 +35,8 @@ const Carousel = ({ data, lang }) => {
       </div>
 
       <div className="relative z-10 max-w-4xl text-center px-6 sm:px-10 lg:px-16">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-brand-blueFinca">
+        {/* Título */}
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-blueFinca">
           {title !== "GestoFinca" ? (
             <strong className="text-brand-blueFinca">{title}</strong>
           ) : (
@@ -43,8 +45,16 @@ const Carousel = ({ data, lang }) => {
             </>
           )}
         </h1>
-        <p className="mt-4 text-lg sm:text-xl text-white">{description}</p>
-        <p className="mt-2 text-lg sm:text-xl text-white">{text}</p>
+        {/* Descripción */}
+        <p className="mt-4 text-base sm:text-lg md:text-xl text-white">
+          {description}
+        </p>
+        {/* Texto adicional, solo visible en pantallas medianas y grandes */}
+        <p className="mt-2 text-base sm:text-lg md:text-xl text-white hidden sm:block">
+          {text}
+        </p>
+
+        {/* Botones responsivos */}
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
             href={`/contacto?lang=${lang}`}
@@ -59,8 +69,14 @@ const Carousel = ({ data, lang }) => {
             {buttons?.about_us}
           </a>
         </div>
+
+        {/* Logo responsivo */}
         <div className="mt-6 flex justify-center">
-          <img src={logo.src} alt="Logo" className="w-50 h-20" />
+          <img
+            src={logo.src}
+            alt="Logo"
+            className="w-36 h-auto sm:w-40 md:w-50 lg:w-60"
+          />
         </div>
       </div>
     </section>
