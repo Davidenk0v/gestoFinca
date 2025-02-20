@@ -27,13 +27,13 @@ const translations = await loadTranslations(lang);
     <!-- Sección de información de servicios -->
     <section aria-labelledby="services-info-section" class="relative">
         <h2 id="services-info-section" class="sr-only">Nuestros servicios</h2>
-        <ServicesInfo text={translations.contact.phrases[0]}/>
+        <ServicesInfo data={translations} />
     </section>
 
     <!-- Sección de contacto -->
     <section aria-labelledby="contact-section">
         <h2 id="contact-section" class="sr-only">Contáctanos</h2>
-        <ContactBanner />
+        <ContactBanner text={translations.contact.phrases[0]}/>
         <ContactFormReact lang={translations.forms}/>
     </section>
 

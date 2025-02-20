@@ -131,19 +131,25 @@
     "pages": {
       "title": "Pages",
       "links": [
-        { "name": "About Us", "link": "/nosotros" },
-        { "name": "Property Management", "link": "/administracion-fincas" },
-        { "name": "Holiday Rentals", "link": "/alquileres-vacacionales" },
-        { "name": "Quotes", "link": "/presupuestos" }
+        { "name": "About Us", "link": "/nosotros?lang=en" },
+        {
+          "name": "Property Management",
+          "link": "/administracion-fincas?lang=en"
+        },
+        {
+          "name": "Holiday Rentals",
+          "link": "/alquileres-vacacionales?lang=en"
+        },
+        { "name": "Quotes", "link": "/presupuestos?lang=en" }
       ]
     },
     "useful_links": {
       "title": "Useful Links",
       "links": [
-        { "name": "Contact Us", "link": "/contacto" },
-        { "name": "Terms and Conditions", "link": "/terms-conditions" },
-        { "name": "Privacy Policy", "link": "/politica-de-privacidad" },
-        { "name": "Cookie Policy", "link": "/cookie-policy" }
+        { "name": "Contact Us", "link": "/contacto?lang=en" },
+        { "name": "Terms and Conditions", "link": "/terms-conditions?lang=en" },
+        { "name": "Privacy Policy", "link": "/politica-de-privacidad?lang=en" },
+        { "name": "Cookie Policy", "link": "/cookie-policy?lang=en" }
       ]
     }
   },
