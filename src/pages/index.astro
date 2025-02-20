@@ -19,7 +19,7 @@ const translation = await loadTranslations(lang);
 		<div class="snap-start">
 			<Carrousel data={translation.index} client:load lang={lang}/>
 		</div>
-		<section class="snap-start">
+		<section>
 			<ServicesInfo />
 		</section>
 		<ContactBanner text={translation.contact.phrases[0]}/>

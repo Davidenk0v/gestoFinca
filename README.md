@@ -1,48 +1,72 @@
-# Astro Starter Kit: Basics
+# GestoFinca
 
-```sh
-npm create astro@latest -- --template basics
-```
+GestoFinca es una plataforma de gestión de propiedades y administración de alquileres vacacionales. Desarrollada con [Astro](https://astro.build/), [React](https://react.dev/) y [TailwindCSS](https://tailwindcss.com/), ofrece una experiencia rápida, moderna y adaptable para propietarios y administradores de fincas.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Características principales
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Administración de fincas**: Gestión completa de propiedades con información detallada.
+- **Gestión de alquileres vacacionales**: Control de reservas, disponibilidad y mantenimiento de alojamientos.
+- **Sistema de envío de correos**: Integrado con [Resend](https://resend.com/) para comunicación eficiente con los clientes.
+- **Vistas disponibles**:
+  - Administración de fincas
+  - Gestión de alquileres vacacionales
+  - Nosotros
+  - Contacto
+  - Presupuestos
+- **Internacionalización**: Disponible en español, inglés y alemán.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tecnologías utilizadas
 
-## 🚀 Project Structure
+- **Astro**: Framework para la creación de sitios web rápidos y optimizados.
+- **React**: Componentes interactivos y dinámicos dentro de Astro.
+- **TailwindCSS**: Diseño moderno y adaptable con clases utilitarias.
+- **Resend**: Envío de correos electrónicos confiable y eficiente.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Colores corporativos
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **greenFinca**: `#7EDA55`
+- **blueFinca**: `#25C0D8`
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Instalación y configuración
 
-## 🧞 Commands
+1. Clonar el repositorio:
+   ```sh
+   git clone https://github.com/Davidenk0v/gestoFinca.git
+   cd gestoFinca
+   ```
+2. Instalar dependencias:
+   ```sh
+   npm install
+   ```
+3. Configurar variables de entorno:
+   - Crear un archivo `.env` en la raíz del proyecto con los siguientes valores:
+     ```env
+     RESEND_API_KEY=tu_api_key
+     ```
+4. Iniciar el entorno de desarrollo:
+   ```sh
+   npm run dev
+   ```
 
-All commands are run from the root of the project, from a terminal:
+## Despliegue
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+La aplicación está desplegada en [Vercel](https://vercel.com/) y puede accederse en línea.
 
-## 👀 Want to learn more?
+## Licencia
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este proyecto está bajo la licencia MIT. Para más información, consulta el archivo `LICENSE`.
+
+## Tareas Pendientes
+
+- Carrousel con un solo eslogan y un poco más grande.
+- Elemento de contacto en medio de los servicios con degradado azul-verde.
+- Títulos en azul.
+- Líneas del header en verde junto con el logo.
+- Botón del carrousel verde y transparente.
+- Botones de los servicios en naranja.
+- Iconos y datos de email y teléfono.
+- Formulario al final de todas las páginas.
+
+---
+
+¡Gracias por usar GestoFinca! 🚀
