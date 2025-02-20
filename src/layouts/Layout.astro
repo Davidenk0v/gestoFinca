@@ -1,13 +1,14 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import Header from "../components/Header.jsx"
+import Header from "../components/Header.jsx";
 import WhatsAppIcon from "../components/WhatsappIcon.jsx";
 import { loadTranslations } from "../utils/i18n";
 import Footer from "../components/Footer.astro";
-const { title } = Astro.props;
+import logo from "../assets/logos/imagen_logo_negativo.png";
+
+const { title, description } = Astro.props;
 const params = Astro.url.searchParams;
 const lang = params.get("lang") || "es";
-
 
 const translations = await loadTranslations(lang);
 ---
@@ -16,19 +17,64 @@ const translations = await loadTranslations(lang);
 <html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<!-- Meta descripción -->
+		<meta name="description" content={description || translations.seo.description} />
+
+		<!-- Open Graph meta tags -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description || translations.seo.description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content={logo.src} /> <!-- Asegúrate de tener una imagen para compartir -->
+		<meta property="og:locale" content={lang} />
+
+		<!-- Twitter Card meta tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description || translations.seo.description} />
+		<meta name="twitter:image" content={logo.src} />
+
+		<!-- JSON-LD structured data for SEO -->
+		<script type="application/ld+json">
+			{`
+				{
+					"@context": "https://schema.org",
+					"@type": "WebPage",
+					"headline": "${title}",
+					"description": "${description || translations.seo.description}",
+					"author": {
+						"@type": "Organization",
+						"name": "Tu Nombre o Empresa"
+					},
+					"url": "${Astro.url.href}",
+					"mainEntityOfPage": {
+						"@type": "WebPage",
+						"@id": "${Astro.url.href}"
+					}
+				}
+			`}
+		</script>
+
 		<ClientRouter />
 	</head>
 	<body>
 		<div class="flex flex-col min-h-screen bg-slate-100">
+			<!-- Header: incluir datos de traducción y transición -->
 			<Header client:load transition:persist lang={lang} data={translations}/>
+
+			<!-- Main content area with slot for dynamic page content -->
 			<main class="flex-grow">
 				<slot />
 			</main>
-			<WhatsAppIcon transition:persist client:load/>
+
+			<!-- WhatsApp floating icon -->
+			<WhatsAppIcon transition:persist client:load />
+
+			<!-- Footer with translation and persisted transition -->
 			<Footer transition:persist texts={translations.footer}/>
 		</div>
 	</body>

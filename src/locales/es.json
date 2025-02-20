@@ -163,5 +163,8 @@
     "vacation_rentals": "Alquileres Vacacionales",
     "quotes": "Presupuestos",
     "contact": "Contacto"
+  },
+  "seo": {
+    "description": "Somos una empresa especializada en la administración de fincas, ofreciendo soluciones personalizadas para propietarios y comunidades. Gestionamos tu propiedad con eficiencia, transparencia y dedicación. Descubre nuestros servicios profesionales para una gestión integral y sin preocupaciones."
   }
 }

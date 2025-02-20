@@ -4,23 +4,33 @@ import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import Layout from "../layouts/Layout.astro";
-
 import { loadTranslations } from "../utils/i18n";
+
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
-
 const translations = await loadTranslations(lang);
-
 ---
 
-<Layout title={translations.property_management.title}>  
-        <section>
-            <Carrousel client:load data={translations.property_management} lang={lang}/>
-        </section>
-        <section class="bg-white dark:bg-gray-900">
-            <ContactBanner text={translations.contact.phrases[0]}>
-        </section>
-        <section>
-            <ContactFormReact client:load lang={translations.forms}/>
-        </section>
+<Layout 
+    title={translations.property_management.title} 
+    description={translations.property_management.description} 
+    lang={lang}
+>
+    <!-- Sección del carrusel -->
+    <section aria-labelledby="carrousel-section">
+        <h2 id="carrousel-section" class="sr-only">Galería de imágenes de la administración de fincas</h2>
+        <Carrousel client:load data={translations.property_management} lang={lang}/>
+    </section>
+
+    <!-- Sección del banner de contacto -->
+    <section class="bg-white dark:bg-gray-900" aria-labelledby="contact-banner-section">
+        <h2 id="contact-banner-section" class="sr-only">Contáctanos</h2>
+        <ContactBanner text={translations.contact.phrases[0]} />
+    </section>
+
+    <!-- Sección del formulario de contacto -->
+    <section aria-labelledby="contact-form-section" class="my-4">
+        <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
+        <ContactFormReact client:load lang={translations.forms}/>
+    </section>
 </Layout>

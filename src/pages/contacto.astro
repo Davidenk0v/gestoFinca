@@ -10,13 +10,19 @@ const translations = await loadTranslations(lang);
 const { contact } = translations;
 ---
 
-<Layout title={contact.title}>
-    <div class="block text-center py-4 bg-gradient-to-tr from-brand-blueFinca to-brand-greenFinca">
+<Layout title={contact.title} description={contact.description}>
+      <!-- Sección de bienvenida con encabezado optimizado -->
+    <section class="block text-center py-4 bg-gradient-to-tr from-brand-blueFinca to-brand-greenFinca">
     <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">{contact.buttons.contact_us}</h1>
     <p class="text-lg font-normal text-gray-900 lg:text-xl dark:text-gray-400">{contact.description}</p>
-    </div>    
-    <div class="bg-gradient-to-tr from-brand-blueFinca to-brand-greenFinca">
+    </section>    
+        <!-- Formulario de contacto con etiquetas ARIA y accesibilidad -->
+    <section class="bg-gradient-to-tr from-brand-blueFinca to-brand-greenFinca">
+        <h2 class="sr-only">Formulario de Contacto</h2> <!-- Título accesible para usuarios con lector de pantallas -->
         <ContactFormReact client:load lang={translations.forms}/>
-    </div>
-    <ContactBanner text={contact.phrases[0]}/>
+    </section>
+     <!-- Sección de banner de contacto -->
+    <section>
+        <ContactBanner text={contact.phrases[0]}/>
+    </section>
 </Layout>

@@ -154,5 +154,8 @@
     "vacation_rentals": "Vacation Rentals",
     "quotes": "Quotes",
     "contact": "Contact"
+  },
+  "seo": {
+    "description": "We are a company specialized in property management, offering tailored solutions for owners and communities. We manage your property with efficiency, transparency, and dedication. Discover our professional services for comprehensive and worry-free property management."
   }
 }
