@@ -61,11 +61,11 @@ Este proyecto está bajo la licencia MIT. Para más información, consulta el ar
 
 ## Tareas Pendientes
 
-- [] Carrousel con un solo eslogan y un poco más grande.
-- [] Elemento de contacto en medio de los servicios con degradado azul-verde.
-- [] Títulos en azul.
-- [] Líneas del header en verde junto con el logo.
-- [] Botón del carrousel verde y transparente.
+- [ ] Carrousel con un solo eslogan y un poco más grande.
+- [ ] Elemento de contacto en medio de los servicios con degradado azul-verde.
+- [ ] Títulos en azul.
+- [ ] Líneas del header en verde junto con el logo.
+- [ ] Botón del carrousel verde y transparente.
 - [x] Botones de los servicios en naranja.
 - [x] Iconos y datos de email y teléfono.
 - [x] Formulario al final de todas las páginas.

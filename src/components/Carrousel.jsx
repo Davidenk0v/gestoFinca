@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
+import image1 from "@/assets/images/fondo-azul.webp";
 import edf1 from "@/assets/images/building.webp";
-import edf2 from "@/assets/images/edificio1.webp";
-import edf3 from "@/assets/images/puerta.webp";
+import edf2 from "@/assets/images/house.webp";
 import logo from "@/assets/logos/imagen_logo_negativo.png";
 
-const images = [edf1, edf2, edf3];
+const images = [edf2, image1];
 
 const Carousel = ({ data, lang }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -36,7 +36,7 @@ const Carousel = ({ data, lang }) => {
       <div className="relative z-10 max-w-4xl text-center px-6 sm:px-10 lg:px-16">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-brand-blueFinca">
           {title !== "GestoFinca" ? (
-            <strong className="text-brand-greenFinca">{title}</strong>
+            <strong className="text-brand-blueFinca">{title}</strong>
           ) : (
             <>
               Gesto<strong className="text-brand-greenFinca">Finca.</strong>
@@ -48,13 +48,13 @@ const Carousel = ({ data, lang }) => {
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
             href={`/contacto?lang=${lang}`}
-            className="border-2 border-brand-blueFinca rounded-md bg-brand-blueFinca px-6 py-2 text-sm font-semibold text-white shadow-sm hover:bg-transparent hover:text-brand-blueFinca sm:w-auto"
+            className="border-2 border-brand-greenFinca rounded-md bg-brand-greenFinca px-6 py-2 text-sm font-semibold text-black shadow-sm hover:bg-transparent hover:text-brand-greenFinca sm:w-auto"
           >
             {buttons?.contact_us}
           </a>
           <a
             href={`/nosotros?lang=${lang}`}
-            className="border-2 border-brand-blueFinca rounded-md px-6 py-2 text-sm font-semibold text-brand-blueFinca shadow-sm hover:text-black hover:bg-brand-blueFinca sm:w-auto"
+            className="border-2 border-brand-greenFinca rounded-md px-6 py-2 text-sm font-semibold text-brand-greenFinca shadow-sm hover:text-black hover:bg-brand-greenFinca sm:w-auto"
           >
             {buttons?.about_us}
           </a>

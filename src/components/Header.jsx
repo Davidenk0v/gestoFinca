@@ -68,7 +68,7 @@ const Header = ({ lang = "es", data }) => {
               <a
                 key={href}
                 href={href}
-                className="whitespace-nowrap text-sm font-semibold text-gray-900 border-b-2 border-transparent focus:border-brand-blueFinca"
+                className="whitespace-nowrap text-sm font-semibold text-gray-900 border-b-2 border-transparent focus:border-brand-greenFinca"
               >
                 {label}
               </a>
