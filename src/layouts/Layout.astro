@@ -1,10 +1,10 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import Footer from "../components/Footer.astro";
 import Header from "../components/Header.jsx"
 import WhatsAppIcon from "../components/WhatsappIcon.jsx";
-const { title } = Astro.props;
 import { loadTranslations } from "../utils/i18n";
+import Footer from "../components/Footer.astro";
+const { title } = Astro.props;
 const params = Astro.url.searchParams;
 const lang = params.get("lang") || "es";
 
@@ -29,7 +29,7 @@ const translations = await loadTranslations(lang);
 				<slot />
 			</main>
 			<WhatsAppIcon transition:persist client:load/>
-			<Footer client:load transition:persist texts={translations.footer}/>
+			<Footer transition:persist texts={translations.footer}/>
 		</div>
 	</body>
 </html>

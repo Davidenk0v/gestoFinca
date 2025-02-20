@@ -17,13 +17,6 @@ export default defineConfig({
   },
   output: "server",
   adapter: vercelAdapter(),
-  i18n: {
-    defaultLocale: "es",
-    locales: ["en", "es", "de"],
-    routing: {
-      prefixDefaultLocale: false,
-    },
-  },
 
   integrations: [tailwind(), react()],
 });
