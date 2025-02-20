@@ -1,5 +1,7 @@
 # GestoFinca
 
+[Página web](https://gesto-finca.vercel.app/)
+
 GestoFinca es una plataforma de gestión de propiedades y administración de alquileres vacacionales. Desarrollada con [Astro](https://astro.build/), [React](https://react.dev/) y [TailwindCSS](https://tailwindcss.com/), ofrece una experiencia rápida, moderna y adaptable para propietarios y administradores de fincas.
 
 ## Características principales
@@ -58,15 +60,13 @@ Este proyecto está bajo la licencia MIT. Para más información, consulta el ar
 
 ## Tareas Pendientes
 
-- Carrousel con un solo eslogan y un poco más grande.
-- Elemento de contacto en medio de los servicios con degradado azul-verde.
-- Títulos en azul.
-- Líneas del header en verde junto con el logo.
-- Botón del carrousel verde y transparente.
-- Botones de los servicios en naranja.
-- Iconos y datos de email y teléfono.
-- Formulario al final de todas las páginas.
+[] Carrousel con un solo eslogan y un poco más grande.
+[] Elemento de contacto en medio de los servicios con degradado azul-verde.
+[] Títulos en azul.
+[] Líneas del header en verde junto con el logo.
+[] Botón del carrousel verde y transparente.
+[x] Botones de los servicios en naranja.
+[x] Iconos y datos de email y teléfono.
+[x] Formulario al final de todas las páginas.
 
 ---
-
-¡Gracias por usar GestoFinca! 🚀
