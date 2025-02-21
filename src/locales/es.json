@@ -60,6 +60,7 @@
       "contact_us": "Contáctanos"
     },
     "phrases": [
+      "Nuestros valores",
       "Más de 10 años de experiencia.",
       "Comprometidos con el servicio y la calidad."
     ]
@@ -154,6 +155,38 @@
         { "name": "Política de Privacidad", "link": "/politica-privacidad" },
         { "name": "Uso de Cookies", "link": "/uso-cookies" }
       ]
+    }
+  },
+  "values": {
+    "title": "Nuestros Valores",
+    "description": "En GestoFinca nos regimos por una serie de valores que nos definen como empresa y como equipo.",
+    "value1": {
+      "title": "Compromiso",
+      "description": "Nos comprometemos con nuestros clientes para ofrecerles un servicio de calidad y confianza."
+    },
+    "value2": {
+      "title": "Transparencia",
+      "description": "Actuamos con transparencia en todas nuestras gestiones, garantizando la confianza de nuestros clientes."
+    },
+    "value3": {
+      "title": "Profesionalidad",
+      "description": "Nuestro equipo está formado por profesionales cualificados y con experiencia en el sector inmobiliario."
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "description": "Descubre los servicios que ofrecemos en GestoFinca para la administración de fincas y alquileres vacacionales.",
+    "service1": {
+      "title": "Administración de Fincas",
+      "description": "Gestionamos comunidades de propietarios y fincas urbanas con eficiencia y transparencia."
+    },
+    "service2": {
+      "title": "Alquileres Vacacionales",
+      "description": "Ofrecemos una selección de propiedades en alquiler para estancias cortas, con todas las comodidades."
+    },
+    "service3": {
+      "title": "Asesoramiento Inmobiliario",
+      "description": "Te asesoramos en la compra, venta o alquiler de propiedades, garantizando un servicio personalizado."
     }
   },
   "header": {

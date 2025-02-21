@@ -60,6 +60,7 @@
       "contact_us": "Contact us"
     },
     "phrases": [
+      "Our values",
       "Over 10 years of experience.",
       "Committed to service and quality."
     ]
@@ -151,6 +152,38 @@
         { "name": "Privacy Policy", "link": "/politica-de-privacidad?lang=en" },
         { "name": "Cookie Policy", "link": "/cookie-policy?lang=en" }
       ]
+    }
+  },
+  "values": {
+    "title": "Our Values",
+    "description": "At GestoFinca, we are guided by a set of values that define us as a company and as a team.",
+    "value1": {
+      "title": "Commitment",
+      "description": "We are committed to our clients to offer them a service of quality and trust."
+    },
+    "value2": {
+      "title": "Transparency",
+      "description": "We act with transparency in all our dealings, ensuring the trust of our clients."
+    },
+    "value3": {
+      "title": "Professionalism",
+      "description": "Our team is made up of qualified professionals with experience in the real estate sector."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Discover the services we offer at GestoFinca for property management and vacation rentals.",
+    "service1": {
+      "title": "Property Management",
+      "description": "We manage homeowner associations and urban properties with efficiency and transparency."
+    },
+    "service2": {
+      "title": "Vacation Rentals",
+      "description": "We offer a selection of properties for short-term rental, with all the comforts."
+    },
+    "service3": {
+      "title": "Real Estate Advisory",
+      "description": "We provide advice on buying, selling, or renting properties, ensuring a personalized service."
     }
   },
   "header": {

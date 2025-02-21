@@ -57,6 +57,7 @@
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
+      "Unsere werte",
       "Mehr als 10 Jahre Erfahrung.",
       "Verpflichtet zu Service und Qualität."
     ]
@@ -157,6 +158,38 @@
         },
         { "name": "Cookie-Richtlinie", "link": "/cookie-richtlinie?lang=de" }
       ]
+    }
+  },
+  "values": {
+    "title": "Unsere Werte",
+    "description": "Bei GestoFinca folgen wir einer Reihe von Werten, die uns als Unternehmen und als Team definieren.",
+    "value1": {
+      "title": "Engagement",
+      "description": "Wir verpflichten uns, unseren Kunden einen Service von Qualität und Vertrauen zu bieten."
+    },
+    "value2": {
+      "title": "Transparenz",
+      "description": "Wir handeln mit Transparenz in allen unseren Geschäften und garantieren das Vertrauen unserer Kunden."
+    },
+    "value3": {
+      "title": "Professionalität",
+      "description": "Unser Team besteht aus qualifizierten Fachleuten mit Erfahrung im Immobiliensektor."
+    }
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "description": "Entdecken Sie die Dienstleistungen, die wir bei GestoFinca für die Verwaltung von Grundstücken und Ferienvermietungen anbieten.",
+    "service1": {
+      "title": "Immobilienverwaltung",
+      "description": "Wir verwalten Eigentümergemeinschaften und städtische Immobilien mit Effizienz und Transparenz."
+    },
+    "service2": {
+      "title": "Ferienvermietungen",
+      "description": "Wir bieten eine Auswahl an Immobilien zur Kurzzeitmiete, ausgestattet mit allen Annehmlichkeiten."
+    },
+    "service3": {
+      "title": "Immobilienberatung",
+      "description": "Wir beraten Sie beim Kauf, Verkauf oder der Vermietung von Immobilien und garantieren einen personalisierten Service."
     }
   },
   "header": {

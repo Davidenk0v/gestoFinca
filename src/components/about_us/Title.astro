@@ -1,0 +1,11 @@
+---
+const { title, description } = Astro.props;
+---
+<div class="max-w-2xl mx-auto text-center">
+    <h2 id="values-section" class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl dark:text-white" aria-level="1">
+        {title}
+    </h2>
+    <p class="mt-4 text-base font-normal text-gray-500 sm:text-xl dark:text-gray-400">
+        {description}
+    </p>
+</div>

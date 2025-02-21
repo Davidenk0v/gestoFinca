@@ -2,14 +2,42 @@
 import CardService from './CardService.astro'
 import Vacation from '../assets/icons/vacation.svg'
 import House from '../assets/icons/house.svg'
+import Title from './about_us/Title.astro'
 
 const data = Astro.props.data
 
-const {footer} = data;
-const {property_management, vacation_rentals} = data;
+const { property_management, vacation_rentals, footer, services } = data;
 ---
 
-<section class="bg-slate-100 flex flex-col md:flex-row gap-4 justify-center m-4">
-  <CardService link={footer.pages[1]} button={property_management.buttons.about_us} text={property_management.description} title={property_management.title} img={House} />
-  <CardService link={footer.pages[2]} button={property_management.buttons.about_us} text={vacation_rentals.description} title={vacation_rentals.title}  img={Vacation} >
+<section class="bg-slate-100 flex flex-col gap-4 justify-center items-center m-4" aria-labelledby="services-title">
+  <!-- Título centrado arriba -->
+  <h2 id="services-title" class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl dark:text-white" aria-level="2">
+    {services.title}
+  </h2>
+
+  <div class="flex flex-col md:flex-row gap-8 justify-center w-full">
+    <!-- Primer CardService -->
+    <article class="card-service" aria-labelledby="property-management">
+      <CardService 
+        link={footer.pages[1]} 
+        button={property_management.buttons.about_us} 
+        text={property_management.description} 
+        title={property_management.title} 
+        img={House} 
+        alt="Imagen representativa de gestión de propiedades"
+      />
+    </article>
+    
+    <!-- Segundo CardService -->
+    <article class="card-service" aria-labelledby="vacation-rentals">
+      <CardService 
+        link={footer.pages[2]} 
+        button={vacation_rentals.buttons.about_us} 
+        text={vacation_rentals.description} 
+        title={vacation_rentals.title}  
+        img={Vacation} 
+        alt="Imagen representativa de alquileres vacacionales"
+      />
+    </article>
+  </div>
 </section>
