@@ -9,7 +9,6 @@ import holiday from "@/assets/images/holiday.png";
 
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
-
 const translations = await loadTranslations(lang);
 const link = translations.footer.useful_links.links[0].link
 ---
@@ -25,19 +24,21 @@ const link = translations.footer.useful_links.links[0].link
         <Carrousel client:load data={translations.vacation_rentals} lang={lang}/>
     </section>
 
-    <section>
+    <!-- Sección de servicios -->
+    <section aria-labelledby="services-section">
+        <h2 id="services-section" class="sr-only">Servicios de alquileres vacacionales</h2>
         <ServiceBanner data={translations.vacation_rentals} image={holiday} link={link} />
     </section>
 
     <!-- Sección del banner de contacto -->
     <section aria-labelledby="contact-banner-section">
-        <h2 id="contact-banner-section" class="sr-only">Contáctanos para más información</h2>
+        <h2 id="contact-banner-section" class="sr-only">Contáctanos para más información sobre alquileres vacacionales</h2>
         <ContactBanner text={translations.contact.phrases[0]}/>
     </section>
 
     <!-- Sección del formulario de contacto -->
     <section aria-labelledby="contact-form-section">
-        <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
+        <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
         <ContactFormReact lang={translations.forms}/>
     </section>
 </Layout>

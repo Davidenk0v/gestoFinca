@@ -150,7 +150,7 @@
       "links": [
         { "name": "Contact Us", "link": "/contacto?lang=en" },
         { "name": "Terms and Conditions", "link": "/terms-conditions?lang=en" },
-        { "name": "Privacy Policy", "link": "/politica-de-privacidad?lang=en" },
+        { "name": "Privacy Policy", "link": "/privacy-policy?lang=en" },
         { "name": "Cookie Policy", "link": "/cookie-policy?lang=en" }
       ]
     }

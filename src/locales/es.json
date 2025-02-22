@@ -153,7 +153,7 @@
       "links": [
         { "name": "Contáctanos", "link": "/contacto" },
         { "name": "Términos y Condiciones", "link": "/terminos-condiciones" },
-        { "name": "Política de Privacidad", "link": "/politica-privacidad" },
+        { "name": "Política de Privacidad", "link": "/politica-de-privacidad" },
         { "name": "Uso de Cookies", "link": "/uso-cookies" }
       ]
     }
