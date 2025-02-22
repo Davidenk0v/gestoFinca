@@ -57,6 +57,7 @@
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
+      "Lernen Sie uns kennen.",
       "Unsere werte",
       "Mehr als 10 Jahre Erfahrung.",
       "Verpflichtet zu Service und Qualität."
@@ -64,7 +65,7 @@
   },
   "quotes": {
     "title": "Angebote",
-    "description": "Fordern Sie ein maßgeschneidertes Angebot für die Verwaltung Ihrer Immobilie oder Ferienwohnung an.",
+    "description": "Fordern Sie ein individuelles Angebot an.",
     "text": "Wir bieten ein unverbindliches Angebot, das auf Ihre Bedürfnisse und Anforderungen zugeschnitten ist.",
     "buttons": {
       "about_us": "Mehr erfahren",

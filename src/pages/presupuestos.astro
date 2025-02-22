@@ -5,11 +5,13 @@ import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import Layout from "../layouts/Layout.astro";
 import { loadTranslations } from "../utils/i18n";
+import Title from "../components/about_us/Title.astro";
 
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 
 const translations = await loadTranslations(lang);
+const { quotes } = translations;
 ---
 
 <Layout 
@@ -32,6 +34,7 @@ const translations = await loadTranslations(lang);
 
     <!-- Sección del formulario de contacto -->
     <section aria-labelledby="contact-form-section">
+        <Title title={quotes.description} description={quotes.text}/>
         <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
         <ContactFormReact lang={translations.forms}/>
     </section>

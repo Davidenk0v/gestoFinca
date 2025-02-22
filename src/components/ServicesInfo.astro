@@ -2,7 +2,6 @@
 import CardService from './CardService.astro'
 import Vacation from '../assets/icons/vacation.svg'
 import House from '../assets/icons/house.svg'
-import Title from './about_us/Title.astro'
 
 const data = Astro.props.data
 
@@ -19,7 +18,7 @@ const { property_management, vacation_rentals, footer, services } = data;
     <!-- Primer CardService -->
     <article class="card-service" aria-labelledby="property-management">
       <CardService 
-        link={footer.pages[1]} 
+        link={footer.pages.links[1].link} 
         button={property_management.buttons.about_us} 
         text={property_management.description} 
         title={property_management.title} 
@@ -31,7 +30,7 @@ const { property_management, vacation_rentals, footer, services } = data;
     <!-- Segundo CardService -->
     <article class="card-service" aria-labelledby="vacation-rentals">
       <CardService 
-        link={footer.pages[2]} 
+        link={footer.pages.links[2].link} 
         button={vacation_rentals.buttons.about_us} 
         text={vacation_rentals.description} 
         title={vacation_rentals.title}  

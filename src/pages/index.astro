@@ -5,6 +5,7 @@ import ServicesInfo from '../components/ServicesInfo.astro';
 import Layout from '../layouts/Layout.astro';
 import ContactBanner from '../components/ContactBanner.astro';
 import { loadTranslations } from '../utils/i18n';
+import AboutUs from '../components/AboutUs.astro';
 
 const params = Astro.url.searchParams;
 const url = new URL(Astro.request.url);
@@ -22,10 +23,17 @@ const translation = await loadTranslations(lang);
     </section>
     
     <!-- Sección de Servicios con más detalles sobre lo que ofreces -->
+    <section aria-labelledby="values-section">
+      <h2 id="values-section" class="sr-only">Nuestros valores</h2>
+      <AboutUs data={translation} />
+    </section>
+    
+    <!-- Sección de Servicios con más detalles sobre lo que ofreces -->
     <section aria-labelledby="services-section">
       <h2 id="services-section" class="sr-only">Nuestros Servicios</h2>
       <ServicesInfo data={translation} />
     </section>
+    
     
     <!-- Banner de contacto para facilitar la acción -->
     <ContactBanner text={translation.contact.phrases[0]}/>

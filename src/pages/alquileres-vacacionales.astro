@@ -2,13 +2,16 @@
 import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
+import ServiceBanner from "../components/ServiceBanner.astro";
 import Layout from "../layouts/Layout.astro";
 import { loadTranslations } from "../utils/i18n";
+import holiday from "@/assets/images/holiday.png";
 
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 
 const translations = await loadTranslations(lang);
+const link = translations.footer.useful_links.links[0].link
 ---
 
 <Layout 
@@ -20,6 +23,10 @@ const translations = await loadTranslations(lang);
     <section aria-labelledby="carrousel-section" class="bg-white">
         <h2 id="carrousel-section" class="sr-only">Galería de alquileres vacacionales</h2>
         <Carrousel client:load data={translations.vacation_rentals} lang={lang}/>
+    </section>
+
+    <section>
+        <ServiceBanner data={translations.vacation_rentals} image={holiday} link={link} />
     </section>
 
     <!-- Sección del banner de contacto -->

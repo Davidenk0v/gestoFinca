@@ -60,6 +60,7 @@
       "contact_us": "Contact us"
     },
     "phrases": [
+      "Get to kwow us.",
       "Our values",
       "Over 10 years of experience.",
       "Committed to service and quality."
@@ -67,7 +68,7 @@
   },
   "quotes": {
     "title": "Quotes",
-    "description": "Request a personalized quote for the management of your property or vacation rental.",
+    "description": "Request a personalized quote.",
     "text": "We offer a no-obligation quote tailored to your needs and requirements.",
     "buttons": {
       "about_us": "Learn more",

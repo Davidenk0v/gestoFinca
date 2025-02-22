@@ -1,14 +1,17 @@
 ---
-import { late, transformer } from "astro:schema";
 import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import Layout from "../layouts/Layout.astro";
 import { loadTranslations } from "../utils/i18n";
+import ServiceBanner from "../components/ServiceBanner.astro";
+import logo from '@/assets/images/vivienda.png'
 
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
+const {property_management} = translations;
+const link = translations.footer.useful_links.links[0].link
 ---
 
 <Layout 
@@ -20,6 +23,10 @@ const translations = await loadTranslations(lang);
     <section aria-labelledby="carrousel-section">
         <h2 id="carrousel-section" class="sr-only">Galería de imágenes de la administración de fincas</h2>
         <Carrousel client:load data={translations.property_management} lang={lang}/>
+    </section>
+
+    <section>
+        <ServiceBanner data={property_management} image={logo} link={link}/>
     </section>
 
     <!-- Sección del banner de contacto -->

@@ -60,6 +60,7 @@
       "contact_us": "Contáctanos"
     },
     "phrases": [
+      "Nuestra esencia",
       "Nuestros valores",
       "Más de 10 años de experiencia.",
       "Comprometidos con el servicio y la calidad."
@@ -67,7 +68,7 @@
   },
   "quotes": {
     "title": "Presupuestos",
-    "description": "Solicita un presupuesto personalizado para la administración de tu finca o alquiler vacacional.",
+    "description": "Solicita un presupuesto personalizado.",
     "text": "Te ofrecemos un presupuesto sin compromiso, ajustado a tus necesidades y exigencias.",
     "buttons": {
       "about_us": "Saber más",

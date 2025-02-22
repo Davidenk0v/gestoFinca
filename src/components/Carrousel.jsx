@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import image1 from "@/assets/images/fondo-azul.webp";
 import edf1 from "@/assets/images/building.webp";
 import edf2 from "@/assets/images/house.webp";
@@ -8,17 +9,14 @@ const images = [edf2, image1];
 
 const Carousel = ({ data, lang }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [animation, setAnimation] = useState("slideIn");
+  const [direction, setDirection] = useState(1);
 
   const { title, description, text, buttons } = data || {};
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnimation("slideOut");
-      setTimeout(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setAnimation("slideIn");
-      }, 500);
+      setDirection(1);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 10000);
 
     return () => clearInterval(interval);
@@ -26,11 +24,34 @@ const Carousel = ({ data, lang }) => {
 
   return (
     <section className="relative h-[40vh] md:h-[60vh] lg:h-[70vh] overflow-hidden flex items-center justify-center">
-      {/* Imagen de fondo responsiva */}
-      <div
-        className={`absolute inset-0 bg-cover bg-center transition-transform duration-500 ${animation}`}
-        style={{ backgroundImage: `url(${images[currentIndex].src})` }}
-      >
+      {/* Contenedor de imágenes animadas */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden bg-slate-100">
+        <AnimatePresence custom={direction} mode="popLayout">
+          <motion.div
+            key={currentIndex}
+            className="absolute inset-0 w-full h-full bg-cover bg-center"
+            style={{ backgroundImage: `url(${images[currentIndex].src})` }}
+            initial={{ x: 0 }}
+            animate={{ x: "-100%" }}
+            exit={{ x: "-100%" }}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          >
+            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          </motion.div>
+        </AnimatePresence>
+        <motion.div
+          key={`new-${currentIndex}`}
+          className="absolute inset-0 w-full h-full bg-cover bg-center"
+          style={{
+            backgroundImage: `url(${
+              images[(currentIndex + 1) % images.length].src
+            })`,
+          }}
+          initial={{ x: "100%" }} // Empieza fuera de la pantalla (derecha)
+          animate={{ x: 0 }} // Se mueve hacia la posición correcta
+          exit={{ x: 0 }} // Se mantiene ahí
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+        />
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
 
@@ -46,15 +67,17 @@ const Carousel = ({ data, lang }) => {
           )}
         </h1>
         {/* Descripción */}
-        <p className="mt-4 text-base sm:text-lg md:text-xl text-white">
+        <p className="mt-4 text-base sm:text-lg md:text-xl hidden sm:block text-white">
+          {" "}
+          {/* Cuando la pantalla sea menor a sm, no se mostrará el texto */}{" "}
           {description}
         </p>
-        {/* Texto adicional, solo visible en pantallas medianas y grandes */}
+        {/* Texto adicional */}
         <p className="mt-2 text-base sm:text-lg md:text-xl text-white hidden sm:block">
           {text}
         </p>
 
-        {/* Botones responsivos */}
+        {/* Botones */}
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
             href={`/contacto?lang=${lang}`}
@@ -70,7 +93,7 @@ const Carousel = ({ data, lang }) => {
           </a>
         </div>
 
-        {/* Logo responsivo */}
+        {/* Logo */}
         <div className="mt-6 flex justify-center">
           <img
             src={logo.src}

@@ -4,7 +4,7 @@ import Header from "../components/Header.jsx";
 import WhatsAppIcon from "../components/WhatsappIcon.jsx";
 import { loadTranslations } from "../utils/i18n";
 import Footer from "../components/Footer.astro";
-import logo from "../assets/logos/imagen_logo_negativo.png";
+import logo from "../assets/logos/gestoFinca.jpeg";
 
 const { title, description } = Astro.props;
 const params = Astro.url.searchParams;
@@ -48,7 +48,7 @@ const translations = await loadTranslations(lang);
 					"description": "${description || translations.seo.description}",
 					"author": {
 						"@type": "Organization",
-						"name": "Tu Nombre o Empresa"
+						"name": "GestoFinca"
 					},
 					"url": "${Astro.url.href}",
 					"mainEntityOfPage": {

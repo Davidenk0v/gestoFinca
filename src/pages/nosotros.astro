@@ -6,6 +6,7 @@ import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import { loadTranslations } from "../utils/i18n";
 import AboutUs from "../components/AboutUs.astro";
+import Who from "../components/Who.astro";
 
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
@@ -26,6 +27,9 @@ const translations = await loadTranslations(lang);
     </section>
 
     <!-- Sección de información de servicios -->
+    <section>
+        <Who data={translations} />
+    </section>
     <section aria-labelledby="services-info-section" class="relative">
         <h2 id="services-info-section" class="sr-only">Nuestros servicios</h2>
         <AboutUs data={translations} />
