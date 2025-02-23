@@ -64,10 +64,11 @@ const translations = await loadTranslations(lang);
 	<body>
 		<div class="flex flex-col min-h-screen bg-slate-100">
 			<!-- Header -->
-			<Header client:load transition:persist lang={lang} data={translations}/>
-
+			
 			<!-- H1 Title: Título principal de la página -->
-			<h1 class="sr-only">{title}</h1>
+			<header>
+				<Header client:load transition:persist lang={lang} data={translations}/>
+			</header>
 
 			<!-- Main content area with slot for dynamic page content -->
 			<main class="flex-grow">
@@ -78,7 +79,7 @@ const translations = await loadTranslations(lang);
 			<WhatsAppIcon transition:persist client:load />
 
 			<!-- Footer -->
-			<Footer transition:persist texts={translations.footer}/>
+			<Footer transition:persist texts={translations.footer} lang={lang}/>
 		</div>
 	</body>
 </html>

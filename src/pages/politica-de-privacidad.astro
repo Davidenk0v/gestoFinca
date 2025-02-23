@@ -1,142 +1,101 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title="Políticas de Privacidad">
+<Layout title="Política de Privacidad - GestoFinca">
+  <article class="py-12 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-auto">
+    <header class="mb-6 p-5 text-center">
+      <h2 class="text-3xl font-semibold text-brand-blueFinca mb-4">Política de Privacidad</h2>
+      <meta name="description" content="Consulta nuestra política de privacidad sobre el tratamiento de tus datos personales." />
+    </header>
 
-  <!-- Meta Tags para SEO y redes sociales -->
-  <head>
-    <meta name="description" content="Política de privacidad de GestoFinca, garantizando la protección de tus datos personales según el RGPD." />
-    <meta property="og:title" content="Política de Privacidad - GestoFinca" />
-    <meta property="og:description" content="En GestoFinca, nos comprometemos a proteger tus datos personales. Lee nuestra política de privacidad." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/images/og-image.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Política de Privacidad - GestoFinca" />
-    <meta name="twitter:description" content="En GestoFinca, nos comprometemos a proteger tus datos personales. Lee nuestra política de privacidad." />
-    <meta name="twitter:image" content="/assets/images/og-image.jpg" />
-  </head>
+    <section class="space-y-8 p-5">
+      <p class="text-lg leading-relaxed">
+        En <span class="font-semibold">GestoFinca</span>, nos comprometemos a proteger la privacidad y los datos personales de nuestros usuarios. A continuación, te detallamos cómo recopilamos, utilizamos y protegemos tu información.
+      </p>
 
-  <article class="prose lg:prose-xl mx-auto py-8 px-4 sm:px-8 md:px-12">
-    <h1 class="text-4xl font-bold text-center mb-8">Política de Privacidad</h1>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">1. Responsable del Tratamiento</h2>
+      <p class="text-lg leading-relaxed">
+        <strong>Nombre:</strong> GestoFinca S.L. <br />
+        <strong>Dirección:</strong> Calle Ejemplo 123, 28001 Madrid, España <br />
+        <strong>Correo electrónico:</strong> <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a> <br />
+        <strong>Teléfono:</strong> +34 912 345 678
+      </p>
 
-    <p class="mb-6">
-      En <span class="font-semibold">GestoFinca</span>, nos comprometemos a proteger la privacidad y los datos personales de nuestros usuarios. Esta política de privacidad explica cómo recopilamos, usamos y protegemos tu información de acuerdo con la legislación vigente en España, incluyendo el Reglamento General de Protección de Datos (RGPD) y la Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales (LOPDGDD).
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">2. Datos que Recopilamos</h2>
+      <p class="text-lg leading-relaxed">
+        Recopilamos los siguientes datos personales:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Información de contacto: nombre, dirección de correo electrónico, número de teléfono.</li>
+        <li>Información de navegación: dirección IP, tipo de dispositivo, sistema operativo, navegador.</li>
+        <li>Otros datos que nos proporciones directamente a través de formularios o comunicaciones.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">1. Responsable del Tratamiento</h2>
-    <p class="mb-4">
-      <strong>Nombre:</strong> [Nombre de la Empresa] <br />
-      <strong>Dirección:</strong> [Dirección de la Empresa] <br />
-      <strong>Correo electrónico:</strong> [Correo electrónico de contacto] <br />
-      <strong>Teléfono:</strong> [Número de teléfono]
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">3. Finalidad del Tratamiento</h2>
+      <p class="text-lg leading-relaxed">
+        Usamos tus datos para:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Proveer nuestros servicios y productos.</li>
+        <li>Responder a tus consultas y solicitudes.</li>
+        <li>Mejorar nuestro sitio web y personalizar tu experiencia.</li>
+        <li>Cumplir con nuestras obligaciones legales.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">2. Datos que Recopilamos</h2>
-    <p class="mb-4">Recopilamos los siguientes datos personales:</p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Información de contacto: nombre, dirección de correo electrónico, número de teléfono.</li>
-      <li>Información de navegación: dirección IP, tipo de dispositivo, sistema operativo, navegador.</li>
-      <li>Otros datos que nos proporciones directamente a través de formularios o comunicaciones.</li>
-    </ul>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">4. Legitimación para el Tratamiento</h2>
+      <p class="text-lg leading-relaxed">
+        El tratamiento de tus datos se basa en:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>El consentimiento explícito que nos has otorgado.</li>
+        <li>La necesidad de procesar tus datos para la ejecución de un contrato.</li>
+        <li>El cumplimiento de obligaciones legales.</li>
+        <li>Nuestro interés legítimo para mejorar nuestros servicios.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">3. Finalidad del Tratamiento</h2>
-    <p class="mb-4">Usamos tus datos para:</p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Proveer nuestros servicios y productos.</li>
-      <li>Responder a tus consultas y solicitudes.</li>
-      <li>Mejorar nuestro sitio web y personalizar tu experiencia.</li>
-      <li>Cumplir con nuestras obligaciones legales.</li>
-    </ul>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">5. Derechos de los Usuarios</h2>
+      <p class="text-lg leading-relaxed">
+        Tienes derecho a:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Acceder a tus datos personales.</li>
+        <li>Solicitar la rectificación de datos inexactos.</li>
+        <li>Solicitar la supresión de tus datos personales.</li>
+        <li>Oponerte al tratamiento de tus datos.</li>
+        <li>Solicitar la limitación del tratamiento de tus datos.</li>
+        <li>Portar tus datos a otro proveedor.</li>
+      </ul>
+      <p class="text-lg leading-relaxed">
+        Puedes ejercer estos derechos enviando una solicitud a nuestro correo electrónico:
+        <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a>.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">4. Legitimación para el Tratamiento</h2>
-    <p class="mb-4">
-      El tratamiento de tus datos se basa en:
-    </p>
-    <ul class="list-disc list-inside mb-6">
-      <li>El consentimiento explícito que nos has otorgado.</li>
-      <li>La necesidad de procesar tus datos para la ejecución de un contrato.</li>
-      <li>El cumplimiento de obligaciones legales.</li>
-      <li>Nuestro interés legítimo para mejorar nuestros servicios.</li>
-    </ul>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">6. Plazo de Conservación</h2>
+      <p class="text-lg leading-relaxed">
+        Conservaremos tus datos personales mientras sean necesarios para los fines descritos en esta política de privacidad, salvo que la ley exija o permita un período de conservación más largo.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">5. Derechos de los Usuarios</h2>
-    <p class="mb-4">Tienes derecho a:</p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Acceder a tus datos personales.</li>
-      <li>Solicitar la rectificación de datos inexactos.</li>
-      <li>Solicitar la supresión de tus datos personales.</li>
-      <li>Oponerte al tratamiento de tus datos.</li>
-      <li>Solicitar la limitación del tratamiento de tus datos.</li>
-      <li>Portar tus datos a otro proveedor.</li>
-    </ul>
-    <p class="mb-6">
-      Puedes ejercer estos derechos enviando una solicitud a nuestro correo electrónico:
-      <a href="mailto:[Correo electrónico de contacto]" class="text-blue-600 hover:underline">[Correo electrónico de contacto]</a>.
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">7. Transferencias Internacionales</h2>
+      <p class="text-lg leading-relaxed">
+        No transferimos tus datos personales fuera del Espacio Económico Europeo (EEE). En caso de hacerlo, nos aseguraremos de que estén protegidos adecuadamente.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">6. Plazo de Conservación</h2>
-    <p class="mb-6">
-      Conservaremos tus datos personales mientras sean necesarios para los fines descritos en esta política de privacidad, salvo que la ley exija o permita un período de conservación más largo.
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">8. Seguridad de los Datos</h2>
+      <p class="text-lg leading-relaxed">
+        Implementamos medidas técnicas y organizativas para garantizar la seguridad de tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">7. Transferencias Internacionales</h2>
-    <p class="mb-6">
-      No transferimos tus datos personales fuera del Espacio Económico Europeo (EEE). En caso de hacerlo, nos aseguraremos de que estén protegidos adecuadamente.
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">9. Cambios en la Política de Privacidad</h2>
+      <p class="text-lg leading-relaxed">
+        Podemos actualizar esta política de privacidad ocasionalmente. Publicaremos cualquier cambio en esta página e indicaremos la fecha de la última actualización.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">8. Seguridad de los Datos</h2>
-    <p class="mb-6">
-      Implementamos medidas técnicas y organizativas para garantizar la seguridad de tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado.
-    </p>
-
-    <h2 class="text-2xl font-semibold mt-8 mb-4">9. Cambios en la Política de Privacidad</h2>
-    <p class="mb-6">
-      Podemos actualizar esta política de privacidad ocasionalmente. Publicaremos cualquier cambio en esta página e indicaremos la fecha de la última actualización.
-    </p>
-
-    <h2 class="text-2xl font-semibold mt-8 mb-4">10. Contacto</h2>
-    <p class="mb-6">
-      Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en:
-      <a href="mailto:[Correo electrónico de contacto]" class="text-blue-600 hover:underline">[Correo electrónico de contacto]</a>.
-    </p>
-
-    <p class="text-sm text-gray-500 mt-8">
-      Fecha de última actualización: <span class="font-semibold">[Fecha de la última actualización]</span>
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">10. Contacto</h2>
+      <p class="text-lg leading-relaxed">
+        Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en:
+        <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a>.
+      </p>
+    </section>
   </article>
-
 </Layout>
-
-<style>
-  /* Optimización visual para dispositivos móviles */
-  .prose {
-    font-size: 1rem;
-    line-height: 1.75;
-    margin: 0 auto;
-  }
-
-  .prose h1, .prose h2 {
-    font-weight: 700;
-    color: #333;
-  }
-
-  .prose p {
-    margin-bottom: 1.25rem;
-  }
-
-  @media (max-width: 768px) {
-    .prose {
-      font-size: 0.95rem;
-    }
-  }
-
-  .prose a {
-    color: #3182ce;
-    text-decoration: none;
-  }
-
-  .prose a:hover {
-    text-decoration: underline;
-  }
-</style>

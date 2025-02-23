@@ -1,101 +1,100 @@
 {
   "property_management": {
     "title": "Administración de Fincas",
-    "description": "Ofrecemos servicios profesionales en la gestión y administración de comunidades de propietarios y fincas urbanas.",
-    "text": "Nos encargamos de la gestión integral de su propiedad, asegurando su correcta administración y optimización.",
+    "description": "Gestión profesional y eficiente para comunidades y propietarios exigentes.",
+    "text": "Nos encargamos de todo para que tu comunidad funcione sin preocupaciones. Transparencia, eficiencia y compromiso en cada gestión.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
     },
     "phrases": [
-      "Confía en nuestra experiencia.",
-      "Gestión eficiente y transparente."
+      "Tu comunidad, en manos expertas.",
+      "Gestión sin complicaciones, con total confianza."
     ]
   },
   "vacation_rentals": {
     "title": "Alquileres Vacacionales",
-    "description": "Disfruta de unas vacaciones únicas con nuestra selección de propiedades en alquiler para estancias cortas.",
-    "text": "Descubre apartamentos y casas que ofrecen comodidad, ubicación excelente y una experiencia memorable.",
+    "description": "Convierte tu propiedad en una fuente de ingresos sin esfuerzo.",
+    "text": "Maximizamos la rentabilidad de tu vivienda con una gestión integral y sin preocupaciones.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
     },
     "phrases": [
-      "Haz de tus vacaciones un momento inolvidable.",
-      "Propiedades para todo tipo de viajes."
+      "Tu propiedad generando ingresos por ti.",
+      "Nos encargamos de todo, tú solo disfruta los beneficios."
     ]
   },
   "contact": {
     "title": "Contacto",
-    "description": "Estamos a tu disposición para resolver cualquier duda o consulta. Ponte en contacto con nosotros.",
-    "text": "Nuestro equipo está disponible para ofrecerte la atención personalizada que necesitas.",
+    "description": "Estamos aquí para ayudarte. ¡Hablemos!",
+    "text": "Nuestro equipo está listo para ofrecerte soluciones personalizadas y asesoramiento experto.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
     },
     "phrases": [
-      "No dudes en contactarnos.",
-      "Tu satisfacción es nuestra prioridad."
+      "Resolvemos tus dudas con profesionalidad.",
+      "Tu tranquilidad es nuestra misión."
     ]
   },
   "index": {
     "title": "GestoFinca",
-    "description": "La mejor opción para la gestión de fincas, alquileres vacacionales y mucho más.",
-    "text": "Con años de experiencia, ofrecemos soluciones personalizadas para cada cliente.",
+    "description": "Expertos en administración de fincas y alquileres vacacionales.",
+    "text": "Más que una gestión, una solución integral para propietarios y comunidades.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
     },
     "phrases": [
-      "Tu tranquilidad es nuestra misión.",
-      "Soluciones integrales para ti."
+      "Tu tranquilidad, nuestro compromiso.",
+      "Gestión profesional, resultados garantizados."
     ]
   },
   "about_us": {
     "title": "Nosotros",
-    "description": "Somos un equipo comprometido con ofrecerte la mejor gestión de propiedades y servicios inmobiliarios.",
-    "text": "Con un enfoque profesional y cercano, buscamos garantizar la satisfacción de nuestros clientes.",
+    "description": "Compromiso, profesionalidad y transparencia en la gestión de tu propiedad.",
+    "text": "Especialistas en administración de fincas y alquileres vacacionales, ofreciendo un servicio cercano y eficiente.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
     },
     "phrases": [
-      "Nuestra esencia",
-      "Nuestros valores",
-      "Más de 10 años de experiencia.",
-      "Comprometidos con el servicio y la calidad."
+      "Experiencia y confianza a tu servicio.",
+      "Más de 10 años de éxito gestionando propiedades.",
+      "Excelencia y compromiso en cada gestión."
     ]
   },
   "quotes": {
     "title": "Presupuestos",
-    "description": "Solicita un presupuesto personalizado.",
-    "text": "Te ofrecemos un presupuesto sin compromiso, ajustado a tus necesidades y exigencias.",
+    "description": "Solicita tu presupuesto sin compromiso.",
+    "text": "Adaptamos nuestros servicios a tus necesidades con total transparencia y precios competitivos.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
     },
     "phrases": [
-      "Transparencia y precios justos.",
-      "Presupuestos adaptados a tus necesidades."
+      "Presupuestos claros, sin sorpresas.",
+      "Soluciones a medida con precios competitivos."
     ]
   },
   "privacy_policy": {
     "title": "Política de Privacidad",
-    "description": "Protegemos tu información personal de acuerdo con las leyes y regulaciones vigentes.",
-    "text": "Lee nuestra política de privacidad para conocer cómo gestionamos tus datos personales.",
+    "description": "Protegemos tu información con el máximo compromiso.",
+    "text": "Consulta nuestra política para saber cómo gestionamos y protegemos tus datos.",
     "buttons": {
       "read_policy": "Leer política",
       "accept": "Aceptar"
     },
     "phrases": [
-      "Tu privacidad es importante para nosotros.",
-      "Cumplimos con las normativas de protección de datos."
+      "Tu privacidad, nuestra prioridad.",
+      "Cumplimos con todas las normativas vigentes."
     ]
   },
   "forms": {
     "title": "Formularios",
-    "description": "Accede a nuestros formularios para realizar diversas gestiones de manera fácil y rápida.",
-    "text": "Desde formularios de contacto hasta solicitudes de presupuesto, tenemos todo lo que necesitas.",
+    "description": "Facilitamos tus gestiones con formularios rápidos y sencillos.",
+    "text": "Realiza tus solicitudes de manera ágil y sin complicaciones.",
     "fields": {
       "name": {
         "label": "Nombre",
@@ -127,8 +126,8 @@
       "learn_more": "Saber más"
     },
     "phrases": [
-      "Gestiona tu solicitud de forma rápida.",
-      "Formularios sencillos y fáciles de usar."
+      "Gestiones rápidas y sin complicaciones.",
+      "Tu solicitud, a solo un clic."
     ]
   },
   "footer": {
@@ -156,38 +155,45 @@
         { "name": "Política de Privacidad", "link": "/politica-de-privacidad" },
         { "name": "Uso de Cookies", "link": "/uso-cookies" }
       ]
+    },
+    "contact": {
+      "title": "Contacto",
+      "address": { "info": "Calle Falsa, 123", "tag": "Dirección" },
+      "city": { "info": "12345, Ciudad Ficticia", "tag": "Ciudad" },
+      "phone": { "info": "+34 123 456 789", "tag": "Teléfono" },
+      "email": { "info": "info@gestofinca.com", "tag": "Correo Electrónico" }
     }
   },
   "values": {
     "title": "Nuestros Valores",
-    "description": "En GestoFinca nos regimos por una serie de valores que nos definen como empresa y como equipo.",
+    "description": "Principios que guían nuestro trabajo y nos definen como empresa.",
     "value1": {
       "title": "Compromiso",
-      "description": "Nos comprometemos con nuestros clientes para ofrecerles un servicio de calidad y confianza."
+      "description": "Tu tranquilidad es nuestra prioridad. Nos aseguramos de brindarte un servicio excepcional."
     },
     "value2": {
       "title": "Transparencia",
-      "description": "Actuamos con transparencia en todas nuestras gestiones, garantizando la confianza de nuestros clientes."
+      "description": "Construimos relaciones basadas en la confianza, con una gestión clara y honesta."
     },
     "value3": {
       "title": "Profesionalidad",
-      "description": "Nuestro equipo está formado por profesionales cualificados y con experiencia en el sector inmobiliario."
+      "description": "Un equipo de expertos a tu disposición para garantizarte una gestión eficiente y sin complicaciones."
     }
   },
   "services": {
     "title": "Nuestros Servicios",
-    "description": "Descubre los servicios que ofrecemos en GestoFinca para la administración de fincas y alquileres vacacionales.",
+    "description": "Soluciones personalizadas para propietarios y comunidades.",
     "service1": {
       "title": "Administración de Fincas",
-      "description": "Gestionamos comunidades de propietarios y fincas urbanas con eficiencia y transparencia."
+      "description": "Gestión integral para comunidades con total transparencia y eficiencia."
     },
     "service2": {
       "title": "Alquileres Vacacionales",
-      "description": "Ofrecemos una selección de propiedades en alquiler para estancias cortas, con todas las comodidades."
+      "description": "Optimiza la rentabilidad de tu vivienda sin preocupaciones."
     },
     "service3": {
       "title": "Asesoramiento Inmobiliario",
-      "description": "Te asesoramos en la compra, venta o alquiler de propiedades, garantizando un servicio personalizado."
+      "description": "Te guiamos en cada paso de la compra, venta o alquiler de tu propiedad."
     }
   },
   "header": {
@@ -199,6 +205,7 @@
     "contact": "Contacto"
   },
   "seo": {
-    "description": "Somos una empresa especializada en la administración de fincas, ofreciendo soluciones personalizadas para propietarios y comunidades. Gestionamos tu propiedad con eficiencia, transparencia y dedicación. Descubre nuestros servicios profesionales para una gestión integral y sin preocupaciones."
+    "title": "GestoFinca - Administración de Fincas y Alquileres Vacacionales",
+    "description": "Expertos en administración de fincas y gestión de alquileres vacacionales. Ofrecemos soluciones integrales, transparentes y personalizadas para propietarios y comunidades."
   }
 }

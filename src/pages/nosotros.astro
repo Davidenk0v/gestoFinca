@@ -19,32 +19,37 @@ const translations = await loadTranslations(lang);
     description={translations.about_us.description}
     lang={lang}
 >
-    <!-- Sección del carrusel -->
-    <section aria-labelledby="about-us-carousel-section" class="bg-white">
-        <h2 id="about-us-carousel-section" class="sr-only">Galería de imágenes de nuestra empresa</h2>
-        <Carrousel client:load data={translations.about_us} lang={lang}/>
-    </section>
+    <!-- Sección principal con el h1 -->
+    <main>
+        <h1 class="sr-only">{translations.about_us.title}</h1> <!-- Título principal de la página accesible para SEO y tecnología asistiva -->
 
-    <!-- Sección sobre nosotros -->
-    <section>
-        <Who data={translations} />
-    </section>
+        <!-- Sección del carrusel -->
+        <section aria-labelledby="about-us-carousel-section" class="bg-white">
+            <h2 id="about-us-carousel-section" class="sr-only">Galería de imágenes de nuestra empresa</h2>
+            <Carrousel client:load data={translations.about_us} lang={lang}/>
+        </section>
 
-    <!-- Sección de información sobre nuestros servicios -->
-    <section aria-labelledby="services-info-section" class="relative">
-        <h2 id="services-info-section" class="sr-only">Nuestros servicios principales</h2>
-        <AboutUs data={translations} />
-    </section>
+        <!-- Sección sobre nosotros -->
+        <section>
+            <Who data={translations} />
+        </section>
 
-    <!-- Sección de detalles adicionales y contacto -->
-    <section>
-        <ServicesInfo data={translations} />
-        <ContactBanner text={translations.contact.phrases[0]}/>
-    </section>
+        <!-- Sección de información sobre nuestros servicios -->
+        <section aria-labelledby="services-info-section" class="relative">
+            <h2 id="services-info-section" class="sr-only">Nuestros servicios principales</h2>
+            <AboutUs data={translations} />
+        </section>
 
-    <!-- Sección de contacto -->
-    <section aria-labelledby="contact-section">
-        <h2 id="contact-section" class="sr-only">Formulario de contacto</h2>
-        <ContactFormReact lang={translations.forms}/>
-    </section>
+        <!-- Sección de detalles adicionales y contacto -->
+        <section>
+            <ServicesInfo data={translations} />
+            <ContactBanner text={translations.contact.phrases[0]}/>
+        </section>
+
+        <!-- Sección de contacto -->
+        <section aria-labelledby="contact-section">
+            <h2 id="contact-section" class="sr-only">Formulario de contacto</h2>
+            <ContactFormReact lang={translations.forms}/>
+        </section>
+    </main>
 </Layout>

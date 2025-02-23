@@ -1,101 +1,100 @@
 {
   "property_management": {
     "title": "Property Management",
-    "description": "We offer professional services in the management and administration of homeowners' associations and urban properties.",
-    "text": "We handle the comprehensive management of your property, ensuring its proper administration and optimization.",
+    "description": "Professional and efficient management for communities and property owners.",
+    "text": "We take care of everything so your community runs smoothly and worry-free. Transparency, efficiency, and commitment in every service.",
     "buttons": {
-      "about_us": "Learn more",
-      "contact_us": "Contact us"
+      "about_us": "Learn More",
+      "contact_us": "Contact Us"
     },
     "phrases": [
-      "Trust in our experience.",
-      "Efficient and transparent management."
+      "Your community in expert hands.",
+      "Hassle-free management with complete confidence."
     ]
   },
   "vacation_rentals": {
     "title": "Vacation Rentals",
-    "description": "Enjoy a unique vacation with our selection of properties for short-term rentals.",
-    "text": "Discover apartments and homes offering comfort, great location, and a memorable experience.",
+    "description": "Turn your property into a profitable rental without the hassle.",
+    "text": "We maximize your property's profitability with a full-service, worry-free approach.",
     "buttons": {
-      "about_us": "Learn more",
-      "contact_us": "Contact us"
+      "about_us": "Learn More",
+      "contact_us": "Contact Us"
     },
     "phrases": [
-      "Make your vacation unforgettable.",
-      "Properties for all types of trips."
+      "Let your property generate income for you.",
+      "We handle everything so you can enjoy the benefits."
     ]
   },
   "contact": {
     "title": "Contact",
-    "description": "We are available to resolve any questions or inquiries. Get in touch with us.",
-    "text": "Our team is available to offer you the personalized attention you need.",
+    "description": "We are here to help. Let's talk!",
+    "text": "Our team is ready to offer tailored solutions and expert advice.",
     "buttons": {
-      "about_us": "Learn more",
-      "contact_us": "Contact us"
+      "about_us": "Learn More",
+      "contact_us": "Contact Us"
     },
     "phrases": [
-      "Feel free to reach out to us.",
-      "Your satisfaction is our priority."
+      "We answer your questions with professionalism.",
+      "Your peace of mind is our mission."
     ]
   },
   "index": {
     "title": "GestoFinca",
-    "description": "The best choice for property management, vacation rentals, and much more.",
-    "text": "With years of experience, we offer personalized solutions for every client.",
+    "description": "Experts in property management and vacation rentals.",
+    "text": "More than just management, a complete solution for owners and communities.",
     "buttons": {
-      "about_us": "Learn more",
-      "contact_us": "Contact us"
+      "about_us": "Learn More",
+      "contact_us": "Contact Us"
     },
     "phrases": [
-      "Your peace of mind is our mission.",
-      "Comprehensive solutions for you."
+      "Your peace of mind, our commitment.",
+      "Professional management, guaranteed results."
     ]
   },
   "about_us": {
     "title": "About Us",
-    "description": "We are a team committed to offering the best property management and real estate services.",
-    "text": "With a professional and close approach, we aim to guarantee the satisfaction of our clients.",
+    "description": "Commitment, professionalism, and transparency in managing your property.",
+    "text": "Specialists in property management and vacation rentals, offering a close and efficient service.",
     "buttons": {
-      "about_us": "Learn more",
-      "contact_us": "Contact us"
+      "about_us": "Learn More",
+      "contact_us": "Contact Us"
     },
     "phrases": [
-      "Get to kwow us.",
-      "Our values",
-      "Over 10 years of experience.",
-      "Committed to service and quality."
+      "Experience and trust at your service.",
+      "Over 10 years of successfully managing properties.",
+      "Excellence and commitment in every service."
     ]
   },
   "quotes": {
     "title": "Quotes",
-    "description": "Request a personalized quote.",
-    "text": "We offer a no-obligation quote tailored to your needs and requirements.",
+    "description": "Request your free quote with no obligation.",
+    "text": "We tailor our services to your needs with full transparency and competitive pricing.",
     "buttons": {
-      "about_us": "Learn more",
-      "contact_us": "Contact us"
+      "about_us": "Learn More",
+      "contact_us": "Contact Us"
     },
     "phrases": [
-      "Transparency and fair prices.",
-      "Quotes tailored to your needs."
+      "Clear pricing, no surprises.",
+      "Tailored solutions with competitive rates."
     ]
   },
   "privacy_policy": {
     "title": "Privacy Policy",
-    "description": "We protect your personal information in accordance with current laws and regulations.",
-    "text": "Read our privacy policy to understand how we manage your personal data.",
+    "description": "We protect your information with the highest commitment.",
+    "text": "Check our policy to learn how we handle and protect your data.",
     "buttons": {
-      "read_policy": "Read policy",
+      "read_policy": "Read Policy",
       "accept": "Accept"
     },
     "phrases": [
-      "Your privacy is important to us.",
-      "We comply with data protection regulations."
+      "Your privacy, our priority.",
+      "We comply with all current regulations."
     ]
   },
   "forms": {
     "title": "Forms",
-    "description": "Access our forms to perform various tasks easily and quickly.",
-    "text": "From contact forms to quote requests, we have everything you need.",
+    "description": "We make your transactions easy with quick and simple forms.",
+    "text": "Submit your requests quickly and effortlessly.",
     "fields": {
       "name": {
         "label": "Name",
@@ -111,7 +110,7 @@
       },
       "message": {
         "label": "Message",
-        "placeholder": "Enter your message"
+        "placeholder": "Write your message"
       },
       "subject": {
         "label": "Subject",
@@ -124,9 +123,12 @@
     },
     "buttons": {
       "send_form": "Send",
-      "learn_more": "Learn more"
+      "learn_more": "Learn More"
     },
-    "phrases": ["Manage your request quickly.", "Simple and easy-to-use forms."]
+    "phrases": [
+      "Fast, easy, and hassle-free transactions.",
+      "Your request is just one click away."
+    ]
   },
   "footer": {
     "phrase": "Your peace of mind is our mission.",
@@ -153,38 +155,45 @@
         { "name": "Privacy Policy", "link": "/privacy-policy?lang=en" },
         { "name": "Cookie Policy", "link": "/cookie-policy?lang=en" }
       ]
+    },
+    "contact": {
+      "title": "Contact",
+      "address": { "info": "Fake Street, 123", "tag": "Address" },
+      "city": { "info": "12345, Fictitious City", "tag": "City" },
+      "phone": { "info": "+34 123 456 789", "tag": "Phone" },
+      "email": { "info": "info@gestofinca.com", "tag": "Email" }
     }
   },
   "values": {
     "title": "Our Values",
-    "description": "At GestoFinca, we are guided by a set of values that define us as a company and as a team.",
+    "description": "Principles that guide our work and define us as a company.",
     "value1": {
       "title": "Commitment",
-      "description": "We are committed to our clients to offer them a service of quality and trust."
+      "description": "Your peace of mind is our priority. We ensure top-quality service."
     },
     "value2": {
       "title": "Transparency",
-      "description": "We act with transparency in all our dealings, ensuring the trust of our clients."
+      "description": "We build relationships based on trust, with clear and honest management."
     },
     "value3": {
       "title": "Professionalism",
-      "description": "Our team is made up of qualified professionals with experience in the real estate sector."
+      "description": "A team of experts at your service to guarantee efficient and hassle-free management."
     }
   },
   "services": {
     "title": "Our Services",
-    "description": "Discover the services we offer at GestoFinca for property management and vacation rentals.",
+    "description": "Customized solutions for property owners and communities.",
     "service1": {
       "title": "Property Management",
-      "description": "We manage homeowner associations and urban properties with efficiency and transparency."
+      "description": "Comprehensive management for communities with full transparency and efficiency."
     },
     "service2": {
       "title": "Vacation Rentals",
-      "description": "We offer a selection of properties for short-term rental, with all the comforts."
+      "description": "Optimize your property's profitability with no worries."
     },
     "service3": {
-      "title": "Real Estate Advisory",
-      "description": "We provide advice on buying, selling, or renting properties, ensuring a personalized service."
+      "title": "Real Estate Consulting",
+      "description": "We guide you every step of the way in buying, selling, or renting your property."
     }
   },
   "header": {
@@ -196,6 +205,7 @@
     "contact": "Contact"
   },
   "seo": {
-    "description": "We are a company specialized in property management, offering tailored solutions for owners and communities. We manage your property with efficiency, transparency, and dedication. Discover our professional services for comprehensive and worry-free property management."
+    "title": "GestoFinca - Property Management and Vacation Rentals",
+    "description": "Experts in property management and vacation rentals. We offer comprehensive, transparent, and customized solutions for owners and communities."
   }
 }

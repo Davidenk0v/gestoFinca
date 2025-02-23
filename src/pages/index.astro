@@ -12,35 +12,41 @@ const url = new URL(Astro.request.url);
 const lang = url.searchParams.get('lang') || (typeof window !== 'undefined' ? localStorage.getItem('lang') : 'es');
 
 const translation = await loadTranslations(lang);
+const { seo } = translation;
 ---
 
-<Layout title={translation.index.title} description={translation.index.description}>
+<Layout title={seo.title} description={translation.index.description}>
   <div class="snap-y snap-mandatory">
     
-    <!-- Sección del carrusel con imágenes -->
-    <section class="snap-start">
-      <Carrousel data={translation.index} client:load lang={lang}/>
-    </section>
+    <!-- Sección principal con el h1 -->
+    <main>
+      <h1 class="sr-only">{seo.title}</h1> <!-- Título principal de la página accesible para SEO y tecnología asistiva -->
     
-    <!-- Sección de Servicios con más detalles sobre lo que ofreces -->
-    <section aria-labelledby="values-section">
-      <h2 id="values-section" class="sr-only">Nuestros valores</h2>
-      <AboutUs data={translation} />
-    </section>
-    <!-- Sección de Servicios con más detalles sobre lo que ofreces -->
-    <section aria-labelledby="services-section">
-      <h2 id="services-section" class="sr-only">Nuestros Servicios</h2>
-      <ServicesInfo data={translation} />
-    </section>
+      <!-- Sección del carrusel con imágenes -->
+      <section class="snap-start">
+        <Carrousel data={translation.index} client:load lang={lang}/>
+      </section>
     
+      <!-- Sección de nuestros valores -->
+      <section aria-labelledby="values-section">
+        <h2 id="values-section" class="sr-only">Nuestros valores</h2>
+        <AboutUs data={translation} />
+      </section>
     
-    <!-- Banner de contacto para facilitar la acción -->
-    <ContactBanner text={translation.contact.phrases[0]}/>
+      <!-- Sección de nuestros servicios -->
+      <section aria-labelledby="services-section">
+        <h2 id="services-section" class="sr-only">Nuestros Servicios</h2>
+        <ServicesInfo data={translation} />
+      </section>
     
-    <!-- Sección del formulario de contacto -->
-    <section class="my-4" aria-labelledby="contact-form-section">
-      <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
-      <ContactFormReact client:load lang={translation.forms}/>
-    </section>
+      <!-- Banner de contacto para facilitar la acción -->
+      <ContactBanner text={translation.contact.phrases[0]}/>
+    
+      <!-- Sección del formulario de contacto -->
+      <section class="my-4" aria-labelledby="contact-form-section">
+        <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
+        <ContactFormReact client:load lang={translation.forms}/>
+      </section>
+    </main>
   </div>
 </Layout>

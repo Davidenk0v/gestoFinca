@@ -1,98 +1,100 @@
 {
   "property_management": {
     "title": "Immobilienverwaltung",
-    "description": "Wir bieten professionelle Dienstleistungen in der Verwaltung und Organisation von Eigentümergemeinschaften und städtischen Immobilien.",
-    "text": "Wir kümmern uns um die umfassende Verwaltung Ihrer Immobilie, um eine korrekte Verwaltung und Optimierung zu gewährleisten.",
+    "description": "Professionelle und effiziente Verwaltung für Eigentümergemeinschaften und Immobilien.",
+    "text": "Wir kümmern uns um alles, damit Ihre Gemeinschaft reibungslos und sorgenfrei funktioniert. Transparenz, Effizienz und Engagement in jedem Service.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
-      "Vertrauen Sie auf unsere Erfahrung.",
-      "Effiziente und transparente Verwaltung."
+      "Ihre Gemeinschaft in den besten Händen.",
+      "Effiziente und transparente Verwaltung – ganz ohne Stress."
     ]
   },
   "vacation_rentals": {
-    "title": "Ferienwohnungen",
-    "description": "Genießen Sie einen einzigartigen Urlaub mit unserer Auswahl an Ferienwohnungen zur Kurzzeitmiete.",
-    "text": "Entdecken Sie Apartments und Häuser, die Komfort, eine hervorragende Lage und ein unvergessliches Erlebnis bieten.",
+    "title": "Ferienvermietung",
+    "description": "Machen Sie Ihre Immobilie zu einer lukrativen Ferienunterkunft – ganz ohne Aufwand.",
+    "text": "Wir maximieren die Rentabilität Ihrer Immobilie mit einem Rundum-sorglos-Service.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
-      "Machen Sie Ihren Urlaub unvergesslich.",
-      "Immobilien für alle Arten von Reisen."
+      "Lassen Sie Ihre Immobilie für Sie arbeiten.",
+      "Wir übernehmen die Verwaltung – Sie genießen den Gewinn."
     ]
   },
   "contact": {
     "title": "Kontakt",
-    "description": "Wir stehen Ihnen zur Verfügung, um alle Fragen oder Anfragen zu beantworten. Kontaktieren Sie uns.",
-    "text": "Unser Team ist bereit, Ihnen die persönliche Betreuung zu bieten, die Sie benötigen.",
+    "description": "Wir sind für Sie da. Lassen Sie uns sprechen!",
+    "text": "Unser Team steht bereit, um Ihnen maßgeschneiderte Lösungen und kompetente Beratung anzubieten.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
-      "Zögern Sie nicht, uns zu kontaktieren.",
-      "Ihre Zufriedenheit ist unsere Priorität."
+      "Wir beantworten Ihre Fragen professionell.",
+      "Ihre Zufriedenheit ist unser Ziel."
     ]
   },
   "index": {
     "title": "GestoFinca",
-    "description": "Die beste Wahl für Immobilienverwaltung, Ferienwohnungen und vieles mehr.",
-    "text": "Mit jahrelanger Erfahrung bieten wir maßgeschneiderte Lösungen für jeden Kunden.",
-    "buttons": {
-      "about_us": "Mehr erfahren",
-      "contact_us": "Kontaktieren Sie uns"
-    },
-    "phrases": ["Ihre Ruhe ist unsere Mission.", "Umfassende Lösungen für Sie."]
-  },
-  "about_us": {
-    "title": "Über uns",
-    "description": "Wir sind ein Team, das sich verpflichtet hat, die beste Immobilienverwaltung und Immobilienservices anzubieten.",
-    "text": "Mit einem professionellen und nahen Ansatz streben wir an, die Zufriedenheit unserer Kunden zu gewährleisten.",
+    "description": "Experten für Immobilienverwaltung und Ferienvermietung.",
+    "text": "Mehr als nur Verwaltung – eine umfassende Lösung für Eigentümer und Gemeinschaften.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
-      "Lernen Sie uns kennen.",
-      "Unsere werte",
-      "Mehr als 10 Jahre Erfahrung.",
-      "Verpflichtet zu Service und Qualität."
+      "Ihre Sicherheit, unser Engagement.",
+      "Professionelle Verwaltung mit garantierten Ergebnissen."
+    ]
+  },
+  "about_us": {
+    "title": "Über uns",
+    "description": "Engagement, Professionalität und Transparenz in der Verwaltung Ihrer Immobilie.",
+    "text": "Spezialisten für Immobilienverwaltung und Ferienvermietung mit persönlichem und effizientem Service.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Erfahrung und Vertrauen zu Ihrem Vorteil.",
+      "Über 10 Jahre erfolgreiche Verwaltung.",
+      "Exzellenz und Engagement in jedem Service."
     ]
   },
   "quotes": {
     "title": "Angebote",
-    "description": "Fordern Sie ein individuelles Angebot an.",
-    "text": "Wir bieten ein unverbindliches Angebot, das auf Ihre Bedürfnisse und Anforderungen zugeschnitten ist.",
+    "description": "Fordern Sie Ihr unverbindliches Angebot an.",
+    "text": "Wir passen unsere Dienstleistungen an Ihre Bedürfnisse an – mit voller Transparenz und fairen Preisen.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
-      "Transparenz und faire Preise.",
-      "Angebote, die auf Ihre Bedürfnisse abgestimmt sind."
+      "Klare Kosten, keine Überraschungen.",
+      "Individuelle Lösungen zu wettbewerbsfähigen Preisen."
     ]
   },
   "privacy_policy": {
     "title": "Datenschutzrichtlinie",
-    "description": "Wir schützen Ihre persönlichen Daten gemäß den geltenden Gesetzen und Vorschriften.",
-    "text": "Lesen Sie unsere Datenschutzrichtlinie, um zu erfahren, wie wir Ihre persönlichen Daten verwalten.",
+    "description": "Wir schützen Ihre Daten mit höchstem Engagement.",
+    "text": "Lesen Sie unsere Datenschutzrichtlinie, um zu erfahren, wie wir Ihre Daten verwalten und schützen.",
     "buttons": {
       "read_policy": "Richtlinie lesen",
       "accept": "Akzeptieren"
     },
     "phrases": [
-      "Ihre Privatsphäre ist uns wichtig.",
-      "Wir halten die Datenschutzbestimmungen ein."
+      "Ihre Privatsphäre hat für uns oberste Priorität.",
+      "Wir erfüllen alle aktuellen Vorschriften."
     ]
   },
   "forms": {
     "title": "Formulare",
-    "description": "Greifen Sie auf unsere Formulare zu, um verschiedene Aufgaben einfach und schnell zu erledigen.",
-    "text": "Von Kontaktformularen bis hin zu Angebotsanfragen haben wir alles, was Sie brauchen.",
+    "description": "Einfache und schnelle Verwaltung mit unseren Online-Formularen.",
+    "text": "Senden Sie Ihre Anfragen schnell und unkompliziert.",
     "fields": {
       "name": {
         "label": "Name",
@@ -108,7 +110,7 @@
       },
       "message": {
         "label": "Nachricht",
-        "placeholder": "Geben Sie Ihre Nachricht ein"
+        "placeholder": "Schreiben Sie Ihre Nachricht"
       },
       "subject": {
         "label": "Betreff",
@@ -120,16 +122,16 @@
       }
     },
     "buttons": {
-      "send_form": "Absenden",
+      "send_form": "Senden",
       "learn_more": "Mehr erfahren"
     },
     "phrases": [
-      "Verwalten Sie Ihre Anfrage schnell.",
-      "Einfache und benutzerfreundliche Formulare."
+      "Schnell, einfach und unkompliziert.",
+      "Ihre Anfrage ist nur einen Klick entfernt."
     ]
   },
   "footer": {
-    "phrase": "Ihre Ruhe ist unsere Mission.",
+    "phrase": "Ihre Zufriedenheit ist unser Ziel.",
     "pages": {
       "title": "Seiten",
       "links": [
@@ -151,7 +153,7 @@
         { "name": "Kontaktieren Sie uns", "link": "/contacto?lang=de" },
         {
           "name": "Allgemeine Geschäftsbedingungen",
-          "link": "/allgemeine-geschaeftsbedingungen"
+          "link": "/allgemeine-geschaeftsbedingungen?lang=de"
         },
         {
           "name": "Datenschutzrichtlinie",
@@ -159,49 +161,57 @@
         },
         { "name": "Cookie-Richtlinie", "link": "/cookie-richtlinie?lang=de" }
       ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "address": { "info": "Falsche Straße, 123", "tag": "Adresse" },
+      "city": { "info": "12345, Fiktive Stadt", "tag": "Stadt" },
+      "phone": { "info": "+34 123 456 789", "tag": "Telefon" },
+      "email": { "info": "info@gestofinca.com", "tag": "E-Mail" }
     }
   },
   "values": {
     "title": "Unsere Werte",
-    "description": "Bei GestoFinca folgen wir einer Reihe von Werten, die uns als Unternehmen und als Team definieren.",
+    "description": "Prinzipien, die unsere Arbeit leiten und unser Unternehmen definieren.",
     "value1": {
       "title": "Engagement",
-      "description": "Wir verpflichten uns, unseren Kunden einen Service von Qualität und Vertrauen zu bieten."
+      "description": "Ihre Zufriedenheit ist unsere Priorität. Wir bieten Ihnen einen erstklassigen Service."
     },
     "value2": {
       "title": "Transparenz",
-      "description": "Wir handeln mit Transparenz in allen unseren Geschäften und garantieren das Vertrauen unserer Kunden."
+      "description": "Wir bauen vertrauensvolle Beziehungen mit klaren und ehrlichen Verwaltungsprozessen auf."
     },
     "value3": {
       "title": "Professionalität",
-      "description": "Unser Team besteht aus qualifizierten Fachleuten mit Erfahrung im Immobiliensektor."
+      "description": "Ein Expertenteam steht Ihnen zur Verfügung, um eine effiziente und stressfreie Verwaltung zu gewährleisten."
     }
   },
   "services": {
     "title": "Unsere Dienstleistungen",
-    "description": "Entdecken Sie die Dienstleistungen, die wir bei GestoFinca für die Verwaltung von Grundstücken und Ferienvermietungen anbieten.",
+    "description": "Maßgeschneiderte Lösungen für Eigentümer und Gemeinschaften.",
     "service1": {
       "title": "Immobilienverwaltung",
-      "description": "Wir verwalten Eigentümergemeinschaften und städtische Immobilien mit Effizienz und Transparenz."
+      "description": "Umfassende Verwaltung für Eigentümergemeinschaften mit Transparenz und Effizienz."
     },
     "service2": {
-      "title": "Ferienvermietungen",
-      "description": "Wir bieten eine Auswahl an Immobilien zur Kurzzeitmiete, ausgestattet mit allen Annehmlichkeiten."
+      "title": "Ferienvermietung",
+      "description": "Maximieren Sie die Rentabilität Ihrer Immobilie – ohne Stress."
     },
     "service3": {
       "title": "Immobilienberatung",
-      "description": "Wir beraten Sie beim Kauf, Verkauf oder der Vermietung von Immobilien und garantieren einen personalisierten Service."
+      "description": "Wir begleiten Sie beim Kauf, Verkauf oder der Vermietung Ihrer Immobilie mit Fachwissen und Vertrauen."
     }
   },
   "header": {
     "home": "Startseite",
     "about_us": "Über uns",
     "property_management": "Immobilienverwaltung",
-    "vacation_rentals": "Ferienwohnungen",
+    "vacation_rentals": "Ferienvermietung",
     "quotes": "Angebote",
     "contact": "Kontakt"
   },
   "seo": {
-    "description": "Wir sind ein Unternehmen, das auf die Verwaltung von Immobilien spezialisiert ist und maßgeschneiderte Lösungen für Eigentümer und Gemeinschaften anbietet. Wir verwalten Ihre Immobilie mit Effizienz, Transparenz und Engagement. Entdecken Sie unsere professionellen Dienstleistungen für eine umfassende und sorgenfreie Immobilienverwaltung."
+    "title": "GestoFinca – Immobilienverwaltung und Ferienvermietung",
+    "description": "Experten für Immobilienverwaltung und Ferienvermietung. Wir bieten umfassende, transparente und maßgeschneiderte Lösungen für Eigentümer und Gemeinschaften."
   }
 }

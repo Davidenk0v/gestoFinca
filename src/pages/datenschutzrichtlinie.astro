@@ -1,48 +1,101 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title="Datenschutzrichtlinie">
+<Layout title="Datenschutzrichtlinie - GestoFinca">
+  <article class="py-12 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-auto">
+    <header class="mb-6 p-5 text-center">
+      <h2 class="text-3xl font-semibold text-brand-blueFinca mb-4">Datenschutzrichtlinie</h2>
+      <meta name="description" content="Sehen Sie sich unsere Datenschutzrichtlinie zur Verarbeitung Ihrer persönlichen Daten an." />
+    </header>
 
-  <!-- Meta Tags para SEO y redes sociales -->
-  <head>
-    <meta name="description" content="Datenschutzrichtlinie von GestoFinca, die den Schutz Ihrer persönlichen Daten gemäß der DSGVO gewährleistet." />
-    <meta property="og:title" content="Datenschutzrichtlinie - GestoFinca" />
-    <meta property="og:description" content="Bei GestoFinca verpflichten wir uns, Ihre persönlichen Daten zu schützen. Lesen Sie unsere Datenschutzrichtlinie." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/images/og-image.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Datenschutzrichtlinie - GestoFinca" />
-    <meta name="twitter:description" content="Bei GestoFinca verpflichten wir uns, Ihre persönlichen Daten zu schützen. Lesen Sie unsere Datenschutzrichtlinie." />
-    <meta name="twitter:image" content="/assets/images/og-image.jpg" />
-  </head>
+    <section class="space-y-8 p-5">
+      <p class="text-lg leading-relaxed">
+        Bei <span class="font-semibold">GestoFinca</span> verpflichten wir uns, die Privatsphäre und persönlichen Daten unserer Nutzer zu schützen. Im Folgenden erläutern wir, wie wir Ihre Daten sammeln, verwenden und schützen.
+      </p>
 
-  <article class="prose lg:prose-xl mx-auto py-8 px-4 sm:px-8 md:px-12">
-    <h1 class="text-4xl font-bold text-center mb-8">Datenschutzrichtlinie</h1>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">1. Verantwortlicher für die Verarbeitung</h2>
+      <p class="text-lg leading-relaxed">
+        <strong>Name:</strong> GestoFinca S.L. <br />
+        <strong>Adresse:</strong> Calle Ejemplo 123, 28001 Madrid, Spanien <br />
+        <strong>E-Mail:</strong> <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a> <br />
+        <strong>Telefon:</strong> +34 912 345 678
+      </p>
 
-    <p class="mb-6">
-      Bei <span class="font-semibold">GestoFinca</span> verpflichten wir uns, die Privatsphäre und persönlichen Daten unserer Nutzer zu schützen. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen gemäß den geltenden Vorschriften in Spanien, einschließlich der Datenschutz-Grundverordnung (DSGVO) und des Gesetzes zum Schutz personenbezogener Daten und der Garantie digitaler Rechte (LOPDGDD), erheben, verwenden und schützen.
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">2. Daten, die wir erheben</h2>
+      <p class="text-lg leading-relaxed">
+        Wir erheben die folgenden persönlichen Daten:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Kontaktinformationen: Name, E-Mail-Adresse, Telefonnummer.</li>
+        <li>Browsedaten: IP-Adresse, Gerätetyp, Betriebssystem, Browser.</li>
+        <li>Andere Daten, die Sie uns direkt über Formulare oder Kommunikation zur Verfügung stellen.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">1. Verantwortlicher für die Datenverarbeitung</h2>
-    <p class="mb-4">
-      <strong>Name:</strong> [Firmenname] <br />
-      <strong>Adresse:</strong> [Firmenadresse] <br />
-      <strong>E-Mail:</strong> [Kontakt-E-Mail] <br />
-      <strong>Telefon:</strong> [Telefonnummer]
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">3. Zweck der Datenverarbeitung</h2>
+      <p class="text-lg leading-relaxed">
+        Wir verwenden Ihre Daten für:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Bereitstellung unserer Dienste und Produkte.</li>
+        <li>Beantwortung Ihrer Anfragen und Anträge.</li>
+        <li>Verbesserung unserer Website und Personalisierung Ihrer Erfahrung.</li>
+        <li>Erfüllung unserer gesetzlichen Verpflichtungen.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">2. Erhobene Daten</h2>
-    <p class="mb-4">Wir erheben die folgenden personenbezogenen Daten:</p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Kontaktinformationen: Name, E-Mail-Adresse, Telefonnummer.</li>
-      <li>Navigationsinformationen: IP-Adresse, Gerätetyp, Betriebssystem, Browser.</li>
-      <li>Andere Daten, die Sie uns direkt über Formulare oder Kommunikation zur Verfügung stellen.</li>
-    </ul>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">4. Rechtsgrundlage für die Verarbeitung</h2>
+      <p class="text-lg leading-relaxed">
+        Die Verarbeitung Ihrer Daten basiert auf:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Ihrer ausdrücklichen Zustimmung.</li>
+        <li>Der Notwendigkeit, Ihre Daten für die Ausführung eines Vertrags zu verarbeiten.</li>
+        <li>Der Erfüllung gesetzlicher Verpflichtungen.</li>
+        <li>Unserem berechtigten Interesse, unsere Dienste zu verbessern.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">3. Zweck der Datenverarbeitung</h2>
-    <p class="mb-4">Wir verwenden Ihre Daten, um:</p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Unsere Dienstleistungen und Produkte bereitzustellen.</li>
-      <li>Auf Ihre Anfragen und Anfragen zu antworten.</li>
-      <li>Unsere Website zu verbessern und Ihre Erfahrung
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">5. Rechte der Nutzer</h2>
+      <p class="text-lg leading-relaxed">
+        Sie haben das Recht:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Auf Zugang zu Ihren persönlichen Daten.</li>
+        <li>Die Berichtigung unrichtiger Daten zu verlangen.</li>
+        <li>Die Löschung Ihrer persönlichen Daten zu verlangen.</li>
+        <li>Der Verarbeitung Ihrer Daten zu widersprechen.</li>
+        <li>Die Einschränkung der Verarbeitung Ihrer Daten zu beantragen.</li>
+        <li>Ihre Daten an einen anderen Anbieter zu übertragen.</li>
+      </ul>
+      <p class="text-lg leading-relaxed">
+        Sie können diese Rechte ausüben, indem Sie eine Anfrage an unsere E-Mail senden:
+        <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a>.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">6. Aufbewahrungsfrist</h2>
+      <p class="text-lg leading-relaxed">
+        Wir werden Ihre persönlichen Daten so lange aufbewahren, wie es für die in dieser Datenschutzrichtlinie beschriebenen Zwecke erforderlich ist, es sei denn, das Gesetz verlangt oder erlaubt eine längere Aufbewahrungsfrist.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">7. Internationale Übermittlungen</h2>
+      <p class="text-lg leading-relaxed">
+        Wir übertragen Ihre persönlichen Daten nicht außerhalb des Europäischen Wirtschaftsraums (EWR). Falls wir dies tun, stellen wir sicher, dass sie angemessen geschützt sind.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">8. Datensicherheit</h2>
+      <p class="text-lg leading-relaxed">
+        Wir setzen technische und organisatorische Maßnahmen um, um die Sicherheit Ihrer persönlichen Daten zu gewährleisten und deren Veränderung, Verlust, unbefugte Verarbeitung oder Zugriff zu verhindern.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">9. Änderungen der Datenschutzrichtlinie</h2>
+      <p class="text-lg leading-relaxed">
+        Wir können diese Datenschutzrichtlinie gelegentlich aktualisieren. Alle Änderungen werden auf dieser Seite veröffentlicht, und wir geben das Datum der letzten Aktualisierung an.
+      </p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">10. Kontakt</h2>
+      <p class="text-lg leading-relaxed">
+        Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, können Sie uns unter folgender E-Mail-Adresse kontaktieren:
+        <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a>.
+      </p>
+    </section>
+  </article>
+</Layout>

@@ -1,109 +1,101 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title="Privacy Policy">
+<Layout title="Privacy Policy - GestoFinca">
+  <article class="py-12 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-auto">
+    <header class="mb-6 p-5 text-center">
+      <h2 class="text-3xl font-semibold text-brand-blueFinca mb-4">Privacy Policy</h2>
+      <meta name="description" content="Check out our privacy policy on the processing of your personal data." />
+    </header>
 
-  <!-- Meta Tags para SEO y redes sociales -->
-  <head>
-    <meta name="description" content="Privacy policy of GestoFinca, ensuring the protection of your personal data according to GDPR regulations." />
-    <meta property="og:title" content="Privacy Policy - GestoFinca" />
-    <meta property="og:description" content="At GestoFinca, we are committed to protecting your personal data. Read our privacy policy." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/assets/images/og-image.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Privacy Policy - GestoFinca" />
-    <meta name="twitter:description" content="At GestoFinca, we are committed to protecting your personal data. Read our privacy policy." />
-    <meta name="twitter:image" content="/assets/images/og-image.jpg" />
-  </head>
+    <section class="space-y-8 p-5">
+      <p class="text-lg leading-relaxed">
+        At <span class="font-semibold">GestoFinca</span>, we are committed to protecting the privacy and personal data of our users. Below, we detail how we collect, use, and protect your information.
+      </p>
 
-  <article class="prose lg:prose-xl mx-auto py-8 px-4 sm:px-8 md:px-12">
-    <h1 class="text-4xl font-bold text-center mb-8">Privacy Policy</h1>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">1. Data Controller</h2>
+      <p class="text-lg leading-relaxed">
+        <strong>Name:</strong> GestoFinca S.L. <br />
+        <strong>Address:</strong> Calle Ejemplo 123, 28001 Madrid, Spain <br />
+        <strong>Email:</strong> <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a> <br />
+        <strong>Phone:</strong> +34 912 345 678
+      </p>
 
-    <p class="mb-6">
-      At <span class="font-semibold">GestoFinca</span>, we are committed to protecting the privacy and personal data of our users. This privacy policy explains how we collect, use, and protect your information in accordance with current legislation in Spain, including the General Data Protection Regulation (GDPR) and the Organic Law on Data Protection and Guarantee of Digital Rights (LOPDGDD).
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">2. Data We Collect</h2>
+      <p class="text-lg leading-relaxed">
+        We collect the following personal data:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Contact information: name, email address, phone number.</li>
+        <li>Browsing information: IP address, device type, operating system, browser.</li>
+        <li>Other data you provide directly through forms or communications.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">1. Data Controller</h2>
-    <p class="mb-4">
-      <strong>Name:</strong> [Company Name] <br />
-      <strong>Address:</strong> [Company Address] <br />
-      <strong>Email:</strong> [Contact Email] <br />
-      <strong>Phone:</strong> [Phone Number]
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">3. Purpose of Data Processing</h2>
+      <p class="text-lg leading-relaxed">
+        We use your data to:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Provide our services and products.</li>
+        <li>Respond to your inquiries and requests.</li>
+        <li>Improve our website and personalize your experience.</li>
+        <li>Comply with our legal obligations.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">2. Data We Collect</h2>
-    <p class="mb-4">We collect the following personal data:</p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Contact information: name, email address, phone number.</li>
-      <li>Navigation information: IP address, device type, operating system, browser.</li>
-      <li>Other data you provide directly through forms or communications.</li>
-    </ul>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">4. Legal Basis for Data Processing</h2>
+      <p class="text-lg leading-relaxed">
+        The processing of your data is based on:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Your explicit consent.</li>
+        <li>The need to process your data for the execution of a contract.</li>
+        <li>Compliance with legal obligations.</li>
+        <li>Our legitimate interest in improving our services.</li>
+      </ul>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">3. Purpose of Data Processing</h2>
-    <p class="mb-4">We use your data to:</p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Provide our services and products.</li>
-      <li>Respond to your inquiries and requests.</li>
-      <li>Improve our website and personalize your experience.</li>
-      <li>Comply with our legal obligations.</li>
-    </ul>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">5. User Rights</h2>
+      <p class="text-lg leading-relaxed">
+        You have the right to:
+      </p>
+      <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+        <li>Access your personal data.</li>
+        <li>Request the correction of inaccurate data.</li>
+        <li>Request the deletion of your personal data.</li>
+        <li>Object to the processing of your data.</li>
+        <li>Request the restriction of data processing.</li>
+        <li>Transfer your data to another provider.</li>
+      </ul>
+      <p class="text-lg leading-relaxed">
+        You can exercise these rights by sending a request to our email:
+        <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a>.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">4. Legal Basis for Processing</h2>
-    <p class="mb-4">
-      The processing of your data is based on:
-    </p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Your explicit consent.</li>
-      <li>The necessity to process your data for the execution of a contract.</li>
-      <li>Compliance with legal obligations.</li>
-      <li>Our legitimate interest in improving our services.</li>
-    </ul>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">6. Data Retention Period</h2>
+      <p class="text-lg leading-relaxed">
+        We will retain your personal data for as long as necessary for the purposes outlined in this privacy policy, unless the law requires or allows a longer retention period.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">5. User Rights</h2>
-    <p class="mb-4">You have the right to:</p>
-    <ul class="list-disc list-inside mb-6">
-      <li>Access your personal data.</li>
-      <li>Request rectification of inaccurate data.</li>
-      <li>Request deletion of your personal data.</li>
-      <li>Object to the processing of your data.</li>
-      <li>Request restriction of processing your data.</li>
-      <li>Port your data to another provider.</li>
-    </ul>
-    <p class="mb-6">
-      You can exercise these rights by sending a request to our email:
-      <a href="mailto:[Contact Email]" class="text-blue-600 hover:underline">[Contact Email]</a>.
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">7. International Transfers</h2>
+      <p class="text-lg leading-relaxed">
+        We do not transfer your personal data outside the European Economic Area (EEA). If we do, we will ensure that it is adequately protected.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">6. Data Retention Period</h2>
-    <p class="mb-6">
-      We will retain your personal data for as long as necessary for the purposes described in this privacy policy, unless the law requires or allows a longer retention period.
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">8. Data Security</h2>
+      <p class="text-lg leading-relaxed">
+        We implement technical and organizational measures to ensure the security of your personal data and to prevent its alteration, loss, unauthorized processing, or access.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">7. International Transfers</h2>
-    <p class="mb-6">
-      We do not transfer your personal data outside the European Economic Area (EEA). If we do, we will ensure that your data is adequately protected.
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">9. Changes to the Privacy Policy</h2>
+      <p class="text-lg leading-relaxed">
+        We may occasionally update this privacy policy. We will post any changes on this page and indicate the date of the last update.
+      </p>
 
-    <h2 class="text-2xl font-semibold mt-8 mb-4">8. Data Security</h2>
-    <p class="mb-6">
-      We implement technical and organizational measures to ensure the security of your personal data and prevent unauthorized alteration, loss, access, or processing.
-    </p>
-
-    <h2 class="text-2xl font-semibold mt-8 mb-4">9. Changes to the Privacy Policy</h2>
-    <p class="mb-6">
-      We may update this privacy policy occasionally. Any changes will be posted on this page with the date of the latest update.
-    </p>
-
-    <h2 class="text-2xl font-semibold mt-8 mb-4">10. Contact</h2>
-    <p class="mb-6">
-      If you have any questions about this privacy policy, you can contact us at:
-      <a href="mailto:[Contact Email]" class="text-blue-600 hover:underline">[Contact Email]</a>.
-    </p>
-
-    <p class="text-sm text-gray-500 mt-8">
-      Last updated: <span class="font-semibold">[Last Update Date]</span>
-    </p>
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">10. Contact</h2>
+      <p class="text-lg leading-relaxed">
+        If you have any questions about this privacy policy, you can contact us at:
+        <a href="mailto:info@gestofinca.com" class="text-blue-600 hover:underline">info@gestofinca.com</a>.
+      </p>
+    </section>
   </article>
-
 </Layout>

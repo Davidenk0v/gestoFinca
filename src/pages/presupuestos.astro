@@ -19,24 +19,27 @@ const { quotes } = translations;
     description={translations.quotes.description} 
     lang={lang}
 >
+    <!-- Sección principal con el h1 -->
+    <main>
+        <h1 class="sr-only">{translations.quotes.title}</h1> <!-- Título principal de la página accesible para SEO y tecnologías asistivas -->
 
-    <!-- Sección del carrusel -->
-    <section aria-labelledby="quotes-carousel-section" class="bg-white">
-        <h2 id="quotes-carousel-section" class="sr-only">Citas destacadas</h2>
-        <Carrousel client:load data={translations.quotes} lang={lang}/>
-    </section>
+        <!-- Sección del carrusel -->
+        <section aria-labelledby="quotes-carousel-section" class="bg-white">
+            <h2 id="quotes-carousel-section" class="sr-only">Citas destacadas</h2>
+            <Carrousel client:load data={translations.quotes} lang={lang}/>
+        </section>
 
-    <!-- Sección del banner de contacto -->
-    <section aria-labelledby="contact-banner-section">
-        <h2 id="contact-banner-section" class="sr-only">Contáctanos para más información</h2>
-        <ContactBanner text={translations.contact.phrases[0]}/>
-    </section>
+        <!-- Sección del banner de contacto -->
+        <section aria-labelledby="contact-banner-section">
+            <h2 id="contact-banner-section" class="sr-only">Contáctanos para más información</h2>
+            <ContactBanner text={translations.contact.phrases[0]}/>
+        </section>
 
-    <!-- Sección del formulario de contacto -->
-    <section aria-labelledby="contact-form-section">
-        <Title title={quotes.description} description={quotes.text}/>
-        <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
-        <ContactFormReact lang={translations.forms}/>
-    </section>
-
+        <!-- Sección del formulario de contacto -->
+        <section aria-labelledby="contact-form-section">
+            <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
+            <Title title={quotes.description} description={quotes.text}/>
+            <ContactFormReact lang={translations.forms}/>
+        </section>
+    </main>
 </Layout>
