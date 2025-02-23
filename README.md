@@ -1,6 +1,7 @@
 # GestoFinca
 
-![GestoFinca Inicio](https://github.com/user-attachments/assets/2a443632-841a-490e-9046-b51e3f021f01)
+![GestoFinca Inicio](https://github.com/user-attachments/assets/6f39c536-a185-4620-8cd7-1efcdba2782f)
+
 
 [Ir a la página](https://gesto-finca.vercel.app/)
 
@@ -56,17 +57,14 @@ GestoFinca es una plataforma de gestión de propiedades y administración de alq
 
 La aplicación está desplegada en [Vercel](https://vercel.com/) y puede accederse en línea.
 
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Para más información, consulta el archivo `LICENSE`.
 
 ## Tareas Pendientes
 
-- [ ] Carrousel con un solo eslogan y un poco más grande.
-- [ ] Elemento de contacto en medio de los servicios con degradado azul-verde.
-- [ ] Títulos en azul.
-- [ ] Líneas del header en verde junto con el logo.
-- [ ] Botón del carrousel verde y transparente.
+- [x] Carrousel con un solo eslogan y un poco más grande.
+- [x] Elemento de contacto en medio de los servicios con degradado azul-verde.
+- [x] Títulos en azul.
+- [x] Líneas del header en verde junto con el logo.
+- [x] Botón del carrousel verde y transparente.
 - [x] Botones de los servicios en naranja.
 - [x] Iconos y datos de email y teléfono.
 - [x] Formulario al final de todas las páginas.
