@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import image1 from "@/assets/images/fondo-azul.webp";
-import edf1 from "@/assets/images/building.webp";
 import edf2 from "@/assets/images/house.webp";
 import logo from "@/assets/logos/imagen_logo_negativo.png";
 
@@ -67,7 +66,7 @@ const Carousel = ({ data, lang }) => {
           )}
         </h1>
         {/* Descripción */}
-        <p className="mt-4 text-base sm:text-lg md:text-xl hidden sm:block text-white">
+        <p className="mt-4 text-base font-bold sm:text-lg md:text-xl hidden sm:block text-white">
           {" "}
           {/* Cuando la pantalla sea menor a sm, no se mostrará el texto */}{" "}
           {description}

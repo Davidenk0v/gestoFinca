@@ -2,7 +2,7 @@
   "property_management": {
     "title": "Administración de Fincas",
     "description": "Gestión profesional y eficiente para comunidades y propietarios exigentes.",
-    "text": "Nos encargamos de todo para que tu comunidad funcione sin preocupaciones. Transparencia, eficiencia y compromiso en cada gestión.",
+    "text": "Gestionamos tu comunidad con eficiencia, transparencia y un enfoque personalizado para optimizar su funcionamiento y bienestar.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
@@ -15,7 +15,7 @@
   "vacation_rentals": {
     "title": "Alquileres Vacacionales",
     "description": "Convierte tu propiedad en una fuente de ingresos sin esfuerzo.",
-    "text": "Maximizamos la rentabilidad de tu vivienda con una gestión integral y sin preocupaciones.",
+    "text": "Nos encargamos de la gestión integral de tus alquileres vacacionales, maximizando rentabilidad y cuidando cada detalle para una experiencia sin preocupaciones.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
@@ -40,8 +40,8 @@
   },
   "index": {
     "title": "GestoFinca",
-    "description": "Expertos en administración de fincas y alquileres vacacionales.",
-    "text": "Más que una gestión, una solución integral para propietarios y comunidades.",
+    "description": "Administramos con pasión, cuidamos con dedicación.",
+    "text": "Expertos en servicios de administración de fincas y trámites de gestoría, garantizando soluciones eficientes y personalizadas para usted o su comunidad.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
@@ -169,7 +169,7 @@
     "description": "Principios que guían nuestro trabajo y nos definen como empresa.",
     "value1": {
       "title": "Compromiso",
-      "description": "Tu tranquilidad es nuestra prioridad. Nos aseguramos de brindarte un servicio excepcional."
+      "description": "Nos dedicamos al bienestar de tus comunidades, gestionando cada detalle con responsabilidad y dedicación."
     },
     "value2": {
       "title": "Transparencia",
@@ -177,7 +177,11 @@
     },
     "value3": {
       "title": "Profesionalidad",
-      "description": "Un equipo de expertos a tu disposición para garantizarte una gestión eficiente y sin complicaciones."
+      "description": "Brindamos un servicio serio, experto y comprometido con las necesidades de cada cliente."
+    },
+    "value4": {
+      "title": "Eficiencia",
+      "description": "Optimizamos los recursos para ofrecer soluciones rápidas, efectivas y rentables para tu comunidad."
     }
   },
   "services": {
@@ -185,15 +189,11 @@
     "description": "Soluciones personalizadas para propietarios y comunidades.",
     "service1": {
       "title": "Administración de Fincas",
-      "description": "Gestión integral para comunidades con total transparencia y eficiencia."
+      "description": "Gestionamos tu comunidad con eficiencia, transparencia y un enfoque personalizado para optimizar su funcionamiento y bienestar."
     },
     "service2": {
       "title": "Alquileres Vacacionales",
-      "description": "Optimiza la rentabilidad de tu vivienda sin preocupaciones."
-    },
-    "service3": {
-      "title": "Asesoramiento Inmobiliario",
-      "description": "Te guiamos en cada paso de la compra, venta o alquiler de tu propiedad."
+      "description": "Nos encargamos de la gestión integral de tus alquileres vacacionales, maximizando rentabilidad y cuidando cada detalle para una experiencia sin preocupaciones."
     }
   },
   "header": {
@@ -205,7 +205,15 @@
     "contact": "Contacto"
   },
   "seo": {
-    "title": "GestoFinca - Administración de Fincas y Alquileres Vacacionales",
-    "description": "Expertos en administración de fincas y gestión de alquileres vacacionales. Ofrecemos soluciones integrales, transparentes y personalizadas para propietarios y comunidades."
+    "title": "GestoFinca - Administración de Fincas y Alquileres Vacacionales en Tenerife",
+    "description": "Expertos en administración de fincas y gestión de alquileres vacacionales. Ofrecemos soluciones integrales, transparentes y personalizadas para propietarios y comunidades.",
+    "keywords": "administración de fincas, alquileres vacacionales, gestoría, Tenerife",
+    "tags": {
+      "about_us": "Nosotros | Administración de Fincas y Alquileres Vacacionales en Tenerife",
+      "property_management": "Administración de Fincas en Tenerife",
+      "vacation_rentals": "Gestión de alquileres vacacionales en Tenerife",
+      "quotes": "Presupuestos | Administración de Fincas y Alquileres Vacacionales en Tenerife",
+      "contact": "Contacto | Administración de Fincas y Alquileres Vacacionales en Tenerife"
+    }
   }
 }

@@ -11,10 +11,11 @@ const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
 const link = translations.footer.useful_links.links[0].link;
+const { seo } = translations;
 ---
 
 <Layout 
-    title={translations.vacation_rentals.title} 
+    title={seo.tags.vacation_rentals} 
     description={translations.vacation_rentals.description}
     lang={lang}
 >

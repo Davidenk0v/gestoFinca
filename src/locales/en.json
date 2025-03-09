@@ -1,8 +1,8 @@
 {
   "property_management": {
     "title": "Property Management",
-    "description": "Professional and efficient management for communities and property owners.",
-    "text": "We take care of everything so your community runs smoothly and worry-free. Transparency, efficiency, and commitment in every service.",
+    "description": "Professional and efficient management for communities and demanding owners.",
+    "text": "We manage your community with efficiency, transparency, and a personalized approach to optimize its operation and well-being.",
     "buttons": {
       "about_us": "Learn More",
       "contact_us": "Contact Us"
@@ -14,8 +14,8 @@
   },
   "vacation_rentals": {
     "title": "Vacation Rentals",
-    "description": "Turn your property into a profitable rental without the hassle.",
-    "text": "We maximize your property's profitability with a full-service, worry-free approach.",
+    "description": "Turn your property into a source of income effortlessly.",
+    "text": "We take care of the comprehensive management of your vacation rentals, maximizing profitability and taking care of every detail for a worry-free experience.",
     "buttons": {
       "about_us": "Learn More",
       "contact_us": "Contact Us"
@@ -40,8 +40,8 @@
   },
   "index": {
     "title": "GestoFinca",
-    "description": "Experts in property management and vacation rentals.",
-    "text": "More than just management, a complete solution for owners and communities.",
+    "description": "We manage with passion, we care with dedication.",
+    "text": "Experts in property management services and administrative procedures, guaranteeing efficient and personalized solutions for you or your community.",
     "buttons": {
       "about_us": "Learn More",
       "contact_us": "Contact Us"
@@ -169,7 +169,7 @@
     "description": "Principles that guide our work and define us as a company.",
     "value1": {
       "title": "Commitment",
-      "description": "Your peace of mind is our priority. We ensure top-quality service."
+      "description": "We are dedicated to the well-being of your communities, managing every detail with responsibility and dedication."
     },
     "value2": {
       "title": "Transparency",
@@ -177,7 +177,11 @@
     },
     "value3": {
       "title": "Professionalism",
-      "description": "A team of experts at your service to guarantee efficient and hassle-free management."
+      "description": "We provide a serious, expert, and committed service tailored to each client’s needs."
+    },
+    "value4": {
+      "title": "Efficiency",
+      "description": "We optimize resources to offer quick, effective, and profitable solutions for your community."
     }
   },
   "services": {
@@ -205,7 +209,15 @@
     "contact": "Contact"
   },
   "seo": {
-    "title": "GestoFinca - Property Management and Vacation Rentals",
-    "description": "Experts in property management and vacation rentals. We offer comprehensive, transparent, and customized solutions for owners and communities."
+    "title": "GestoFinca - Property Management and Vacation Rentals in Tenerife",
+    "description": "Experts in property management and vacation rental management. We offer comprehensive, transparent, and personalized solutions for property owners and communities.",
+    "keywords": "property management, vacation rentals, administration services, Tenerife",
+    "tags": {
+      "about_us": "About Us | Property Management and Vacation Rentals in Tenerife",
+      "property_management": "Property Management in Tenerife",
+      "vacation_rentals": "Vacation Rentals in Tenerife",
+      "quotes": "Quotes | Property Management and Vacation Rentals in Tenerife",
+      "contact": "Contact | Property Management and Vacation Rentals in Tenerife"
+    }
   }
 }

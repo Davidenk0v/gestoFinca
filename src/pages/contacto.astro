@@ -7,10 +7,10 @@ const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 
 const translations = await loadTranslations(lang);
-const { contact } = translations;
+const { contact, seo } = translations;
 ---
 
-<Layout title={contact.title} description={contact.description}>
+<Layout title={seo.tags.contact} description={contact.description}>
     <!-- Sección principal con el h1 -->
     <main>
         <h1 class="sr-only">{contact.title}</h1> <!-- Título principal de la página accesible para SEO y tecnología asistiva -->

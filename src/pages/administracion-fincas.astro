@@ -10,12 +10,13 @@ import logo from '@/assets/images/vivienda.png'
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
-const { property_management } = translations;
+const { property_management, seo } = translations;
+const { tags } = seo;
 const link = translations.footer.useful_links.links[0].link;
 ---
 
 <Layout 
-    title={translations.property_management.title} 
+    title={tags.property_management} 
     description={translations.property_management.description} 
     lang={lang}
 >

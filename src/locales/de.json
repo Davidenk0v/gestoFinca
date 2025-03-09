@@ -1,8 +1,8 @@
 {
   "property_management": {
     "title": "Immobilienverwaltung",
-    "description": "Professionelle und effiziente Verwaltung für Eigentümergemeinschaften und Immobilien.",
-    "text": "Wir kümmern uns um alles, damit Ihre Gemeinschaft reibungslos und sorgenfrei funktioniert. Transparenz, Effizienz und Engagement in jedem Service.",
+    "description": "Professionelles und effizientes Management für Gemeinschaften und anspruchsvolle Eigentümer.",
+    "text": "Wir verwalten Ihre Gemeinschaft mit Effizienz, Transparenz und einem individuellen Ansatz, um ihren Betrieb und ihr Wohlbefinden zu optimieren.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
@@ -13,9 +13,9 @@
     ]
   },
   "vacation_rentals": {
-    "title": "Ferienvermietung",
-    "description": "Machen Sie Ihre Immobilie zu einer lukrativen Ferienunterkunft – ganz ohne Aufwand.",
-    "text": "Wir maximieren die Rentabilität Ihrer Immobilie mit einem Rundum-sorglos-Service.",
+    "title": "Ferienvermietungen",
+    "description": "Machen Sie Ihre Immobilie mühelos zur Einkommensquelle.",
+    "text": "Wir übernehmen das komplette Management Ihrer Ferienvermietungen, maximieren die Rentabilität und kümmern uns um jedes Detail für eine sorgenfreie Erfahrung.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
@@ -40,8 +40,8 @@
   },
   "index": {
     "title": "GestoFinca",
-    "description": "Experten für Immobilienverwaltung und Ferienvermietung.",
-    "text": "Mehr als nur Verwaltung – eine umfassende Lösung für Eigentümer und Gemeinschaften.",
+    "description": "Wir verwalten mit Leidenschaft, wir kümmern uns mit Hingabe.",
+    "text": "Experten für Immobilienverwaltung und Verwaltungsverfahren, die effiziente und maßgeschneiderte Lösungen für Sie oder Ihre Gemeinschaft garantieren.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
@@ -175,15 +175,19 @@
     "description": "Prinzipien, die unsere Arbeit leiten und unser Unternehmen definieren.",
     "value1": {
       "title": "Engagement",
-      "description": "Ihre Zufriedenheit ist unsere Priorität. Wir bieten Ihnen einen erstklassigen Service."
+      "description": "Wir setzen uns für das Wohl Ihrer Gemeinschaften ein und verwalten jedes Detail mit Verantwortung und Hingabe."
     },
     "value2": {
       "title": "Transparenz",
-      "description": "Wir bauen vertrauensvolle Beziehungen mit klaren und ehrlichen Verwaltungsprozessen auf."
+      "description": "Wir bauen Beziehungen auf Vertrauen auf, mit klarer und ehrlicher Verwaltung."
     },
     "value3": {
       "title": "Professionalität",
-      "description": "Ein Expertenteam steht Ihnen zur Verfügung, um eine effiziente und stressfreie Verwaltung zu gewährleisten."
+      "description": "Wir bieten einen seriösen, kompetenten und engagierten Service, der auf die Bedürfnisse jedes Kunden zugeschnitten ist."
+    },
+    "value4": {
+      "title": "Effizienz",
+      "description": "Wir optimieren Ressourcen, um schnelle, effektive und rentable Lösungen für Ihre Gemeinschaft zu bieten."
     }
   },
   "services": {
@@ -211,7 +215,15 @@
     "contact": "Kontakt"
   },
   "seo": {
-    "title": "GestoFinca – Immobilienverwaltung und Ferienvermietung",
-    "description": "Experten für Immobilienverwaltung und Ferienvermietung. Wir bieten umfassende, transparente und maßgeschneiderte Lösungen für Eigentümer und Gemeinschaften."
+    "title": "GestoFinca - Immobilienverwaltung und Ferienvermietungen auf Teneriffa",
+    "description": "Experten in der Immobilienverwaltung und Ferienvermietung. Wir bieten umfassende, transparente und personalisierte Lösungen für Eigentümer und Gemeinschaften.",
+    "keywords": "Immobilienverwaltung, Ferienvermietungen, Verwaltungsdienste, Teneriffa",
+    "tags": {
+      "about_us": "Über uns | Immobilienverwaltung und Ferienvermietungen auf Teneriffa",
+      "property_management": "Immobilienverwaltung auf Teneriffa",
+      "vacation_rentals": "Ferienvermietungen auf Teneriffa",
+      "quotes": "Kostenvoranschläge | Immobilienverwaltung und Ferienvermietungen auf Teneriffa",
+      "contact": "Kontakt | Immobilienverwaltung und Ferienvermietungen auf Teneriffa"
+    }
   }
 }
