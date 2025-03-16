@@ -7,6 +7,48 @@
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
     },
+    "services": [
+      {
+        "title": "Contabilidad",
+        "img": "accounting",
+        "description": "Garantizamos una gestión transparente y eficiente de los recursos financieros. Nos encargamos de la elaboración de balances, presupuestos y liquidaciones, asegurando siempre la máxima claridad y cumplimiento de las normativas vigentes."
+      },
+      {
+        "title": "Proveedores",
+        "img": "suppliers",
+        "description": "Gestionamos y coordinamos todos los proveedores necesarios para el correcto funcionamiento de su comunidad. Desde el mantenimiento hasta los servicios especializados, nos aseguramos de seleccionar y supervisar a los mejores profesionales, garantizando calidad, eficiencia y cumplimiento en cada trabajo realizado."
+      },
+      {
+        "title": "Preparación de juntas",
+        "img": "meetings",
+        "description": "Nos encargamos de la preparación y organización de las juntas de propietarios, asegurando una convocatoria clara y puntual. Gestionamos la elaboración del orden del día, la documentación necesaria y la correcta redacción de actas, facilitando así una comunicación efectiva y una toma de decisiones ágil y transparente."
+      },
+      {
+        "title": "Visitas a la comunidad",
+        "img": "visits",
+        "description": "Realizamos visitas periódicas a las comunidades para supervisar el estado de las instalaciones y resolver cualquier incidencia de forma rápida y eficiente. Nuestra atención constante asegura que se mantenga el buen funcionamiento y la seguridad de su propiedad, ofreciendo soluciones personalizadas según las necesidades de cada comunidad."
+      },
+      {
+        "title": "Asesoramiento",
+        "img": "advice",
+        "description": "Brindamos asesoramiento legal especializado en cuestiones como la redacción y actualización de estatutos y la normativa de división horizontal. Garantizamos el cumplimiento de la legislación vigente y ofrecemos soluciones legales para resolver cualquier conflicto o duda que pueda surgir en su comunidad."
+      },
+      {
+        "title": "Custodia de documentación",
+        "img": "documents",
+        "description": "Nos encargamos de la custodia y gestión segura de toda la documentación de su comunidad, asegurando su conservación y acceso cuando sea necesario. Garantizamos que los documentos estén organizados de manera eficiente, cumpliendo con las normativas legales y facilitando su consulta en cualquier momento."
+      },
+      {
+        "title": "Mediadores con seguros",
+        "img": "mediation",
+        "description": "Actuamos como mediadores para resolver de manera amistosa y eficaz cualquier conflicto entre la comunidad, los propietarios y los seguros. Actuamos como intermediarios imparciales, facilitando la comunicación y ayudando a encontrar soluciones equitativas que favorezcan el bienestar y la armonía dentro de la comunidad."
+      },
+      {
+        "title": "Elaboración de presupuestos y planificación financiera",
+        "img": "budgets",
+        "description": "Ayudamos a la comunidad a planificar sus gastos y a elaborar presupuestos anuales, con el fin de optimizar los recursos."
+      }
+    ],
     "phrases": [
       "Tu comunidad, en manos expertas.",
       "Gestión sin complicaciones, con total confianza."

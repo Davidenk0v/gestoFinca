@@ -7,6 +7,40 @@
       "about_us": "Learn More",
       "contact_us": "Contact Us"
     },
+    "services": [
+      {
+        "title": "Accounting",
+        "description": "We guarantee transparent and efficient management of financial resources. We handle the preparation of balance sheets, budgets, and settlements, always ensuring maximum clarity and compliance with current regulations."
+      },
+      {
+        "title": "Suppliers",
+        "description": "We manage and coordinate all suppliers necessary for the proper functioning of your community. From maintenance to specialized services, we ensure the selection and supervision of the best professionals, guaranteeing quality, efficiency, and compliance in every job performed."
+      },
+      {
+        "title": "Meeting Preparation",
+        "description": "We take care of the preparation and organization of homeowners' meetings, ensuring clear and timely convocations. We manage the creation of the agenda, the necessary documentation, and the correct drafting of minutes, thus facilitating effective communication and a quick and transparent decision-making process."
+      },
+      {
+        "title": "Community Visits",
+        "description": "We conduct periodic visits to communities to supervise the condition of facilities and resolve any issues quickly and efficiently. Our constant attention ensures the smooth operation and safety of your property, offering personalized solutions based on the needs of each community."
+      },
+      {
+        "title": "Advisory Services",
+        "description": "We provide specialized legal advice on issues such as drafting and updating bylaws and horizontal division regulations. We ensure compliance with current legislation and offer legal solutions to resolve any conflicts or doubts that may arise within your community."
+      },
+      {
+        "title": "Document Custody",
+        "description": "We handle the secure custody and management of all your community’s documentation, ensuring its preservation and access when needed. We guarantee that the documents are organized efficiently, complying with legal regulations and facilitating easy consultation at any time."
+      },
+      {
+        "title": "Insurance Mediators",
+        "description": "We act as mediators to resolve any conflicts between the community, owners, and insurance companies in an amicable and effective manner. We serve as impartial intermediaries, facilitating communication and helping to find fair solutions that promote the well-being and harmony of the community."
+      },
+      {
+        "title": "Budget Preparation and Financial Planning",
+        "description": "We assist the community in planning its expenses and preparing annual budgets in order to optimize resources."
+      }
+    ],
     "phrases": [
       "Your community in expert hands.",
       "Hassle-free management with complete confidence."

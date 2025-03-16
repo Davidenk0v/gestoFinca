@@ -7,6 +7,40 @@
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
     },
+    "services": [
+      {
+        "title": "Buchhaltung",
+        "description": "Wir garantieren eine transparente und effiziente Verwaltung der finanziellen Ressourcen. Wir kümmern uns um die Erstellung von Bilanzen, Budgets und Abrechnungen und stellen dabei stets maximale Klarheit und die Einhaltung der geltenden Vorschriften sicher."
+      },
+      {
+        "title": "Lieferanten",
+        "description": "Wir verwalten und koordinieren alle Lieferanten, die für das ordnungsgemäße Funktionieren Ihrer Gemeinschaft erforderlich sind. Vom Wartungsservice bis hin zu spezialisierten Dienstleistungen sorgen wir dafür, dass wir die besten Fachleute auswählen und überwachen, um Qualität, Effizienz und die Einhaltung der Vorgaben bei jeder Arbeit zu gewährleisten."
+      },
+      {
+        "title": "Vorbereitung der Eigentümerversammlungen",
+        "description": "Wir kümmern uns um die Vorbereitung und Organisation der Eigentümerversammlungen, um eine klare und pünktliche Einladung sicherzustellen. Wir verwalten die Erstellung der Tagesordnung, die notwendigen Unterlagen und die korrekte Protokollführung, um eine effektive Kommunikation und einen schnellen, transparenten Entscheidungsprozess zu ermöglichen."
+      },
+      {
+        "title": "Besuche in der Gemeinschaft",
+        "description": "Wir führen regelmäßige Besuche in den Gemeinschaften durch, um den Zustand der Einrichtungen zu überwachen und etwaige Vorfälle schnell und effizient zu lösen. Unsere kontinuierliche Betreuung stellt sicher, dass der ordnungsgemäße Betrieb und die Sicherheit Ihrer Immobilie gewährleistet sind, und wir bieten maßgeschneiderte Lösungen, die den Bedürfnissen jeder Gemeinschaft entsprechen."
+      },
+      {
+        "title": "Beratung",
+        "description": "Wir bieten spezialisierte rechtliche Beratung zu Themen wie der Ausarbeitung und Aktualisierung von Satzungen sowie der horizontalen Teilung von Immobilien. Wir stellen die Einhaltung der geltenden Gesetzgebung sicher und bieten rechtliche Lösungen zur Behebung von Konflikten oder Unklarheiten, die innerhalb Ihrer Gemeinschaft auftreten können."
+      },
+      {
+        "title": "Dokumentenaufbewahrung",
+        "description": "Wir übernehmen die sichere Aufbewahrung und Verwaltung aller Unterlagen Ihrer Gemeinschaft und sorgen dafür, dass diese bei Bedarf zugänglich sind. Wir garantieren, dass die Dokumente effizient organisiert werden, die gesetzlichen Vorschriften eingehalten werden und sie jederzeit eingesehen werden können."
+      },
+      {
+        "title": "Versicherungsvermittler",
+        "description": "Wir fungieren als Vermittler, um etwaige Konflikte zwischen der Gemeinschaft, den Eigentümern und den Versicherungen auf freundliche und effektive Weise zu lösen. Als unparteiische Vermittler erleichtern wir die Kommunikation und helfen, faire Lösungen zu finden, die das Wohl und die Harmonie innerhalb der Gemeinschaft fördern."
+      },
+      {
+        "title": "Budgeterstellung und Finanzplanung",
+        "description": "Wir unterstützen die Gemeinschaft bei der Planung ihrer Ausgaben und der Erstellung von Jahresbudgets, um die Ressourcen zu optimieren."
+      }
+    ],
     "phrases": [
       "Ihre Gemeinschaft in den besten Händen.",
       "Effiziente und transparente Verwaltung – ganz ohne Stress."

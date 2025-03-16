@@ -6,12 +6,15 @@ import Layout from "../layouts/Layout.astro";
 import { loadTranslations } from "../utils/i18n";
 import ServiceBanner from "../components/ServiceBanner.astro";
 import logo from '@/assets/images/vivienda.png'
-
+import ExpandableCard from "../components/ExpandableCard.jsx";
+import Title from "../components/about_us/Title.astro";
+import accounting from "../assets/icons/accounting.svg";
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
 const { property_management, seo } = translations;
 const { tags } = seo;
+const { services } = property_management;
 const link = translations.footer.useful_links.links[0].link;
 ---
 
@@ -34,8 +37,24 @@ const link = translations.footer.useful_links.links[0].link;
             <ServiceBanner data={property_management} image={logo} link={link}/>
         </section>
 
+        <section aria-labelledby="services-section" class="px-4 py-8">
+            <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-4 text-center">
+                {lang === "es" 
+                  ? "Servicios de administración de fincas" 
+                  : lang === "en" 
+                  ? "Services of property management" 
+                  : "Dienstleistungen der Immobilienverwaltung"}
+            </h2>
+            <h2 id="services-section" class="sr-only">Servicios de administración de fincas</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {services.map((service) => (
+                <ExpandableCard client:load buttomText={property_management.buttons.about_us} title={service.title} subtitle={service.subtitle} text={service.description} img={service.img} />
+              ))}
+            </div>
+          </section>
+
         <!-- Sección del banner de contacto -->
-        <section class="bg-white dark:bg-gray-900" aria-labelledby="contact-banner-section">
+        <section class="bg-white" aria-labelledby="contact-banner-section">
             <h2 class="sr-only" id="contact-banner-section">Contáctanos</h2>
             <ContactBanner text={translations.contact.phrases[0]} />
         </section>

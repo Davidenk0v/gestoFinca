@@ -6,6 +6,9 @@ import Layout from '../layouts/Layout.astro';
 import ContactBanner from '../components/ContactBanner.astro';
 import { loadTranslations } from '../utils/i18n';
 import AboutUs from '../components/AboutUs.astro';
+import ClientSay from '../components/ClientSay.astro';
+import FAQComponent from '../components/FAQComponent.astro';
+import Accordion from '../components/Accordion.jsx';
 
 const params = Astro.url.searchParams;
 const url = new URL(Astro.request.url);
@@ -39,6 +42,11 @@ const { seo } = translation;
         <ServicesInfo data={translation} />
       </section>
     
+      <!-- Sección de testimonios para mejorar la confianza y SEO -->
+      <section class="container mx-auto px-4 py-8" aria-labelledby="faq-section">
+        <ClientSay lang={lang}/>
+        <FAQComponent lang={lang}/>
+      </section>
       <!-- Banner de contacto para facilitar la acción -->
       <ContactBanner text={translation.contact.phrases[0]}/>
     

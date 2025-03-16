@@ -1,4 +1,5 @@
 ---
+import Accordion from "../components/Accordion";
 import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
@@ -12,6 +13,8 @@ const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
 const link = translations.footer.useful_links.links[0].link;
 const { seo } = translations;
+const { vacation_rentals } = translations.vacation_rentals;
+const { services } = translations.vacation_rentals;
 ---
 
 <Layout 
@@ -33,6 +36,10 @@ const { seo } = translations;
         <section aria-labelledby="services-section">
             <h2 id="services-section" class="sr-only">Servicios de alquileres vacacionales</h2>
             <ServiceBanner data={translations.vacation_rentals} image={holiday} link={link} />
+        </section>
+
+        <section>
+            <Accordion client:load/>
         </section>
 
         <!-- Sección del banner de contacto -->
