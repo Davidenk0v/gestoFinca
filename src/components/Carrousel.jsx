@@ -72,9 +72,9 @@ const Carousel = ({ data, lang }) => {
           {description}
         </p>
         {/* Texto adicional */}
-        <p className="mt-2 text-base sm:text-lg md:text-xl text-white hidden sm:block">
+        {/*         <p className="mt-2 text-base sm:text-lg md:text-xl text-white hidden sm:block">
           {text}
-        </p>
+        </p> */}
 
         {/* Botones */}
         <div className="mt-6 flex flex-wrap justify-center gap-4">

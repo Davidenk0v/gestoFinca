@@ -2,7 +2,7 @@
   "property_management": {
     "title": "Property Management",
     "description": "Professional and efficient management for communities and demanding owners.",
-    "text": "We manage your community with efficiency, transparency, and a personalized approach to optimize its operation and well-being.",
+    "text": "We are property managers in Tenerife, certified and specialized technicians in all types of communities. We have a team of highly qualified professionals with proven experience in property management.",
     "buttons": {
       "about_us": "Learn More",
       "contact_us": "Contact Us"
@@ -10,34 +10,42 @@
     "services": [
       {
         "title": "Accounting",
+        "img": "accounting",
         "description": "We guarantee transparent and efficient management of financial resources. We handle the preparation of balance sheets, budgets, and settlements, always ensuring maximum clarity and compliance with current regulations."
       },
       {
         "title": "Suppliers",
+        "img": "suppliers",
         "description": "We manage and coordinate all suppliers necessary for the proper functioning of your community. From maintenance to specialized services, we ensure the selection and supervision of the best professionals, guaranteeing quality, efficiency, and compliance in every job performed."
       },
       {
         "title": "Meeting Preparation",
+        "img": "meetings",
         "description": "We take care of the preparation and organization of homeowners' meetings, ensuring clear and timely convocations. We manage the creation of the agenda, the necessary documentation, and the correct drafting of minutes, thus facilitating effective communication and a quick and transparent decision-making process."
       },
       {
         "title": "Community Visits",
+        "img": "visits",
         "description": "We conduct periodic visits to communities to supervise the condition of facilities and resolve any issues quickly and efficiently. Our constant attention ensures the smooth operation and safety of your property, offering personalized solutions based on the needs of each community."
       },
       {
         "title": "Advisory Services",
+        "img": "advice",
         "description": "We provide specialized legal advice on issues such as drafting and updating bylaws and horizontal division regulations. We ensure compliance with current legislation and offer legal solutions to resolve any conflicts or doubts that may arise within your community."
       },
       {
         "title": "Document Custody",
+        "img": "documents",
         "description": "We handle the secure custody and management of all your community’s documentation, ensuring its preservation and access when needed. We guarantee that the documents are organized efficiently, complying with legal regulations and facilitating easy consultation at any time."
       },
       {
         "title": "Insurance Mediators",
+        "img": "mediation",
         "description": "We act as mediators to resolve any conflicts between the community, owners, and insurance companies in an amicable and effective manner. We serve as impartial intermediaries, facilitating communication and helping to find fair solutions that promote the well-being and harmony of the community."
       },
       {
         "title": "Budget Preparation and Financial Planning",
+        "img": "budgets",
         "description": "We assist the community in planning its expenses and preparing annual budgets in order to optimize resources."
       }
     ],
@@ -49,11 +57,48 @@
   "vacation_rentals": {
     "title": "Vacation Rentals",
     "description": "Turn your property into a source of income effortlessly.",
-    "text": "We take care of the comprehensive management of your vacation rentals, maximizing profitability and taking care of every detail for a worry-free experience.",
+    "text": "We manage your vacation rental property comprehensively, ensuring an excellent experience for both owners and guests. Trust us to optimize your investment and provide unforgettable stays.",
     "buttons": {
       "about_us": "Learn More",
       "contact_us": "Contact Us"
     },
+    "services": [
+      {
+        "title": "Property Advertising and Promotion",
+        "img": "property_promotion",
+        "description": "Listing on rental platforms (Airbnb, Booking, etc.) and promotion through social media and other channels."
+      },
+      {
+        "title": "Reservation Management",
+        "img": "booking_management",
+        "description": "Coordinating bookings, confirmations, and cancellations, ensuring maximum occupancy."
+      },
+      {
+        "title": "Guest Reception and Welcome",
+        "img": "guest_reception",
+        "description": "Check-in and check-out of guests, providing local information and ensuring a great first impression."
+      },
+      {
+        "title": "Cleaning and Maintenance",
+        "img": "cleaning_maintenance",
+        "description": "Professional cleaning services between stays and general maintenance to keep the property in optimal condition."
+      },
+      {
+        "title": "24/7 Customer Support",
+        "img": "customer_support",
+        "description": "Continuous support for guests, resolving any issues or concerns during their stay."
+      },
+      {
+        "title": "Payment and Billing Management",
+        "img": "payment_management",
+        "description": "Managing payments, collections, and issuing invoices, ensuring transparency and security."
+      },
+      {
+        "title": "Rate Optimization",
+        "img": "pricing_optimization",
+        "description": "Dynamic pricing analysis and adjustments based on demand, season, and competition to maximize revenue."
+      }
+    ],
     "phrases": [
       "Let your property generate income for you.",
       "We handle everything so you can enjoy the benefits."
@@ -87,8 +132,8 @@
   },
   "about_us": {
     "title": "About Us",
-    "description": "Commitment, professionalism, and transparency in managing your property.",
-    "text": "Specialists in property management and vacation rentals, offering a close and efficient service.",
+    "description": "At GestoFinca, we understand that the community management sector needs a revolution to meet the growing and changing needs of property owners.",
+    "text": "Our goal is to offer an exclusive, top-quality service, dedicating the necessary time to each client to fulfill all their demands. We have extensive experience in the services we provide and are highly qualified and certified, allowing us to guarantee the utmost professionalism and trust in every management task. The importance of working with certified professionals lies in the legal protection we offer our clients, ensuring that all actions and decisions are backed by current regulations, providing peace of mind and security at all times.",
     "buttons": {
       "about_us": "Learn More",
       "contact_us": "Contact Us"

@@ -2,7 +2,7 @@
   "property_management": {
     "title": "Immobilienverwaltung",
     "description": "Professionelles und effizientes Management für Gemeinschaften und anspruchsvolle Eigentümer.",
-    "text": "Wir verwalten Ihre Gemeinschaft mit Effizienz, Transparenz und einem individuellen Ansatz, um ihren Betrieb und ihr Wohlbefinden zu optimieren.",
+    "text": "Wir sind Immobilienverwalter auf Teneriffa, zertifizierte und spezialisierte Fachleute für alle Arten von Gemeinschaften. Wir verfügen über ein Team hochqualifizierter Fachkräfte mit nachweislicher Erfahrung im Bereich der Immobilienverwaltung.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
@@ -10,34 +10,42 @@
     "services": [
       {
         "title": "Buchhaltung",
+        "img": "accounting",
         "description": "Wir garantieren eine transparente und effiziente Verwaltung der finanziellen Ressourcen. Wir kümmern uns um die Erstellung von Bilanzen, Budgets und Abrechnungen und stellen dabei stets maximale Klarheit und die Einhaltung der geltenden Vorschriften sicher."
       },
       {
         "title": "Lieferanten",
+        "img": "suppliers",
         "description": "Wir verwalten und koordinieren alle Lieferanten, die für das ordnungsgemäße Funktionieren Ihrer Gemeinschaft erforderlich sind. Vom Wartungsservice bis hin zu spezialisierten Dienstleistungen sorgen wir dafür, dass wir die besten Fachleute auswählen und überwachen, um Qualität, Effizienz und die Einhaltung der Vorgaben bei jeder Arbeit zu gewährleisten."
       },
       {
         "title": "Vorbereitung der Eigentümerversammlungen",
+        "img": "meetings",
         "description": "Wir kümmern uns um die Vorbereitung und Organisation der Eigentümerversammlungen, um eine klare und pünktliche Einladung sicherzustellen. Wir verwalten die Erstellung der Tagesordnung, die notwendigen Unterlagen und die korrekte Protokollführung, um eine effektive Kommunikation und einen schnellen, transparenten Entscheidungsprozess zu ermöglichen."
       },
       {
         "title": "Besuche in der Gemeinschaft",
+        "img": "visits",
         "description": "Wir führen regelmäßige Besuche in den Gemeinschaften durch, um den Zustand der Einrichtungen zu überwachen und etwaige Vorfälle schnell und effizient zu lösen. Unsere kontinuierliche Betreuung stellt sicher, dass der ordnungsgemäße Betrieb und die Sicherheit Ihrer Immobilie gewährleistet sind, und wir bieten maßgeschneiderte Lösungen, die den Bedürfnissen jeder Gemeinschaft entsprechen."
       },
       {
         "title": "Beratung",
+        "img": "advice",
         "description": "Wir bieten spezialisierte rechtliche Beratung zu Themen wie der Ausarbeitung und Aktualisierung von Satzungen sowie der horizontalen Teilung von Immobilien. Wir stellen die Einhaltung der geltenden Gesetzgebung sicher und bieten rechtliche Lösungen zur Behebung von Konflikten oder Unklarheiten, die innerhalb Ihrer Gemeinschaft auftreten können."
       },
       {
         "title": "Dokumentenaufbewahrung",
+        "img": "documents",
         "description": "Wir übernehmen die sichere Aufbewahrung und Verwaltung aller Unterlagen Ihrer Gemeinschaft und sorgen dafür, dass diese bei Bedarf zugänglich sind. Wir garantieren, dass die Dokumente effizient organisiert werden, die gesetzlichen Vorschriften eingehalten werden und sie jederzeit eingesehen werden können."
       },
       {
         "title": "Versicherungsvermittler",
+        "img": "mediation",
         "description": "Wir fungieren als Vermittler, um etwaige Konflikte zwischen der Gemeinschaft, den Eigentümern und den Versicherungen auf freundliche und effektive Weise zu lösen. Als unparteiische Vermittler erleichtern wir die Kommunikation und helfen, faire Lösungen zu finden, die das Wohl und die Harmonie innerhalb der Gemeinschaft fördern."
       },
       {
         "title": "Budgeterstellung und Finanzplanung",
+        "img": "budgets",
         "description": "Wir unterstützen die Gemeinschaft bei der Planung ihrer Ausgaben und der Erstellung von Jahresbudgets, um die Ressourcen zu optimieren."
       }
     ],
@@ -49,11 +57,53 @@
   "vacation_rentals": {
     "title": "Ferienvermietungen",
     "description": "Machen Sie Ihre Immobilie mühelos zur Einkommensquelle.",
-    "text": "Wir übernehmen das komplette Management Ihrer Ferienvermietungen, maximieren die Rentabilität und kümmern uns um jedes Detail für eine sorgenfreie Erfahrung.",
+    "text": "Wir verwalten Ihre Ferienimmobilie umfassend und sorgen für ein exzellentes Erlebnis sowohl für Eigentümer als auch für Gäste. Vertrauen Sie uns, um Ihre Investition zu optimieren und unvergessliche Aufenthalte zu bieten.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
     },
+    "services": [
+      {
+        "title": "Ferienvermietungen",
+        "img": "vacation_rentals",
+        "description": "Wir verwalten Ihre Ferienimmobilie umfassend und sorgen für ein exzellentes Erlebnis sowohl für Eigentümer als auch für Gäste. Vertrauen Sie uns, um Ihre Investition zu optimieren und unvergessliche Aufenthalte zu bieten."
+      },
+      {
+        "title": "Werbung und Promotion der Immobilie",
+        "img": "property_promotion",
+        "description": "Anzeige auf Mietplattformen (Airbnb, Booking, etc.) und Promotion über soziale Medien und andere Kanäle."
+      },
+      {
+        "title": "Buchungsmanagement",
+        "img": "booking_management",
+        "description": "Koordination von Buchungen, Bestätigungen und Stornierungen, um eine maximale Belegung zu gewährleisten."
+      },
+      {
+        "title": "Empfang und Begrüßung der Gäste",
+        "img": "guest_reception",
+        "description": "Check-in und Check-out der Gäste, Bereitstellung lokaler Informationen und Sicherstellung eines guten ersten Eindrucks."
+      },
+      {
+        "title": "Reinigung und Wartung",
+        "img": "cleaning_maintenance",
+        "description": "Professionelle Reinigungsdienste zwischen den Aufenthalten und allgemeine Wartung, um die Immobilie in optimalem Zustand zu halten."
+      },
+      {
+        "title": "24/7 Kundensupport",
+        "img": "customer_support",
+        "description": "Ständige Unterstützung für die Gäste, um Probleme oder Anliegen während ihres Aufenthalts zu lösen."
+      },
+      {
+        "title": "Zahlungs- und Rechnungsmanagement",
+        "img": "payment_management",
+        "description": "Verwaltung von Zahlungen, Inkasso und Ausstellung von Rechnungen, um Transparenz und Sicherheit zu gewährleisten."
+      },
+      {
+        "title": "Preisoptimierung",
+        "img": "pricing_optimization",
+        "description": "Dynamische Preisgestaltung und Anpassung basierend auf Nachfrage, Saison und Wettbewerb zur Maximierung der Einnahmen."
+      }
+    ],
     "phrases": [
       "Lassen Sie Ihre Immobilie für Sie arbeiten.",
       "Wir übernehmen die Verwaltung – Sie genießen den Gewinn."
@@ -87,8 +137,8 @@
   },
   "about_us": {
     "title": "Über uns",
-    "description": "Engagement, Professionalität und Transparenz in der Verwaltung Ihrer Immobilie.",
-    "text": "Spezialisten für Immobilienverwaltung und Ferienvermietung mit persönlichem und effizientem Service.",
+    "description": "Bei GestoFinca verstehen wir, dass der Bereich der Immobilienverwaltung eine Revolution benötigt, um den wachsenden und sich wandelnden Bedürfnissen der Eigentümer gerecht zu werden.",
+    "text": "Unser Ziel ist es, einen exklusiven Service von höchster Qualität anzubieten, indem wir jedem Kunden die notwendige Zeit widmen, um alle seine Anforderungen zu erfüllen. Wir verfügen über umfangreiche Erfahrung in den von uns angebotenen Dienstleistungen und sind hochqualifiziert sowie zertifiziert, was es uns ermöglicht, höchste Professionalität und Vertrauen in jeder Verwaltung zu gewährleisten. Die Bedeutung der Zusammenarbeit mit zertifizierten Fachleuten liegt im rechtlichen Schutz, den wir unseren Kunden bieten. So stellen wir sicher, dass alle Maßnahmen und Entscheidungen den geltenden Vorschriften entsprechen und somit jederzeit Sicherheit und Ruhe gewährleisten.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"

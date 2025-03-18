@@ -2,7 +2,7 @@
   "property_management": {
     "title": "Administración de Fincas",
     "description": "Gestión profesional y eficiente para comunidades y propietarios exigentes.",
-    "text": "Gestionamos tu comunidad con eficiencia, transparencia y un enfoque personalizado para optimizar su funcionamiento y bienestar.",
+    "text": "Somos administradores de fincas en Tenerife, colegiados y técnicos especializados en todo tipo de comunidades. Contamos con un equipo de profesionales altamente cualificados y con experiencia demostrable en el ámbito de la administración de fincas.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
@@ -57,11 +57,48 @@
   "vacation_rentals": {
     "title": "Alquileres Vacacionales",
     "description": "Convierte tu propiedad en una fuente de ingresos sin esfuerzo.",
-    "text": "Nos encargamos de la gestión integral de tus alquileres vacacionales, maximizando rentabilidad y cuidando cada detalle para una experiencia sin preocupaciones.",
+    "text": "Gestionamos tu propiedad de alquiler vacacional de manera integral, asegurando una experiencia excelente tanto para propietarios como para huéspedes. Confía en nosotros para optimizar tu inversión y ofrecer estancias inolvidables.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"
     },
+    "services": [
+      {
+        "title": "Publicidad y Promoción de la Propiedad",
+        "img": "property_promotion",
+        "description": "Publicación en plataformas de alquiler (Airbnb, Booking, etc.) y promoción a través de redes sociales y otros canales."
+      },
+      {
+        "title": "Gestión de Reservas",
+        "img": "booking_management",
+        "description": "Coordinación de reservas, confirmaciones y cancelaciones, garantizando la máxima ocupación."
+      },
+      {
+        "title": "Recepción y Bienvenida de Huéspedes",
+        "img": "guest_reception",
+        "description": "Check-in y check-out de los huéspedes, proporcionando información local y asegurando una buena primera impresión."
+      },
+      {
+        "title": "Limpieza y Mantenimiento",
+        "img": "cleaning_maintenance",
+        "description": "Servicios de limpieza profesional entre estancias y mantenimiento general para mantener la propiedad en óptimas condiciones."
+      },
+      {
+        "title": "Atención al Cliente 24/7",
+        "img": "customer_support",
+        "description": "Soporte continuo para los huéspedes, resolviendo cualquier duda o incidencia durante su estancia."
+      },
+      {
+        "title": "Gestión de Pagos y Facturación",
+        "img": "payment_management",
+        "description": "Administración de pagos, cobros y emisión de facturas, garantizando transparencia y seguridad."
+      },
+      {
+        "title": "Optimización de Tarifas",
+        "img": "pricing_optimization",
+        "description": "Análisis y ajuste dinámico de precios según la demanda, temporada y competencia para maximizar los ingresos."
+      }
+    ],
     "phrases": [
       "Tu propiedad generando ingresos por ti.",
       "Nos encargamos de todo, tú solo disfruta los beneficios."
@@ -95,8 +132,8 @@
   },
   "about_us": {
     "title": "Nosotros",
-    "description": "Compromiso, profesionalidad y transparencia en la gestión de tu propiedad.",
-    "text": "Especialistas en administración de fincas y alquileres vacacionales, ofreciendo un servicio cercano y eficiente.",
+    "description": "Desde GestoFinca entendemos que el sector de la gestión de comunidades necesita una revolución para poder satisfacer las crecientes y cambiantes necesidades de los propietarios.",
+    "text": "Nuestro objetivo es ofrecer un servicio exclusivo y de la más alta calidad, donde dedicamos el tiempo necesario a cada cliente para satisfacer todas sus demandas. Contamos con una amplia experiencia en los servicios que ofrecemos y estamos altamente cualificados y colegiados, lo que nos permite garantizar la máxima profesionalidad y confianza en cada gestión. La importancia de contar con profesionales colegiados radica en la protección legal que ofrecemos a nuestros clientes, asegurando que todas las acciones y decisiones estén respaldadas por la normativa vigente, brindando así tranquilidad y seguridad en todo momento.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"

@@ -3,6 +3,7 @@ import Accordion from "../components/Accordion";
 import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
+import ExpandableCard from "../components/ExpandableCard";
 import ServiceBanner from "../components/ServiceBanner.astro";
 import Layout from "../layouts/Layout.astro";
 import { loadTranslations } from "../utils/i18n";
@@ -14,7 +15,7 @@ const translations = await loadTranslations(lang);
 const link = translations.footer.useful_links.links[0].link;
 const { seo } = translations;
 const { vacation_rentals } = translations.vacation_rentals;
-const { services } = translations.vacation_rentals;
+const { services, buttons } = translations.vacation_rentals;
 ---
 
 <Layout 
@@ -38,8 +39,20 @@ const { services } = translations.vacation_rentals;
             <ServiceBanner data={translations.vacation_rentals} image={holiday} link={link} />
         </section>
 
-        <section>
-            <Accordion client:load/>
+        <section aria-labelledby="services-section" class="px-4 py-8">
+            <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-4 text-center">
+                {lang === "es" 
+                  ? "Servicios de gestión de alquileres vacacionales" 
+                  : lang === "en" 
+                  ? "Services of vacation rentals" 
+                  : "Dienstleistungen der Ferienvermietung"}
+            </h2>
+            <h2 id="services-section" class="sr-only">Servicios de administración de fincas</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((service) => (
+                <ExpandableCard client:load buttomText={buttons.about_us} title={service.title} subtitle={service.subtitle} text={service.description} img={service.img} />
+              ))}
+            </div>
         </section>
 
         <!-- Sección del banner de contacto -->
