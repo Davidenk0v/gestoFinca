@@ -27,44 +27,109 @@ const { services, buttons } = translations.vacation_rentals;
     <main class="flex-grow">
         <h1 class="sr-only">{translations.vacation_rentals.title}</h1> <!-- Título principal de la página -->
 
-        <!-- Sección del carrusel -->
-        <section aria-labelledby="carrousel-section" class="bg-white">
+        <!-- Sección del carrusel con animación -->
+        <section aria-labelledby="carrousel-section" class="bg-white overflow-hidden">
             <h2 id="carrousel-section" class="sr-only">Galería de alquileres vacacionales</h2>
-            <Carrousel client:load data={translations.vacation_rentals} lang={lang}/>
-        </section>
-
-        <!-- Sección de servicios -->
-        <section aria-labelledby="services-section">
-            <h2 id="services-section" class="sr-only">Servicios de alquileres vacacionales</h2>
-            <ServiceBanner data={translations.vacation_rentals} image={holiday} link={link} />
-        </section>
-
-        <section aria-labelledby="services-section" class="px-4 py-8">
-            <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-4 text-center">
-                {lang === "es" 
-                  ? "Servicios de gestión de alquileres vacacionales" 
-                  : lang === "en" 
-                  ? "Services of vacation rentals" 
-                  : "Dienstleistungen der Ferienvermietung"}
-            </h2>
-            <h2 id="services-section" class="sr-only">Servicios de administración de fincas</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service) => (
-                <ExpandableCard client:load buttomText={buttons.about_us} title={service.title} subtitle={service.subtitle} text={service.description} img={service.img} />
-              ))}
+            <div class="animate-fade-in">
+                <Carrousel client:load data={translations.vacation_rentals} lang={lang}/>
             </div>
         </section>
 
-        <!-- Sección del banner de contacto -->
-        <section aria-labelledby="contact-banner-section">
+        <!-- Sección de servicios con animación -->
+        <section aria-labelledby="services-banner-section" class="animate-fade-in">
+            <h2 id="services-banner-section" class="sr-only">Servicios de alquileres vacacionales</h2>
+            <ServiceBanner data={translations.vacation_rentals} image={holiday} link={link} />
+        </section>
+
+        <!-- Sección de tarjetas de servicios con animación -->
+        <section aria-labelledby="services-section" class="px-4 py-16 bg-slate-50 overflow-hidden">
+            <div class="max-w-screen-xl mx-auto">
+                <div class="text-center mb-12 animate-fade-in">
+                    <span class="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
+                        {lang === "es" ? "NUESTROS SERVICIOS" : lang === "en" ? "OUR SERVICES" : "UNSERE DIENSTLEISTUNGEN"}
+                    </span>
+                    <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl">
+                        {lang === "es" 
+                          ? "Servicios de gestión de alquileres vacacionales" 
+                          : lang === "en" 
+                          ? "Vacation rental management services" 
+                          : "Dienstleistungen der Ferienvermietung"}
+                    </h2>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+                
+                <h2 id="services-section" class="sr-only">Servicios de administración de fincas</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in-up">
+                {services.map((service, index) => (
+                    <div class="service-card" style={`animation-delay: ${index * 0.1}s`}>
+                        <ExpandableCard client:load buttomText={buttons.about_us} title={service.title} subtitle={service.subtitle} text={service.description} img={service.img} />
+                    </div>
+                ))}
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del banner de contacto con animación -->
+        <section aria-labelledby="contact-banner-section" class="animate-fade-in">
             <h2 id="contact-banner-section" class="sr-only">Contáctanos para más información sobre alquileres vacacionales</h2>
             <ContactBanner text={translations.contact.phrases[0]}/>
         </section>
 
-        <!-- Sección del formulario de contacto -->
-        <section aria-labelledby="contact-form-section">
-            <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
-            <ContactFormReact lang={translations.forms}/>
+        <!-- Sección del formulario de contacto con animación -->
+        <section aria-labelledby="contact-form-section" class="py-16 animate-fade-in">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <span class="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
+                        {lang === "es" ? "CONTÁCTANOS" : lang === "en" ? "CONTACT US" : "KONTAKTIEREN SIE UNS"}
+                    </span>
+                    <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl">
+                        {lang === "es" 
+                          ? "¿Tienes alguna pregunta?" 
+                          : lang === "en" 
+                          ? "Do you have any questions?" 
+                          : "Haben Sie Fragen?"}
+                    </h2>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+                <div class="shadow-xl rounded-xl overflow-hidden">
+                    <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
+                    <ContactFormReact lang={translations.forms}/>
+                </div>
+            </div>
         </section>
     </main>
 </Layout>
+
+<style>
+    /* Animaciones */
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    
+    .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+    
+    .service-card {
+        opacity: 0;
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    /* Para el efecto de desplazamiento escalonado en las tarjetas */
+    @media (prefers-reduced-motion: no-preference) {
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+        .service-card:nth-child(4) { animation-delay: 0.4s; }
+    }
+</style>

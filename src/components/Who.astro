@@ -4,39 +4,79 @@ import house from '../assets/images/house.png';
 
 const { about_us, footer } = Astro.props.data;
 const link = footer.useful_links.links[0].link;
+const lang = Astro.props.lang;
 ---
 
-<section class="bg-slate-100 dark:bg-gray-900">
-    <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:grid-cols-12 lg:gap-8 xl:gap-0 lg:py-16">
+<section class="bg-slate-100 dark:bg-gray-900 py-12 lg:py-20 overflow-hidden">
+    <div class="grid max-w-screen-xl px-4 mx-auto lg:grid-cols-12 lg:gap-12 xl:gap-16">
         
-        <!-- Texto y contenido -->
-        <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+        <!-- Texto y contenido con animación -->
+        <div class="mr-auto place-self-center lg:col-span-7 animate-fade-in">
+            <span class="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
+                {lang === "es" 
+                ? "SOBRE NOSOTROS" 
+                : lang === "en" 
+                ? "ABOUT US" 
+                : "ÜBER UNS"}
+            </span>
+            
+            <h1 class="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
                 {about_us.phrases[0]}
             </h1>
-            <p class="max-w-2xl mb-6 text-gray-600 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            
+            <p class="max-w-2xl mb-8 text-gray-600 lg:mb-10 md:text-lg lg:text-xl dark:text-gray-400 leading-relaxed">
                 {about_us.description}
             </p>
-            <p class="max-w-2xl mb-6 text-gray-600 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                {about_us.text}
-            </p>
+            
+            <div class="max-w-2xl mb-10 text-gray-600 lg:mb-12 md:text-lg lg:text-xl dark:text-gray-400 leading-relaxed">
+                {about_us.text && about_us.text.split('.').map((paragraph) => (
+                    <p class="mb-4 last:mb-0">{paragraph}</p>
+                ))}
+            </div>
 
             <!-- Botón de contacto optimizado para SEO y accesibilidad -->
             <a href={link} 
-            class="inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-700 focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            aria-label="Contáctanos para más información sobre administración de fincas">
-             {about_us.buttons.contact_us}
-             <svg class="w-4 h-4 ml-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-             </svg>
-         </a>
-         
+               class="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-600 hover:translate-y-[-2px] focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+               aria-label="Contáctanos para más información sobre administración de fincas">
+                {about_us.buttons.contact_us}
+                <svg class="w-5 h-5 ml-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
         </div>
 
-        <!-- Imagen optimizada -->
-        <div class="flex justify-center lg:col-span-5 sm:hidden md:block">
-            <Image src={house} alt="Imagen de una casa en una mano" loading="lazy" class="rounded-lg">
+        <!-- Imagen optimizada con animación -->
+        <div class="lg:col-span-5 sm:hidden md:flex justify-center items-center mt-12 lg:mt-0 animate-fade-in-right">
+            <div class="relative">
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-300 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <Image 
+                    src={house} 
+                    alt="Imagen de una casa en una mano" 
+                    loading="lazy" 
+                    class="rounded-lg relative shadow-xl hover:shadow-2xl transition-all duration-300"
+                />
+            </div>
         </div>
 
     </div>
 </section>
+
+<style>
+    /* Animaciones */
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    .animate-fade-in-right {
+        animation: fadeInRight 1s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes fadeInRight {
+        from { opacity: 0; transform: translateX(20px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+</style>
