@@ -64,11 +64,6 @@
     },
     "services": [
       {
-        "title": "Ferienvermietungen",
-        "img": "vacation_rentals",
-        "description": "Wir verwalten Ihre Ferienimmobilie umfassend und sorgen für ein exzellentes Erlebnis sowohl für Eigentümer als auch für Gäste. Vertrauen Sie uns, um Ihre Investition zu optimieren und unvergessliche Aufenthalte zu bieten."
-      },
-      {
         "title": "Werbung und Promotion der Immobilie",
         "img": "property_promotion",
         "description": "Anzeige auf Mietplattformen (Airbnb, Booking, etc.) und Promotion über soziale Medien und andere Kanäle."

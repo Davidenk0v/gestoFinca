@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const ContactForm = ({ lang }) => {
   const { fields, buttons } = lang;
@@ -14,6 +14,16 @@ const ContactForm = ({ lang }) => {
   const [polityCheck, setPolityCheck] = useState(false);
   const [feedback, setFeedback] = useState({ message: "", type: "" });
 
+  useEffect(() => {
+    if (feedback.message) {
+      const timer = setTimeout(
+        () => setFeedback({ message: "", type: "" }),
+        5000
+      );
+      return () => clearTimeout(timer);
+    }
+  }, [feedback]);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -21,17 +31,13 @@ const ContactForm = ({ lang }) => {
 
   const handleCheck = (event) => setPolityCheck(event.target.checked);
 
-  const showMessage = (message, type) => {
-    setFeedback({ message, type });
-    setTimeout(() => setFeedback({ message: "", type: "" }), 5000);
-  };
+  const showMessage = (message, type) => setFeedback({ message, type });
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (!polityCheck)
       return showMessage("Debe aceptar la política de privacidad", "error");
-
     if (Object.values(formData).some((field) => !field.trim())) {
       return showMessage("Todos los campos son obligatorios", "error");
     }
@@ -43,26 +49,24 @@ const ContactForm = ({ lang }) => {
         body: JSON.stringify(formData),
       });
 
-      if (response.ok) {
-        showMessage(
-          "Mensaje enviado correctamente. Pronto nos pondremos en contacto con usted.",
-          "success"
-        );
-        setFormData(initialFormData);
-        setPolityCheck(false);
-      } else {
-        throw new Error("Error al enviar el mensaje");
-      }
-    } catch (error) {
+      if (!response.ok) throw new Error("Error al enviar el mensaje");
+
+      showMessage(
+        "Mensaje enviado correctamente. Pronto nos pondremos en contacto.",
+        "success"
+      );
+      setFormData(initialFormData);
+      setPolityCheck(false);
+    } catch {
       showMessage("Hubo un error. Inténtelo de nuevo más tarde.", "error");
     }
   };
 
   return (
-    <div className="flex justify-center p-4 bg-slate-100">
+    <div className="flex justify-center p-4 bg-slate-100 animate-fade-in">
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-white p-6 rounded-lg shadow-md"
+        className="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
       >
         {feedback.message && (
           <div
@@ -86,18 +90,22 @@ const ContactForm = ({ lang }) => {
             </label>
             {key === "message" ? (
               <textarea
+                id={key}
                 name={key}
                 value={formData[key]}
                 onChange={handleChange}
-                className="w-full p-2 border rounded-lg focus:ring-green-700 focus:border-green-700"
+                className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
+                aria-invalid={formData[key] === "" ? "true" : "false"}
               />
             ) : (
               <input
+                id={key}
                 type={key === "email" ? "email" : "text"}
                 name={key}
                 value={formData[key]}
                 onChange={handleChange}
-                className="w-full p-2 border rounded-lg focus:ring-green-700 focus:border-green-700"
+                className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
+                aria-invalid={formData[key] === "" ? "true" : "false"}
               />
             )}
           </div>
@@ -109,12 +117,12 @@ const ContactForm = ({ lang }) => {
             type="checkbox"
             checked={polityCheck}
             onChange={handleCheck}
-            className="w-4 h-4 text-blue-600 border-gray-300 rounded"
+            className="w-4 h-4 text-orange-500 border-gray-300 rounded"
           />
           <label htmlFor="privacy-policy" className="ml-2 text-sm">
             <a
               href={fields.privacy_policy.link}
-              className="text-blue-600 hover:underline"
+              className="text-orange-500 hover:underline"
             >
               {fields.privacy_policy.label}
             </a>
@@ -124,7 +132,8 @@ const ContactForm = ({ lang }) => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="px-5 py-3 text-white font-semibold bg-orange-500 rounded-lg hover:bg-orange-800 focus:ring-4 focus:ring-blue-300"
+            className="px-5 py-3 text-white font-semibold bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-600 hover:translate-y-[-2px] focus:ring-4 focus:outline-none focus:ring-orange-300"
+            aria-label="Enviar formulario de contacto"
           >
             {buttons.send_form}
           </button>

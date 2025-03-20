@@ -8,13 +8,13 @@ const data = Astro.props.data
 const { property_management, vacation_rentals, footer, services } = data;
 ---
 
-<section class="bg-slate-100 flex flex-col gap-4 justify-center items-center m-4" aria-labelledby="services-title">
+<section class="bg-slate-100 flex flex-col gap-8 justify-center items-center px-4 py-12 animate-fade-in" aria-labelledby="services-title">
   <!-- Título centrado arriba -->
-  <h2 id="services-title" class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl dark:text-white" aria-level="2">
+  <h2 id="services-title" class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl dark:text-white text-center">
     {services.title}
   </h2>
 
-  <div class="flex flex-col md:flex-row gap-8 justify-center w-full">
+  <div class="flex flex-col md:flex-row gap-8 justify-center w-full max-w-screen-lg animate-fade-in-up">
     <!-- Primer CardService -->
     <article class="card-service" aria-labelledby="property-management">
       <CardService 
@@ -40,3 +40,23 @@ const { property_management, vacation_rentals, footer, services } = data;
     </article>
   </div>
 </section>
+
+<style>
+   /* Animaciones */
+   .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+   }
+   .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+   }
+   
+   @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+   }
+
+   @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+   }
+</style>

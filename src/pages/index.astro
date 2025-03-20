@@ -53,7 +53,25 @@ const { seo } = translation;
       <!-- Sección del formulario de contacto -->
       <section class="my-4" aria-labelledby="contact-form-section">
         <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
-        <ContactFormReact client:load lang={translation.forms}/>
+        <div class="max-w-screen-xl mx-auto px-4">
+          <div class="text-center mb-12">
+              <span class="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
+                  {lang === "es" ? "CONTÁCTANOS" : lang === "en" ? "CONTACT US" : "KONTAKTIEREN SIE UNS"}
+              </span>
+              <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl">
+                  {lang === "es" 
+                    ? "¿Tienes alguna pregunta?" 
+                    : lang === "en" 
+                    ? "Do you have any questions?" 
+                    : "Haben Sie Fragen?"}
+              </h2>
+              <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+          </div>
+          <div class="shadow-xl rounded-xl overflow-hidden">
+              <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
+              <ContactFormReact client:load lang={translation.forms}/>
+          </div>
+      </div>
       </section>
     </main>
   </div>

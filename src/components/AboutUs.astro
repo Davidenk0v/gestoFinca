@@ -2,38 +2,51 @@
 import profesional from "@/assets/icons/home2.svg"
 import hands from "@/assets/icons/hands.svg"
 import family from "@/assets/icons/family.svg"
-import CardValue from "./CardValue.astro"
 import reloj from "@/assets/icons/reloj.svg"
+import CardValue from "./CardValue.astro"
 import Title from "./about_us/Title.astro"
 
-const data = Astro.props.data
+const data = Astro.props.data;
 const { values } = data;
 ---
 
-<section class="bg-slate-100 dark:bg-gray-900 antialiased" aria-labelledby="values-section">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
-<Title title={values.title} description={values.description} />
+<section class="bg-slate-100 dark:bg-gray-900 antialiased animate-fade-in" aria-labelledby="values-section">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto lg:px-6 sm:py-16 lg:py-24">
+        <!-- Título y descripción -->
+        <Title title={values.title} description={values.description} />
 
-        <div class="grid grid-cols-1 mt-12 text-center sm:mt-16 gap-x-20 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-            <!-- Primera tarjeta -->
-            <article class="card" aria-labelledby="compromiso">
-                <CardValue title={values.value1.title} text={values.value1.description} image={hands} />
-            </article>
-            
-            <!-- Segunda tarjeta -->
-            <article class="card" aria-labelledby="transparencia">
-                <CardValue title={values.value2.title} text={values.value2.description} image={family} />
-            </article>
-            
-            <!-- Tercera tarjeta -->
-            <article class="card" aria-labelledby="profesionalidad">
-                <CardValue title={values.value3.title} text={values.value3.description} image={profesional} />
-            </article>
-
-            <!-- Cuarta tarjeta -->
-            <article class="card" aria-labelledby="eficiencia">
-                <CardValue title={values.value4.title} text={values.value4.description} image={reloj} />
-            </article>
+        <div class="grid grid-cols-1 mt-12 text-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {[
+                { id: "compromiso", title: values.value1.title, text: values.value1.description, image: hands },
+                { id: "transparencia", title: values.value2.title, text: values.value2.description, image: family },
+                { id: "profesionalidad", title: values.value3.title, text: values.value3.description, image: profesional },
+                { id: "eficiencia", title: values.value4.title, text: values.value4.description, image: reloj }
+            ].map(({ id, title, text, image }) => (
+                <article class="card animate-fade-in-up" aria-labelledby={id}>
+                    <h3 id={id} class="sr-only">{title}</h3>
+                    <CardValue title={title} text={text} image={image} />
+                </article>
+            ))}
         </div>
     </div>
 </section>
+
+<style>
+   /* Animaciones */
+   .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+   }
+   .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+   }
+
+   @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+   }
+
+   @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+   }
+</style>

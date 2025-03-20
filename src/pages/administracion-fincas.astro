@@ -7,14 +7,12 @@ import { loadTranslations } from "../utils/i18n";
 import ServiceBanner from "../components/ServiceBanner.astro";
 import logo from '@/assets/images/vivienda.png'
 import ExpandableCard from "../components/ExpandableCard.jsx";
-import Title from "../components/about_us/Title.astro";
-import accounting from "../assets/icons/accounting.svg";
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
 const { property_management, seo } = translations;
 const { tags } = seo;
-const { services } = property_management;
+const { services, buttons } = property_management;
 const link = translations.footer.useful_links.links[0].link;
 ---
 
@@ -23,46 +21,89 @@ const link = translations.footer.useful_links.links[0].link;
     description={translations.property_management.description} 
     lang={lang}
 >
-    <!-- Sección principal con el h1 -->
     <main class="flex-grow">
         <h1 class="sr-only">{translations.property_management.title}</h1>
 
-        <!-- Sección del carrusel -->
-        <section aria-labelledby="carrousel-section">
-            <h2 id="carrousel-section" class="sr-only">Galería de imágenes de la administración de fincas</h2>
+        <section aria-labelledby="carrousel-section" class="animate-fade-in">
+            <h2 id="carrousel-section" class="sr-only">Galería de administración de fincas</h2>
             <Carrousel client:load data={translations.property_management} lang={lang}/>
         </section>
 
-        <section>
+        <section class="animate-fade-in">
             <ServiceBanner data={property_management} image={logo} link={link}/>
         </section>
 
-        <section aria-labelledby="services-section" class="px-4 py-8">
-            <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-4 text-center">
-                {lang === "es" 
-                  ? "Servicios de administración de fincas" 
-                  : lang === "en" 
-                  ? "Services of property management" 
-                  : "Dienstleistungen der Immobilienverwaltung"}
-            </h2>
-            <h2 id="services-section" class="sr-only">Servicios de administración de fincas</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {services.map((service) => (
-                <ExpandableCard client:load buttomText={property_management.buttons.about_us} title={service.title} subtitle={service.subtitle} text={service.description} img={service.img} />
-              ))}
+        <section aria-labelledby="services-section" class="px-4 py-16 bg-slate-50 animate-fade-in-up">
+            <div class="max-w-screen-xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
+                        {lang === "es" ? "NUESTROS SERVICIOS" : lang === "en" ? "OUR SERVICES" : "UNSERE DIENSTLEISTUNGEN"}
+                    </span>
+                    <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl">
+                        {lang === "es" 
+                          ? "Servicios de administración de fincas" 
+                          : lang === "en" 
+                          ? "Property management services" 
+                          : "Dienstleistungen der Immobilienverwaltung"}
+                    </h2>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+                
+                <h2 id="services-section" class="sr-only">Servicios de administración de fincas</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in-up">
+                {services.map((service, index) => (
+                    <div class="service-card" style={`animation-delay: ${index * 0.1}s`}>
+                        <ExpandableCard client:load buttomText={buttons.about_us} title={service.title} subtitle={service.subtitle} text={service.description} img={service.img} />
+                    </div>
+                ))}
+                </div>
             </div>
-          </section>
+        </section>
 
-        <!-- Sección del banner de contacto -->
-        <section class="bg-white" aria-labelledby="contact-banner-section">
-            <h2 class="sr-only" id="contact-banner-section">Contáctanos</h2>
+        <section aria-labelledby="contact-banner-section" class="animate-fade-in">
+            <h2 id="contact-banner-section" class="sr-only">Contáctanos para más información</h2>
             <ContactBanner text={translations.contact.phrases[0]} />
         </section>
 
-        <!-- Sección del formulario de contacto -->
-        <section aria-labelledby="contact-form-section" class="my-4">
-            <h2 class="sr-only" id="contact-form-section">Formulario de contacto</h2>
-            <ContactFormReact client:load lang={translations.forms}/>
+        <section aria-labelledby="contact-form-section" class="py-16 animate-fade-in">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <span class="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
+                        {lang === "es" ? "CONTÁCTANOS" : lang === "en" ? "CONTACT US" : "KONTAKTIEREN SIE UNS"}
+                    </span>
+                    <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl">
+                        {lang === "es" 
+                          ? "¿Tienes alguna pregunta?" 
+                          : lang === "en" 
+                          ? "Do you have any questions?" 
+                          : "Haben Sie Fragen?"}
+                    </h2>
+                    <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+                </div>
+                <div class="shadow-xl rounded-xl overflow-hidden">
+                    <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
+                    <ContactFormReact client:load lang={translations.forms}/>
+                </div>
+            </div>
         </section>
     </main>
 </Layout>
+
+<style>
+   .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    .animate-fade-in-up {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>

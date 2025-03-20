@@ -93,7 +93,7 @@ const { services, buttons } = translations.vacation_rentals;
                 </div>
                 <div class="shadow-xl rounded-xl overflow-hidden">
                     <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
-                    <ContactFormReact lang={translations.forms}/>
+                    <ContactFormReact client:load lang={translations.forms}/>
                 </div>
             </div>
         </section>
@@ -101,35 +101,21 @@ const { services, buttons } = translations.vacation_rentals;
 </Layout>
 
 <style>
-    /* Animaciones */
-    .animate-fade-in {
+   /* Animaciones */
+   .animate-fade-in {
         animation: fadeIn 1s ease-out forwards;
     }
-    
-    .animate-fade-in-up {
-        animation: fadeInUp 1s ease-out forwards;
-    }
-    
-    .service-card {
-        opacity: 0;
-        animation: fadeInUp 0.8s ease-out forwards;
+    .animate-fade-in-right {
+        animation: fadeInRight 1s ease-out forwards;
     }
     
     @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    
-    @keyframes fadeInUp {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
     }
     
-    /* Para el efecto de desplazamiento escalonado en las tarjetas */
-    @media (prefers-reduced-motion: no-preference) {
-        .service-card:nth-child(1) { animation-delay: 0.1s; }
-        .service-card:nth-child(2) { animation-delay: 0.2s; }
-        .service-card:nth-child(3) { animation-delay: 0.3s; }
-        .service-card:nth-child(4) { animation-delay: 0.4s; }
+    @keyframes fadeInRight {
+        from { opacity: 0; transform: translateX(20px); }
+        to { opacity: 1; transform: translateX(0); }
     }
 </style>
