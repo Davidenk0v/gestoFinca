@@ -9,37 +9,44 @@ import Title from "../components/about_us/Title.astro";
 
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
-
 const translations = await loadTranslations(lang);
-const { quotes, seo } = translations;
+const { quotes, seo, contact, forms } = translations;
 ---
 
 <Layout 
     title={seo.tags.quotes} 
-    description={translations.quotes.description} 
+    description={quotes.description} 
     lang={lang}
 >
-    <!-- Sección principal con el h1 -->
     <main>
-        <h1 class="sr-only">{translations.quotes.title}</h1> <!-- Título principal de la página accesible para SEO y tecnologías asistivas -->
+        <!-- Título principal de la página accesible para SEO y tecnologías asistivas -->
+        <h1 class="sr-only">{quotes.title}</h1>
 
-        <!-- Sección del carrusel -->
+        <!-- Sección del carrusel de citas -->
         <section aria-labelledby="quotes-carousel-section" class="bg-white">
             <h2 id="quotes-carousel-section" class="sr-only">Citas destacadas</h2>
-            <Carrousel client:load data={translations.quotes} lang={lang}/>
+            <Carrousel client:load data={quotes} lang={lang}/>
+        </section>
+        <section aria-labelledby="contact-banner-section" class="bg-gray-100 py-12">
+            <h2 id="contact-banner-section" class="sr-only">Contáctanos para más información</h2>
+            <ContactBanner text={contact.phrases[0]} />
+        </section>
+
+        <!-- Sección de información adicional y contacto -->
+        <section class="py-12">
+            <div class="max-w-screen-xl mx-auto px-4 text-center">
+                <Title title={quotes.description} description={quotes.text}/>
+            </div>
         </section>
 
         <!-- Sección del banner de contacto -->
-        <section aria-labelledby="contact-banner-section">
-            <h2 id="contact-banner-section" class="sr-only">Contáctanos para más información</h2>
-            <ContactBanner text={translations.contact.phrases[0]}/>
-        </section>
 
         <!-- Sección del formulario de contacto -->
-        <section aria-labelledby="contact-form-section">
+        <section aria-labelledby="contact-form-section" class="py-16">
             <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
-            <Title title={quotes.description} description={quotes.text}/>
-            <ContactFormReact lang={translations.forms}/>
+            <div class="max-w-screen-md mx-auto px-4">
+                <ContactFormReact lang={forms}/>
+            </div>
         </section>
     </main>
 </Layout>
