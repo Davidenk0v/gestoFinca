@@ -42,10 +42,12 @@ const { quotes, seo, contact, forms } = translations;
         <!-- Sección del banner de contacto -->
 
         <!-- Sección del formulario de contacto -->
-        <section aria-labelledby="contact-form-section" class="py-16">
-            <h2 id="contact-form-section" class="sr-only">Formulario de contacto</h2>
-            <div class="max-w-screen-md mx-auto px-4">
-                <ContactFormReact lang={forms}/>
+        <section aria-labelledby="contact-form-section" class="py-16 animate-fade-in">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="overflow-hidden">
+                    <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
+                    <ContactFormReact client:load lang={lang} data={translations.forms} title={true}/>
+                </div>
             </div>
         </section>
     </main>

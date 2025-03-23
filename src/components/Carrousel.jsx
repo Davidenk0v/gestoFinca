@@ -1,25 +1,43 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import image1 from "@/assets/images/fondo-azul.webp";
 import edf2 from "@/assets/images/house.webp";
 import logo from "@/assets/logos/imagen_logo_negativo.png";
 
-const images = [edf2, image1];
+// Definir imágenes fuera del componente para evitar recreaciones
+const IMAGES = [edf2, image1];
+const SLIDE_DURATION = 10000; // 10 segundos entre diapositivas
+const TRANSITION_DURATION = 0.6;
 
 const Carousel = ({ data, lang }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
+  const { title, description, buttons } = data || {};
 
-  const { title, description, text, buttons } = data || {};
+  // Manejar la navegación del carrusel
+  const goToSlide = useCallback(
+    (index) => {
+      setDirection(index > currentIndex ? 1 : -1);
+      setCurrentIndex(index);
+    },
+    [currentIndex]
+  );
 
+  const nextSlide = useCallback(() => {
+    const newIndex = (currentIndex + 1) % IMAGES.length;
+    goToSlide(newIndex);
+  }, [currentIndex, goToSlide]);
+
+  const prevSlide = useCallback(() => {
+    const newIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
+    goToSlide(newIndex);
+  }, [currentIndex, goToSlide]);
+
+  // Configuración del intervalo automático
   useEffect(() => {
-    const interval = setInterval(() => {
-      setDirection(1);
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000);
-
+    const interval = setInterval(nextSlide, SLIDE_DURATION);
     return () => clearInterval(interval);
-  }, []);
+  }, [nextSlide]);
 
   return (
     <section className="relative h-[40vh] md:h-[60vh] lg:h-[70vh] overflow-hidden flex items-center justify-center">
@@ -27,36 +45,83 @@ const Carousel = ({ data, lang }) => {
       <div className="absolute inset-0 w-full h-full overflow-hidden bg-slate-100">
         <AnimatePresence custom={direction} mode="popLayout">
           <motion.div
-            key={currentIndex}
+            key={`slide-${currentIndex}`}
             className="absolute inset-0 w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: `url(${images[currentIndex].src})` }}
-            initial={{ x: 0 }}
-            animate={{ x: "-100%" }}
-            exit={{ x: "-100%" }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
-          >
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-          </motion.div>
+            style={{ backgroundImage: `url(${IMAGES[currentIndex].src})` }}
+            initial={{ x: direction > 0 ? "100%" : "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: direction > 0 ? "-100%" : "100%" }}
+            transition={{ duration: TRANSITION_DURATION, ease: "easeInOut" }}
+          />
         </AnimatePresence>
-        <motion.div
-          key={`new-${currentIndex}`}
-          className="absolute inset-0 w-full h-full bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${
-              images[(currentIndex + 1) % images.length].src
-            })`,
-          }}
-          initial={{ x: "100%" }} // Empieza fuera de la pantalla (derecha)
-          animate={{ x: 0 }} // Se mueve hacia la posición correcta
-          exit={{ x: 0 }} // Se mantiene ahí
-          transition={{ duration: 0.6, ease: "easeInOut" }}
-        />
+
+        {/* Overlay oscuro */}
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
       </div>
 
+      {/* Controles de navegación */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-4 z-20 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+        aria-label="Diapositiva anterior"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+
+      <button
+        onClick={nextSlide}
+        className="absolute right-4 z-20 p-2 rounded-full bg-black/30 text-white hover:bg-black/50 transition-colors"
+        aria-label="Siguiente diapositiva"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+
+      {/* Indicadores de posición */}
+      <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2">
+        {IMAGES.map((_, i) => (
+          <button
+            key={`dot-${i}`}
+            onClick={() => goToSlide(i)}
+            className={`w-3 h-3 rounded-full transition-colors ${
+              i === currentIndex
+                ? "bg-brand-greenFinca"
+                : "bg-white/50 hover:bg-white/80"
+            }`}
+            aria-label={`Ir a diapositiva ${i + 1}`}
+          />
+        ))}
+      </div>
+
+      {/* Contenido */}
       <div className="relative z-10 max-w-4xl text-center px-6 sm:px-10 lg:px-16">
         {/* Título */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-blueFinca">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
           {title !== "GestoFinca" ? (
             <strong className="text-brand-blueFinca">{title}</strong>
           ) : (
@@ -65,30 +130,27 @@ const Carousel = ({ data, lang }) => {
             </>
           )}
         </h1>
+
         {/* Descripción */}
-        <p className="mt-4 text-base font-bold sm:text-lg md:text-xl hidden sm:block text-white">
-          {" "}
-          {/* Cuando la pantalla sea menor a sm, no se mostrará el texto */}{" "}
-          {description}
-        </p>
-        {/* Texto adicional */}
-        {/*         <p className="mt-2 text-base sm:text-lg md:text-xl text-white hidden sm:block">
-          {text}
-        </p> */}
+        {description && (
+          <p className="mt-4 text-base font-bold sm:text-lg md:text-xl hidden sm:block text-white">
+            {description}
+          </p>
+        )}
 
         {/* Botones */}
         <div className="mt-6 flex flex-wrap justify-center gap-4">
           <a
             href={`/contacto?lang=${lang}`}
-            className="border-2 border-brand-greenFinca rounded-md bg-brand-greenFinca px-6 py-2 text-sm font-semibold text-black shadow-sm hover:bg-transparent hover:text-brand-greenFinca sm:w-auto"
+            className="border-2 border-brand-greenFinca rounded-md bg-brand-greenFinca px-6 py-2 text-sm font-semibold text-black shadow-sm hover:bg-transparent hover:text-brand-greenFinca transition-colors duration-300 sm:w-auto"
           >
-            {buttons?.contact_us}
+            {buttons?.contact_us || "Contacto"}
           </a>
           <a
             href={`/nosotros?lang=${lang}`}
-            className="border-2 border-brand-greenFinca rounded-md px-6 py-2 text-sm font-semibold text-brand-greenFinca shadow-sm hover:text-black hover:bg-brand-greenFinca sm:w-auto"
+            className="border-2 border-brand-greenFinca rounded-md px-6 py-2 text-sm font-semibold text-brand-greenFinca shadow-sm hover:text-black hover:bg-brand-greenFinca transition-colors duration-300 sm:w-auto"
           >
-            {buttons?.about_us}
+            {buttons?.about_us || "Sobre Nosotros"}
           </a>
         </div>
 

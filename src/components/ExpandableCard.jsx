@@ -33,11 +33,22 @@ const iconMap = {
   pricing_optimization: pricing_optimization,
 };
 
-const ExpandableCard = ({ title, subtitle, text, buttomText, img }) => {
+const ExpandableCard = ({ title, subtitle, text, buttomText, img, lang }) => {
   const [expanded, setExpanded] = useState(false);
   const [height, setHeight] = useState(0);
+  const [closeText, setCloseText] = useState("Ocultar");
   const contentRef = useRef(null);
   const logo = iconMap[img];
+
+  useEffect(() => {
+    if (lang === "es") {
+      setCloseText("Ocultar");
+    } else if (lang === "en") {
+      setCloseText("Hide");
+    } else {
+      setCloseText("Cacher");
+    }
+  }, [lang]);
 
   useEffect(() => {
     if (expanded) {
@@ -65,7 +76,7 @@ const ExpandableCard = ({ title, subtitle, text, buttomText, img }) => {
         onClick={() => setExpanded(!expanded)}
         className="bg-slate-100 hover:bg-slate-200 text-gray-500 font-semibold px-4 py-2 rounded-md flex items-center mx-auto transition-colors duration-300"
       >
-        {expanded ? "Ocultar" : buttomText}
+        {expanded ? closeText : buttomText}
       </button>
 
       {/* Expanded content with animation */}

@@ -58,9 +58,13 @@ const { seo } = translations;
         </section>
 
         <!-- Sección de contacto -->
-        <section aria-labelledby="contact-section">
-            <h2 id="contact-section" class="sr-only">Formulario de contacto</h2>
-            <ContactFormReact lang={translations.forms}/>
+        <section aria-labelledby="contact-form-section" class="py-16 animate-fade-in">
+            <div class="max-w-screen-xl mx-auto px-4">
+                <div class="overflow-hidden">
+                    <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
+                    <ContactFormReact client:load lang={lang} data={translations.forms} title={true}/>
+                </div>
+            </div>
         </section>
         <!-- Testimonios para mejorar la confianza y SEO -->
 

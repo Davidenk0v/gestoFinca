@@ -24,7 +24,7 @@ const { contact, seo } = translations;
         <!-- Formulario de contacto con etiquetas ARIA y accesibilidad -->
         <section class="bg-gradient-to-tr from-brand-blueFinca to-brand-greenFinca">
             <h2 class="sr-only">Formulario de Contacto</h2> <!-- Título accesible para usuarios con lector de pantallas -->
-            <ContactFormReact client:load lang={translations.forms}/>
+            <ContactFormReact client:load lang={lang} data={translations.forms} title={false}/>
         </section>
 
         <!-- Sección de banner de contacto -->

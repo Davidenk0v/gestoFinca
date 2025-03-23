@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
-const ContactForm = ({ lang }) => {
-  const { fields, buttons } = lang;
+const ContactForm = ({ data, lang, title }) => {
+  // Usar destructuración con valores por defecto para evitar undefined
+  const { fields = {}, buttons = {} } = data || {};
   const initialFormData = {
     name: "",
     phone: "",
@@ -63,83 +64,114 @@ const ContactForm = ({ lang }) => {
   };
 
   return (
-    <div className="flex justify-center p-4 bg-slate-100 animate-fade-in">
-      <form
-        onSubmit={handleSubmit}
-        className="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
-      >
-        {feedback.message && (
-          <div
-            className={`text-center p-3 mb-4 rounded ${
-              feedback.type === "error"
-                ? "bg-red-100 text-red-700"
-                : "bg-green-100 text-green-700"
-            }`}
-          >
-            <strong>{feedback.message}</strong>
-          </div>
-        )}
-
-        {Object.keys(initialFormData).map((key) => (
-          <div key={key} className="mb-4">
-            <label
-              htmlFor={key}
-              className="block text-sm font-semibold text-gray-900 mb-1"
+    <section>
+      {title && (
+        <div className="text-center mb-12">
+          <span className="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
+            {lang === "es"
+              ? "CONTÁCTANOS"
+              : lang === "en"
+              ? "CONTACT US"
+              : "KONTAKTIEREN SIE UNS"}
+          </span>
+          <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl">
+            {lang === "es"
+              ? "¿Tienes alguna pregunta?"
+              : lang === "en"
+              ? "Do you have any questions?"
+              : "Haben Sie Fragen?"}
+          </h2>
+          <div className="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+      )}
+      <div className="flex justify-center p-4 bg-slate-100 animate-fade-in">
+        <form
+          onSubmit={handleSubmit}
+          className="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+        >
+          {feedback.message && (
+            <div
+              className={`text-center p-3 mb-4 rounded ${
+                feedback.type === "error"
+                  ? "bg-red-100 text-red-700"
+                  : "bg-green-100 text-green-700"
+              }`}
             >
-              {fields[key]?.label}*
+              <strong>{feedback.message}</strong>
+            </div>
+          )}
+
+          {Object.keys(initialFormData).map((key) => (
+            <div key={key} className="mb-4">
+              <label
+                htmlFor={key}
+                className="block text-sm font-semibold text-gray-900 mb-1"
+              >
+                {fields[key]?.label || key}*
+              </label>
+              {key === "message" ? (
+                <textarea
+                  id={key}
+                  name={key}
+                  value={formData[key]}
+                  onChange={handleChange}
+                  className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
+                  aria-invalid={formData[key] === "" ? "true" : "false"}
+                  placeholder={fields[key]?.placeholder || ""}
+                />
+              ) : (
+                <input
+                  id={key}
+                  type={key === "email" ? "email" : "text"}
+                  name={key}
+                  value={formData[key]}
+                  onChange={handleChange}
+                  className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
+                  aria-invalid={formData[key] === "" ? "true" : "false"}
+                  placeholder={fields[key]?.placeholder || ""}
+                />
+              )}
+            </div>
+          ))}
+
+          {/* Verificar que fields.privacy_policy existe antes de acceder a sus propiedades */}
+          <div className="flex items-center mb-4">
+            <input
+              id="privacy-policy"
+              type="checkbox"
+              checked={polityCheck}
+              onChange={handleCheck}
+              className="w-4 h-4 text-orange-500 border-gray-300 rounded"
+            />
+            <label htmlFor="privacy-policy" className="ml-2 text-sm">
+              {fields.privacy_policy ? (
+                <a
+                  href={fields.privacy_policy.link || "/politica-de-privacidad"}
+                  className="text-orange-500 hover:underline"
+                >
+                  {fields.privacy_policy.label ||
+                    "He leído y acepto la política de privacidad"}
+                </a>
+              ) : (
+                <span className="text-orange-500">
+                  He leído y acepto la política de privacidad
+                </span>
+              )}
             </label>
-            {key === "message" ? (
-              <textarea
-                id={key}
-                name={key}
-                value={formData[key]}
-                onChange={handleChange}
-                className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
-                aria-invalid={formData[key] === "" ? "true" : "false"}
-              />
-            ) : (
-              <input
-                id={key}
-                type={key === "email" ? "email" : "text"}
-                name={key}
-                value={formData[key]}
-                onChange={handleChange}
-                className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
-                aria-invalid={formData[key] === "" ? "true" : "false"}
-              />
-            )}
           </div>
-        ))}
 
-        <div className="flex items-center mb-4">
-          <input
-            id="privacy-policy"
-            type="checkbox"
-            checked={polityCheck}
-            onChange={handleCheck}
-            className="w-4 h-4 text-orange-500 border-gray-300 rounded"
-          />
-          <label htmlFor="privacy-policy" className="ml-2 text-sm">
-            <a
-              href={fields.privacy_policy.link}
-              className="text-orange-500 hover:underline"
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="px-5 py-3 text-white font-semibold bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-600 hover:translate-y-[-2px] focus:ring-4 focus:outline-none focus:ring-orange-300"
+              aria-label="Enviar formulario de contacto"
             >
-              {fields.privacy_policy.label}
-            </a>
-          </label>
-        </div>
-
-        <div className="flex justify-center">
-          <button
-            type="submit"
-            className="px-5 py-3 text-white font-semibold bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-600 hover:translate-y-[-2px] focus:ring-4 focus:outline-none focus:ring-orange-300"
-            aria-label="Enviar formulario de contacto"
-          >
-            {buttons.send_form}
-          </button>
-        </div>
-      </form>
-    </div>
+              {buttons.send_form || "Enviar"}
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
   );
 };
 
