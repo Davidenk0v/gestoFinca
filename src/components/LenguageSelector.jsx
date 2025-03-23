@@ -108,7 +108,7 @@ const LanguageSelector = () => {
 
       {isOpen && (
         <ul
-          className="absolute right-0 mt-1 w-auto bg-white shadow-lg rounded-md py-1 z-50"
+          className="absolute left-0 sm:left-auto sm:right-0 mt-1 w-32 bg-white shadow-lg rounded-md py-1 z-50"
           role="listbox"
           aria-label="Seleccionar idioma"
         >
