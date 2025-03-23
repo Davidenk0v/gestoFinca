@@ -6,26 +6,35 @@ const LANGUAGES = [
   { code: "de", flag: "🇩🇪", name: "Deutsch" },
 ];
 
+const DEFAULT_LANGUAGE = "es";
+
 const LanguageSelector = () => {
-  const [language, setLanguage] = useState("es");
+  // Inicializar con el idioma predeterminado
+  const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
   const [isOpen, setIsOpen] = useState(false);
 
-  // Cargar idioma del localStorage al iniciar
+  // Verificar la URL al cargar el componente
   useEffect(() => {
     if (typeof window !== "undefined") {
-      // Intentar obtener el idioma de la URL primero
-      const urlParams = new URLSearchParams(window.location.search);
-      const urlLang = urlParams.get("lang");
+      try {
+        // Verificar si hay un parámetro de idioma en la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get("lang");
 
-      // Si no está en la URL, intentar obtenerlo del localStorage
-      const storedLang = localStorage.getItem("lang");
-
-      // Usar el idioma que se encuentre, o el predeterminado "es"
-      const initialLang = urlLang || storedLang || "es";
-
-      // Solo establecer si es un idioma válido
-      if (LANGUAGES.some((lang) => lang.code === initialLang)) {
-        setLanguage(initialLang);
+        if (urlLang && LANGUAGES.some((lang) => lang.code === urlLang)) {
+          // Si hay un idioma válido en la URL, úsalo
+          setLanguage(urlLang);
+          // También actualiza localStorage para mantener consistencia
+          localStorage.setItem("lang", urlLang);
+        } else {
+          // Si no hay un idioma en la URL, usa español como predeterminado
+          setLanguage(DEFAULT_LANGUAGE);
+          // Actualiza localStorage para mantener consistencia
+          localStorage.setItem("lang", DEFAULT_LANGUAGE);
+        }
+      } catch (error) {
+        console.error("Error al verificar el idioma en la URL:", error);
+        setLanguage(DEFAULT_LANGUAGE);
       }
     }
   }, []);
@@ -38,16 +47,25 @@ const LanguageSelector = () => {
         return;
       }
 
+      // Verificar que el código de idioma sea válido
+      if (!LANGUAGES.some((lang) => lang.code === langCode)) {
+        langCode = DEFAULT_LANGUAGE;
+      }
+
       setLanguage(langCode);
 
       if (typeof window !== "undefined") {
-        // Guardar en localStorage
-        localStorage.setItem("lang", langCode);
+        try {
+          // Guardar en localStorage
+          localStorage.setItem("lang", langCode);
 
-        // Actualizar URL
-        const currentUrl = new URL(window.location.href);
-        currentUrl.searchParams.set("lang", langCode);
-        window.location.href = currentUrl.toString();
+          // Actualizar URL
+          const currentUrl = new URL(window.location.href);
+          currentUrl.searchParams.set("lang", langCode);
+          window.location.href = currentUrl.toString();
+        } catch (error) {
+          console.error("Error al cambiar el idioma:", error);
+        }
       }
 
       setIsOpen(false);
@@ -69,9 +87,10 @@ const LanguageSelector = () => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [isOpen]);
 
-  // Obtener el idioma actual
+  // Obtener el idioma actual con un fallback seguro a español
   const currentLanguage =
-    LANGUAGES.find((lang) => lang.code === language) || LANGUAGES[0];
+    LANGUAGES.find((lang) => lang.code === language) ||
+    LANGUAGES.find((lang) => lang.code === DEFAULT_LANGUAGE);
 
   return (
     <div className="relative language-selector">
