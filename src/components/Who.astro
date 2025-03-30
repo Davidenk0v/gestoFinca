@@ -29,7 +29,7 @@ const lang = Astro.props.lang;
             </p>
             
             <div class="max-w-2xl mb-10 text-gray-600 lg:mb-12 md:text-lg lg:text-xl dark:text-gray-400 leading-relaxed">
-                {about_us.text && about_us.text.split('.').map((paragraph) => (
+                {about_us.text && about_us.text.split('&').map((paragraph) => (
                     <p class="mb-4 last:mb-0">{paragraph}</p>
                 ))}
             </div>

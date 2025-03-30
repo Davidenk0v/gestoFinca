@@ -65,25 +65,24 @@ const ContactForm = ({ data, lang, title }) => {
 
   return (
     <section>
-      {title && (
-        <div className="text-center mb-12">
-          <span className="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
-            {lang === "es"
-              ? "CONTÁCTANOS"
-              : lang === "en"
-              ? "CONTACT US"
-              : "KONTAKTIEREN SIE UNS"}
-          </span>
-          <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl">
-            {lang === "es"
-              ? "¿Tienes alguna pregunta?"
-              : lang === "en"
-              ? "Do you have any questions?"
-              : "Haben Sie Fragen?"}
-          </h2>
-          <div className="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
-        </div>
-      )}
+      <div className="text-center mb-12">
+        <span className="inline-block text-orange-500 font-semibold mb-2 tracking-wide">
+          {lang === "es"
+            ? "RESUELVE TUS DUDAS"
+            : lang === "en"
+            ? "SOLVE YOUR DOUBTS"
+            : "KLÄREN SIE IHRE ZWEIFEL"}
+        </span>
+        <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl">
+          {lang === "es"
+            ? "¿Tienes alguna pregunta?"
+            : lang === "en"
+            ? "Do you have any questions?"
+            : "Haben Sie Fragen?"}
+        </h2>
+        <div className="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+      </div>
+
       <div className="flex justify-center p-4 bg-slate-100 animate-fade-in">
         <form
           onSubmit={handleSubmit}

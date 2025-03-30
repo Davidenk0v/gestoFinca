@@ -97,6 +97,11 @@
         "title": "Optimización de Tarifas",
         "img": "pricing_optimization",
         "description": "Análisis y ajuste dinámico de precios según la demanda, temporada y competencia para maximizar los ingresos."
+      },
+      {
+        "title": "Gestión de Impuestos Locales",
+        "img": "tax_management",
+        "description": "Ayudamos a los propietarios a cumplir con los impuestos locales relacionados con los alquileres vacacionales, como los impuestos sobre el turismo, las licencias o las tasas de uso. Gestionar el pago y la presentación de declaraciones fiscales."
       }
     ],
     "phrases": [
@@ -126,6 +131,7 @@
       "contact_us": "Contáctanos"
     },
     "phrases": [
+      "Tus expertos de confianza en administración de fincas en Tenerife.",
       "Tu tranquilidad, nuestro compromiso.",
       "Gestión profesional, resultados garantizados."
     ]
@@ -133,7 +139,7 @@
   "about_us": {
     "title": "Nosotros",
     "description": "Desde GestoFinca entendemos que el sector de la gestión de comunidades necesita una revolución para poder satisfacer las crecientes y cambiantes necesidades de los propietarios.",
-    "text": "Nuestro objetivo es ofrecer un servicio exclusivo y de la más alta calidad, donde dedicamos el tiempo necesario a cada cliente para satisfacer todas sus demandas. Contamos con una amplia experiencia en los servicios que ofrecemos y estamos altamente cualificados y colegiados, lo que nos permite garantizar la máxima profesionalidad y confianza en cada gestión. La importancia de contar con profesionales colegiados radica en la protección legal que ofrecemos a nuestros clientes, asegurando que todas las acciones y decisiones estén respaldadas por la normativa vigente, brindando así tranquilidad y seguridad en todo momento.",
+    "text": "Nuestro objetivo es ofrecer un servicio exclusivo y de la más alta calidad, donde dedicamos el tiempo necesario a cada cliente para satisfacer todas sus demandas.& Contamos con una amplia experiencia en los servicios que ofrecemos y estamos altamente cualificados y colegiados, lo que nos permite garantizar la máxima profesionalidad y confianza en cada gestión.& La importancia de contar con profesionales colegiados radica en la protección legal que ofrecemos a nuestros clientes, asegurando que todas las acciones y decisiones estén respaldadas por la normativa vigente, brindando así tranquilidad y seguridad en todo momento.",
     "buttons": {
       "about_us": "Saber más",
       "contact_us": "Contáctanos"

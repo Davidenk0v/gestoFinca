@@ -12,7 +12,7 @@ const TRANSITION_DURATION = 0.6;
 const Carousel = ({ data, lang }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(1);
-  const { title, description, buttons } = data || {};
+  const { title, description, buttons, phrases } = data || {};
 
   // Manejar la navegación del carrusel
   const goToSlide = useCallback(
@@ -121,7 +121,7 @@ const Carousel = ({ data, lang }) => {
       {/* Contenido */}
       <div className="relative z-10 max-w-4xl text-center px-6 sm:px-10 lg:px-16">
         {/* Título */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-blueFinca">
           {title !== "GestoFinca" ? (
             <strong className="text-brand-blueFinca">{title}</strong>
           ) : (
@@ -130,6 +130,11 @@ const Carousel = ({ data, lang }) => {
             </>
           )}
         </h1>
+
+        {/* Subtitle */}
+        <p className="mt-4 text-base sm:text-lg md:text-xl hidden sm:block text-white">
+          {phrases[0]}
+        </p>
 
         {/* Descripción */}
         {description && (

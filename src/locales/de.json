@@ -97,6 +97,11 @@
         "title": "Preisoptimierung",
         "img": "pricing_optimization",
         "description": "Dynamische Preisgestaltung und Anpassung basierend auf Nachfrage, Saison und Wettbewerb zur Maximierung der Einnahmen."
+      },
+      {
+        "title": "Verwaltung lokaler Steuern",
+        "img": "tax_management",
+        "description": "Wir helfen Immobilieneigentümern, die lokalen Steuern im Zusammenhang mit Ferienvermietungen einzuhalten, wie z. B. Tourismussteuern, Lizenzen oder Nutzungsgebühren. Verwaltung der Zahlung und Einreichung von Steuererklärungen."
       }
     ],
     "phrases": [
@@ -126,6 +131,7 @@
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
+      "Ihre zuverlässigen Experten für Immobilienverwaltung auf Teneriffa.",
       "Ihre Sicherheit, unser Engagement.",
       "Professionelle Verwaltung mit garantierten Ergebnissen."
     ]
@@ -133,7 +139,7 @@
   "about_us": {
     "title": "Über uns",
     "description": "Bei GestoFinca verstehen wir, dass der Bereich der Immobilienverwaltung eine Revolution benötigt, um den wachsenden und sich wandelnden Bedürfnissen der Eigentümer gerecht zu werden.",
-    "text": "Unser Ziel ist es, einen exklusiven Service von höchster Qualität anzubieten, indem wir jedem Kunden die notwendige Zeit widmen, um alle seine Anforderungen zu erfüllen. Wir verfügen über umfangreiche Erfahrung in den von uns angebotenen Dienstleistungen und sind hochqualifiziert sowie zertifiziert, was es uns ermöglicht, höchste Professionalität und Vertrauen in jeder Verwaltung zu gewährleisten. Die Bedeutung der Zusammenarbeit mit zertifizierten Fachleuten liegt im rechtlichen Schutz, den wir unseren Kunden bieten. So stellen wir sicher, dass alle Maßnahmen und Entscheidungen den geltenden Vorschriften entsprechen und somit jederzeit Sicherheit und Ruhe gewährleisten.",
+    "text": "Unser Ziel ist es, einen exklusiven Service von höchster Qualität anzubieten, indem wir jedem Kunden die notwendige Zeit widmen, um alle seine Anforderungen zu erfüllen.& Wir verfügen über umfangreiche Erfahrung in den von uns angebotenen Dienstleistungen und sind hochqualifiziert sowie zertifiziert, was es uns ermöglicht, höchste Professionalität und Vertrauen in jeder Verwaltung zu gewährleisten.& Die Bedeutung der Zusammenarbeit mit zertifizierten Fachleuten liegt im rechtlichen Schutz, den wir unseren Kunden bieten. So stellen wir sicher, dass alle Maßnahmen und Entscheidungen den geltenden Vorschriften entsprechen und somit jederzeit Sicherheit und Ruhe gewährleisten.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"

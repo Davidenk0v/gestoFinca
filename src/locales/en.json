@@ -97,6 +97,11 @@
         "title": "Rate Optimization",
         "img": "pricing_optimization",
         "description": "Dynamic pricing analysis and adjustments based on demand, season, and competition to maximize revenue."
+      },
+      {
+        "title": "Local Tax Management",
+        "img": "tax_management",
+        "description": "We help property owners comply with local taxes related to vacation rentals, such as tourism taxes, licenses, or usage fees. Managing payment and filing of tax returns."
       }
     ],
     "phrases": [
@@ -126,6 +131,7 @@
       "contact_us": "Contact Us"
     },
     "phrases": [
+      "Your reliable property management experts in Tenerife.",
       "Your peace of mind, our commitment.",
       "Professional management, guaranteed results."
     ]
@@ -133,7 +139,7 @@
   "about_us": {
     "title": "About Us",
     "description": "At GestoFinca, we understand that the community management sector needs a revolution to meet the growing and changing needs of property owners.",
-    "text": "Our goal is to offer an exclusive, top-quality service, dedicating the necessary time to each client to fulfill all their demands. We have extensive experience in the services we provide and are highly qualified and certified, allowing us to guarantee the utmost professionalism and trust in every management task. The importance of working with certified professionals lies in the legal protection we offer our clients, ensuring that all actions and decisions are backed by current regulations, providing peace of mind and security at all times.",
+    "text": "Our goal is to offer an exclusive, top-quality service, dedicating the necessary time to each client to fulfill all their demands. &We have extensive experience in the services we provide and are highly qualified and certified, allowing us to guarantee the utmost professionalism and trust in every management task.& The importance of working with certified professionals lies in the legal protection we offer our clients, ensuring that all actions and decisions are backed by current regulations, providing peace of mind and security at all times.",
     "buttons": {
       "about_us": "Learn More",
       "contact_us": "Contact Us"

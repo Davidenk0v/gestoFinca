@@ -14,6 +14,7 @@ import cleaning_maintenance from "../assets/icons/cleaning_maintenance.svg";
 import customer_support from "../assets/icons/customer_support.svg";
 import payment_management from "../assets/icons/payment_management.svg";
 import pricing_optimization from "../assets/icons/pricing_optimization.svg";
+import tax_management from "../assets/icons/tax_management.svg";
 
 const iconMap = {
   accounting: accounting,
@@ -31,6 +32,7 @@ const iconMap = {
   customer_support: customer_support,
   payment_management: payment_management,
   pricing_optimization: pricing_optimization,
+  tax_management: tax_management,
 };
 
 const ExpandableCard = ({ title, subtitle, text, buttomText, img, lang }) => {
