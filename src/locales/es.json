@@ -243,9 +243,12 @@
     },
     "contact": {
       "title": "Contacto",
-      "address": { "info": "Calle Falsa, 123", "tag": "Dirección" },
-      "city": { "info": "12345, Ciudad Ficticia", "tag": "Ciudad" },
-      "phone": { "info": "+34 123 456 789", "tag": "Teléfono" },
+      "address": {
+        "info": "Adeje",
+        "tag": "Dirección"
+      },
+      "city": { "info": "38670, Santa Cruz de Tenerife", "tag": "Ciudad" },
+      "phone": { "info": "+34 606 83 83 93", "tag": "Teléfono" },
       "email": { "info": "info@gestofinca.com", "tag": "Correo Electrónico" }
     }
   },

@@ -1,53 +1,141 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+
+// Strukturierter Inhalt für verbesserte Leistung und Wartbarkeit
+const sections = [
+  {
+    id: "intro",
+    content: "Willkommen bei unserem Unternehmen für Immobilienverwaltung und Ferienvermietung. Nachfolgend finden Sie die Nutzungsbedingungen, die die Nutzung unserer Dienstleistungen regeln. Durch die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Bedingungen einverstanden."
+  },
+  {
+    id: "acceptance",
+    title: "1. Annahme der Bedingungen",
+    content: "Durch den Zugriff auf oder die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen einverstanden. Wenn Sie mit einem Aspekt der Bedingungen nicht einverstanden sind, sollten Sie unsere Dienstleistungen nicht nutzen."
+  },
+  {
+    id: "services",
+    title: "2. Angebotene Dienstleistungen",
+    content: "Unser Unternehmen bietet Immobilienverwaltung, Ferienvermietungsmanagement und verwandte Beratungsdienstleistungen an. Wir übernehmen alle notwendigen Maßnahmen, um sicherzustellen, dass Immobilien effizient und professionell verwaltet werden."
+  },
+  {
+    id: "responsibility",
+    title: "3. Verantwortung des Nutzers",
+    content: "Als Nutzer unserer Dienstleistungen liegt es in Ihrer Verantwortung, bei der Beauftragung unserer Dienstleistungen genaue und wahrheitsgemäße Informationen bereitzustellen. Sie sind auch dafür verantwortlich, sicherzustellen, dass Immobilien alle geltenden gesetzlichen Vorschriften einhalten."
+  },
+  {
+    id: "ip",
+    title: "4. Geistiges Eigentum",
+    content: "Alle Inhalte und Materialien im Zusammenhang mit unseren Dienstleistungen, einschließlich Texte, Bilder, Logos und Marken, sind ausschließliches Eigentum unseres Unternehmens oder seiner Lizenzgeber. Jede unbefugte Reproduktion ist untersagt."
+  },
+  {
+    id: "liability",
+    title: "5. Haftungsbeschränkung",
+    content: "Wir haften nicht für direkte, indirekte, zufällige, besondere oder Folgeschäden, die sich aus der Nutzung oder der Unfähigkeit zur Nutzung unserer Dienstleistungen ergeben."
+  },
+  {
+    id: "modifications",
+    title: "6. Änderungen",
+    content: "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Alle Änderungen werden auf dieser Seite mit dem Datum der letzten Aktualisierung veröffentlicht."
+  },
+  {
+    id: "contact",
+    title: "7. Kontakt",
+    content: "Wenn Sie Fragen zu diesen Bedingungen haben, zögern Sie nicht, uns über die auf unserer Kontaktseite verfügbaren Kanäle zu kontaktieren."
+  }
+];
+
+// Relevante Metadaten für SEO
+const pageTitle = "Allgemeine Geschäftsbedingungen - GestoFinca";
+const pageDescription = "Lesen Sie die Allgemeinen Geschäftsbedingungen für unsere Immobilienverwaltungs- und Ferienvermietungsdienste.";
 ---
 
-<Layout>
-  <article class="py-12 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-auto">
-    <header class="mb-6 p-5 text-center">
-      <h2 class="text-3xl font-semibold text-brand-blueFinca mb-4">Allgemeine Geschäftsbedingungen</h2>
-      <meta name="description" content="Überprüfen Sie die Allgemeinen Geschäftsbedingungen für unsere Dienstleistungen in der Verwaltung von Immobilien und Ferienvermietungen." />
+<Layout title={pageTitle}>
+  <article class="py-8 px-4 sm:px-6 max-w-4xl mx-auto bg-white shadow rounded-lg my-8">
+    <header class="mb-6 text-center">
+      <h1 class="text-3xl font-semibold text-brand-blueFinca mb-4">Allgemeine Geschäftsbedingungen</h1>
+      <meta name="description" content={pageDescription} />
+      <p class="text-sm text-gray-500">Letzte Aktualisierung: 15. März 2025</p>
     </header>
 
-    <section class="space-y-8 p-5">
-      <p class="text-lg leading-relaxed">
-        Willkommen bei unserem Unternehmen für Immobilienverwaltung und Ferienvermietungsmanagement. Nachfolgend finden Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Dienstleistungen. Durch die Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen einverstanden.
+    <div class="space-y-6">
+      <!-- Einführung ohne Titel -->
+      <p class="text-base sm:text-lg leading-relaxed">
+        {sections[0].content}
       </p>
 
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">1. Akzeptanz der Bedingungen</h2>
-      <p class="text-lg leading-relaxed">
-        Durch den Zugriff auf oder die Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen einverstanden. Wenn Sie mit einem Teil dieser Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienste nicht nutzen.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">2. Angebotene Dienstleistungen</h2>
-      <p class="text-lg leading-relaxed">
-        Unser Unternehmen bietet Dienstleistungen in der Immobilienverwaltung, Ferienvermietung und zugehörige Beratungsdienste an. Wir übernehmen alle notwendigen Operationen, um sicherzustellen, dass die Immobilien effizient und professionell verwaltet werden.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">3. Verantwortung des Nutzers</h2>
-      <p class="text-lg leading-relaxed">
-        Als Nutzer unserer Dienste sind Sie dafür verantwortlich, genaue und wahrheitsgemäße Informationen bei der Buchung unserer Dienstleistungen bereitzustellen. Sie sind auch dafür verantwortlich, sicherzustellen, dass die Immobilien alle geltenden gesetzlichen Vorschriften erfüllen.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">4. Geistiges Eigentum</h2>
-      <p class="text-lg leading-relaxed">
-        Alle Inhalte und Materialien im Zusammenhang mit unseren Dienstleistungen, einschließlich Texte, Bilder, Logos und Marken, sind alleiniges Eigentum unseres Unternehmens oder seiner Lizenzgeber. Eine unbefugte Reproduktion ist verboten.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">5. Haftungsbeschränkung</h2>
-      <p class="text-lg leading-relaxed">
-        Wir haften nicht für direkte, indirekte, zufällige, besondere oder Folgeschäden, die aus der Nutzung oder der Unfähigkeit zur Nutzung unserer Dienste resultieren.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">6. Änderungen</h2>
-      <p class="text-lg leading-relaxed">
-        Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Alle Änderungen werden auf dieser Seite mit dem Datum der letzten Aktualisierung veröffentlicht.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">7. Kontakt</h2>
-      <p class="text-lg leading-relaxed">
-        Wenn Sie Fragen zu diesen Bedingungen haben, können Sie uns gerne über die auf unserer Kontaktseite verfügbaren Kanäle kontaktieren.
-      </p>
-    </section>
+      <!-- Nummerierte Abschnitte -->
+      {sections.slice(1).map(section => (
+        <section id={section.id} class="pt-2">
+          <h2 class="text-xl sm:text-2xl font-semibold text-brand-blueFinca mb-2">
+            {section.title}
+          </h2>
+          <p class="text-base sm:text-lg leading-relaxed text-gray-800">
+            {section.content}
+          </p>
+        </section>
+      ))}
+    </div>
   </article>
 </Layout>
+
+<script>
+  // Lazy Loading mit Intersection für optimierte Ladezeiten
+  document.addEventListener('DOMContentLoaded', () => {
+    if ('IntersectionObserver' in window) {
+      const sectionsToObserve = document.querySelectorAll('section[id]');
+      
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          // Fügt eine Klasse hinzu, wenn der Abschnitt sichtbar ist
+          if (entry.isIntersecting) {
+            entry.target.classList.add('section-visible');
+            // Optional: Beobachtung beenden, nachdem der Abschnitt sichtbar wurde
+            // sectionObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      sectionsToObserve.forEach(section => {
+        sectionObserver.observe(section);
+      });
+    }
+  });
+</script>
+
+<style>
+  /* Stile zur Performanceoptimierung */
+  section {
+    contain: content;
+    will-change: opacity;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+  }
+  
+  section.section-visible {
+    opacity: 1;
+  }
+  
+  /* Eingeschränkte Bewegung Präferenzen */
+  @media (prefers-reduced-motion: reduce) {
+    section {
+      transition: none;
+      opacity: 1;
+    }
+  }
+  
+  /* Schriftoptimierung */
+  @font-face {
+    font-display: swap;
+  }
+  
+  /* Optimierung für Geräte mit hohem Kontrast */
+  @media (forced-colors: active) {
+    article {
+      border: 1px solid CanvasText;
+    }
+    
+    h1, h2 {
+      text-decoration: underline;
+    }
+  }
+</style>

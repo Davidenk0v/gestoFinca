@@ -243,9 +243,9 @@
     },
     "contact": {
       "title": "Contact",
-      "address": { "info": "Fake Street, 123", "tag": "Address" },
-      "city": { "info": "12345, Fictitious City", "tag": "City" },
-      "phone": { "info": "+34 123 456 789", "tag": "Phone" },
+      "address": { "info": "Adeje", "tag": "Address" },
+      "city": { "info": "38670, Santa Cruz de Tenerife", "tag": "City" },
+      "phone": { "info": "+34 606 83 83 93", "tag": "Phone" },
       "email": { "info": "info@gestofinca.com", "tag": "Email" }
     }
   },

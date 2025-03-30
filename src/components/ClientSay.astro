@@ -1,56 +1,168 @@
 ---
-const lang = Astro.props.lang;
+// Props del componente
+const { lang = "es", testimonials = [] } = Astro.props;
+
+// Textos traducidos según el idioma
+const translations = {
+  es: {
+    title: "Lo que dicen nuestros clientes",
+    reviews: [
+      {
+        text: "Excelente servicio de administración para mi apartamento en Tenerife Sur. Se encargan de todo y han maximizado los ingresos de mi vivienda vacacional.",
+        author: "Carlos M.",
+        nationality: "ES",
+        rating: 5
+      },
+      {
+        text: "Como propietario extranjero, contar con un administrador de confianza en Tenerife es fundamental. Su equipo es profesional y siempre responde rápidamente.",
+        author: "Ana P.",
+        nationality: "ES",
+        rating: 5
+      }
+    ]
+  },
+  en: {
+    title: "What our clients say",
+    reviews: [
+      {
+        text: "Excellent management service for my apartment in South Tenerife. They take care of everything and have maximized my vacation rental income.",
+        author: "Richard T.",
+        nationality: "UK",
+        rating: 5
+      },
+      {
+        text: "As a foreign owner, having a trustworthy property manager in Tenerife is essential. Their team is professional and always responds quickly.",
+        author: "Sarah L.",
+        nationality: "UK",
+        rating: 5
+      }
+    ]
+  },
+  de: {
+    title: "Was unsere Kunden sagen",
+    reviews: [
+      {
+        text: "Ausgezeichneter Verwaltungsservice für meine Wohnung im Süden Teneriffas. Sie kümmern sich um alles und haben meine Einnahmen aus der Ferienvermietung maximiert.",
+        author: "Michael S.",
+        nationality: "DE",
+        rating: 5
+      },
+      {
+        text: "Als ausländischer Eigentümer ist es wichtig, einen vertrauenswürdigen Immobilienverwalter auf Teneriffa zu haben. Ihr Team ist professionell und reagiert immer schnell.",
+        author: "Brigitte K.",
+        nationality: "DE",
+        rating: 5
+      }
+    ]
+  }
+};
+
+// Usar el contenido traducido según el idioma proporcionado
+const content = translations[lang] || translations.es;
+
+// Función para renderizar estrellas de manera accesible
+const renderStars = (rating: any) => {
+  const fullStars = '★'.repeat(rating);
+  const emptyStars = '☆'.repeat(5 - rating);
+  return `${fullStars}${emptyStars}`;
+};
 ---
-<section class="mb-12">
-    <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-4 text-center">
-        {lang === "es" 
-          ? "Lo que dicen nuestros clientes" 
-          : lang === "en" 
-          ? "What our clients say" 
-          : "Was unsere kunden sagen"}
-    </h2>
-    <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow" itemscope itemtype="https://schema.org/Review">
-            <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                <meta itemprop="ratingValue" content="5" />
-                <div class="flex text-yellow-400 mb-2">
-                    <span>★★★★★</span>
-                </div>
-            </div>
-            <blockquote itemprop="reviewBody" class="italic">
-                {lang === "es" 
-                  ? "Excelente servicio de administración para mi apartamento en Tenerife Sur. Se encargan de todo y han maximizado los ingresos de mi vivienda vacacional." 
-                  : lang === "en" 
-                  ? "Excellent management service for my apartment in South Tenerife. They take care of everything and have maximized my vacation rental income." 
-                  : "Ausgezeichneter Verwaltungsservice für meine Wohnung im Süden Teneriffas. Sie kümmern sich um alles und haben meine Einnahmen aus der Ferienvermietung maximiert."}
-            </blockquote>
-            <div class="mt-4 font-medium" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <span itemprop="name">
-                    {lang === "es" ? "Carlos M." : lang === "en" ? "Richard T." : "Michael S."}
-                </span>
-                <meta itemprop="nationality" content={lang === "es" ? "ES" : lang === "en" ? "UK" : "DE"} />
-            </div>
+
+<section 
+  class="mb-12 max-w-6xl mx-auto px-4" 
+  aria-labelledby="testimonials-heading"
+>
+  <h2 
+    id="testimonials-heading"
+    class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-8 text-center"
+  >
+    {content.title}
+  </h2>
+  
+  <div class="grid md:grid-cols-2 gap-6">
+    {content.reviews.map((review:any) => (
+      <div 
+        class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 dark:border-gray-700" 
+        itemscope 
+        itemtype="https://schema.org/Review"
+      >
+        <div 
+          itemprop="reviewRating" 
+          itemscope 
+          itemtype="https://schema.org/Rating"
+        >
+          <meta itemprop="worstRating" content="1" />
+          <meta itemprop="bestRating" content="5" />
+          <meta itemprop="ratingValue" content={review.rating.toString()} />
+          
+          <div 
+            class="flex text-yellow-400 mb-3" 
+            aria-label={`Calificación: ${review.rating} de 5 estrellas`}
+          >
+            <span aria-hidden="true">{renderStars(review.rating)}</span>
+          </div>
         </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow" itemscope itemtype="https://schema.org/Review">
-            <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                <meta itemprop="ratingValue" content="5" />
-                <div class="flex text-yellow-400 mb-2">
-                    <span>★★★★★</span>
-                </div>
-            </div>
-            <blockquote itemprop="reviewBody" class="italic">
-                {lang === "es" 
-                  ? "Como propietario extranjero, contar con un administrador de confianza en Tenerife es fundamental. Su equipo es profesional y siempre responde rápidamente." 
-                  : lang === "en" 
-                  ? "As a foreign owner, having a trustworthy property manager in Tenerife is essential. Their team is professional and always responds quickly." 
-                  : "Als ausländischer Eigentümer ist es wichtig, einen vertrauenswürdigen Immobilienverwalter auf Teneriffa zu haben. Ihr Team ist professionell und reagiert immer schnell."}
-            </blockquote>
-            <div class="mt-4 font-medium" itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <span itemprop="name">
-                    {lang === "es" ? "Ana P." : lang === "en" ? "Sarah L." : "Brigitte K."}
-                </span>
-                <meta itemprop="nationality" content={lang === "es" ? "ES" : lang === "en" ? "UK" : "DE"} />
-            </div>
-        </div>
-    </div>
+        
+        <blockquote 
+          itemprop="reviewBody" 
+          class="italic text-gray-800 dark:text-gray-200"
+        >
+          "{review.text}"
+        </blockquote>
+        
+        <footer class="mt-4">
+          <div 
+            class="font-medium text-gray-900 dark:text-gray-100" 
+            itemprop="author" 
+            itemscope 
+            itemtype="https://schema.org/Person"
+          >
+            <span itemprop="name">{review.author}</span>
+            <meta itemprop="nationality" content={review.nationality} />
+          </div>
+          
+          <meta itemprop="datePublished" content="2023-10-15" />
+          <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/Service">
+            <meta itemprop="name" content="GestoFinca Property Management" />
+            <meta itemprop="serviceType" content="Property Management" />
+          </div>
+        </footer>
+      </div>
+    ))}
+  </div>
 </section>
+
+<style>
+  /* Mejoras visuales para accesibilidad */
+  blockquote {
+    position: relative;
+    padding-left: 1rem;
+    border-left: 3px solid #e5e7eb;
+    margin-left: 0.5rem;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .transition-shadow {
+      transition: none;
+    }
+  }
+  
+  /* Soporte para modo de alto contraste */
+  @media (forced-colors: active) {
+    blockquote {
+      border-left: 3px solid CanvasText;
+    }
+    
+    a:focus {
+      outline: 2px solid CanvasText;
+    }
+  }
+  
+  /* Optimizaciones para carga */
+  @media (min-width: 768px) {
+    .grid {
+      content-visibility: auto;
+      contain-intrinsic-size: 1000px;
+    }
+  }
+</style>

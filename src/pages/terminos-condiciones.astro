@@ -1,53 +1,141 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "../layouts/Layout.astro";
+
+// Contenido estructurado para mejorar rendimiento y mantenibilidad
+const sections = [
+  {
+    id: "intro",
+    content: "Bienvenido a nuestra empresa de administración de fincas y gestión de alquileres vacacionales. A continuación, se presentan los términos y condiciones de uso que rigen el uso de nuestros servicios. Al utilizar nuestros servicios, acepta cumplir con estos términos."
+  },
+  {
+    id: "acceptance",
+    title: "1. Aceptación de los Términos",
+    content: "Al acceder o utilizar nuestros servicios, usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con algún aspecto de los términos, no debe utilizar nuestros servicios."
+  },
+  {
+    id: "services",
+    title: "2. Servicios ofrecidos",
+    content: "Nuestra empresa ofrece servicios de administración de fincas, gestión de alquileres vacacionales y asesoría relacionada. Nos encargamos de todas las operaciones necesarias para garantizar que las propiedades sean gestionadas de manera eficiente y profesional."
+  },
+  {
+    id: "responsibility",
+    title: "3. Responsabilidad del Usuario",
+    content: "Como usuario de nuestros servicios, es su responsabilidad proporcionar información precisa y veraz al contratar nuestros servicios. También es responsable de garantizar que las propiedades cumplan con todas las normativas legales aplicables."
+  },
+  {
+    id: "ip",
+    title: "4. Propiedad Intelectual",
+    content: "Todo el contenido y material relacionado con nuestros servicios, incluidos los textos, imágenes, logotipos y marcas, son propiedad exclusiva de nuestra empresa o sus licenciantes. Queda prohibida cualquier reproducción no autorizada."
+  },
+  {
+    id: "liability",
+    title: "5. Limitación de Responsabilidad",
+    content: "No seremos responsables de daños directos, indirectos, incidentales, especiales o consecuentes que resulten del uso o incapacidad para usar nuestros servicios."
+  },
+  {
+    id: "modifications",
+    title: "6. Modificaciones",
+    content: "Nos reservamos el derecho de modificar estos términos en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de la última actualización."
+  },
+  {
+    id: "contact",
+    title: "7. Contacto",
+    content: "Si tiene alguna pregunta sobre estos términos, no dude en contactarnos a través de los canales disponibles en nuestra página de contacto."
+  }
+];
+
+// Metadatos relevantes para SEO
+const pageTitle = "Términos y condiciones - GestoFinca";
+const pageDescription = "Consulta los términos y condiciones de uso de nuestros servicios de administración de fincas y alquileres vacacionales.";
 ---
 
-<Layout title="Términos y condiciones - GestoFinca">
-  <article class="py-12 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-auto">
-    <header class="mb-6 p-5 text-center">
-      <h2 class="text-3xl font-semibold text-brand-blueFinca mb-4">Términos y Condiciones</h2>
-      <meta name="description" content="Consulta los términos y condiciones de uso de nuestros servicios de administración de fincas y alquileres vacacionales." />
+<Layout title={pageTitle}>
+  <article class="py-8 px-4 sm:px-6 max-w-4xl mx-auto bg-white shadow rounded-lg my-8">
+    <header class="mb-6 text-center">
+      <h1 class="text-3xl font-semibold text-brand-blueFinca mb-4">Términos y Condiciones</h1>
+      <meta name="description" content={pageDescription} />
+      <p class="text-sm text-gray-500">Última actualización: 15 de marzo de 2025</p>
     </header>
 
-    <section class="space-y-8 p-5">
-      <p class="text-lg leading-relaxed">
-        Bienvenido a nuestra empresa de administración de fincas y gestión de alquileres vacacionales. A continuación, se presentan los términos y condiciones de uso que rigen el uso de nuestros servicios. Al utilizar nuestros servicios, acepta cumplir con estos términos.
+    <div class="space-y-6">
+      <!-- Introducción sin título -->
+      <p class="text-base sm:text-lg leading-relaxed">
+        {sections[0].content}
       </p>
 
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">1. Aceptación de los Términos</h2>
-      <p class="text-lg leading-relaxed">
-        Al acceder o utilizar nuestros servicios, usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con algún aspecto de los términos, no debe utilizar nuestros servicios.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">2. Servicios ofrecidos</h2>
-      <p class="text-lg leading-relaxed">
-        Nuestra empresa ofrece servicios de administración de fincas, gestión de alquileres vacacionales y asesoría relacionada. Nos encargamos de todas las operaciones necesarias para garantizar que las propiedades sean gestionadas de manera eficiente y profesional.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">3. Responsabilidad del Usuario</h2>
-      <p class="text-lg leading-relaxed">
-        Como usuario de nuestros servicios, es su responsabilidad proporcionar información precisa y veraz al contratar nuestros servicios. También es responsable de garantizar que las propiedades cumplan con todas las normativas legales aplicables.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">4. Propiedad Intelectual</h2>
-      <p class="text-lg leading-relaxed">
-        Todo el contenido y material relacionado con nuestros servicios, incluidos los textos, imágenes, logotipos y marcas, son propiedad exclusiva de nuestra empresa o sus licenciantes. Queda prohibida cualquier reproducción no autorizada.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">5. Limitación de Responsabilidad</h2>
-      <p class="text-lg leading-relaxed">
-        No seremos responsables de daños directos, indirectos, incidentales, especiales o consecuentes que resulten del uso o incapacidad para usar nuestros servicios.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">6. Modificaciones</h2>
-      <p class="text-lg leading-relaxed">
-        Nos reservamos el derecho de modificar estos términos en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de la última actualización.
-      </p>
-
-      <h2 class="text-2xl font-semibold text-brand-blueFinca">7. Contacto</h2>
-      <p class="text-lg leading-relaxed">
-        Si tiene alguna pregunta sobre estos términos, no dude en contactarnos a través de los canales disponibles en nuestra página de contacto.
-      </p>
-    </section>
+      <!-- Secciones numeradas -->
+      {sections.slice(1).map(section => (
+        <section id={section.id} class="pt-2">
+          <h2 class="text-xl sm:text-2xl font-semibold text-brand-blueFinca mb-2">
+            {section.title}
+          </h2>
+          <p class="text-base sm:text-lg leading-relaxed text-gray-800">
+            {section.content}
+          </p>
+        </section>
+      ))}
+    </div>
   </article>
 </Layout>
+
+<script>
+  // Carga diferida de intersección para optimizar la carga
+  document.addEventListener('DOMContentLoaded', () => {
+    if ('IntersectionObserver' in window) {
+      const sectionsToObserve = document.querySelectorAll('section[id]');
+      
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          // Añade una clase cuando la sección es visible
+          if (entry.isIntersecting) {
+            entry.target.classList.add('section-visible');
+            // Opcionalmente desconectar después de ser visible
+            // sectionObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      sectionsToObserve.forEach(section => {
+        sectionObserver.observe(section);
+      });
+    }
+  });
+</script>
+
+<style>
+  /* Estilos para optimización de rendimiento */
+  section {
+    contain: content;
+    will-change: opacity;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+  }
+  
+  section.section-visible {
+    opacity: 1;
+  }
+  
+  /* Preferencias de movimiento reducido */
+  @media (prefers-reduced-motion: reduce) {
+    section {
+      transition: none;
+      opacity: 1;
+    }
+  }
+  
+  /* Optimización de fuentes */
+  @font-face {
+    font-display: swap;
+  }
+  
+  /* Optimizar para dispositivos de alto contraste */
+  @media (forced-colors: active) {
+    article {
+      border: 1px solid CanvasText;
+    }
+    
+    h1, h2 {
+      text-decoration: underline;
+    }
+  }
+</style>

@@ -8,15 +8,20 @@ const data = Astro.props.data
 const { property_management, vacation_rentals, footer, services } = data;
 ---
 
-<section class="bg-slate-100 flex flex-col gap-8 justify-center items-center px-4 py-12 animate-fade-in" aria-labelledby="services-title">
-  <!-- Título centrado arriba -->
-  <h2 id="services-title" class="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
+<section 
+  class="bg-slate-100 flex flex-col gap-8 justify-center items-center px-4 py-12" 
+  aria-labelledby="services-title"
+>
+  <h2 
+    id="services-title" 
+    class="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl"
+  >
     {services.title}
   </h2>
 
-  <div class="flex flex-col md:flex-row gap-8 justify-center w-full max-w-screen-lg animate-fade-in-up">
+  <div class="flex flex-col md:flex-row gap-8 justify-center w-full max-w-screen-lg">
     <!-- Primer CardService -->
-    <article class="card-service" aria-labelledby="property-management">
+    <div class="card-service flex-1">
       <CardService 
         link={footer.pages.links[1].link} 
         button={property_management.buttons.about_us} 
@@ -24,11 +29,12 @@ const { property_management, vacation_rentals, footer, services } = data;
         title={property_management.title} 
         img={House} 
         alt="Imagen representativa de gestión de propiedades"
+        id="property-management"
       />
-    </article>
+    </div>
     
     <!-- Segundo CardService -->
-    <article class="card-service" aria-labelledby="vacation-rentals">
+    <div class="card-service flex-1">
       <CardService 
         link={footer.pages.links[2].link} 
         button={vacation_rentals.buttons.about_us} 
@@ -36,27 +42,31 @@ const { property_management, vacation_rentals, footer, services } = data;
         title={vacation_rentals.title}  
         img={Vacation} 
         alt="Imagen representativa de alquileres vacacionales"
+        id="vacation-rentals"
       />
-    </article>
+    </div>
   </div>
 </section>
 
 <style>
-   /* Animaciones */
-   .animate-fade-in {
-        animation: fadeIn 1s ease-out forwards;
-   }
-   .animate-fade-in-up {
-        animation: fadeInUp 1s ease-out forwards;
-   }
-   
    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
    }
 
    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(40px); }
-        to { opacity: 1; transform: translateY(0); }
+        0% { opacity: 0; transform: translateY(40px); }
+        100% { opacity: 1; transform: translateY(0); }
+   }
+
+   /* Animaciones con preferencias de movimiento reducido */
+   @media (prefers-reduced-motion: no-preference) {
+     section {
+       animation: fadeIn 1s ease-out forwards;
+     }
+     
+     section > div {
+       animation: fadeInUp 1s ease-out forwards;
+     }
    }
 </style>
