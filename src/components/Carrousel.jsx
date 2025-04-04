@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import fondoAzul from "@/assets/images/fondo-azul.webp";
 import fondoCasa from "@/assets/images/fondo-casa.webp";
-import logo from "@/assets/logos/imagen_logo_negativo.png";
+import logo from "@/assets/logos/imagen_logo_negativo.webp";
 
 // Definir imágenes fuera del componente para evitar recreaciones
 const IMAGES = [fondoCasa, fondoAzul];
