@@ -1,72 +1,51 @@
-# GestoFinca
+# 🌿 GestoFinca
 
-![GestoFinca Inicio](https://github.com/user-attachments/assets/6f39c536-a185-4620-8cd7-1efcdba2782f)
+![GestoFinca Screenshot](https://github.com/user-attachments/assets/6f39c536-a185-4620-8cd7-1efcdba2782f)
 
+🔗 [Visitar la aplicación](https://gesto-finca.vercel.app/)
 
-[Ir a la página](https://gesto-finca.vercel.app/)
+**GestoFinca** es una web moderna y eficiente, desarrollada para una empresa especializada en la **gestión de propiedades** y la administración de **alquileres vacacionales**. Ofrece una interfaz intuitiva, un diseño centrado en la usabilidad y soporte multilingüe, todo enfocado en brindar una experiencia de usuario óptima.
 
-GestoFinca es una plataforma de gestión de propiedades y administración de alquileres vacacionales. Desarrollada con [Astro](https://astro.build/), [React](https://react.dev/) y [TailwindCSS](https://tailwindcss.com/), ofrece una experiencia rápida, moderna y adaptable para propietarios y administradores de fincas.
+---
 
-## Características principales
+## ✨ Características destacadas
 
-- **Administración de fincas**: Gestión completa de propiedades con información detallada.
-- **Gestión de alquileres vacacionales**: Control de reservas, disponibilidad y mantenimiento de alojamientos.
-- **Sistema de envío de correos**: Integrado con [Resend](https://resend.com/) para comunicación eficiente con los clientes.
-- **Vistas disponibles**:
-  - Administración de fincas
-  - Gestión de alquileres vacacionales
+- 🏡 **Gestión integral de fincas**: Agrega, visualiza y administra propiedades con todos sus detalles.
+- 🛏️ **Control de alquileres vacacionales**: Gestión de reservas, disponibilidad, mantenimiento y más.
+- 📬 **Sistema de contacto**: Integración con [Resend](https://resend.com/) para el envío profesional de correos electrónicos.
+- 🌍 **Internacionalización (i18n)**: Disponible en **español**, **inglés** y **alemán** para llegar a un público global.
+- 👥 **Secciones informativas**:
+  - Página de administración de fincas
+  - Página de alquileres vacacionales
   - Nosotros
   - Contacto
-  - Presupuestos
-- **Internacionalización**: Disponible en español, inglés y alemán.
+  - Solicitud de presupuestos
 
-## Tecnologías utilizadas
+---
 
-- **Astro**: Framework para la creación de sitios web rápidos y optimizados.
-- **React**: Componentes interactivos y dinámicos dentro de Astro.
-- **TailwindCSS**: Diseño moderno y adaptable con clases utilitarias.
-- **Resend**: Envío de correos electrónicos confiable y eficiente.
+## 🛠️ Tecnologías utilizadas
 
-## Colores corporativos
+| Tecnología                              | Descripción                                                          |
+| --------------------------------------- | -------------------------------------------------------------------- |
+| [Astro](https://astro.build/)           | Framework moderno para sitios rápidos y optimizados.                 |
+| [React](https://react.dev/)             | Componentes dinámicos e interactivos dentro del ecosistema Astro.    |
+| [TailwindCSS](https://tailwindcss.com/) | Estilizado moderno con clases utilitarias para un diseño responsive. |
+| [Resend](https://resend.com/)           | Servicio confiable para el envío de correos electrónicos.            |
 
-- **greenFinca**: `#7EDA55`
-- **blueFinca**: `#25C0D8`
+---
 
-## Instalación y configuración
+## 🎨 Colores corporativos
 
-1. Clonar el repositorio:
-   ```sh
-   git clone https://github.com/Davidenk0v/gestoFinca.git
-   cd gestoFinca
-   ```
-2. Instalar dependencias:
-   ```sh
-   npm install
-   ```
-3. Configurar variables de entorno:
-   - Crear un archivo `.env` en la raíz del proyecto con los siguientes valores:
-     ```env
-     RESEND_API_KEY=tu_api_key
-     ```
-4. Iniciar el entorno de desarrollo:
-   ```sh
-   npm run dev
-   ```
+| Nombre       | Hex       |
+| ------------ | --------- |
+| `greenFinca` | `#7EDA55` |
+| `blueFinca`  | `#25C0D8` |
 
-## Despliegue
+---
 
-La aplicación está desplegada en [Vercel](https://vercel.com/) y puede accederse en línea.
+## 🚀 Despliegue
 
-
-## Tareas Pendientes
-
-- [x] Carrousel con un solo eslogan y un poco más grande.
-- [x] Elemento de contacto en medio de los servicios con degradado azul-verde.
-- [x] Títulos en azul.
-- [x] Líneas del header en verde junto con el logo.
-- [x] Botón del carrousel verde y transparente.
-- [x] Botones de los servicios en naranja.
-- [x] Iconos y datos de email y teléfono.
-- [x] Formulario al final de todas las páginas.
+GestoFinca está desplegado en [Vercel](https://vercel.com/), garantizando un rendimiento rápido y disponibilidad constante.  
+👉 Puedes acceder a la aplicación en: **[gesto-finca.vercel.app](https://gesto-finca.vercel.app/)**
 
 ---
