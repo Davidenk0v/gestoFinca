@@ -1,12 +1,12 @@
 ---
+import { loadTranslations } from "../utils/i18n";
 import Carrousel from "../components/Carrousel";
 import ContactBanner from "../components/ContactBanner.astro";
 import ContactFormReact from "../components/ContactFormReact";
 import Layout from "../layouts/Layout.astro";
-import { loadTranslations } from "../utils/i18n";
 import ServiceBanner from "../components/ServiceBanner.astro";
-import logo from '@/assets/images/vivienda.png'
 import ExpandableCard from "../components/ExpandableCard.jsx";
+import houseHand from '@/assets/images/vivienda.webp'
 const url = new URL(Astro.request.url);
 const lang = url.searchParams.get("lang") || "es";
 const translations = await loadTranslations(lang);
@@ -30,7 +30,7 @@ const link = translations.footer.useful_links.links[0].link;
         </section>
 
         <section class="animate-fade-in">
-            <ServiceBanner data={property_management} image={logo} link={link}/>
+            <ServiceBanner data={property_management} image={houseHand} link={link}/>
         </section>
 
         <section aria-labelledby="services-section" class="px-4 py-16 bg-slate-50 animate-fade-in-up">

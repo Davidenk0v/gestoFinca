@@ -1,11 +1,11 @@
 import { useEffect, useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import image1 from "@/assets/images/fondo-azul.webp";
-import edf2 from "@/assets/images/house.webp";
+import fondoAzul from "@/assets/images/fondo-azul.webp";
+import fondoCasa from "@/assets/images/fondo-casa.webp";
 import logo from "@/assets/logos/imagen_logo_negativo.png";
 
 // Definir imágenes fuera del componente para evitar recreaciones
-const IMAGES = [edf2, image1];
+const IMAGES = [fondoCasa, fondoAzul];
 const SLIDE_DURATION = 10000; // 10 segundos entre diapositivas
 const TRANSITION_DURATION = 0.6;
 
