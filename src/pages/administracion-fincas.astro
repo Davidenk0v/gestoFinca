@@ -51,7 +51,7 @@ const link = translations.footer.useful_links.links[0].link;
                 
                 <h2 id="services-section" class="sr-only">Servicios de administración de fincas</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in-up">
-                {services.map((service, index) => (
+                {services.map((service: any, index: number) => (
                     <div class="service-card" style={`animation-delay: ${index * 0.1}s`}>
                         <ExpandableCard client:load lang={lang} buttomText={buttons.about_us} title={service.title} subtitle={service.subtitle} text={service.description} img={service.img} />
                     </div>

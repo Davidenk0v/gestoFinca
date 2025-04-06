@@ -132,7 +132,7 @@ const Carousel = ({ data, lang }) => {
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 text-base sm:text-lg md:text-xl hidden sm:block text-white">
+        <p className="mt-4 text-base sm:text-lg md:text-xl sm:block text-white">
           {phrases[0]}
         </p>
 
