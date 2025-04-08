@@ -7,7 +7,7 @@ const WhatsAppIcon = () => {
 
   const handleClick = () => {
     const message = "¡Hola! Estoy interesado en recibir más información.";
-    const phoneNumber = "+34672277520";
+    const phoneNumber = "+34689958931";
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       message
     )}`;
