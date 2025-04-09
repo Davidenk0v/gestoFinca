@@ -87,8 +87,8 @@ export async function POST({ request }) {
         <body>
           <div class="container">
             <div class="header">
-              <img src="assets/logos/gestofinca.png" alt="GestoFinca Logo" class="logo">
-              <p>Gestión Profesional de Fincas</p>
+              <img src="https://www.gestofinca.com/assets/logos/gestofinca.png" alt="GestoFinca Logo" class="logo">
+              <p>GestoFinca</p>
             </div>
             
             <div class="content">
