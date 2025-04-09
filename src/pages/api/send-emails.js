@@ -8,7 +8,7 @@ export async function POST({ request }) {
 
     const data = await resend.emails.send({
       from: "GestoFinca <no-reply@gestofinca.com>",
-      to: "david4100ggx@gmail.com",
+      to: "gestofinca@gmail.com",
       subject: subject,
       html: `
         <!DOCTYPE html>
@@ -87,7 +87,6 @@ export async function POST({ request }) {
         <body>
           <div class="container">
             <div class="header">
-              <img src="https://www.gestofinca.com/assets/logos/gestofinca.png" alt="GestoFinca Logo" class="logo">
               <p>GestoFinca</p>
             </div>
             
