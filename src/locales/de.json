@@ -238,13 +238,13 @@
         { "name": "Kontaktieren Sie uns", "link": "/contacto?lang=de" },
         {
           "name": "Allgemeine Geschäftsbedingungen",
-          "link": "/allgemeine-geschaeftsbedingungen?lang=de"
+          "link": "/de/allgemeine-geschaeftsbedingungen"
         },
         {
           "name": "Datenschutzrichtlinie",
-          "link": "/datenschutzrichtlinie?lang=de"
+          "link": "/de/datenschutzrichtlinie"
         },
-        { "name": "Cookie-Richtlinie", "link": "/cookie-richtlinie?lang=de" }
+        { "name": "Cookie-Richtlinie", "link": "/de/cookie-richtlinie" }
       ]
     },
     "contact": {

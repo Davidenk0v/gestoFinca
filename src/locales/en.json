@@ -236,9 +236,9 @@
       "title": "Useful Links",
       "links": [
         { "name": "Contact Us", "link": "/contacto?lang=en" },
-        { "name": "Terms and Conditions", "link": "/terms-conditions?lang=en" },
-        { "name": "Privacy Policy", "link": "/privacy-policy?lang=en" },
-        { "name": "Cookie Policy", "link": "/cookie-policy?lang=en" }
+        { "name": "Terms and Conditions", "link": "/en/terms-conditions" },
+        { "name": "Privacy Policy", "link": "/en/privacy-policy" },
+        { "name": "Cookie Policy", "link": "/en/cookie-policy" }
       ]
     },
     "contact": {

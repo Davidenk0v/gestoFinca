@@ -236,9 +236,9 @@
       "title": "Enlaces de interés",
       "links": [
         { "name": "Contáctanos", "link": "/contacto" },
-        { "name": "Términos y Condiciones", "link": "/terminos-condiciones" },
-        { "name": "Política de Privacidad", "link": "/politica-de-privacidad" },
-        { "name": "Uso de Cookies", "link": "/uso-cookies" }
+        { "name": "Términos y Condiciones", "link": "/es/terminos-condiciones" },
+        { "name": "Política de Privacidad", "link": "/es/politica-de-privacidad" },
+        { "name": "Uso de Cookies", "link": "/es/uso-cookies" }
       ]
     },
     "contact": {
