@@ -1,15 +1,15 @@
 ---
-import Carrousel from "../components/Carrousel";
-import ContactBanner from "../components/ContactBanner.astro";
-import ContactFormReact from "../components/ContactFormReact";
-import ExpandableCard from "../components/ExpandableCard";
-import ServiceBanner from "../components/ServiceBanner.astro";
-import Layout from "../layouts/Layout.astro";
-import { loadTranslations } from "../utils/i18n";
+import Carrousel from "../../components/Carrousel";
+import ContactBanner from "../../components/ContactBanner.astro";
+import ContactFormReact from "../../components/ContactFormReact";
+import ExpandableCard from "../../components/ExpandableCard";
+import ServiceBanner from "../../components/ServiceBanner.astro";
+import Layout from "../../layouts/Layout.astro";
+import { loadTranslations } from "../../utils/i18n";
 import holiday from "@/assets/images/holiday.webp";
 
 const url = new URL(Astro.request.url);
-const lang = url.searchParams.get("lang") || "es";
+const lang = Astro.params.lang
 const translations = await loadTranslations(lang);
 const link = translations.footer.useful_links.links[0].link;
 const { seo } = translations;

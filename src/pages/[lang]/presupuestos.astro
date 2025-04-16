@@ -1,14 +1,13 @@
 ---
 import { quotelessJson } from "astro:schema";
-import Carrousel from "../components/Carrousel";
-import ContactBanner from "../components/ContactBanner.astro";
-import ContactFormReact from "../components/ContactFormReact";
-import Layout from "../layouts/Layout.astro";
-import { loadTranslations } from "../utils/i18n";
-import Title from "../components/about_us/Title.astro";
+import Carrousel from "../../components/Carrousel";
+import ContactBanner from "../../components/ContactBanner.astro";
+import ContactFormReact from "../../components/ContactFormReact";
+import Layout from "../../layouts/Layout.astro";
+import { loadTranslations } from "../../utils/i18n";
+import Title from "../../components/about_us/Title.astro";
 
-const url = new URL(Astro.request.url);
-const lang = url.searchParams.get("lang") || "es";
+const lang = Astro.params.lang
 const translations = await loadTranslations(lang);
 const { quotes, seo, contact, forms } = translations;
 ---

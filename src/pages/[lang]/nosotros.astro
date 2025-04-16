@@ -1,17 +1,16 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import ServicesInfo from "../components/ServicesInfo.astro";
-import Carrousel from "../components/Carrousel";
-import ContactBanner from "../components/ContactBanner.astro";
-import ContactFormReact from "../components/ContactFormReact";
-import { loadTranslations } from "../utils/i18n";
-import AboutUs from "../components/AboutUs.astro";
-import Who from "../components/Who.astro";
-import FAQComponent from "../components/FAQComponent.astro";
-import ClientSay from "../components/ClientSay.astro";
+import Layout from "../../layouts/Layout.astro";
+import ServicesInfo from "../../components/ServicesInfo.astro";
+import Carrousel from "../../components/Carrousel";
+import ContactBanner from "../../components/ContactBanner.astro";
+import ContactFormReact from "../../components/ContactFormReact";
+import { loadTranslations } from "../../utils/i18n";
+import AboutUs from "../../components/AboutUs.astro";
+import Who from "../../components/Who.astro";
+import FAQComponent from "../../components/FAQComponent.astro";
+import ClientSay from "../../components/ClientSay.astro";
 
-const url = new URL(Astro.request.url);
-const lang = url.searchParams.get("lang") || "es";
+const lang = Astro.params.lang
 
 const translations = await loadTranslations(lang);
 const { seo } = translations;

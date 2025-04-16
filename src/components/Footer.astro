@@ -1,6 +1,7 @@
 ---
 import logoadmin from "@/assets/logos/imagen_logo.webp";
 import Image from "astro/components/Image.astro";
+
 const {texts, lang} = Astro.props;
 const { phrase, pages, useful_links, contact } = texts;
 
@@ -38,7 +39,7 @@ const jsonLd = {
           </h3>
         </a>
         <p class="text-base text-gray-700 mb-6">{phrase}</p>
-        <a href={`/?lang=${lang}`} title="Inicio GestoFinca" class="inline-block">
+        <a href={`/${lang}/`} title="Inicio GestoFinca" class="inline-block">
           <Image
             src={logoadmin}
             alt="Logo de GestoFinca - Administración de fincas y alquileres vacacionales"

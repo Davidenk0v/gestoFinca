@@ -1,17 +1,15 @@
 ---
-import Carrousel from '../components/Carrousel.jsx'
-import ContactFormReact from '../components/ContactFormReact';
-import ServicesInfo from '../components/ServicesInfo.astro';
-import Layout from '../layouts/Layout.astro';
-import ContactBanner from '../components/ContactBanner.astro';
-import { loadTranslations } from '../utils/i18n';
-import AboutUs from '../components/AboutUs.astro';
-import ClientSay from '../components/ClientSay.astro';
-import FAQComponent from '../components/FAQComponent.astro';
+import Carrousel from '../../components/Carrousel.jsx'
+import ContactFormReact from '../../components/ContactFormReact';
+import ServicesInfo from '../../components/ServicesInfo.astro';
+import Layout from '../../layouts/Layout.astro';
+import ContactBanner from '../../components/ContactBanner.astro';
+import { loadTranslations } from '../../utils/i18n';
+import AboutUs from '../../components/AboutUs.astro';
+import ClientSay from '../../components/ClientSay.astro';
+import FAQComponent from '../../components/FAQComponent.astro';
 
-const params = Astro.url.searchParams;
-const url = new URL(Astro.request.url);
-const lang = url.searchParams.get('lang') || (typeof window !== 'undefined' ? localStorage.getItem('lang') : 'es');
+const lang = Astro.params.lang || 'es'; // Default to Spanish if no lang param is provided
 
 const translation = await loadTranslations(lang);
 const { seo } = translation;

@@ -26,21 +26,21 @@ const Header = ({ lang = "es", data }) => {
 
   // Definir rutas de navegación
   const navigationLinks = [
-    { href: `/?lang=${lang}`, label: header?.home || "Inicio" },
+    { href: `/${lang}/`, label: header?.home || "Inicio" },
     {
-      href: `/administracion-fincas?lang=${lang}`,
+      href: `/${lang}/administracion-fincas`,
       label: header?.property_management || "Administración de Fincas",
     },
     {
-      href: `/alquileres-vacacionales?lang=${lang}`,
+      href: `/${lang}/alquileres-vacacionales`,
       label: header?.vacation_rentals || "Alquileres Vacacionales",
     },
-    { href: `/nosotros?lang=${lang}`, label: header?.about_us || "Nosotros" },
+    { href: `/${lang}/nosotros`, label: header?.about_us || "Nosotros" },
     {
-      href: `/presupuestos?lang=${lang}`,
+      href: `/${lang}/presupuestos`,
       label: header?.quotes || "Presupuestos",
     },
-    { href: `/contacto?lang=${lang}`, label: header?.contact || "Contacto" },
+    { href: `/${lang}/contacto`, label: header?.contact || "Contacto" },
   ];
 
   // Manejar bloqueo de scroll cuando el menú móvil está abierto
@@ -72,7 +72,7 @@ const Header = ({ lang = "es", data }) => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a
-              href={`/?lang=${lang}`}
+              href={`/${lang}/`}
               className="flex items-center text-3xl font-bold text-brand-blueFinca hover:opacity-80 transition-opacity"
             >
               Gesto<span className="text-brand-greenFinca">Finca</span>

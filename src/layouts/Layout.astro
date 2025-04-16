@@ -7,11 +7,10 @@ import Footer from "../components/Footer.astro";
 import logo from "../assets/logos/gestofinca.png";
 
 // Mantenemos los props originales
-const { title, description } = Astro.props;
-const params = Astro.url.searchParams;
-const lang = params.get("lang") || "es";
-
+const lang = Astro.params.lang
 const translations = await loadTranslations(lang);
+console.log(Astro.props)
+const { title , description } = Astro.props;
 
 // Constantes para SEO
 const companyInfo = {
@@ -53,7 +52,7 @@ const organizationSchema = {
 const webpageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "headline": title,
+  "headline": title || translations.seo.title,
   "description": description || translations.seo.description,
   "url": Astro.url.href,
   "inLanguage": lang,
@@ -112,7 +111,7 @@ const seoKeywords = {
 		<link rel="alternate" hreflang="x-default" href={`${companyInfo.siteUrl}${currentPath}`} />
 		
 		<!-- Título optimizado -->
-		<title>{title} | {companyInfo.name} | Tenerife</title>
+		<title>{title || translations.seo.title} | {companyInfo.name} | Tenerife</title>
 
 		<!-- Meta descripción -->
 		<meta name="description" content={description || translations.seo.description} />
@@ -129,7 +128,7 @@ const seoKeywords = {
 		<meta name="ICBM" content="28.2916, -16.6291" />
 
 		<!-- Open Graph meta tags -->
-		<meta property="og:title" content={title} />
+		<meta property="og:title" content={title || translations.seo.title} />
 		<meta property="og:description" content={description || translations.seo.description} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url.href} />
@@ -139,7 +138,7 @@ const seoKeywords = {
 		
 		<!-- Twitter Card meta tags -->
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content={title} />
+		<meta name="twitter:title" content={title || translations.seo.title} />
 		<meta name="twitter:description" content={description || translations.seo.description} />
 		<meta name="twitter:image" content={new URL(logo.src, Astro.url)} />
 

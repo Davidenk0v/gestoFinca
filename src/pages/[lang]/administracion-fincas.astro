@@ -1,14 +1,13 @@
 ---
-import { loadTranslations } from "../utils/i18n";
-import Carrousel from "../components/Carrousel";
-import ContactBanner from "../components/ContactBanner.astro";
-import ContactFormReact from "../components/ContactFormReact";
-import Layout from "../layouts/Layout.astro";
-import ServiceBanner from "../components/ServiceBanner.astro";
-import ExpandableCard from "../components/ExpandableCard.jsx";
+import { loadTranslations } from "../../utils/i18n";
+import Carrousel from "../../components/Carrousel";
+import ContactBanner from "../../components/ContactBanner.astro";
+import ContactFormReact from "../../components/ContactFormReact";
+import Layout from "../../layouts/Layout.astro";
+import ServiceBanner from "../../components/ServiceBanner.astro";
+import ExpandableCard from "../../components/ExpandableCard.jsx";
 import houseHand from '@/assets/images/vivienda.webp'
-const url = new URL(Astro.request.url);
-const lang = url.searchParams.get("lang") || "es";
+const lang = Astro.params.lang
 const translations = await loadTranslations(lang);
 const { property_management, seo } = translations;
 const { tags } = seo;

@@ -9,37 +9,25 @@ const LANGUAGES = [
 const DEFAULT_LANGUAGE = "es";
 
 const LanguageSelector = () => {
-  // Inicializar con el idioma predeterminado
   const [language, setLanguage] = useState(DEFAULT_LANGUAGE);
   const [isOpen, setIsOpen] = useState(false);
 
-  // Verificar la URL al cargar el componente
+  // Detectar idioma desde el pathname
   useEffect(() => {
     if (typeof window !== "undefined") {
-      try {
-        // Verificar si hay un parámetro de idioma en la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const urlLang = urlParams.get("lang");
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      const urlLang = pathParts[0];
 
-        if (urlLang && LANGUAGES.some((lang) => lang.code === urlLang)) {
-          // Si hay un idioma válido en la URL, úsalo
-          setLanguage(urlLang);
-          // También actualiza localStorage para mantener consistencia
-          localStorage.setItem("lang", urlLang);
-        } else {
-          // Si no hay un idioma en la URL, usa español como predeterminado
-          setLanguage(DEFAULT_LANGUAGE);
-          // Actualiza localStorage para mantener consistencia
-          localStorage.setItem("lang", DEFAULT_LANGUAGE);
-        }
-      } catch (error) {
-        console.error("Error al verificar el idioma en la URL:", error);
+      if (LANGUAGES.some((lang) => lang.code === urlLang)) {
+        setLanguage(urlLang);
+        localStorage.setItem("lang", urlLang);
+      } else {
         setLanguage(DEFAULT_LANGUAGE);
+        localStorage.setItem("lang", DEFAULT_LANGUAGE);
       }
     }
   }, []);
 
-  // Manejar cambio de idioma
   const changeLanguage = useCallback(
     (langCode) => {
       if (langCode === language) {
@@ -47,7 +35,6 @@ const LanguageSelector = () => {
         return;
       }
 
-      // Verificar que el código de idioma sea válido
       if (!LANGUAGES.some((lang) => lang.code === langCode)) {
         langCode = DEFAULT_LANGUAGE;
       }
@@ -56,13 +43,11 @@ const LanguageSelector = () => {
 
       if (typeof window !== "undefined") {
         try {
-          // Guardar en localStorage
-          localStorage.setItem("lang", langCode);
-
-          // Actualizar URL
-          const currentUrl = new URL(window.location.href);
-          currentUrl.searchParams.set("lang", langCode);
-          window.location.href = currentUrl.toString();
+          const currentPath = window.location.pathname;
+          const pathParts = currentPath.split("/").filter(Boolean);
+          pathParts[0] = langCode; // sustituye el primer segmento con el nuevo idioma
+          const newPath = "/" + pathParts.join("/");
+          window.location.pathname = newPath;
         } catch (error) {
           console.error("Error al cambiar el idioma:", error);
         }
@@ -73,7 +58,6 @@ const LanguageSelector = () => {
     [language]
   );
 
-  // Cerrar el menú al hacer clic fuera
   useEffect(() => {
     if (!isOpen) return;
 
@@ -87,7 +71,6 @@ const LanguageSelector = () => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [isOpen]);
 
-  // Obtener el idioma actual con un fallback seguro a español
   const currentLanguage =
     LANGUAGES.find((lang) => lang.code === language) ||
     LANGUAGES.find((lang) => lang.code === DEFAULT_LANGUAGE);
