@@ -4,7 +4,7 @@ export const prerender = true;
 export async function GET() {
   const baseUrl = 'https://www.gestofinca.com';
 
-  // Rutas base extraídas de tu sitemap anterior
+  // Rutas base
   const routes = [
     '',  // Para la página index
     'administracion-fincas',
@@ -29,22 +29,28 @@ export async function GET() {
     for (const lang of languages) {
       // Construir la URL con el formato /{lang}/{ruta}
       const path = route ? `${lang}/${route}` : `${lang}`;
+      
+      // Aseguramos que la URL es absoluta y válida
+      const fullUrl = `${baseUrl}/${path}`;
+      
       sitemap += `
   <url>
-    <loc>${baseUrl}/${path}</loc>
+    <loc>${fullUrl}</loc>
     <lastmod>${now}</lastmod>`;
 
       // Añadir enlaces alternativos para cada idioma
       for (const alternateLang of languages) {
         const alternatePath = route ? `${alternateLang}/${route}` : `${alternateLang}`;
+        const alternateUrl = `${baseUrl}/${alternatePath}`;
+        
         sitemap += `
     <xhtml:link 
       rel="alternate" 
       hreflang="${alternateLang}" 
-      href="${baseUrl}/${alternatePath}" />`;
+      href="${alternateUrl}" />`;
       }
 
-      // Añadir enlace para el idioma "x-default" (recomendado por Google)
+      // Añadir enlace para el idioma "x-default"
       const defaultPath = route ? `es/${route}` : `es`;
       sitemap += `
     <xhtml:link 
@@ -63,7 +69,6 @@ export async function GET() {
   return new Response(sitemap, {
     headers: {
       "Content-Type": "application/xml",
-      "Cache-Control": "public, max-age=3600"
     },
   });
 }
