@@ -1,32 +1,28 @@
-// src/middleware.ts
-import { defineMiddleware } from 'astro:middleware';
+import { defineMiddleware } from "astro:middleware";
 
 export const onRequest = defineMiddleware((context, next) => {
   const { url, headers } = context.request;
   const pathname = new URL(url).pathname;
-  
-  // Si estamos en la ruta raíz
+  console.log(`Request URL: ${url}`);
+  console.log(`Pathname: ${pathname}`);
+
   if (pathname === '/') {
-    // Obtener el idioma preferido del navegador
     const acceptLanguage = headers.get('accept-language') || '';
-    
-    // Lista de idiomas soportados
+    console.log(`Accept-Language: ${acceptLanguage}`);
+
     const supportedLanguages = ['es', 'en', 'de'];
-    
-    // Intentar encontrar el mejor idioma
-    let preferredLanguage = 'es'; // Español como predeterminado
-    
-    // Buscar coincidencias en el encabezado accept-language
+    let preferredLanguage = 'es';
+
     for (const lang of supportedLanguages) {
       if (acceptLanguage.includes(lang)) {
         preferredLanguage = lang;
         break;
       }
     }
-    
-    // Redirigir al idioma preferido
+
+    console.log(`Redirecting to: /${preferredLanguage}/`);
     return context.redirect(`/${preferredLanguage}/`);
   }
-  
+
   return next();
 });
