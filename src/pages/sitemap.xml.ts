@@ -4,48 +4,66 @@ export const prerender = true;
 export async function GET() {
   const baseUrl = 'https://www.gestofinca.com';
 
-  const basePaths = [
-    '/',
-    '/administracion-fincas',
-    '/alquileres-vacacionales',
-    '/contacto',
-    '/nosotros',
-    '/presupuestos',
+  // Rutas base extraídas de tu sitemap anterior
+  const routes = [
+    '',  // Para la página index
+    'administracion-fincas',
+    'alquileres-vacacionales',
+    'contacto',
+    'nosotros',
+    'presupuestos',
+    'cookie-policy',
+    'privacy-policy',
+    'terms-conditions',
   ];
 
   const languages = ['es', 'en', 'de'];
-  const now = new Date().toISOString();
+  const now = new Date().toISOString().split('T')[0];
 
-  // Generamos un bloque <url> por cada ruta y sus versiones multilingües
-  const urls = basePaths.map((path) => {
-    const alternates = languages.map((lang) => {
-      const href = path === '/' ? `${baseUrl}/?lang=${lang}` : `${baseUrl}${path}?lang=${lang}`;
-      return `<xhtml:link rel="alternate" hreflang="${lang}" href="${href}" />`;
-    }).concat(
-      `<xhtml:link rel="alternate" hreflang="x-default" href="${baseUrl}${path}" />`
-    ).join('\n      ');
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">`;
 
-    return languages.map((lang) => {
-      const loc = path === '/' ? `${baseUrl}/?lang=${lang}` : `${baseUrl}${path}?lang=${lang}`;
-      return `
-    <url>
-      <loc>${loc}</loc>
-      <lastmod>${now}</lastmod>
-      ${alternates}
-    </url>`;
-    }).join('');
-  }).join('');
+  // Para cada ruta, generar las entradas para todos los idiomas
+  for (const route of routes) {
+    for (const lang of languages) {
+      // Construir la URL con el formato /{lang}/{ruta}
+      const path = route ? `${lang}/${route}` : `${lang}`;
+      sitemap += `
+  <url>
+    <loc>${baseUrl}/${path}</loc>
+    <lastmod>${now}</lastmod>`;
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  ${urls}
+      // Añadir enlaces alternativos para cada idioma
+      for (const alternateLang of languages) {
+        const alternatePath = route ? `${alternateLang}/${route}` : `${alternateLang}`;
+        sitemap += `
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="${alternateLang}" 
+      href="${baseUrl}/${alternatePath}" />`;
+      }
+
+      // Añadir enlace para el idioma "x-default" (recomendado por Google)
+      const defaultPath = route ? `es/${route}` : `es`;
+      sitemap += `
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="x-default" 
+      href="${baseUrl}/${defaultPath}" />
+    <changefreq>weekly</changefreq>
+    <priority>${route === '' ? '1.0' : '0.8'}</priority>
+  </url>`;
+    }
+  }
+
+  sitemap += `
 </urlset>`;
 
   return new Response(sitemap, {
     headers: {
       "Content-Type": "application/xml",
+      "Cache-Control": "public, max-age=3600"
     },
   });
 }

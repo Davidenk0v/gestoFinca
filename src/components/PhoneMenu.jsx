@@ -14,7 +14,7 @@ const PhoneMenu = ({ togglePhoneMenu, data, lang }) => {
       <div className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
           <a
-            href={`/?lang=${lang}`}
+            href={`/${lang}/`}
             onClick={togglePhoneMenu}
             className="-m-1.5 p-1.5 text-brand-blueFinca font-bold text-3xl"
           >
@@ -48,7 +48,7 @@ const PhoneMenu = ({ togglePhoneMenu, data, lang }) => {
               {links.map((item) => (
                 <a
                   key={item.href}
-                  href={`${item.href}?lang=${lang}`}
+                  href={`/${lang}/${item.href}`}
                   onClick={togglePhoneMenu}
                   className="block px-3 py-2 text-gray-900 font-semibold hover:bg-gray-50 rounded-lg"
                 >

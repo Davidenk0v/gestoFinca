@@ -9,7 +9,7 @@ import logo from "../assets/logos/gestofinca.png";
 // Mantenemos los props originales
 const lang = Astro.params.lang
 const translations = await loadTranslations(lang);
-const { title , description } = Astro.props;
+const { title, description } = Astro.props;
 
 // Constantes para SEO
 const companyInfo = {
@@ -20,7 +20,8 @@ const companyInfo = {
 
 // Obtenemos la ruta actual para la URL canónica
 const currentPath = Astro.url.pathname;
-const canonicalUrl = `${companyInfo.siteUrl}${currentPath}${lang !== "es" ? `?lang=${lang}` : ""}`;
+// Construimos la URL canónica con la ruta limpia
+const canonicalUrl = `${companyInfo.siteUrl}${currentPath}`;
 
 // Schema.org para la organización
 const organizationSchema = {
@@ -77,11 +78,26 @@ const langMappings = {
   "de": "de-DE"
 };
 
-// URLs alternativas para otros idiomas
-const alternateUrls = ["es", "en", "de"].map(langCode => ({
-  lang: langMappings[langCode] || langCode,
-  url: `${companyInfo.siteUrl}${currentPath}${langCode !== "es" ? `?lang=${langCode}` : ""}`
-}));
+// Extraer la ruta relativa sin el prefijo del idioma
+// Por ejemplo, /es/administracion-fincas/ -> /administracion-fincas/
+const pathWithoutLang = currentPath.replace(new RegExp(`^/${lang}/`), '/');
+
+// URLs alternativas para otros idiomas con rutas limpias
+const alternateUrls = ["es", "en", "de"].map(langCode => {
+  // Si es la página raíz del idioma, solo usar el idioma
+  if (pathWithoutLang === '/' || pathWithoutLang === '') {
+    return {
+      lang: langMappings[langCode] || langCode,
+      url: `${companyInfo.siteUrl}/${langCode}/`
+    };
+  }
+  
+  // Si es una página interna, construir la ruta limpia
+  return {
+    lang: langMappings[langCode] || langCode,
+    url: `${companyInfo.siteUrl}/${langCode}${pathWithoutLang}`
+  };
+});
 
 // Keywords específicos por idioma
 const seoKeywords = {
@@ -107,7 +123,7 @@ const seoKeywords = {
 		{alternateUrls.map(alt => (
 			<link rel="alternate" hreflang={alt.lang} href={alt.url} />
 		))}
-		<link rel="alternate" hreflang="x-default" href={`${companyInfo.siteUrl}${currentPath}`} />
+		<link rel="alternate" hreflang="x-default" href={`${companyInfo.siteUrl}/es/${pathWithoutLang === '/' ? '' : pathWithoutLang}`} />
 		
 		<!-- Título optimizado -->
 		<title>{title || translations.seo.title} | {companyInfo.name} | Tenerife</title>
