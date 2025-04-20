@@ -1,0 +1,28 @@
+---
+// Este archivo se ejecutará si la redirección del middleware falla
+---
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Obtener el idioma preferido del navegador
+    const supportedLanguages = ['es', 'en', 'de'];
+    const userLang = navigator.language.split('-')[0];
+    let preferredLanguage = 'es'; // Idioma por defecto
+    
+    // Comprobar si el idioma del usuario está soportado
+    if (supportedLanguages.includes(userLang)) {
+      preferredLanguage = userLang;
+    }
+    
+    // Redirigir a la página del idioma correspondiente
+    window.location.replace(`/${preferredLanguage}/`);
+  </script>
+</head>
+<body>
+  <p>Redirecting to the appropriate language...</p>
+</body>
+</html>
