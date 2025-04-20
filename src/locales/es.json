@@ -203,7 +203,7 @@
       },
       "privacy_policy": {
         "label": "He leído y acepto la política de privacidad",
-        "link": "/politica-de-privacidad"
+        "link": "/es/privacy-policy"
       }
     },
     "buttons": {
@@ -220,25 +220,25 @@
     "pages": {
       "title": "Páginas",
       "links": [
-        { "name": "Nosotros", "link": "/nosotros" },
+        { "name": "Nosotros", "link": "/es/nosotros" },
         {
           "name": "Administración de Fincas",
-          "link": "/administracion-fincas"
+          "link": "/es/administracion-fincas"
         },
         {
           "name": "Alquileres Vacacionales",
-          "link": "/alquileres-vacacionales"
+          "link": "/es/alquileres-vacacionales"
         },
-        { "name": "Presupuestos", "link": "/presupuestos" }
+        { "name": "Presupuestos", "link": "/es/presupuestos" }
       ]
     },
     "useful_links": {
       "title": "Enlaces de interés",
       "links": [
-        { "name": "Contáctanos", "link": "/contacto" },
-        { "name": "Términos y Condiciones", "link": "/es/terminos-condiciones" },
-        { "name": "Política de Privacidad", "link": "/es/politica-de-privacidad" },
-        { "name": "Uso de Cookies", "link": "/es/uso-cookies" }
+        { "name": "Contáctanos", "link": "/es/contacto" },
+        { "name": "Términos y Condiciones", "link": "/es/terms-conditions" },
+        { "name": "Política de Privacidad", "link": "/es/privacy-policy" },
+        { "name": "Uso de Cookies", "link": "/es/cookie-policy" }
       ]
     },
     "contact": {
@@ -303,5 +303,153 @@
       "quotes": "Presupuestos | Administración de Fincas y Alquileres Vacacionales en Tenerife",
       "contact": "Contacto | Administración de Fincas y Alquileres Vacacionales en Tenerife"
     }
-  }
+  },
+    "cookiePolicy": {
+      "metaTitle": "Política de Cookies",
+      "metaDescription": "Consulta nuestra política sobre el uso de cookies en el sitio web de GestoFinca.",
+      "title": "Política de Cookies",
+      "intro": "En GestoFinca, usamos cookies para mejorar la experiencia de navegación de nuestros usuarios. Esta página tiene como objetivo informarte sobre cómo y por qué usamos cookies en nuestro sitio web.",
+      "section1": {
+        "title": "1. ¿Qué son las cookies?",
+        "text": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo. Permiten al sitio web recordar tus acciones y preferencias durante un tiempo determinado."
+      },
+      "section2": {
+        "title": "2. Tipos de cookies que usamos",
+        "list": [
+          "<strong>Cookies necesarias:</strong> Esenciales para el funcionamiento adecuado del sitio web.",
+          "<strong>Cookies de rendimiento:</strong> Nos ayudan a medir y mejorar el rendimiento del sitio.",
+          "<strong>Cookies funcionales:</strong> Recuerdan tus preferencias para mejorar tu experiencia.",
+          "<strong>Cookies de publicidad:</strong> Muestran anuncios más relevantes y limitan su repetición."
+        ]
+      },
+      "section3": {
+        "title": "3. ¿Cómo controlar las cookies?",
+        "text1": "Puedes gestionar las cookies desde la configuración de tu navegador.",
+        "text2": "Para más información, consulta la ayuda de tu navegador o sitios web especializados en gestión de cookies."
+      },
+      "section4": {
+        "title": "4. Consentimiento",
+        "text": "Al seguir navegando en nuestro sitio, aceptas el uso de cookies. Si no estás de acuerdo, ajusta la configuración o deja de usar el sitio."
+      },
+      "section5": {
+        "title": "5. Cambios en la política de cookies",
+        "text": "Nos reservamos el derecho de actualizar esta política en cualquier momento. Publicaremos los cambios aquí junto con la fecha de la última actualización."
+      },
+      "section6": {
+        "title": "6. Contacto",
+        "text": "Si tienes preguntas sobre esta política de cookies, contáctanos a través de los medios disponibles en nuestra página de contacto."
+      }
+    },
+    "privacyPolicy":{
+      "metaTitle": "Política de Privacidad",
+      "metaDescription": "Consulta nuestra política de privacidad sobre el tratamiento de tus datos personales.",
+      "title": "Política de Privacidad",
+      "intro": "En <strong>GestoFinca</strong>, nos comprometemos a proteger la privacidad y los datos personales de nuestros usuarios. A continuación, detallamos cómo recopilamos, usamos y protegemos tu información.",
+      "sections": [
+        {
+          "title": "1. Responsable del Tratamiento",
+          "text": "<strong>Nombre:</strong> GestoFinca S.L. <br/><strong>Dirección:</strong> 38670, Santa Cruz de Tenerife, España <br/><strong>Email:</strong> <a href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a> <br/><strong>Teléfono:</strong> +34 689 95 89 31"
+        },
+        {
+          "title": "2. Datos que Recopilamos",
+          "text": "Recopilamos los siguientes datos personales:",
+          "list": [
+            "Información de contacto: nombre, dirección de correo electrónico, número de teléfono.",
+            "Información de navegación: dirección IP, tipo de dispositivo, sistema operativo, navegador.",
+            "Otros datos que proporciones directamente a través de formularios o comunicaciones."
+          ]
+        },
+        {
+          "title": "3. Finalidad del Tratamiento de Datos",
+          "text": "Utilizamos tus datos para:",
+          "list": [
+            "Prestar nuestros servicios y productos.",
+            "Responder a tus consultas y solicitudes.",
+            "Mejorar nuestro sitio web y personalizar tu experiencia.",
+            "Cumplir con nuestras obligaciones legales."
+          ]
+        },
+        {
+          "title": "4. Base Legal para el Tratamiento",
+          "text": "El tratamiento de tus datos se basa en:",
+          "list": [
+            "Tu consentimiento explícito.",
+            "La necesidad de procesar tus datos para la ejecución de un contrato.",
+            "El cumplimiento de obligaciones legales.",
+            "Nuestro interés legítimo en mejorar nuestros servicios."
+          ]
+        },
+        {
+          "title": "5. Derechos del Usuario",
+          "text": "Tienes derecho a:",
+          "list": [
+            "Acceder a tus datos personales.",
+            "Solicitar la corrección de datos inexactos.",
+            "Solicitar la eliminación de tus datos personales.",
+            "Oponerte al tratamiento de tus datos.",
+            "Solicitar la limitación del tratamiento de datos.",
+            "Transferir tus datos a otro proveedor."
+          ]
+        },
+        {
+          "title": "6. Periodo de Conservación",
+          "text": "Conservaremos tus datos personales durante el tiempo necesario para los fines descritos en esta política, salvo que la ley exija o permita un periodo más largo."
+        },
+        {
+          "title": "7. Transferencias Internacionales",
+          "text": "No transferimos tus datos fuera del Espacio Económico Europeo (EEE). En caso de hacerlo, garantizaremos la adecuada protección."
+        },
+        {
+          "title": "8. Seguridad de los Datos",
+          "text": "Implementamos medidas técnicas y organizativas para garantizar la seguridad de tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado."
+        },
+        {
+          "title": "9. Cambios en la Política",
+          "text": "Podemos actualizar esta política de vez en cuando. Publicaremos los cambios en esta página e indicaremos la fecha de la última actualización."
+        },
+        {
+          "title": "10. Contacto",
+          "text": "Si tienes preguntas sobre esta política, puedes escribirnos a <a class='text-blue-500 hover:underline' href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a>."
+        }
+      ]
+    },
+    "termsAndConditions": {
+      "metaTitle": "Términos y Condiciones - GestoFinca",
+      "metaDescription": "Lee los términos y condiciones de uso para nuestros servicios de gestión de propiedades y alquileres vacacionales.",
+      "title": "Términos y Condiciones",
+      "lastUpdated": "Última actualización: 15 de marzo de 2025",
+      "sections": [
+        {
+          "content": "Bienvenido a nuestra empresa de gestión de propiedades y alquileres vacacionales. A continuación se presentan los términos y condiciones de uso que rigen el uso de nuestros servicios. Al utilizar nuestros servicios, aceptas cumplir con estos términos."
+        },
+        {
+          "title": "1. Aceptación de los Términos",
+          "content": "Al acceder o utilizar nuestros servicios, aceptas estar sujeto a estos términos y condiciones. Si no estás de acuerdo con algún aspecto de los términos, no debes usar nuestros servicios."
+        },
+        {
+          "title": "2. Servicios Ofrecidos",
+          "content": "Nuestra empresa ofrece servicios de gestión de propiedades, gestión de alquileres vacacionales y consultoría relacionada. Nos encargamos de todas las operaciones necesarias para asegurar que las propiedades se gestionen de manera eficiente y profesional."
+        },
+        {
+          "title": "3. Responsabilidad del Usuario",
+          "content": "Como usuario de nuestros servicios, es tu responsabilidad proporcionar información precisa y veraz al contratar nuestros servicios. También eres responsable de garantizar que las propiedades cumplan con todas las regulaciones legales aplicables."
+        },
+        {
+          "title": "4. Propiedad Intelectual",
+          "content": "Todo el contenido y material relacionado con nuestros servicios, incluidos textos, imágenes, logotipos y marcas registradas, son propiedad exclusiva de nuestra empresa o sus licenciantes. Queda prohibida cualquier reproducción no autorizada."
+        },
+        {
+          "title": "5. Limitación de Responsabilidad",
+          "content": "No seremos responsables de daños directos, indirectos, incidentales, especiales o consecuentes derivados del uso o la imposibilidad de usar nuestros servicios."
+        },
+        {
+          "title": "6. Modificaciones",
+          "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de la última actualización."
+        },
+        {
+          "title": "7. Contacto",
+          "content": "Si tienes alguna pregunta sobre estos términos, no dudes en contactarnos a través de los canales disponibles en nuestra página de contacto."
+        }
+      ]
+    }    
 }

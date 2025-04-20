@@ -9,7 +9,6 @@ import logo from "../assets/logos/gestofinca.png";
 // Mantenemos los props originales
 const lang = Astro.params.lang
 const translations = await loadTranslations(lang);
-console.log(Astro.props)
 const { title , description } = Astro.props;
 
 // Constantes para SEO

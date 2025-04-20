@@ -1,0 +1,41 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { loadTranslations } from "../../utils/i18n.js";
+
+const { lang } = Astro.params;
+const translations = await loadTranslations(lang);
+const t = translations.termsAndConditions ?? {};
+
+// Relevant metadata for SEO
+const pageTitle = t.metaTitle;
+const pageDescription = t.metaDescription;
+---
+
+<Layout title={pageTitle}>
+  <article class="py-8 px-4 sm:px-6 max-w-4xl mx-auto bg-white shadow rounded-lg my-8">
+    <header class="mb-6 text-center">
+      <h1 class="text-3xl font-semibold text-brand-blueFinca mb-4">{t.title}</h1>
+      <meta name="description" content={pageDescription} />
+      <p class="text-sm text-gray-500">{t.lastUpdated}</p>
+    </header>
+
+    <div class="space-y-6">
+      <!-- Introduction without title -->
+      <p class="text-base sm:text-lg leading-relaxed">
+        {t.sections[0].content}
+      </p>
+
+      <!-- Numbered sections -->
+      {t.sections.slice(1).map(section => (
+        <section id={section.id} class="pt-2">
+          <h2 class="text-xl sm:text-2xl font-semibold text-brand-blueFinca mb-2">
+            {section.title}
+          </h2>
+          <p class="text-base sm:text-lg leading-relaxed text-gray-800">
+            {section.content}
+          </p>
+        </section>
+      ))}
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,42 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {loadTranslations} from "../../utils/i18n.js";
+
+const { lang } = Astro.params;
+const translations = await loadTranslations(lang);
+const t = translations.cookiePolicy ?? {};
+---
+
+<Layout title={`${t.metaTitle} - GestoFinca`}>
+  <article class="py-12 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-auto">
+    <header class="mb-6 p-5 text-center">
+      <h2 class="text-3xl font-semibold text-brand-blueFinca mb-4">{t.title}</h2>
+      <meta name="description" content={t.metaDescription} />
+    </header>
+
+    <section class="space-y-8 p-5">
+      <p class="text-lg leading-relaxed">{t.intro}</p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">{t.section1.title}</h2>
+      <p class="text-lg leading-relaxed">{t.section1.text}</p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">{t.section2.title}</h2>
+      <ul class="list-inside list-disc text-lg leading-relaxed text-gray-700 mb-4">
+        {t.section2.list.map((item: string) => <li set:html={item} />)}
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">{t.section3.title}</h2>
+      <p class="text-lg leading-relaxed">{t.section3.text1}</p>
+      <p class="text-lg leading-relaxed">{t.section3.text2}</p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">{t.section4.title}</h2>
+      <p class="text-lg leading-relaxed">{t.section4.text}</p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">{t.section5.title}</h2>
+      <p class="text-lg leading-relaxed">{t.section5.text}</p>
+
+      <h2 class="text-2xl font-semibold text-brand-blueFinca">{t.section6.title}</h2>
+      <p class="text-lg leading-relaxed">{t.section6.text}</p>
+    </section>
+  </article>
+</Layout>

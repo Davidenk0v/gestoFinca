@@ -203,7 +203,7 @@
       },
       "privacy_policy": {
         "label": "I have read and accept the privacy policy",
-        "link": "/privacy-policy"
+        "link": "/en/privacy-policy"
       }
     },
     "buttons": {
@@ -220,22 +220,22 @@
     "pages": {
       "title": "Pages",
       "links": [
-        { "name": "About Us", "link": "/nosotros?lang=en" },
+        { "name": "About Us", "link": "/en/nosotros" },
         {
           "name": "Property Management",
-          "link": "/administracion-fincas?lang=en"
+          "link": "/en/administracion-fincas"
         },
         {
           "name": "Holiday Rentals",
-          "link": "/alquileres-vacacionales?lang=en"
+          "link": "/en/alquileres-vacacionales"
         },
-        { "name": "Quotes", "link": "/presupuestos?lang=en" }
+        { "name": "Quotes", "link": "/en/presupuestos" }
       ]
     },
     "useful_links": {
       "title": "Useful Links",
       "links": [
-        { "name": "Contact Us", "link": "/contacto?lang=en" },
+        { "name": "Contact Us", "link": "/en/contacto" },
         { "name": "Terms and Conditions", "link": "/en/terms-conditions" },
         { "name": "Privacy Policy", "link": "/en/privacy-policy" },
         { "name": "Cookie Policy", "link": "/en/cookie-policy" }
@@ -304,5 +304,154 @@
       "quotes": "Quotes | Property Management and Vacation Rentals in Tenerife",
       "contact": "Contact | Property Management and Vacation Rentals in Tenerife"
     }
-  }
+  },
+    "cookiePolicy": {
+      "metaTitle": "Cookie Policy",
+      "metaDescription": "Check out our policy on the use of cookies on the GestoFinca website.",
+      "title": "Cookie Policy",
+      "intro": "At GestoFinca, we use cookies to enhance our users' browsing experience. This page aims to inform you about how and why we use cookies on our website.",
+      "section1": {
+        "title": "1. What are cookies?",
+        "text": "Cookies are small text files stored on your device. They allow the website to remember your actions and preferences over time."
+      },
+      "section2": {
+        "title": "2. Types of cookies we use",
+        "list": [
+          "<strong>Necessary cookies:</strong> Essential for the website to function properly.",
+          "<strong>Performance cookies:</strong> Help us measure and improve site performance.",
+          "<strong>Functional cookies:</strong> Remember your preferences for a better experience.",
+          "<strong>Advertising cookies:</strong> Provide more relevant ads and limit repetition."
+        ]
+      },
+      "section3": {
+        "title": "3. How to control cookies?",
+        "text1": "You can manage cookies through your browser settings.",
+        "text2": "For more information, check your browser’s help section or websites about cookie management."
+      },
+      "section4": {
+        "title": "4. Consent",
+        "text": "By browsing our website, you agree to our use of cookies. Otherwise, adjust your settings or stop using the site."
+      },
+      "section5": {
+        "title": "5. Changes to the cookie policy",
+        "text": "We reserve the right to update this cookie policy. Changes will be published here with the last update date."
+      },
+      "section6": {
+        "title": "6. Contact",
+        "text": "For questions about our cookie policy, contact us via the methods on our contact page."
+      }
+    },
+    "privacyPolicy": {
+      "metaTitle": "Privacy Policy",
+      "metaDescription": "Check out our privacy policy on the processing of your personal data.",
+      "title": "Privacy Policy",
+      "intro": "At <strong>GestoFinca</strong>, we are committed to protecting the privacy and personal data of our users. Below, we detail how we collect, use, and protect your information.",
+      "sections": [
+        {
+          "title": "1. Data Controller",
+          "text": "<strong>Name:</strong> GestoFinca S.L. <br/><strong>Address:</strong> 38670, Santa Cruz de Tenerife, Spain <br/><strong>Email:</strong> <a href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a> <br/><strong>Phone:</strong> +34 689 95 89 31"
+        },
+        {
+          "title": "2. Data We Collect",
+          "text": "We collect the following personal data:",
+          "list": [
+            "Contact information: name, email address, phone number.",
+            "Browsing information: IP address, device type, operating system, browser.",
+            "Other data you provide directly through forms or communications."
+          ]
+        },
+        {
+          "title": "3. Purpose of Data Processing",
+          "text": "We use your data to:",
+          "list": [
+            "Provide our services and products.",
+            "Respond to your inquiries and requests.",
+            "Improve our website and personalize your experience.",
+            "Comply with our legal obligations."
+          ]
+        },
+        {
+          "title": "4. Legal Basis for Data Processing",
+          "text": "The processing of your data is based on:",
+          "list": [
+            "Your explicit consent.",
+            "The necessity to process your data for the execution of a contract.",
+            "Compliance with legal obligations.",
+            "Our legitimate interest in improving our services."
+          ]
+        },
+        {
+          "title": "5. User Rights",
+          "text": "You have the right to:",
+          "list": [
+            "Access your personal data.",
+            "Request the correction of inaccurate data.",
+            "Request the deletion of your personal data.",
+            "Object to the processing of your data.",
+            "Request the restriction of data processing.",
+            "Transfer your data to another provider."
+          ]
+        },
+        {
+          "title": "6. Data Retention Period",
+          "text": "We will retain your personal data for as long as necessary for the purposes outlined in this privacy policy, unless the law requires or allows a longer retention period."
+        },
+        {
+          "title": "7. International Transfers",
+          "text": "We do not transfer your personal data outside the European Economic Area (EEA). If we do, we will ensure that it is adequately protected."
+        },
+        {
+          "title": "8. Data Security",
+          "text": "We implement technical and organizational measures to ensure the security of your personal data and to prevent its alteration, loss, unauthorized processing, or access."
+        },
+        {
+          "title": "9. Changes to the Privacy Policy",
+          "text": "We may occasionally update this privacy policy. We will post any changes on this page and indicate the date of the last update."
+        },
+        {
+          "title": "10. Contact",
+          "text": "If you have any questions about this privacy policy, you can contact us at <a class='text-blue-500 hover:underline' href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a>."
+        }
+      ]
+    },
+    "termsAndConditions":{
+      "metaTitle": "Terms and Conditions - GestoFinca",
+      "metaDescription": "Read the terms and conditions of use for our property management and vacation rental services.",
+      "title": "Terms and Conditions",
+      "lastUpdated": "Last updated: March 15, 2025",
+      "sections": [
+        {
+          "content": "Welcome to our property management and vacation rental management company. Below are the terms and conditions of use that govern the use of our services. By using our services, you agree to comply with these terms."
+        },
+        {
+          "title": "1. Acceptance of Terms",
+          "content": "By accessing or using our services, you agree to be bound by these terms and conditions. If you disagree with any aspect of the terms, you should not use our services."
+        },
+        {
+          "title": "2. Services Offered",
+          "content": "Our company offers property management, vacation rental management services, and related consulting. We handle all operations necessary to ensure properties are managed efficiently and professionally."
+        },
+        {
+          "title": "3. User Responsibility",
+          "content": "As a user of our services, it is your responsibility to provide accurate and truthful information when hiring our services. You are also responsible for ensuring that properties comply with all applicable legal regulations."
+        },
+        {
+          "title": "4. Intellectual Property",
+          "content": "All content and material related to our services, including texts, images, logos, and trademarks, are the exclusive property of our company or its licensors. Any unauthorized reproduction is prohibited."
+        },
+        {
+          "title": "5. Limitation of Liability",
+          "content": "We will not be liable for direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use our services."
+        },
+        {
+          "title": "6. Modifications",
+          "content": "We reserve the right to modify these terms at any time. Any changes will be posted on this page with the date of the last update."
+        },
+        {
+          "title": "7. Contact",
+          "content": "If you have any questions about these terms, please do not hesitate to contact us through the channels available on our contact page."
+        }
+      ]
+    }    
+     
 }

@@ -12,10 +12,10 @@ import FAQComponent from '../../components/FAQComponent.astro';
 const lang = Astro.params.lang || 'es'; // Default to Spanish if no lang param is provided
 
 const translation = await loadTranslations(lang);
-const { seo } = translation;
+const seo = translation?.seo ?? { title: "GestoFinca", description: "" };
 ---
 
-<Layout title={seo.title} description={translation.index.description}>
+<Layout title={seo.title} description={translation?.index?.description ?? ''}>
   <div class="snap-y snap-mandatory">
     
     <!-- Sección principal con el h1 -->

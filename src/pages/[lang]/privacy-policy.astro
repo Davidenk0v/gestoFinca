@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { loadTranslations } from "../../utils/i18n.js";
+
+const { lang } = Astro.params;
+const translations = await loadTranslations(lang);
+const t = translations.privacyPolicy ?? {};
+---
+
+<Layout title={`${t.metaTitle} - GestoFinca`}>
+  <article class="py-12 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-auto">
+    <header class="mb-6 p-5 text-center">
+      <h2 class="text-3xl font-semibold text-brand-blueFinca mb-4">{t.title}</h2>
+      <meta name="description" content={t.metaDescription} />
+    </header>
+
+    <section class="space-y-8 p-5">
+      <p class="text-lg leading-relaxed" set:html={t.intro}></p>
+
+      {t.sections.map(section => (
+        <>
+          <h2 class="text-2xl font-semibold text-brand-blueFinca">{section.title}</h2>
+          {section.text && <p class="text-lg leading-relaxed" set:html={section.text}></p>}
+          {section.list && (
+            <ul class="list-disc list-inside mb-6 text-lg leading-relaxed">
+              {section.list.map((item: string) => <li set:html={item} />)}
+            </ul>
+          )}
+        </>
+      ))}
+    </section>
+  </article>
+</Layout>

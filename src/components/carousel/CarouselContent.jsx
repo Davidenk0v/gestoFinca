@@ -30,14 +30,14 @@ export const CarouselContent = memo(
       {/* Botones con mejor accesibilidad */}
       <div className="mt-4 md:mt-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
         <a
-          href={`/contacto?lang=${lang}`}
+          href={`/${lang}/contacto`}
           className="border-2 border-brand-greenFinca rounded-md bg-brand-greenFinca px-4 sm:px-6 py-2 text-sm font-semibold text-black shadow-sm hover:bg-transparent hover:text-brand-greenFinca transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-brand-greenFinca"
           aria-label="Contactar con nosotros"
         >
           {buttons?.contact_us || "Contacto"}
         </a>
         <a
-          href={`/nosotros?lang=${lang}`}
+          href={`/${lang}/nosotros`}
           className="border-2 border-brand-greenFinca rounded-md px-4 sm:px-6 py-2 text-sm font-semibold text-brand-greenFinca shadow-sm hover:text-black hover:bg-brand-greenFinca transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-brand-greenFinca"
           aria-label="Conocer más sobre nosotros"
         >

@@ -145,7 +145,7 @@ const ContactForm = ({ data, lang, title }) => {
             <label htmlFor="privacy-policy" className="ml-2 text-sm">
               {fields.privacy_policy ? (
                 <a
-                  href={fields.privacy_policy.link || "/politica-de-privacidad"}
+                  href={fields.privacy_policy.link || `/${lang}/privacy-policy`}
                   className="text-orange-500 hover:underline"
                 >
                   {fields.privacy_policy.label ||

@@ -203,7 +203,7 @@
       },
       "privacy_policy": {
         "label": "Ich habe die Datenschutzrichtlinie gelesen und akzeptiere sie",
-        "link": "/datenschutzrichtlinie"
+        "link": "/de/privacy-policy"
       }
     },
     "buttons": {
@@ -220,31 +220,31 @@
     "pages": {
       "title": "Seiten",
       "links": [
-        { "name": "Über uns", "link": "/nosotros?lang=de" },
+        { "name": "Über uns", "link": "/de/nosotros" },
         {
           "name": "Verwaltung von Immobilien",
-          "link": "/administracion-fincas"
+          "link": "/de/administracion-fincas"
         },
         {
           "name": "Ferienvermietungen",
-          "link": "/alquileres-vacacionales?lang=de"
+          "link": "/de/alquileres-vacacionales"
         },
-        { "name": "Angebote", "link": "/presupuestos?lang=de" }
+        { "name": "Angebote", "link": "/de/presupuestos" }
       ]
     },
     "useful_links": {
       "title": "Nützliche Links",
       "links": [
-        { "name": "Kontaktieren Sie uns", "link": "/contacto?lang=de" },
+        { "name": "Kontaktieren Sie uns", "link": "/de/contacto" },
         {
           "name": "Allgemeine Geschäftsbedingungen",
-          "link": "/de/allgemeine-geschaeftsbedingungen"
+          "link": "/de/terms-conditions"
         },
         {
           "name": "Datenschutzrichtlinie",
-          "link": "/de/datenschutzrichtlinie"
+          "link": "/de/privacy-policy"
         },
-        { "name": "Cookie-Richtlinie", "link": "/de/cookie-richtlinie" }
+        { "name": "Cookie-Richtlinie", "link": "/de/cookie-policy" }
       ]
     },
     "contact": {
@@ -310,5 +310,154 @@
       "quotes": "Kostenvoranschläge | Immobilienverwaltung und Ferienvermietungen auf Teneriffa",
       "contact": "Kontakt | Immobilienverwaltung und Ferienvermietungen auf Teneriffa"
     }
-  }
+  },
+    "cookiePolicy": {
+      "metaTitle": "Cookie-Richtlinie",
+      "metaDescription": "Informiere dich über unsere Cookie-Richtlinie auf der GestoFinca-Website.",
+      "title": "Cookie-Richtlinie",
+      "intro": "Bei GestoFinca verwenden wir Cookies, um die Benutzererfahrung zu verbessern. Diese Seite informiert dich darüber, wie und warum wir Cookies verwenden.",
+      "section1": {
+        "title": "1. Was sind Cookies?",
+        "text": "Cookies sind kleine Textdateien, die auf deinem Gerät gespeichert werden. Sie ermöglichen es der Website, sich deine Aktionen und Präferenzen zu merken."
+      },
+      "section2": {
+        "title": "2. Welche Arten von Cookies wir verwenden",
+        "list": [
+          "<strong>Notwendige Cookies:</strong> Für das ordnungsgemäße Funktionieren der Website unerlässlich.",
+          "<strong>Leistungs-Cookies:</strong> Helfen uns, die Leistung der Website zu messen und zu verbessern.",
+          "<strong>Funktionale Cookies:</strong> Merken sich deine Einstellungen für ein besseres Erlebnis.",
+          "<strong>Werbe-Cookies:</strong> Zeigen relevantere Werbung und reduzieren Wiederholungen."
+        ]
+      },
+      "section3": {
+        "title": "3. Wie kann man Cookies kontrollieren?",
+        "text1": "Du kannst Cookies über die Einstellungen deines Browsers verwalten.",
+        "text2": "Weitere Informationen findest du in der Hilfe deines Browsers oder auf Webseiten zur Cookie-Verwaltung."
+      },
+      "section4": {
+        "title": "4. Zustimmung",
+        "text": "Durch das Weitersurfen auf unserer Website stimmst du der Verwendung von Cookies zu. Andernfalls kannst du die Einstellungen ändern oder die Seite nicht weiter nutzen."
+      },
+      "section5": {
+        "title": "5. Änderungen an der Cookie-Richtlinie",
+        "text": "Wir behalten uns das Recht vor, diese Richtlinie jederzeit zu ändern. Änderungen werden hier mit dem Datum der letzten Aktualisierung veröffentlicht."
+      },
+      "section6": {
+        "title": "6. Kontakt",
+        "text": "Bei Fragen zur Cookie-Richtlinie kannst du uns über die auf der Kontaktseite angegebenen Wege erreichen."
+      }
+    },
+    "privacyPolicy": {
+      "metaTitle": "Datenschutzerklärung",
+      "metaDescription": "Hier finden Sie unsere Datenschutzerklärung zur Verarbeitung Ihrer personenbezogenen Daten.",
+      "title": "Datenschutzerklärung",
+      "intro": "Bei <strong>GestoFinca</strong> legen wir großen Wert auf den Schutz der Privatsphäre und personenbezogenen Daten unserer Nutzer. Nachfolgend erläutern wir, wie wir Ihre Daten erfassen, verwenden und schützen.",
+      "sections": [
+        {
+          "title": "1. Verantwortlicher",
+          "text": "<strong>Name:</strong> GestoFinca S.L. <br/><strong>Adresse:</strong> 38670, Santa Cruz de Tenerife, Spanien <br/><strong>Email:</strong> <a href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a> <br/><strong>Telefon:</strong> +34 689 95 89 31"
+        },
+        {
+          "title": "2. Erhobene Daten",
+          "text": "Wir erfassen folgende personenbezogene Daten:",
+          "list": [
+            "Kontaktdaten: Name, E-Mail-Adresse, Telefonnummer.",
+            "Browserinformationen: IP-Adresse, Gerätetyp, Betriebssystem, Browser.",
+            "Weitere Daten, die Sie direkt über Formulare oder Kommunikation bereitstellen."
+          ]
+        },
+        {
+          "title": "3. Zweck der Datenverarbeitung",
+          "text": "Wir verwenden Ihre Daten, um:",
+          "list": [
+            "Unsere Dienstleistungen und Produkte bereitzustellen.",
+            "Auf Ihre Anfragen und Anliegen zu antworten.",
+            "Unsere Website zu verbessern und Ihre Nutzererfahrung zu personalisieren.",
+            "Unsere gesetzlichen Verpflichtungen zu erfüllen."
+          ]
+        },
+        {
+          "title": "4. Rechtsgrundlage der Verarbeitung",
+          "text": "Die Verarbeitung Ihrer Daten basiert auf:",
+          "list": [
+            "Ihrer ausdrücklichen Einwilligung.",
+            "Der Notwendigkeit zur Vertragserfüllung.",
+            "Gesetzlichen Verpflichtungen.",
+            "Unserem berechtigten Interesse an der Verbesserung unserer Dienstleistungen."
+          ]
+        },
+        {
+          "title": "5. Rechte der Nutzer",
+          "text": "Sie haben das Recht auf:",
+          "list": [
+            "Zugriff auf Ihre personenbezogenen Daten.",
+            "Berichtigung unrichtiger Daten.",
+            "Löschung Ihrer personenbezogenen Daten.",
+            "Widerspruch gegen die Datenverarbeitung.",
+            "Einschränkung der Verarbeitung.",
+            "Datenübertragbarkeit zu einem anderen Anbieter."
+          ]
+        },
+        {
+          "title": "6. Aufbewahrungsdauer",
+          "text": "Wir speichern Ihre personenbezogenen Daten so lange, wie es für die in dieser Datenschutzerklärung beschriebenen Zwecke erforderlich ist, sofern das Gesetz keine längere Aufbewahrung verlangt oder erlaubt."
+        },
+        {
+          "title": "7. Internationale Datenübermittlungen",
+          "text": "Wir übermitteln Ihre personenbezogenen Daten nicht außerhalb des Europäischen Wirtschaftsraums (EWR). Falls doch, gewährleisten wir einen angemessenen Schutz."
+        },
+        {
+          "title": "8. Datensicherheit",
+          "text": "Wir setzen technische und organisatorische Maßnahmen ein, um die Sicherheit Ihrer personenbezogenen Daten zu gewährleisten und deren Veränderung, Verlust, unbefugte Verarbeitung oder Zugriff zu verhindern."
+        },
+        {
+          "title": "9. Änderungen der Datenschutzerklärung",
+          "text": "Wir können diese Datenschutzerklärung gelegentlich aktualisieren. Änderungen werden auf dieser Seite veröffentlicht und das Datum der letzten Aktualisierung wird angegeben."
+        },
+        {
+          "title": "10. Kontakt",
+          "text": "Bei Fragen zu dieser Datenschutzerklärung können Sie uns unter <a class='text-blue-500 hover:underline' href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a> kontaktieren."
+        }
+      ]
+    },
+    "termsAndConditions":{
+      "metaTitle": "Allgemeine Geschäftsbedingungen - GestoFinca",
+      "metaDescription": "Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Dienstleistungen im Bereich Immobilienverwaltung und Ferienvermietung.",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "lastUpdated": "Letzte Aktualisierung: 15. März 2025",
+      "sections": [
+        {
+          "content": "Willkommen bei unserem Unternehmen für Immobilienverwaltung und Ferienvermietungsmanagement. Im Folgenden finden Sie die Allgemeinen Geschäftsbedingungen, die die Nutzung unserer Dienstleistungen regeln. Durch die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Bedingungen einverstanden."
+        },
+        {
+          "title": "1. Annahme der Bedingungen",
+          "content": "Durch den Zugriff auf oder die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen einverstanden. Wenn Sie mit einem Aspekt der Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienstleistungen nicht nutzen."
+        },
+        {
+          "title": "2. Angebotene Dienstleistungen",
+          "content": "Unser Unternehmen bietet Dienstleistungen in der Immobilienverwaltung, Ferienvermietungsmanagement und verwandte Beratung an. Wir übernehmen alle notwendigen Vorgänge, um sicherzustellen, dass die Immobilien effizient und professionell verwaltet werden."
+        },
+        {
+          "title": "3. Verantwortung des Nutzers",
+          "content": "Als Nutzer unserer Dienstleistungen sind Sie verantwortlich dafür, bei der Inanspruchnahme unserer Dienstleistungen genaue und wahrheitsgemäße Informationen bereitzustellen. Sie sind auch dafür verantwortlich, dass die Immobilien alle geltenden gesetzlichen Bestimmungen einhalten."
+        },
+        {
+          "title": "4. Geistiges Eigentum",
+          "content": "Alle Inhalte und Materialien im Zusammenhang mit unseren Dienstleistungen, einschließlich Texte, Bilder, Logos und Marken, sind das ausschließliche Eigentum unseres Unternehmens oder seiner Lizenzgeber. Jede unbefugte Vervielfältigung ist untersagt."
+        },
+        {
+          "title": "5. Haftungsbeschränkung",
+          "content": "Wir haften nicht für direkte, indirekte, zufällige, besondere oder Folgeschäden, die sich aus der Nutzung oder der Unfähigkeit zur Nutzung unserer Dienstleistungen ergeben."
+        },
+        {
+          "title": "6. Änderungen",
+          "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite mit dem Datum der letzten Aktualisierung veröffentlicht."
+        },
+        {
+          "title": "7. Kontakt",
+          "content": "Wenn Sie Fragen zu diesen Bedingungen haben, zögern Sie bitte nicht, uns über die auf unserer Kontaktseite verfügbaren Kanäle zu kontaktieren."
+        }
+      ]
+    }
+       
 }
