@@ -6,8 +6,7 @@ import { loadTranslations } from "../utils/i18n";
 import Footer from "../components/Footer.astro";
 import logo from "../assets/logos/gestofinca.png";
 
-// Mantenemos los props originales
-const lang = Astro.params.lang
+const lang = Astro.params.lang;
 const translations = await loadTranslations(lang);
 const { title, description } = Astro.props;
 
@@ -18,17 +17,17 @@ const companyInfo = {
   siteUrl: Astro.url.origin
 };
 
-// Obtenemos la ruta actual para la URL canónica
 const currentPath = Astro.url.pathname;
-// Construimos la URL canónica con la ruta limpia
 const canonicalUrl = `${companyInfo.siteUrl}${currentPath}`;
+const now = new Date().toISOString();
 
 // Schema.org para la organización
 const organizationSchema = {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
+  "@type": "ProfessionalService",
   "name": companyInfo.name,
   "image": new URL(logo.src, Astro.url).toString(),
+  "logo": new URL(logo.src, Astro.url).toString(),
   "url": companyInfo.siteUrl,
   "address": {
     "@type": "PostalAddress",
@@ -56,6 +55,8 @@ const webpageSchema = {
   "description": description || translations.seo.description,
   "url": Astro.url.href,
   "inLanguage": lang,
+  "datePublished": "2024-03-15",
+  "dateModified": now,
   "isPartOf": {
     "@type": "WebSite",
     "name": companyInfo.name,
@@ -71,35 +72,27 @@ const webpageSchema = {
   }
 };
 
-// Mapeo de idiomas para hreflang
 const langMappings = {
   "es": "es-ES",
   "en": "en-GB",
   "de": "de-DE"
 };
 
-// Extraer la ruta relativa sin el prefijo del idioma
-// Por ejemplo, /es/administracion-fincas/ -> /administracion-fincas/
 const pathWithoutLang = currentPath.replace(new RegExp(`^/${lang}/`), '/');
 
-// URLs alternativas para otros idiomas con rutas limpias
 const alternateUrls = ["es", "en", "de"].map(langCode => {
-  // Si es la página raíz del idioma, solo usar el idioma
   if (pathWithoutLang === '/' || pathWithoutLang === '') {
     return {
       lang: langMappings[langCode] || langCode,
       url: `${companyInfo.siteUrl}/${langCode}/`
     };
   }
-  
-  // Si es una página interna, construir la ruta limpia
   return {
     lang: langMappings[langCode] || langCode,
     url: `${companyInfo.siteUrl}/${langCode}${pathWithoutLang}`
   };
 });
 
-// Keywords específicos por idioma
 const seoKeywords = {
   "es": "gestión de alquiler vacacional Tenerife, administración de fincas en Tenerife, gestión inmobiliaria en Canarias, empresa de gestión de propiedades, servicios de property management, alquiler turístico Tenerife, gestión de comunidades de vecinos",
   "en": "vacation rental management Tenerife, property management company Canary Islands, real estate services Tenerife, holiday rentals administration, property administration in Tenerife, community management services",
@@ -115,26 +108,19 @@ const seoKeywords = {
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
-		
-		<!-- URL canónica para evitar contenido duplicado -->
+
 		<link rel="canonical" href={canonicalUrl} />
-		
-		<!-- Enlaces alternativos para otros idiomas -->
 		{alternateUrls.map(alt => (
 			<link rel="alternate" hreflang={alt.lang} href={alt.url} />
 		))}
 		<link rel="alternate" hreflang="x-default" href={`${companyInfo.siteUrl}/es/${pathWithoutLang === '/' ? '' : pathWithoutLang}`} />
-		
-		<!-- Título optimizado -->
-		<title>{title || translations.seo.title} | {companyInfo.name} | Tenerife</title>
 
-		<!-- Meta descripción -->
+		<title>{title || "Administración de Fincas en Tenerife"} | {companyInfo.name} | Tenerife</title>
 		<meta name="description" content={description || translations.seo.description} />
 		
-		<!-- Keywords específicos del idioma -->
+		<!-- Puedes eliminar esta línea si no deseas usar keywords (Google no las usa para ranking) -->
 		<meta name="keywords" content={seoKeywords} />
-		
-		<!-- Meta tags técnicos -->
+
 		<meta name="robots" content="index, follow, max-image-preview:large" />
 		<meta name="author" content={companyInfo.name} />
 		<meta name="geo.region" content="ES-CN" />
@@ -150,46 +136,38 @@ const seoKeywords = {
 		<meta property="og:image" content={new URL(logo.src, Astro.url)} />
 		<meta property="og:locale" content={langMappings[lang] || lang} />
 		<meta property="og:site_name" content={companyInfo.name} />
-		
+
 		<!-- Twitter Card meta tags -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title || translations.seo.title} />
 		<meta name="twitter:description" content={description || translations.seo.description} />
 		<meta name="twitter:image" content={new URL(logo.src, Astro.url)} />
 
-		<!-- JSON-LD structured data para SEO -->
+		<!-- JSON-LD structured data -->
 		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
 		<script type="application/ld+json" set:html={JSON.stringify(webpageSchema)} />
 
-		<!-- Precarga de recursos críticos -->
 		<link rel="preload" href={logo.src} as="image" />
-		
-		<!-- Soporte para View Transitions de Astro -->
+
 		<ClientRouter />
 	</head>
 	<body>
 		<div class="flex flex-col min-h-screen bg-slate-100">
-			<!-- Header -->
 			<header>
 				<Header client:load transition:persist lang={lang} data={translations}/>
 			</header>
 
-			<!-- Enlace para saltar al contenido principal (accesibilidad) -->
 			<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:z-50">
 				{lang === "es" ? "Saltar al contenido principal" : 
 				 lang === "en" ? "Skip to main content" : 
 				 "Zum Hauptinhalt springen"}
 			</a>
 
-			<!-- Contenido principal con slot para contenido dinámico -->
 			<main id="main-content" class="flex-grow">
 				<slot />
 			</main>
 
-			<!-- Icono flotante de WhatsApp -->
 			<WhatsAppIcon transition:persist client:load />
-
-			<!-- Footer -->
 			<Footer transition:persist texts={translations.footer} lang={lang}/>
 		</div>
 	</body>
