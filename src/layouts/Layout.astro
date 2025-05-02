@@ -12,9 +12,9 @@ const { title, description } = Astro.props;
 
 // Constantes para SEO
 const companyInfo = {
-  name: "GestoFinca",
-  logo: logo.src,
-  siteUrl: Astro.url.origin
+	name: "GestoFinca",
+	logo: logo.src,
+	siteUrl: Astro.url.origin,
 };
 
 const currentPath = Astro.url.pathname;
@@ -23,80 +23,80 @@ const now = new Date().toISOString();
 
 // Schema.org para la organización
 const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": companyInfo.name,
-  "image": new URL(logo.src, Astro.url).toString(),
-  "logo": new URL(logo.src, Astro.url).toString(),
-  "url": companyInfo.siteUrl,
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "Islas Canarias",
-    "addressLocality": "Tenerife",
-    "addressCountry": "ES"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "28.2916",
-    "longitude": "-16.6291"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Tenerife, Islas Canarias"
-  },
-  "availableLanguage": ["es", "en", "de"]
+	"@context": "https://schema.org",
+	"@type": "ProfessionalService",
+	name: companyInfo.name,
+	image: new URL(logo.src, Astro.url).toString(),
+	logo: new URL(logo.src, Astro.url).toString(),
+	url: companyInfo.siteUrl,
+	address: {
+		"@type": "PostalAddress",
+		addressRegion: "Islas Canarias",
+		addressLocality: "Tenerife",
+		addressCountry: "ES",
+	},
+	geo: {
+		"@type": "GeoCoordinates",
+		latitude: "28.2916",
+		longitude: "-16.6291",
+	},
+	areaServed: {
+		"@type": "Place",
+		name: "Tenerife, Islas Canarias",
+	},
+	availableLanguage: ["es", "en", "de"],
 };
 
 // Schema.org para la página web
 const webpageSchema = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "headline": title || translations.seo.title,
-  "description": description || translations.seo.description,
-  "url": Astro.url.href,
-  "inLanguage": lang,
-  "datePublished": "2024-03-15",
-  "dateModified": now,
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": companyInfo.name,
-    "url": companyInfo.siteUrl
-  },
-  "primaryImageOfPage": {
-    "@type": "ImageObject",
-    "url": new URL(logo.src, Astro.url).toString()
-  },
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2", ".speakable"]
-  }
+	"@context": "https://schema.org",
+	"@type": "WebPage",
+	headline: title || translations.seo.title,
+	description: description || translations.seo.description,
+	url: Astro.url.href,
+	inLanguage: lang,
+	datePublished: "2024-03-15",
+	dateModified: now,
+	isPartOf: {
+		"@type": "WebSite",
+		name: companyInfo.name,
+		url: companyInfo.siteUrl,
+	},
+	primaryImageOfPage: {
+		"@type": "ImageObject",
+		url: new URL(logo.src, Astro.url).toString(),
+	},
+	speakable: {
+		"@type": "SpeakableSpecification",
+		cssSelector: ["h1", "h2", ".speakable"],
+	},
 };
 
 const langMappings = {
-  "es": "es-ES",
-  "en": "en-GB",
-  "de": "de-DE"
+	es: "es-ES",
+	en: "en-GB",
+	de: "de-DE",
 };
 
-const pathWithoutLang = currentPath.replace(new RegExp(`^/${lang}/`), '/');
+const pathWithoutLang = currentPath.replace(new RegExp(`^/${lang}/`), "/");
 
-const alternateUrls = ["es", "en", "de"].map(langCode => {
-  if (pathWithoutLang === '/' || pathWithoutLang === '') {
-    return {
-      lang: langMappings[langCode] || langCode,
-      url: `${companyInfo.siteUrl}/${langCode}/`
-    };
-  }
-  return {
-    lang: langMappings[langCode] || langCode,
-    url: `${companyInfo.siteUrl}/${langCode}${pathWithoutLang}`
-  };
+const alternateUrls = ["es", "en", "de"].map((langCode) => {
+	if (pathWithoutLang === "/" || pathWithoutLang === "") {
+		return {
+			lang: langMappings[langCode] || langCode,
+			url: `${companyInfo.siteUrl}/${langCode}/`,
+		};
+	}
+	return {
+		lang: langMappings[langCode] || langCode,
+		url: `${companyInfo.siteUrl}/${langCode}${pathWithoutLang}`,
+	};
 });
 
 const seoKeywords = {
-  "es": "gestión de alquiler vacacional Tenerife, administración de fincas en Tenerife, gestión inmobiliaria en Canarias, empresa de gestión de propiedades, servicios de property management, alquiler turístico Tenerife, gestión de comunidades de vecinos",
-  "en": "vacation rental management Tenerife, property management company Canary Islands, real estate services Tenerife, holiday rentals administration, property administration in Tenerife, community management services",
-  "de": "Ferienvermietung Verwaltung Teneriffa, Immobilienverwaltung auf den Kanarischen Inseln, Hausverwaltung Teneriffa, Verwaltung von Ferienwohnungen, Immobilienmanagement Firma Teneriffa, Gemeinschaftsverwaltung Dienstleistungen"
+	es: "gestión de alquiler vacacional Tenerife, administración de fincas en Tenerife, gestión inmobiliaria en Canarias, empresa de gestión de propiedades, administrador de fincas cerca de mi, alquiler turístico Tenerife, gestión de comunidades de vecinos",
+	en: "vacation rental management Tenerife, property management company Canary Islands, real estate services Tenerife, holiday rentals administration, property administration in Tenerife, community management services",
+	de: "Ferienvermietung Verwaltung Teneriffa, Immobilienverwaltung auf den Kanarischen Inseln, Hausverwaltung Teneriffa, Verwaltung von Ferienwohnungen, Immobilienmanagement Firma Teneriffa, Gemeinschaftsverwaltung Dienstleistungen",
 }[lang];
 ---
 
@@ -110,14 +110,27 @@ const seoKeywords = {
 		<meta name="generator" content={Astro.generator} />
 
 		<link rel="canonical" href={canonicalUrl} />
-		{alternateUrls.map(alt => (
-			<link rel="alternate" hreflang={alt.lang} href={alt.url} />
-		))}
-		<link rel="alternate" hreflang="x-default" href={`${companyInfo.siteUrl}/es/${pathWithoutLang === '/' ? '' : pathWithoutLang}`} />
+		{
+			alternateUrls.map((alt) => (
+				<link rel="alternate" hreflang={alt.lang} href={alt.url} />
+			))
+		}
+		<link
+			rel="alternate"
+			hreflang="x-default"
+			href={`${companyInfo.siteUrl}/es/${pathWithoutLang === "/" ? "" : pathWithoutLang}`}
+		/>
 
-		<title>{title || "Administración de Fincas en Tenerife"} | {companyInfo.name} | Tenerife</title>
-		<meta name="description" content={description || translations.seo.description} />
-		
+		<title>
+			{title || "Administración de Fincas en Tenerife"} | {
+				companyInfo.name
+			} | Tenerife
+		</title>
+		<meta
+			name="description"
+			content={description || translations.seo.description}
+		/>
+
 		<!-- Puedes eliminar esta línea si no deseas usar keywords (Google no las usa para ranking) -->
 		<meta name="keywords" content={seoKeywords} />
 
@@ -130,7 +143,10 @@ const seoKeywords = {
 
 		<!-- Open Graph meta tags -->
 		<meta property="og:title" content={title || translations.seo.title} />
-		<meta property="og:description" content={description || translations.seo.description} />
+		<meta
+			property="og:description"
+			content={description || translations.seo.description}
+		/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url.href} />
 		<meta property="og:image" content={new URL(logo.src, Astro.url)} />
@@ -140,12 +156,21 @@ const seoKeywords = {
 		<!-- Twitter Card meta tags -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title || translations.seo.title} />
-		<meta name="twitter:description" content={description || translations.seo.description} />
+		<meta
+			name="twitter:description"
+			content={description || translations.seo.description}
+		/>
 		<meta name="twitter:image" content={new URL(logo.src, Astro.url)} />
 
 		<!-- JSON-LD structured data -->
-		<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
-		<script type="application/ld+json" set:html={JSON.stringify(webpageSchema)} />
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify(organizationSchema)}
+		/>
+		<script
+			type="application/ld+json"
+			set:html={JSON.stringify(webpageSchema)}
+		/>
 
 		<link rel="preload" href={logo.src} as="image" />
 
@@ -154,13 +179,25 @@ const seoKeywords = {
 	<body>
 		<div class="flex flex-col min-h-screen bg-slate-100">
 			<header>
-				<Header client:load transition:persist lang={lang} data={translations}/>
+				<Header
+					client:load
+					transition:persist
+					lang={lang}
+					data={translations}
+				/>
 			</header>
 
-			<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:z-50">
-				{lang === "es" ? "Saltar al contenido principal" : 
-				 lang === "en" ? "Skip to main content" : 
-				 "Zum Hauptinhalt springen"}
+			<a
+				href="#main-content"
+				class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:z-50"
+			>
+				{
+					lang === "es"
+						? "Saltar al contenido principal"
+						: lang === "en"
+							? "Skip to main content"
+							: "Zum Hauptinhalt springen"
+				}
 			</a>
 
 			<main id="main-content" class="flex-grow">
@@ -168,7 +205,11 @@ const seoKeywords = {
 			</main>
 
 			<WhatsAppIcon transition:persist client:load />
-			<Footer transition:persist texts={translations.footer} lang={lang}/>
+			<Footer
+				transition:persist
+				texts={translations.footer}
+				lang={lang}
+			/>
 		</div>
 	</body>
 </html>
