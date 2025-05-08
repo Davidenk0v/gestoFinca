@@ -1,8 +1,8 @@
 {
   "property_management": {
-    "title": "Immobilienverwaltung",
+    "title": "Gemeinschaft Verwaltung",
     "description": "Professionelles und effizientes Management für Gemeinschaften und anspruchsvolle Eigentümer.",
-    "text": "Wir sind Immobilienverwalter auf Teneriffa, zertifizierte und spezialisierte Fachleute für alle Arten von Gemeinschaften. Wir verfügen über ein Team hochqualifizierter Fachkräfte mit nachweislicher Erfahrung im Bereich der Immobilienverwaltung.",
+    "text": "Wir sind Immobilienverwalter auf Teneriffa, zertifizierte und spezialisierte Fachleute für alle Arten von Gemeinschaften. Wir verfügen über ein Team hochqualifizierter Fachkräfte mit nachweislicher Erfahrung im Bereich der gemeinschaft verwaltung.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
@@ -125,20 +125,20 @@
   "index": {
     "title": "GestoFinca",
     "description": "Wir verwalten mit Leidenschaft, wir kümmern uns mit Hingabe.",
-    "text": "Experten für Immobilienverwaltung und Verwaltungsverfahren, die effiziente und maßgeschneiderte Lösungen für Sie oder Ihre Gemeinschaft garantieren.",
+    "text": "Experten für gemeinschaft verwaltung und Verwaltungsverfahren, die effiziente und maßgeschneiderte Lösungen für Sie oder Ihre Gemeinschaft garantieren.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
     },
     "phrases": [
-      "Ihre zuverlässigen Experten für Immobilienverwaltung auf Teneriffa.",
+      "Ihre zuverlässigen Experten für gemeinschaft verwaltung auf Teneriffa.",
       "Ihre Sicherheit, unser Engagement.",
       "Professionelle Verwaltung mit garantierten Ergebnissen."
     ]
   },
   "about_us": {
     "title": "Über uns",
-    "description": "Bei GestoFinca verstehen wir, dass der Bereich der Immobilienverwaltung eine Revolution benötigt, um den wachsenden und sich wandelnden Bedürfnissen der Eigentümer gerecht zu werden.",
+    "description": "Bei GestoFinca verstehen wir, dass der Bereich der gemeinschaft verwaltung eine Revolution benötigt, um den wachsenden und sich wandelnden Bedürfnissen der Eigentümer gerecht zu werden.",
     "text": "Unser Ziel ist es, einen exklusiven Service von höchster Qualität anzubieten, indem wir jedem Kunden die notwendige Zeit widmen, um alle seine Anforderungen zu erfüllen.& Wir verfügen über umfangreiche Erfahrung in den von uns angebotenen Dienstleistungen und sind hochqualifiziert sowie zertifiziert, was es uns ermöglicht, höchste Professionalität und Vertrauen in jeder Verwaltung zu gewährleisten.& Die Bedeutung der Zusammenarbeit mit zertifizierten Fachleuten liegt im rechtlichen Schutz, den wir unseren Kunden bieten. So stellen wir sicher, dass alle Maßnahmen und Entscheidungen den geltenden Vorschriften entsprechen und somit jederzeit Sicherheit und Ruhe gewährleisten.",
     "buttons": {
       "about_us": "Mehr erfahren",
@@ -279,7 +279,7 @@
     "title": "Unsere Dienstleistungen",
     "description": "Maßgeschneiderte Lösungen für Eigentümer und Gemeinschaften.",
     "service1": {
-      "title": "Immobilienverwaltung",
+      "title": "Gemeinschaft Verwaltung",
       "description": "Umfassende Verwaltung für Eigentümergemeinschaften mit Transparenz und Effizienz."
     },
     "service2": {
@@ -294,21 +294,21 @@
   "header": {
     "home": "Startseite",
     "about_us": "Über uns",
-    "property_management": "Immobilienverwaltung",
+    "property_management": "Gemeinschaft Verwaltung",
     "vacation_rentals": "Ferienvermietung",
     "quotes": "Angebote",
     "contact": "Kontakt"
   },
   "seo": {
-    "title": "GestoFinca - Immobilienverwaltung und Ferienvermietungen auf Teneriffa",
-    "description": "Experten in der Immobilienverwaltung und Ferienvermietung. Wir bieten umfassende, transparente und personalisierte Lösungen für Eigentümer und Gemeinschaften.",
-    "keywords": "Immobilienverwaltung, Ferienvermietungen, Verwaltungsdienste, Teneriffa",
+    "title": "GestoFinca - Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
+    "description": "Experten in der gemeinschaft verwaltung und Ferienvermietung. Wir bieten umfassende, transparente und personalisierte Lösungen für Eigentümer und Gemeinschaften.",
+    "keywords": "Gemeinschaft verwaltung, Ferienvermietungen, Verwaltungsdienste, Teneriffa",
     "tags": {
-      "about_us": "Über uns | Immobilienverwaltung und Ferienvermietungen auf Teneriffa",
-      "property_management": "Immobilienverwaltung auf Teneriffa",
+      "about_us": "Über uns | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
+      "property_management": "Gemeinschaft verwaltung auf Teneriffa",
       "vacation_rentals": "Ferienvermietungen auf Teneriffa",
-      "quotes": "Kostenvoranschläge | Immobilienverwaltung und Ferienvermietungen auf Teneriffa",
-      "contact": "Kontakt | Immobilienverwaltung und Ferienvermietungen auf Teneriffa"
+      "quotes": "Kostenvoranschläge | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
+      "contact": "Kontakt | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa"
     }
   },
     "cookiePolicy": {
@@ -422,12 +422,12 @@
     },
     "termsAndConditions":{
       "metaTitle": "Allgemeine Geschäftsbedingungen - GestoFinca",
-      "metaDescription": "Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Dienstleistungen im Bereich Immobilienverwaltung und Ferienvermietung.",
+      "metaDescription": "Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Dienstleistungen im Bereich gemeinschaft verwaltung und Ferienvermietung.",
       "title": "Allgemeine Geschäftsbedingungen",
       "lastUpdated": "Letzte Aktualisierung: 15. März 2025",
       "sections": [
         {
-          "content": "Willkommen bei unserem Unternehmen für Immobilienverwaltung und Ferienvermietungsmanagement. Im Folgenden finden Sie die Allgemeinen Geschäftsbedingungen, die die Nutzung unserer Dienstleistungen regeln. Durch die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Bedingungen einverstanden."
+          "content": "Willkommen bei unserem Unternehmen für gemeinschaft verwaltung und Ferienvermietungsmanagement. Im Folgenden finden Sie die Allgemeinen Geschäftsbedingungen, die die Nutzung unserer Dienstleistungen regeln. Durch die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Bedingungen einverstanden."
         },
         {
           "title": "1. Annahme der Bedingungen",
@@ -435,7 +435,7 @@
         },
         {
           "title": "2. Angebotene Dienstleistungen",
-          "content": "Unser Unternehmen bietet Dienstleistungen in der Immobilienverwaltung, Ferienvermietungsmanagement und verwandte Beratung an. Wir übernehmen alle notwendigen Vorgänge, um sicherzustellen, dass die Immobilien effizient und professionell verwaltet werden."
+          "content": "Unser Unternehmen bietet Dienstleistungen in der gemeinschaft verwaltung, Ferienvermietungsmanagement und verwandte Beratung an. Wir übernehmen alle notwendigen Vorgänge, um sicherzustellen, dass die Immobilien effizient und professionell verwaltet werden."
         },
         {
           "title": "3. Verantwortung des Nutzers",
