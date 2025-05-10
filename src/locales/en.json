@@ -109,6 +109,61 @@
       "We handle everything so you can enjoy the benefits."
     ]
   },
+  "vehicle_procedures": {
+  "title": "Vehicle Procedures",
+  "description": "We handle everything related to your vehicle quickly and safely.",
+  "text": "At GestoFinca, we know that car procedures can be a headache. That’s why we’re here to make it easy. We handle the entire process for you, from start to finish, with no hassle or wasted time. We carry out all procedures related to your vehicle and the DGT. OFFICIALLY AUTHORIZED BY THE DGT.",
+  "buttons": {
+    "about_us": "Learn more",
+    "contact_us": "Contact us"
+  },
+  "services": [
+    {
+      "title": "Vehicle Ownership Transfer",
+      "img": "ownership_transfer",
+      "description": "We manage the ownership change quickly and securely, meeting all legal requirements."
+    },
+    {
+      "title": "Purchase and Sale Contracts",
+      "img": "sale_contract",
+      "description": "We draft clear and valid contracts so you can buy or sell with complete peace of mind."
+    },
+    {
+      "title": "Payment of Taxes and Transfer Fees",
+      "img": "tax_payment",
+      "description": "We take care of tax payments and filings so you don’t have to worry about fiscal matters."
+    },
+    {
+      "title": "Vehicle Registration",
+      "img": "vehicle_registration",
+      "description": "We handle the full registration process for both new and imported vehicles."
+    },
+    {
+      "title": "Vehicle Deregistration and Registration",
+      "img": "vehicle_status",
+      "description": "We manage all temporary or permanent vehicle registrations and deregistrations with the DGT."
+    },
+    {
+      "title": "Vehicle Reports",
+      "img": "vehicle_report",
+      "description": "We request official reports so you know the legal and technical status of a vehicle before buying."
+    },
+    {
+      "title": "Duplicate Circulation Permit",
+      "img": "circulation_permit",
+      "description": "We process duplicates in case of loss, theft, or damage to the original permit."
+    },
+    {
+      "title": "Special Circulation Permits",
+      "img": "special_authorizations",
+      "description": "We manage specific permits for driving in exceptional situations or with special vehicles."
+    }
+  ],
+  "phrases": [
+    "Agency officially authorized by the DGT.",
+    "We take care of everything—just enjoy the ride."
+  ]
+},
   "contact": {
     "title": "Contact",
     "description": "We are here to help. Let's talk!",
@@ -229,6 +284,10 @@
           "name": "Holiday Rentals",
           "link": "/en/alquileres-vacacionales"
         },
+        {
+          "name": "Vehicle Procedures",
+          "link": "/en/tramites-vehiculos"
+        },
         { "name": "Quotes", "link": "/en/presupuestos" }
       ]
     },
@@ -301,6 +360,7 @@
       "about_us": "About Us | Property Management and Vacation Rentals in Tenerife",
       "property_management": "Property Management in Tenerife",
       "vacation_rentals": "Vacation Rentals in Tenerife",
+      "vehicle_procedures": "Vehicle Procedures in Tenerife",
       "quotes": "Quotes | Property Management and Vacation Rentals in Tenerife",
       "contact": "Contact | Property Management and Vacation Rentals in Tenerife"
     }

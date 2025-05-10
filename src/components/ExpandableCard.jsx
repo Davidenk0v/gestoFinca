@@ -15,6 +15,8 @@ import customer_support from "../assets/icons/customer_support.svg";
 import payment_management from "../assets/icons/payment_management.svg";
 import pricing_optimization from "../assets/icons/pricing_optimization.svg";
 import tax_management from "../assets/icons/tax_management.svg";
+import ownership_transfer from "../assets/icons/tramite-vehiculos/ownership_transfer.svg";
+import sale_contract from "../assets/icons/tramite-vehiculos/sale_contract.svg";
 
 const iconMap = {
   accounting: accounting,
@@ -33,6 +35,8 @@ const iconMap = {
   payment_management: payment_management,
   pricing_optimization: pricing_optimization,
   tax_management: tax_management,
+  ownership_transfer: ownership_transfer,
+  sale_contract: sale_contract,
 };
 
 const ExpandableCard = ({ title, subtitle, text, buttomText, img, lang }) => {

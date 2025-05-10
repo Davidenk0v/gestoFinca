@@ -1,0 +1,182 @@
+---
+import Carrousel from "../../components/Carrousel";
+import ContactBanner from "../../components/ContactBanner.astro";
+import ContactFormReact from "../../components/ContactFormReact";
+import ExpandableCard from "../../components/ExpandableCard";
+import ServiceBanner from "../../components/ServiceBanner.astro";
+import Layout from "../../layouts/Layout.astro";
+import { loadTranslations } from "../../utils/i18n";
+import holiday from "@/assets/images/holiday.webp";
+import DGT from "@/assets/logos/DGT_logo.webp";
+
+const url = new URL(Astro.request.url);
+const lang = Astro.params.lang;
+const translations = await loadTranslations(lang);
+const link = translations.footer.useful_links.links[0].link;
+const { seo } = translations;
+const { services, buttons } = translations.vehicle_procedures;
+const imgLink = "https://www.dgt.es/inicio/";
+---
+
+<Layout
+  title={seo.tags.vehicle_procedures}
+  description={translations.vehicle_procedures.description}
+  lang={lang}
+>
+  <!-- Sección principal con el h1 -->
+  <main class="flex-grow">
+    <h1 class="sr-only">{translations.vehicle_procedures.title}</h1>
+    <!-- Título principal de la página -->
+
+    <!-- Sección del carrusel con animación -->
+    <section
+      aria-labelledby="carrousel-section"
+      class="bg-white overflow-hidden"
+    >
+      <h2 id="carrousel-section" class="sr-only">
+        Galería de alquileres vacacionales
+      </h2>
+      <div class="animate-fade-in">
+        <Carrousel
+          client:load
+          data={translations.vehicle_procedures}
+          lang={lang}
+        />
+      </div>
+    </section>
+
+    <!-- Sección de servicios con animación -->
+    <section aria-labelledby="services-banner-section" class="animate-fade-in">
+      <h2 id="services-banner-section" class="sr-only">
+        Servicios de alquileres vacacionales
+      </h2>
+      <ServiceBanner
+        data={translations.vehicle_procedures}
+        image={DGT}
+        link={link}
+        imgLink={imgLink}
+      />
+    </section>
+
+    <!-- Sección de tarjetas de servicios con animación -->
+    <section
+      aria-labelledby="services-section"
+      class="px-4 py-16 bg-slate-50 overflow-hidden"
+    >
+      <div class="max-w-screen-xl mx-auto">
+        <div class="text-center mb-12 animate-fade-in">
+          <span
+            class="inline-block text-orange-500 font-semibold mb-2 tracking-wide"
+          >
+            {
+              lang === "es"
+                ? "NUESTROS SERVICIOS"
+                : lang === "en"
+                  ? "OUR SERVICES"
+                  : "UNSERE DIENSTLEISTUNGEN"
+            }
+          </span>
+          <h2
+            class="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl"
+          >
+            {
+              lang === "es"
+                ? "Servicios de tramitación de vehículos"
+                : lang === "en"
+                  ? "Vehicle Processing Services"
+                  : "Fahrzeugverarbeitungsdienste"
+            }
+          </h2>
+          <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <h2 id="services-section" class="sr-only">
+          Servicios de tramitación de vehículos | Vehicle Processing Services |
+          Fahrzeugverarbeitungsdienste
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in-up"
+        >
+          {
+            services.map((service: any, index: number) => (
+              <div
+                class="service-card"
+                style={`animation-delay: ${index * 0.1}s`}
+              >
+                <ExpandableCard
+                  client:load
+                  lang={lang}
+                  buttomText={buttons.about_us}
+                  title={service.title}
+                  subtitle={service.subtitle}
+                  text={service.description}
+                  img={service.img}
+                />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección del banner de contacto con animación -->
+    <section aria-labelledby="contact-banner-section" class="animate-fade-in">
+      <h2 id="contact-banner-section" class="sr-only">
+        Contáctanos para más información sobre alquileres vacacionales
+      </h2>
+      <ContactBanner text={translations.contact.phrases[0]} />
+    </section>
+
+    <!-- Sección del formulario de contacto con animación -->
+    <section
+      aria-labelledby="contact-form-section"
+      class="py-16 animate-fade-in"
+    >
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="overflow-hidden">
+          <h2 id="contact-form-section" class="sr-only">
+            Formulario de contacto para consultas
+          </h2>
+          <ContactFormReact
+            client:load
+            lang={lang}
+            data={translations.forms}
+            title={true}
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  /* Animaciones */
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  .animate-fade-in-right {
+    animation: fadeInRight 1s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>

@@ -109,6 +109,61 @@
       "Wir übernehmen die Verwaltung – Sie genießen den Gewinn."
     ]
   },
+  "vehicle_procedures": {
+  "title": "Fahrzeugangelegenheiten",
+  "description": "Wir kümmern uns schnell und zuverlässig um alles rund um Ihr Fahrzeug.",
+  "text": "Bei GestoFinca wissen wir, dass Fahrzeugformalitäten oft Kopfschmerzen bereiten. Deshalb sind wir da, um es Ihnen einfach zu machen. Wir übernehmen den gesamten Prozess für Sie – von Anfang bis Ende, ohne Stress oder Zeitverlust. Wir erledigen alle Angelegenheiten rund um Ihr Fahrzeug und die DGT. OFFIZIELL VON DER DGT AUTORISIERT.",
+  "buttons": {
+    "about_us": "Mehr erfahren",
+    "contact_us": "Kontaktieren Sie uns"
+  },
+  "services": [
+    {
+      "title": "Fahrzeugübertragung",
+      "img": "ownership_transfer",
+      "description": "Wir übernehmen den Eigentumswechsel schnell und sicher unter Einhaltung aller gesetzlichen Vorgaben."
+    },
+    {
+      "title": "Kauf- und Verkaufsverträge",
+      "img": "sale_contract",
+      "description": "Wir erstellen klare und rechtsgültige Verträge, damit Sie mit voller Sicherheit kaufen oder verkaufen können."
+    },
+    {
+      "title": "Zahlung von Steuern und Übertragungsabgaben",
+      "img": "tax_payment",
+      "description": "Wir kümmern uns um Steuerzahlungen und Einreichungen, damit Sie sich keine Sorgen machen müssen."
+    },
+    {
+      "title": "Fahrzeugzulassung",
+      "img": "vehicle_registration",
+      "description": "Wir erledigen die vollständige Zulassung für neue und importierte Fahrzeuge."
+    },
+    {
+      "title": "An- und Abmeldung von Fahrzeugen",
+      "img": "vehicle_status",
+      "description": "Wir führen temporäre oder dauerhafte An- und Abmeldungen bei der DGT für Sie durch."
+    },
+    {
+      "title": "Fahrzeuginformationen",
+      "img": "vehicle_report",
+      "description": "Wir beantragen offizielle Berichte, damit Sie den rechtlichen und technischen Zustand eines Fahrzeugs vor dem Kauf kennen."
+    },
+    {
+      "title": "Duplikat der Zulassungsbescheinigung",
+      "img": "circulation_permit",
+      "description": "Wir beantragen ein Duplikat bei Verlust, Diebstahl oder Beschädigung des Originaldokuments."
+    },
+    {
+      "title": "Sondergenehmigungen für den Straßenverkehr",
+      "img": "special_authorizations",
+      "description": "Wir beantragen spezielle Genehmigungen für außergewöhnliche Fahrsituationen oder besondere Fahrzeuge."
+    }
+  ],
+  "phrases": [
+    "Von der DGT offiziell zugelassene Agentur.",
+    "Wir kümmern uns um alles – Sie fahren entspannt."
+  ]
+},
   "contact": {
     "title": "Kontakt",
     "description": "Wir sind für Sie da. Lassen Sie uns sprechen!",
@@ -229,6 +284,10 @@
           "name": "Ferienvermietungen",
           "link": "/de/alquileres-vacacionales"
         },
+        {
+          "name": "Fahrzeugangelegenheiten",
+          "link": "/de/tramites-vehiculos"
+        },
         { "name": "Angebote", "link": "/de/presupuestos" }
       ]
     },
@@ -307,6 +366,7 @@
       "about_us": "Über uns | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
       "property_management": "Gemeinschaft verwaltung auf Teneriffa",
       "vacation_rentals": "Ferienvermietungen auf Teneriffa",
+      "vehicle_procedures": "Fahrzeugangelegenheiten auf Teneriffa",
       "quotes": "Kostenvoranschläge | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
       "contact": "Kontakt | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa"
     }

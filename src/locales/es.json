@@ -109,6 +109,61 @@
       "Nos encargamos de todo, tú solo disfruta los beneficios."
     ]
   },
+  "vehicle_procedures": {
+  "title": "Trámites de Vehículos",
+  "description": "Tramitamos todo lo relacionado con tu vehículo de forma rápida y segura.",
+  "text": "En GestoFinca sabemos que los trámites de coche pueden ser un dolor de cabeza. Por eso, estamos aquí para hacértelo fácil. Nos encargamos de todo el proceso por ti, desde el primer paso hasta el último, sin complicaciones ni pérdidas de tiempo. Realizamos todos los trámites relacionados con tu vehículo y con la DGT.",
+  "buttons": {
+    "about_us": "Saber más",
+    "contact_us": "Contáctanos"
+  },
+  "services": [
+    {
+      "title": "Transferencia de Vehículos",
+      "img": "ownership_transfer",
+      "description": "Gestionamos el cambio de titularidad de forma rápida y segura, cumpliendo todos los requisitos legales."
+    },
+    {
+      "title": "Contrato de Venta y Compra",
+      "img": "sale_contract",
+      "description": "Redactamos contratos claros y válidos para que compres o vendas con total tranquilidad."
+    },
+    {
+      "title": "Pago de Tasas e Impuesto de Transmisiones",
+      "img": "tax_payment",
+      "description": "Nos encargamos del pago y presentación de impuestos para que no tengas que preocuparte por gestiones fiscales."
+    },
+    {
+      "title": "Matriculación de Vehículos",
+      "img": "vehicle_registration",
+      "description": "Realizamos todo el proceso de matriculación, tanto para vehículos nuevos como importados."
+    },
+    {
+      "title": "Altas y Bajas de Vehículos",
+      "img": "vehicle_status",
+      "description": "Tramitamos las altas y bajas, temporales o definitivas, ante la DGT sin complicaciones."
+    },
+    {
+      "title": "Informe de Vehículos",
+      "img": "vehicle_report",
+      "description": "Solicitamos informes oficiales para que conozcas el estado legal y técnico del vehículo antes de comprar."
+    },
+    {
+      "title": "Duplicado Permiso de Circulación",
+      "img": "circulation_permit",
+      "description": "Tramitamos el duplicado en caso de pérdida, robo o deterioro del permiso original."
+    },
+    {
+      "title": "Autorizaciones Especiales de Circulación",
+      "img": "special_authorizations",
+      "description": "Gestionamos permisos específicos para circular en situaciones excepcionales o vehículos especiales."
+    }
+  ],
+  "phrases": [
+    "Gestoría autorizada por la DGT.",
+    "Nos encargamos de todo, tú solo conduce tranquilo."
+  ]
+},
   "contact": {
     "title": "Contacto",
     "description": "Estamos aquí para ayudarte. ¡Hablemos!",
@@ -229,6 +284,10 @@
           "name": "Alquileres Vacacionales",
           "link": "/es/alquileres-vacacionales"
         },
+        {
+          "name": "Trámitación de Vehículos",
+          "link": "/es/tramites-vehiculos"
+        },
         { "name": "Presupuestos", "link": "/es/presupuestos" }
       ]
     },
@@ -282,6 +341,10 @@
     "service2": {
       "title": "Alquileres Vacacionales",
       "description": "Nos encargamos de la gestión integral de tus alquileres vacacionales, maximizando rentabilidad y cuidando cada detalle para una experiencia sin preocupaciones."
+    },
+    "service3": {
+      "title": "Tramitación de Vehículos",
+      "description": "Realizamos todos los trámites relacionados con tu vehículo y con la DGT. GESTORÍA AUTORIZADA POR LA DGT."
     }
   },
   "header": {
@@ -300,6 +363,7 @@
       "about_us": "Nosotros | Administración de Fincas y Alquileres Vacacionales en Tenerife",
       "property_management": "Administración de Fincas en Tenerife",
       "vacation_rentals": "Gestión de alquileres vacacionales en Tenerife",
+      "vehicle_procedures": "Trámites de vehículos en Tenerife",
       "quotes": "Presupuestos | Administración de Fincas y Alquileres Vacacionales en Tenerife",
       "contact": "Contacto | Administración de Fincas y Alquileres Vacacionales en Tenerife"
     }

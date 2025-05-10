@@ -1,35 +1,61 @@
 ---
-import Image from 'astro/components/Image.astro'
+import Image from "astro/components/Image.astro";
 
-const { data, image, link } = Astro.props
-const { description, text, buttons} = data
+const { data, image, link, imgLink } = Astro.props;
+const { description, text, buttons } = data;
 ---
 
-<section class="bg-slate-100 mx-auto overflow-x-hidden py-14 md:py-16 lg:py-24 xl:py-16 lg:mt-3 w-11/12 sm:w-10/12" data-aos="fade-right" data-aos-duration="800">
+<section
+  class="bg-slate-100 mx-auto overflow-x-hidden py-14 md:py-16 lg:py-24 xl:py-16 lg:mt-3 w-11/12 sm:w-10/12"
+  data-aos="fade-right"
+  data-aos-duration="800"
+>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-    
     <!-- Text Content Section -->
     <article class="text-center md:text-left">
-      <h2 class="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">{description}</h2>
+      <h2
+        class="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl"
+      >
+        {description}
+      </h2>
       <p class="text-lg text-gray-500 mb-4 md:mb-8">{text}</p>
       <div class="mt-4">
-        <a href={link} class="px-5 cursor-pointer py-3 text-lg tracking-wider text-white bg-orange-500 rounded-lg hover:bg-orange-600 group md:px-8">
-            {buttons.contact_us}
+        <a
+          href={link}
+          class="px-5 cursor-pointer py-3 text-lg tracking-wider text-white bg-orange-500 rounded-lg hover:bg-orange-600 group md:px-8"
+        >
+          {buttons.contact_us}
         </a>
       </div>
     </article>
 
     <!-- Image Section -->
     <figure class="md:w-full lg:w-3/4 mx-auto">
-      <Image 
-        id="vivienda" 
-        class="transition-all duration-300 ease-in-out hover:scale-95 md:mx-0 md:w-full"
-        src={image} 
-        alt="Imagen de vivienda moderna" 
-        loading="lazy" 
-        width="600" 
-        height="400" 
-      />
+      {
+        imgLink ? (
+          <a href={imgLink} target="_blank" rel="noopener noreferrer">
+            <Image
+              id="vivienda"
+              class="transition-all duration-300 ease-in-out hover:scale-95 md:mx-0 md:w-full"
+              src={image}
+              alt="Imagen de vivienda moderna"
+              loading="lazy"
+              width="600"
+              height="400"
+            />
+          </a>
+        ) : (
+          <Image
+            id="vivienda"
+            class="transition-all duration-300 ease-in-out hover:scale-95 md:mx-0 md:w-full"
+            src={image}
+            alt="Imagen de vivienda moderna"
+            loading="lazy"
+            width="600"
+            height="400"
+          />
+        )
+      }
     </figure>
   </div>
 </section>

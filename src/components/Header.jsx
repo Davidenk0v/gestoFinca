@@ -35,6 +35,10 @@ const Header = ({ lang = "es", data }) => {
       href: `/${lang}/alquileres-vacacionales`,
       label: header?.vacation_rentals || "Alquileres Vacacionales",
     },
+    {
+      href: `/${lang}/tramites-vehiculos`,
+      label: "Trámites de vehículos",
+    },
     { href: `/${lang}/nosotros`, label: header?.about_us || "Nosotros" },
     {
       href: `/${lang}/presupuestos`,
