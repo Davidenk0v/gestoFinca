@@ -1,72 +1,106 @@
 ---
-import CardService from './CardService.astro'
-import Vacation from '../assets/icons/bags.svg'
-import House from '../assets/icons/buildings.svg'
+import CardService from "./CardService.astro";
+import Vacation from "../assets/icons/bags.svg";
+import House from "../assets/icons/buildings.svg";
+import Car from "../assets/icons/car-services.svg";
 
-const data = Astro.props.data
+const data = Astro.props.data;
 
-const { property_management, vacation_rentals, footer, services } = data;
+const {
+  property_management,
+  vacation_rentals,
+  vehicle_procedures,
+  footer,
+  services,
+} = data;
 ---
 
-<section 
-  class="bg-slate-100 flex flex-col gap-8 justify-center items-center px-4 py-12" 
+<section
+  class="bg-slate-100 flex flex-col gap-8 justify-center items-center px-4 py-12"
   aria-labelledby="services-title"
 >
-  <h2 
-    id="services-title" 
+  <h2
+    id="services-title"
     class="max-w-2xl mb-6 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl xl:text-6xl"
   >
     {services.title}
   </h2>
 
-  <div class="flex flex-col md:flex-row gap-8 justify-center w-full max-w-screen-lg">
+  <div
+    class="flex flex-col md:flex-row gap-8 justify-center w-full max-w-screen-lg"
+  >
     <!-- Primer CardService -->
     <div class="card-service flex-1">
-      <CardService 
-        link={footer.pages.links[1].link} 
-        button={property_management.buttons.about_us} 
-        text={property_management.description} 
-        title={property_management.title} 
-        img={House} 
+      <CardService
+        link={footer.pages.links[1].link}
+        button={property_management.buttons.about_us}
+        text={property_management.description}
+        title={property_management.title}
+        img={House}
         alt="Imagen representativa de gestión de propiedades"
         id="property-management"
       />
     </div>
-    
+
     <!-- Segundo CardService -->
     <div class="card-service flex-1">
-      <CardService 
-        link={footer.pages.links[2].link} 
-        button={vacation_rentals.buttons.about_us} 
-        text={vacation_rentals.description} 
-        title={vacation_rentals.title}  
-        img={Vacation} 
+      <CardService
+        link={footer.pages.links[2].link}
+        button={vacation_rentals.buttons.about_us}
+        text={vacation_rentals.description}
+        title={vacation_rentals.title}
+        img={Vacation}
         alt="Imagen representativa de alquileres vacacionales"
         id="vacation-rentals"
+      />
+    </div>
+
+    <!-- Tercer CardService -->
+    <div class="card-service flex-1">
+      <CardService
+        link={footer.pages.links[3].link}
+        button={vehicle_procedures.buttons.about_us}
+        text={vehicle_procedures.description}
+        title={vehicle_procedures.title}
+        img={Car}
+        alt="Imagen representativa de trámites vehiculares"
+        id="vehicle-procedures"
       />
     </div>
   </div>
 </section>
 
 <style>
-   @keyframes fadeIn {
-        0% { opacity: 0; transform: translateY(20px); }
-        100% { opacity: 1; transform: translateY(0); }
-   }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-   @keyframes fadeInUp {
-        0% { opacity: 0; transform: translateY(40px); }
-        100% { opacity: 1; transform: translateY(0); }
-   }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-   /* Animaciones con preferencias de movimiento reducido */
-   @media (prefers-reduced-motion: no-preference) {
-     section {
-       animation: fadeIn 1s ease-out forwards;
-     }
-     
-     section > div {
-       animation: fadeInUp 1s ease-out forwards;
-     }
-   }
+  /* Animaciones con preferencias de movimiento reducido */
+  @media (prefers-reduced-motion: no-preference) {
+    section {
+      animation: fadeIn 1s ease-out forwards;
+    }
+
+    section > div {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  }
 </style>

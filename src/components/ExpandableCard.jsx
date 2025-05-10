@@ -17,6 +17,12 @@ import pricing_optimization from "../assets/icons/pricing_optimization.svg";
 import tax_management from "../assets/icons/tax_management.svg";
 import ownership_transfer from "../assets/icons/tramite-vehiculos/ownership_transfer.svg";
 import sale_contract from "../assets/icons/tramite-vehiculos/sale_contract.svg";
+import tax_payment from "../assets/icons/tramite-vehiculos/tax_payment.svg";
+import vehicle_registration from "../assets/icons/tramite-vehiculos/vehicle_registration.svg";
+import vehicle_report from "../assets/icons/tramite-vehiculos/vehicle_report.svg";
+import vehicle_status from "../assets/icons/tramite-vehiculos/vehicle_status.svg";
+import circulation_permit from "../assets/icons/tramite-vehiculos/circulation_permit.svg";
+import special_authorizations from "../assets/icons/tramite-vehiculos/special_authorizations.svg";
 
 const iconMap = {
   accounting: accounting,
@@ -37,6 +43,12 @@ const iconMap = {
   tax_management: tax_management,
   ownership_transfer: ownership_transfer,
   sale_contract: sale_contract,
+  tax_payment: tax_payment,
+  vehicle_registration: vehicle_registration,
+  vehicle_report: vehicle_report,
+  vehicle_status: vehicle_status,
+  circulation_permit: circulation_permit,
+  special_authorizations: special_authorizations,
 };
 
 const ExpandableCard = ({ title, subtitle, text, buttomText, img, lang }) => {
