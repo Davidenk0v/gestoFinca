@@ -22,8 +22,7 @@ export const CarouselContent = memo(
 
       {/* Descripción con mejor visibilidad en móviles */}
       {description && (
-        <p className="hidden sm:block mt-3 md:mt-4 text-sm sm:text-base md:text-lg font-medium text-white">
-          {description}
+        <p className="hidden sm:block mt-3 md:mt-4 text-sm sm:text-base md:text-lg font-medium text-white" dangerouslySetInnerHTML={{ __html: description }}>
         </p>
       )}
 

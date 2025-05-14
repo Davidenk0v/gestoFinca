@@ -2,7 +2,7 @@
   "property_management": {
     "title": "Gemeinschaft Verwaltung",
     "description": "Professionelles und effizientes Management für Gemeinschaften und anspruchsvolle Eigentümer.",
-    "text": "Wir sind Immobilienverwalter auf Teneriffa, zertifizierte und spezialisierte Fachleute für alle Arten von Gemeinschaften. Wir verfügen über ein Team hochqualifizierter Fachkräfte mit nachweislicher Erfahrung im Bereich der gemeinschaft verwaltung.",
+    "text": "Wir sind gemeinschaft verwalterauf Teneriffa, zertifizierte und spezialisierte Fachleute für alle Arten von Gemeinschaften. Wir verfügen über ein Team hochqualifizierter Fachkräfte mit nachweislicher Erfahrung im Bereich der gemeinschaft verwaltung.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
@@ -136,14 +136,14 @@
       "Professionelle Verwaltung mit garantierten Ergebnissen."
     ]
   },
-  "about_us": {
-    "title": "Über uns",
-    "description": "Bei GestoFinca verstehen wir, dass der Bereich der gemeinschaft verwaltung eine Revolution benötigt, um den wachsenden und sich wandelnden Bedürfnissen der Eigentümer gerecht zu werden.",
-    "text": "Unser Ziel ist es, einen exklusiven Service von höchster Qualität anzubieten, indem wir jedem Kunden die notwendige Zeit widmen, um alle seine Anforderungen zu erfüllen.& Wir verfügen über umfangreiche Erfahrung in den von uns angebotenen Dienstleistungen und sind hochqualifiziert sowie zertifiziert, was es uns ermöglicht, höchste Professionalität und Vertrauen in jeder Verwaltung zu gewährleisten.& Die Bedeutung der Zusammenarbeit mit zertifizierten Fachleuten liegt im rechtlichen Schutz, den wir unseren Kunden bieten. So stellen wir sicher, dass alle Maßnahmen und Entscheidungen den geltenden Vorschriften entsprechen und somit jederzeit Sicherheit und Ruhe gewährleisten.",
-    "buttons": {
-      "about_us": "Mehr erfahren",
-      "contact_us": "Kontaktieren Sie uns"
-    },
+"about_us": {
+  "title": "Über uns",
+  "description": "Bei <strong>GestoFinca</strong> sind wir der Meinung, dass die Verwaltung von Eigentümergemeinschaften eine echte Transformation braucht, um den wachsenden und sich wandelnden Bedürfnissen der Eigentümer gerecht zu werden.",
+  "text": "Dieses Engagement wird von <strong>Marco Ackermann Méndez</strong> geleitet, einem Absolventen in <strong>Wirtschaft und Internationalem Geschäft sowie zertifizierten Hausverwalter Nr. 345</strong>, der eine moderne, nahbare und professionelle Sichtweise in jeden Aspekt der Verwaltung einbringt.& Unser Ziel ist klar: einen exklusiven, personalisierten Service von höchster Qualität anzubieten. Wir nehmen uns die nötige Zeit für jeden Kunden, um seine Bedürfnisse ganzheitlich, effizient und transparent zu erfüllen.& Wir verfügen über umfassende Erfahrung in der Branche und ein hochqualifiziertes, zertifiziertes Team, das eine sichere und rechtlich abgesicherte Verwaltung garantiert. Wir setzen auf die Ruhe und Sicherheit unserer Kunden und stellen sicher, dass jede Maßnahme den geltenden Vorschriften und höchsten Standards der Branche entspricht.",
+  "buttons": {
+    "about_us": "Mehr erfahren",
+    "contact_us": "Kontaktieren Sie uns"
+  },
     "phrases": [
       "Erfahrung und Vertrauen zu Ihrem Vorteil.",
       "Über 10 Jahre erfolgreiche Verwaltung.",
