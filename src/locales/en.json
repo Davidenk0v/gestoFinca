@@ -191,14 +191,14 @@
       "Professional management, guaranteed results."
     ]
   },
-  "about_us": {
-    "title": "About Us",
-    "description": "At GestoFinca, we understand that the community management sector needs a revolution to meet the growing and changing needs of property owners.",
-    "text": "Our goal is to offer an exclusive, top-quality service, dedicating the necessary time to each client to fulfill all their demands. &We have extensive experience in the services we provide and are highly qualified and certified, allowing us to guarantee the utmost professionalism and trust in every management task.& The importance of working with certified professionals lies in the legal protection we offer our clients, ensuring that all actions and decisions are backed by current regulations, providing peace of mind and security at all times.",
-    "buttons": {
-      "about_us": "Learn More",
-      "contact_us": "Contact Us"
-    },
+"about_us": {
+  "title": "About Us",
+  "description": "At <strong>GestoFinca</strong>, we believe that community management needs a real transformation to meet the growing and changing needs of property owners.",
+  "text": "This commitment is led by <strong>Marco Ackermann Méndez</strong>, a graduate in <strong>Economics and International Business and a certified Property Administrator Nº 345</strong>, who brings a modern, approachable, and professional vision to every aspect of management.& Our goal is clear: to offer an exclusive, personalized service of the highest quality. We take the necessary time with each client to address their needs in a comprehensive, efficient, and transparent way.& We have solid experience in the sector and a highly qualified and certified team, which allows us to ensure safe and legally backed management. We are committed to our clients’ peace of mind, making sure that every action is aligned with current regulations and the highest industry standards.",
+  "buttons": {
+    "about_us": "Learn more",
+    "contact_us": "Contact us"
+  },
     "phrases": [
       "Experience and trust at your service.",
       "Over 10 years of successfully managing properties.",

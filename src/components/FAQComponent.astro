@@ -1,52 +1,83 @@
 ---
 const lang = Astro.props.lang;
 ---
+
 <section class="mb-12" itemscope itemtype="https://schema.org/FAQPage">
-    <h2 class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-4 text-center">
-        {lang === "es" 
-          ? "Preguntas frecuentes sobre GestoFinca" 
-          : lang === "en" 
-          ? "Frequently Asked Questions about GestoFinca" 
-          : "Häufig gestellte Fragen zur GestoFinca"}
-    </h2>
-    
-    <div class="space-y-6">
-        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b pb-4">
-            <h3 itemprop="name" class="font-medium text-lg">
-                {lang === "es" 
-                  ? "¿Qué servicios incluye la administración de fincas?" 
-                  : lang === "en" 
-                  ? "What services are included in property management?" 
-                  : "Welche Dienstleistungen umfasst die Immobilienverwaltung?"}
-            </h3>
-            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <div itemprop="text" class="mt-2 text-gray-600">
-                    {lang === "es" 
-                      ? "Nuestros servicios incluyen gestión de alquileres vacacionales, mantenimiento de propiedades, administración de comunidades de propietarios, gestión de pagos y facturas." 
-                      : lang === "en" 
-                      ? "Our services include vacation rental management, property maintenance, homeowners association administration, payment and invoice management." 
-                      : "Unsere Dienstleistungen umfassen Ferienvermietungsmanagement, Immobilienwartung, Verwaltung von Eigentümergemeinschaften, Zahlungs- und Rechnungsverwaltung sowie rechtliche Unterstützung."}
-                </div>
-            </div>
+  <h2
+    class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-4 text-center"
+  >
+    {
+      lang === "es"
+        ? "Preguntas frecuentes sobre GestoFinca"
+        : lang === "en"
+          ? "Frequently Asked Questions about GestoFinca"
+          : "Häufig gestellte Fragen zur GestoFinca"
+    }
+  </h2>
+
+  <div class="space-y-6">
+    <div
+      itemscope
+      itemprop="mainEntity"
+      itemtype="https://schema.org/Question"
+      class="border-b pb-4"
+    >
+      <h3 itemprop="name" class="font-medium text-lg">
+        {
+          lang === "es"
+            ? "¿Qué servicios incluye la administración de fincas?"
+            : lang === "en"
+              ? "What services are included in property management?"
+              : "Welche Dienstleistungen umfasst die gemeinschaft verwaltung?"
+        }
+      </h3>
+      <div
+        itemscope
+        itemprop="acceptedAnswer"
+        itemtype="https://schema.org/Answer"
+      >
+        <div itemprop="text" class="mt-2 text-gray-600">
+          {
+            lang === "es"
+              ? "Nuestros servicios incluyen gestión de alquileres vacacionales, mantenimiento de propiedades, administración de comunidades de propietarios, gestión de pagos y facturas."
+              : lang === "en"
+                ? "Our services include vacation rental management, property maintenance, homeowners association administration, payment and invoice management."
+                : "Unsere Dienstleistungen umfassen Ferienvermietungsmanagement, Immobilienwartung, Verwaltung von Eigentümergemeinschaften, Zahlungs- und Rechnungsverwaltung sowie rechtliche Unterstützung."
+          }
         </div>
-        
-        <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b pb-4">
-            <h3 itemprop="name" class="font-medium text-lg">
-                {lang === "es" 
-                  ? "¿Por qué necesito un administrador de propiedades en Tenerife?" 
-                  : lang === "en" 
-                  ? "Why do I need a property manager in Tenerife?" 
-                  : "Warum benötige ich einen Immobilienverwalter auf Teneriffa?"}
-            </h3>
-            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                <div itemprop="text" class="mt-2 text-gray-600">
-                    {lang === "es" 
-                      ? "Un administrador profesional de propiedades en Tenerife se encarga de todos los aspectos operativos, maximiza la rentabilidad de su inversión, gestiona inquilinos y resuelve problemas mientras usted no está, especialmente importante para propietarios extranjeros." 
-                      : lang === "en" 
-                      ? "A professional property manager in Tenerife handles all operational aspects, maximizes your investment returns, manages tenants and resolves issues while you're away, which is especially important for foreign property owners." 
-                      : "Ein professioneller Immobilienverwalter auf Teneriffa kümmert sich um alle betrieblichen Aspekte, maximiert die Rendite Ihrer Investition, verwaltet Mieter und löst Probleme, während Sie nicht vor Ort sind, was besonders für ausländische Eigentümer wichtig ist."}
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <div
+      itemscope
+      itemprop="mainEntity"
+      itemtype="https://schema.org/Question"
+      class="border-b pb-4"
+    >
+      <h3 itemprop="name" class="font-medium text-lg">
+        {
+          lang === "es"
+            ? "¿Por qué necesito un administrador de propiedades en Tenerife?"
+            : lang === "en"
+              ? "Why do I need a property manager in Tenerife?"
+              : "Warum benötige ich einen gemeinschaft verwalter auf Teneriffa?"
+        }
+      </h3>
+      <div
+        itemscope
+        itemprop="acceptedAnswer"
+        itemtype="https://schema.org/Answer"
+      >
+        <div itemprop="text" class="mt-2 text-gray-600">
+          {
+            lang === "es"
+              ? "Un administrador profesional de propiedades en Tenerife se encarga de todos los aspectos operativos, maximiza la rentabilidad de su inversión, gestiona inquilinos y resuelve problemas mientras usted no está, especialmente importante para propietarios extranjeros."
+              : lang === "en"
+                ? "A professional property manager in Tenerife handles all operational aspects, maximizes your investment returns, manages tenants and resolves issues while you're away, which is especially important for foreign property owners."
+                : "Ein professioneller gemeinschaft verwalter auf Teneriffa kümmert sich um alle betrieblichen Aspekte, maximiert die Rendite Ihrer Investition, verwaltet Mieter und löst Probleme, während Sie nicht vor Ort sind, was besonders für ausländische Eigentümer wichtig ist."
+          }
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
