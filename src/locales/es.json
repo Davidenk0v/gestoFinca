@@ -349,6 +349,7 @@
   },
   "header": {
     "home": "Inicio",
+    "services": "Servicios",
     "about_us": "Nosotros",
     "property_management": "Administración de Fincas",
     "vacation_rentals": "Alquileres Vacacionales",
@@ -515,5 +516,18 @@
           "content": "Si tienes alguna pregunta sobre estos términos, no dudes en contactarnos a través de los canales disponibles en nuestra página de contacto."
         }
       ]
-    }    
+    },
+    "faq": {
+    "title": "Preguntas frecuentes sobre GestoFinca",
+    "questions": [
+      {
+        "question": "¿Qué servicios incluye la administración de fincas?",
+        "answer": "Nuestros servicios incluyen gestión de alquileres vacacionales, mantenimiento de propiedades, administración de comunidades de propietarios, gestión de pagos y facturas."
+      },
+      {
+        "question": "¿Por qué necesito un administrador de propiedades en Tenerife?",
+        "answer": "Un administrador profesional de propiedades en Tenerife se encarga de todos los aspectos operativos, maximiza la rentabilidad de su inversión, gestiona inquilinos y resuelve problemas mientras usted no está, especialmente importante para propietarios extranjeros."
+      }
+    ]
+  }
 }

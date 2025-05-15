@@ -347,6 +347,7 @@
   "header": {
     "home": "Home",
     "about_us": "About Us",
+    "services": "Services", 
     "property_management": "Property Management",
     "vacation_rentals": "Vacation Rentals",
     "quotes": "Quotes",

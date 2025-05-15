@@ -2,7 +2,7 @@
   "property_management": {
     "title": "Gemeinschaft Verwaltung",
     "description": "Professionelles und effizientes Management für Gemeinschaften und anspruchsvolle Eigentümer.",
-    "text": "Wir sind gemeinschaft verwalterauf Teneriffa, zertifizierte und spezialisierte Fachleute für alle Arten von Gemeinschaften. Wir verfügen über ein Team hochqualifizierter Fachkräfte mit nachweislicher Erfahrung im Bereich der gemeinschaft verwaltung.",
+    "text": "Wir sind gemeinschaft verwalter auf Teneriffa, zertifizierte und spezialisierte Fachleute für alle Arten von Gemeinschaften. Wir verfügen über ein Team hochqualifizierter Fachkräfte mit nachweislicher Erfahrung im Bereich der gemeinschaft verwaltung.",
     "buttons": {
       "about_us": "Mehr erfahren",
       "contact_us": "Kontaktieren Sie uns"
@@ -353,6 +353,7 @@
   "header": {
     "home": "Startseite",
     "about_us": "Über uns",
+    "services": "Dienstleistungen",
     "property_management": "Gemeinschaft Verwaltung",
     "vacation_rentals": "Ferienvermietung",
     "quotes": "Angebote",
