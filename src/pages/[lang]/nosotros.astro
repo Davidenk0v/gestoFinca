@@ -10,62 +10,75 @@ import Who from "../../components/Who.astro";
 import FAQComponent from "../../components/FAQComponent.astro";
 import ClientSay from "../../components/ClientSay.astro";
 
-const lang = Astro.params.lang
+const lang = Astro.params.lang;
 
 const translations = await loadTranslations(lang);
-const { seo } = translations;
+const { seo, faq } = translations;
 ---
 
-<Layout 
-    title={seo.tags.about_us} 
-    description={translations.about_us.description}
-    lang={lang}
+<Layout
+  title={seo.tags.about_us}
+  description={translations.about_us.description}
+  lang={lang}
 >
-    <!-- Sección principal con el h1 -->
-    <main>
-        <h1 class="sr-only">{translations.about_us.title}</h1> <!-- Título principal de la página accesible para SEO y tecnología asistiva -->
+  <!-- Sección principal con el h1 -->
+  <main>
+    <h1 class="sr-only">{translations.about_us.title}</h1>
+    <!-- Título principal de la página accesible para SEO y tecnología asistiva -->
 
-        <!-- Sección del carrusel -->
-        <section aria-labelledby="about-us-carousel-section" class="bg-white">
-            <h2 id="about-us-carousel-section" class="sr-only">Galería de imágenes de nuestra empresa</h2>
-            <Carrousel client:load data={translations.about_us} lang={lang}/>
-        </section>
+    <!-- Sección del carrusel -->
+    <section aria-labelledby="about-us-carousel-section" class="bg-white">
+      <h2 id="about-us-carousel-section" class="sr-only">
+        Galería de imágenes de nuestra empresa
+      </h2>
+      <Carrousel client:load data={translations.about_us} lang={lang} />
+    </section>
 
-        <!-- Sección sobre nosotros -->
-        <section>
-            <Who data={translations} lang={lang}/>
-        </section>
+    <!-- Sección sobre nosotros -->
+    <section>
+      <Who data={translations} lang={lang} />
+    </section>
 
-        <!-- Sección de información sobre nuestros servicios -->
-        <section aria-labelledby="services-info-section" class="relative">
-            <h2 id="services-info-section" class="sr-only">Nuestros servicios principales</h2>
-            <AboutUs data={translations} />
-        </section>
-        <section aria-labelledby="faq-section" class="container mx-auto px-4 py-8">
+    <!-- Sección de información sobre nuestros servicios -->
+    <section aria-labelledby="services-info-section" class="relative">
+      <h2 id="services-info-section" class="sr-only">
+        Nuestros servicios principales
+      </h2>
+      <AboutUs data={translations} />
+    </section>
+    <section aria-labelledby="faq-section" class="container mx-auto px-4 py-8">
+      <!-- Sección de testimonios para mejorar la confianza y SEO -->
+      <ClientSay lang={lang} />
 
-            <!-- Sección de testimonios para mejorar la confianza y SEO -->
-            <ClientSay lang={lang} />
-                   
-            <!-- Añadir sección de FAQ para impulsar SEO -->
-            <FAQComponent lang={lang} />
-        </section>
+      <!-- Añadir sección de FAQ para impulsar SEO -->
+      <FAQComponent lang={lang} faq={faq} />
+    </section>
 
-        <!-- Sección de detalles adicionales y contacto -->
-        <section>
-            <ServicesInfo data={translations} />
-            <ContactBanner text={translations.contact.phrases[0]}/>
-        </section>
+    <!-- Sección de detalles adicionales y contacto -->
+    <section>
+      <ServicesInfo data={translations} />
+      <ContactBanner text={translations.contact.phrases[0]} />
+    </section>
 
-        <!-- Sección de contacto -->
-        <section aria-labelledby="contact-form-section" class="py-16 animate-fade-in">
-            <div class="max-w-screen-xl mx-auto px-4">
-                <div class="overflow-hidden">
-                    <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
-                    <ContactFormReact client:load lang={lang} data={translations.forms} title={true}/>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonios para mejorar la confianza y SEO -->
-
-    </main>
+    <!-- Sección de contacto -->
+    <section
+      aria-labelledby="contact-form-section"
+      class="py-16 animate-fade-in"
+    >
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="overflow-hidden">
+          <h2 id="contact-form-section" class="sr-only">
+            Formulario de contacto para consultas
+          </h2>
+          <ContactFormReact
+            client:load
+            lang={lang}
+            data={translations.forms}
+            title={true}
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Testimonios para mejorar la confianza y SEO -->
+  </main>
 </Layout>

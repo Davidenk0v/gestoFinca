@@ -1,80 +1,116 @@
 ---
-import Carrousel from '../../components/Carrousel.jsx'
-import ContactFormReact from '../../components/ContactFormReact';
-import ServicesInfo from '../../components/ServicesInfo.astro';
-import Layout from '../../layouts/Layout.astro';
-import ContactBanner from '../../components/ContactBanner.astro';
-import { loadTranslations } from '../../utils/i18n';
-import AboutUs from '../../components/AboutUs.astro';
-import ClientSay from '../../components/ClientSay.astro';
-import FAQComponent from '../../components/FAQComponent.astro';
+import Carrousel from "../../components/Carrousel.jsx";
+import ContactFormReact from "../../components/ContactFormReact";
+import ServicesInfo from "../../components/ServicesInfo.astro";
+import Layout from "../../layouts/Layout.astro";
+import ContactBanner from "../../components/ContactBanner.astro";
+import { loadTranslations } from "../../utils/i18n";
+import AboutUs from "../../components/AboutUs.astro";
+import ClientSay from "../../components/ClientSay.astro";
+import FAQComponent from "../../components/FAQComponent.astro";
 
-const lang = Astro.params.lang || 'es'; // Default to Spanish if no lang param is provided
+const lang = Astro.params.lang || "es"; // Default to Spanish if no lang param is provided
 
 const translation = await loadTranslations(lang);
-const seo = translation?.seo ?? { title: "GestoFinca", description: "Administración de fincas en Tenerife" };
+const seo = translation?.seo ?? {
+  title: "GestoFinca",
+  description: "Administración de fincas en Tenerife",
+};
+const faq = translation?.faq ?? {
+  title: "Preguntas frecuentes",
+  questions: [],
+};
 ---
 
-<Layout title={seo.title} description={translation?.index?.description ?? 'Administración de fincas en Tenerife'}>
+<Layout
+  title={seo.title}
+  description={translation?.index?.description ??
+    "Administración de fincas en Tenerife"}
+>
   <div class="snap-y snap-mandatory">
-    
     <!-- Sección principal con el h1 -->
     <main>
-      <h1 class="sr-only">{seo.title}</h1> <!-- Título principal de la página accesible para SEO y tecnología asistiva -->
-    
+      <h1 class="sr-only">{seo.title}</h1>
+      <!-- Título principal de la página accesible para SEO y tecnología asistiva -->
+
       <!-- Sección del carrusel con imágenes -->
       <section class="snap-start">
-        <Carrousel data={translation.index} client:load lang={lang}/>
+        <Carrousel data={translation.index} client:load lang={lang} />
       </section>
-    
+
       <!-- Sección de nuestros valores -->
       <section aria-labelledby="values-section">
         <h2 id="values-section" class="sr-only">Nuestros valores</h2>
         <AboutUs data={translation} />
       </section>
-    
+
       <!-- Sección de nuestros servicios -->
       <section aria-labelledby="services-section">
         <h2 id="services-section" class="sr-only">Nuestros Servicios</h2>
         <ServicesInfo data={translation} />
       </section>
-    
+
       <!-- Sección de testimonios para mejorar la confianza y SEO -->
-      <section class="container mx-auto px-4 py-8" aria-labelledby="faq-section">
-        <ClientSay lang={lang}/>
-        <FAQComponent lang={lang}/>
+      <section
+        class="container mx-auto px-4 py-8"
+        aria-labelledby="faq-section"
+      >
+        <ClientSay lang={lang} />
+        <FAQComponent lang={lang} faq={faq} />
       </section>
       <!-- Banner de contacto para facilitar la acción -->
-      <ContactBanner text={translation.contact.phrases[0]}/>
-    
+      <ContactBanner text={translation.contact.phrases[0]} />
+
       <!-- Sección del formulario de contacto -->
-      <section aria-labelledby="contact-form-section" class="py-16 animate-fade-in">
+      <section
+        aria-labelledby="contact-form-section"
+        class="py-16 animate-fade-in"
+      >
         <div class="max-w-screen-xl mx-auto px-4">
-            <div class="overflow-hidden">
-                <h2 id="contact-form-section" class="sr-only">Formulario de contacto para consultas</h2>
-                <ContactFormReact client:load lang={lang} data={translation.forms} title={true}/>
-            </div>
+          <div class="overflow-hidden">
+            <h2 id="contact-form-section" class="sr-only">
+              Formulario de contacto para consultas
+            </h2>
+            <ContactFormReact
+              client:load
+              lang={lang}
+              data={translation.forms}
+              title={true}
+            />
+          </div>
         </div>
-    </section>
+      </section>
     </main>
   </div>
 </Layout>
 
 <style>
   .animate-fade-in {
-       animation: fadeIn 1s ease-out forwards;
-   }
-   .animate-fade-in-up {
-       animation: fadeInUp 1s ease-out forwards;
-   }
-   
-   @keyframes fadeIn {
-       from { opacity: 0; transform: translateY(20px); }
-       to { opacity: 1; transform: translateY(0); }
-   }
-   
-   @keyframes fadeInUp {
-       from { opacity: 0; transform: translateY(40px); }
-       to { opacity: 1; transform: translateY(0); }
-   }
+    animation: fadeIn 1s ease-out forwards;
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>

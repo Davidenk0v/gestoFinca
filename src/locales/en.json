@@ -350,6 +350,7 @@
     "services": "Services", 
     "property_management": "Property Management",
     "vacation_rentals": "Vacation Rentals",
+    "vehicle_procedures": "Vehicle Procedures",
     "quotes": "Quotes",
     "contact": "Contact"
   },
@@ -513,6 +514,22 @@
           "content": "If you have any questions about these terms, please do not hesitate to contact us through the channels available on our contact page."
         }
       ]
-    }    
-     
+    },
+"faq": {
+  "title": "Frequently Asked Questions about GestoFinca",
+  "questions": [
+    {
+      "question": "What services are included in property management?",
+      "answer": "Our services include vacation rental management, property maintenance, homeowners' association administration, and management of payments and invoices."
+    },
+    {
+      "question": "Why do I need a property manager in Tenerife?",
+      "answer": "A professional property manager in Tenerife handles all operational aspects, maximizes your investment’s profitability, manages tenants, and solves issues while you're away — especially important for foreign property owners."
+    },
+    {
+      "question": "What is included in the vehicle administration service?",
+      "answer": "It includes ownership transfers, vehicle registration, temporary or permanent deregistration, document duplicates, and management of vehicle-related taxes."
+    }
+  ]
+}  
 }

@@ -3,38 +3,74 @@ import Image from "astro/components/Image.astro";
 const { link, img, title, text, button } = Astro.props;
 ---
 
-<div class="w-full max-w-screen-md mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-lg h-auto animate-fade-in">
-    <div class="flex justify-center">
-        <Image src={img} alt="Icono representativo" loading="lazy" class="w-20 h-20 md:w-24 md:h-24 transition-transform duration-300 hover:scale-105" />
+<div
+  class="w-96 h-96 mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-lg flex flex-col animate-fade-in"
+>
+  <div class="flex justify-center flex-shrink-0">
+    <Image
+      src={img}
+      alt="Icono representativo"
+      loading="lazy"
+      class="w-28 h-28 transition-transform duration-300 hover:scale-105"
+    />
+  </div>
+
+  <div
+    class="p-5 text-center flex flex-col justify-between flex-grow overflow-auto"
+  >
+    <div>
+      <h5
+        class="mb-3 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+      >
+        {title}
+      </h5>
+
+      <p
+        class="mb-5 text-sm text-gray-700 dark:text-gray-400 leading-relaxed overflow-y-auto max-h-32"
+      >
+        {text}
+      </p>
     </div>
 
-    <div class="p-5 text-center">
-        <h5 class="mb-3 text-xl font-bold tracking-tight text-gray-900 dark:text-white md:text-2xl">
-            {title}
-        </h5>
-
-        <p class="mb-5 text-sm text-gray-700 dark:text-gray-400 md:text-base leading-relaxed">
-            {text}
-        </p>
-
-        <a href={link} 
-           class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-600 hover:translate-y-[-2px] focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-           aria-label={`Más información sobre ${title}`}>
-            {button}
-            <svg class="w-4 h-4 ml-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-            </svg>
-        </a>
+    <div class="mt-auto">
+      <a
+        href={link}
+        class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-600 hover:translate-y-[-2px] focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        aria-label={`Más información sobre ${title}`}
+      >
+        {button}
+        <svg
+          class="w-4 h-4 ml-2 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+        </svg>
+      </a>
     </div>
+  </div>
 </div>
 
 <style>
-    .animate-fade-in {
-        animation: fadeIn 1s ease-out forwards;
-    }
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
 
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 </style>

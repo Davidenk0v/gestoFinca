@@ -353,6 +353,7 @@
     "about_us": "Nosotros",
     "property_management": "Administración de Fincas",
     "vacation_rentals": "Alquileres Vacacionales",
+    "vehicle_procedures": "Trámites de Vehículos",
     "quotes": "Presupuestos",
     "contact": "Contacto"
   },
@@ -527,6 +528,10 @@
       {
         "question": "¿Por qué necesito un administrador de propiedades en Tenerife?",
         "answer": "Un administrador profesional de propiedades en Tenerife se encarga de todos los aspectos operativos, maximiza la rentabilidad de su inversión, gestiona inquilinos y resuelve problemas mientras usted no está, especialmente importante para propietarios extranjeros."
+      },
+      {
+        "question": "¿Qué incluye el servicio de tramitación de vehículos?",
+        "answer": "Incluye cambio de titularidad, matriculación, baja temporal o definitiva, duplicados de documentación y gestión de impuestos relacionados con vehículos."
       }
     ]
   }

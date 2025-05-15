@@ -57,7 +57,7 @@ const Header = ({ lang = "es", data }) => {
         },
         {
           href: `/${lang}/tramites-vehiculos`,
-          label: "Trámites de vehículos",
+          label: header?.vehicle_procedures || "Trámites de vehículos",
         },
       ]
     },

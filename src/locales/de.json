@@ -355,6 +355,7 @@
     "about_us": "Über uns",
     "services": "Dienstleistungen",
     "property_management": "Gemeinschaft Verwaltung",
+    "vehicle_procedures": "Fahrzeugangelegenheiten",
     "vacation_rentals": "Ferienvermietung",
     "quotes": "Angebote",
     "contact": "Kontakt"
@@ -519,6 +520,24 @@
           "content": "Wenn Sie Fragen zu diesen Bedingungen haben, zögern Sie bitte nicht, uns über die auf unserer Kontaktseite verfügbaren Kanäle zu kontaktieren."
         }
       ]
+    },
+"faq": {
+  "title": "Häufig gestellte Fragen zu GestoFinca",
+  "questions": [
+    {
+      "question": "Welche Leistungen umfasst die Gemeinschaft verwaltung?",
+      "answer": "Unsere Leistungen umfassen die Verwaltung von Ferienvermietungen, Instandhaltung von Immobilien, Verwaltung von Eigentümergemeinschaften sowie die Abwicklung von Zahlungen und Rechnungen."
+    },
+    {
+      "question": "Warum brauche ich einen Gemeinschaft verwalter auf Teneriffa?",
+      "answer": "Ein professioneller Gemeinschaft verwalter auf Teneriffa kümmert sich um alle operativen Aspekte, maximiert die Rentabilität Ihrer Investition, betreut Mieter und löst Probleme in Ihrer Abwesenheit – besonders wichtig für ausländische Eigentümer."
+    },
+    {
+      "question": "Was beinhaltet der Fahrzeugservice?",
+      "answer": "Er beinhaltet Eigentumsübertragungen, Zulassungen, vorübergehende oder endgültige Abmeldungen, Duplikate von Fahrzeugpapieren und die Verwaltung fahrzeugbezogener Steuern."
     }
+  ]
+}
+
        
 }
