@@ -151,7 +151,7 @@ const Header = ({ lang = "es", data }) => {
                   
                   {/* Dropdown Menu */}
                   <div 
-                    className={`absolute left-0 top-full mt-1 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-all duration-200 ${
+                    className={`absolute left-0 top-full mt-1 w-64 rounded-md shadow-lg bg-slate-200 ring-1 ring-black ring-opacity-5 transition-all duration-200 ${
                       servicesDropdownOpen ? 'opacity-100 transform translate-y-0' : 'opacity-0 invisible transform -translate-y-2'
                     }`}
                   >
