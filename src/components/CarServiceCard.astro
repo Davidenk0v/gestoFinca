@@ -5,25 +5,30 @@ const { title, description, price,tax, lang, link } = Astro.props;
 <section class="py-8">
   <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 items-stretch">
     <!-- Sección de precio compacta -->
-    <div class="lg:col-span-2 text-center p-6 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100">
-      <div class="flex items-baseline justify-center mb-2">
-        {price ? (
-          <span class="text-4xl md:text-5xl font-bold text-gray-800 leading-none items-center">{price}</span>
-          <span class="text-2xl text-gray-700 ml-1">€</span>
-        ) : (
-          <span class="text-4xl md:text-3xl font-bold text-gray-800 leading-none items-center">
-            {lang === "es" ? "Consultar precio" : lang === "en" ? "Contact for price" : "Preis anfragen"}
+    <div class="lg:col-span-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-100 text-center p-6 flex flex-col justify-center h-full">
+      <div>
+        <div class="flex items-baseline justify-center mb-2">
+          {price ? (
+            <div class="flex items-center justify-center">
+              <span class="text-4xl md:text-5xl font-bold text-gray-800 leading-none">{price}</span>
+              <span class="text-2xl text-gray-700 ml-1">€</span>
+            </div>
+          ) : (
+            <span class="text-4xl md:text-3xl font-bold text-gray-800 leading-none">
+              {lang === "es" ? "Consultar precio" : lang === "en" ? "Contact for price" : "Preis anfragen"}
+            </span>
+          )}
+        </div>
+        {tax && (
+          <span class="text-red-600 font-medium text-xs block mt-1">
+            *{tax}
           </span>
         )}
       </div>
-      <span class="text-red-600 font-medium text-xs block">
-        *{tax}
-      </span>
     </div>
 
     <!-- Banner informativo principal -->
-    <div class="lg:col-span-3 bg-gradient-to-r from-brand-blueFinca to-brand-greenFinca text-black p-6 rounded-xl flex flex-col sm:flex-row justify-between items-center shadow-xl relative overflow-hidden">
-      <!-- Efecto de brillo sutil -->
+    <div class="lg:col-span-3 bg-gradient-to-r from-brand-blueFinca to-brand-greenFinca text-black p-6 rounded-xl flex flex-col sm:flex-row justify-between items-center shadow-xl relative overflow-hidden h-full">
       <div class="absolute inset-0 bg-gradient-to-br from-white/15 via-transparent to-transparent pointer-events-none"></div>
       
       <div class="flex-1 relative z-10 text-center sm:text-left mb-4 sm:mb-0 sm:pr-4">
