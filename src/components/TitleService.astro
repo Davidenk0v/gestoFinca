@@ -1,0 +1,29 @@
+---
+const { lang } = Astro.props;
+---
+<div class="max-w-screen-xl mx-auto">
+        <div class="text-center mb-12 animate-fade-in">
+          <span
+            class="inline-block text-orange-500 font-semibold mb-2 tracking-wide"
+          >
+            {
+              lang === "es"
+                ? "NUESTROS SERVICIOS"
+                : lang === "en"
+                  ? "OUR SERVICES"
+                  : "UNSERE DIENSTLEISTUNGEN"
+            }
+          </span>
+          <h2
+            class="text-3xl font-extrabold leading-tight tracking-tight text-gray-800 sm:text-4xl"
+          >
+            {
+              lang === "es"
+                ? "Servicios de tramitación de vehículos"
+                : lang === "en"
+                  ? "Vehicle Processing Services"
+                  : "Fahrzeugverarbeitungsdienste"
+            }
+          </h2>
+          <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+        </div>

@@ -1,9 +1,11 @@
 ---
 import Carrousel from "../../components/Carrousel";
+import CarServiceCard from "../../components/CarServiceCard.astro";
 import ContactBanner from "../../components/ContactBanner.astro";
 import ContactFormReact from "../../components/ContactFormReact";
 import ExpandableCard from "../../components/ExpandableCard";
 import ServiceBanner from "../../components/ServiceBanner.astro";
+import TitleService from "../../components/TitleService.astro";
 import Layout from "../../layouts/Layout.astro";
 import { loadTranslations } from "../../utils/i18n";
 import holiday from "@/assets/images/holiday.webp";
@@ -48,7 +50,7 @@ const imgLink = "https://www.dgt.es/inicio/";
     <!-- Sección de servicios con animación -->
     <section aria-labelledby="services-banner-section" class="animate-fade-in">
       <h2 id="services-banner-section" class="sr-only">
-        Servicios de alquileres vacacionales
+        Servicios de tramitación de vehículos
       </h2>
       <ServiceBanner
         data={translations.vehicle_procedures}
@@ -97,25 +99,17 @@ const imgLink = "https://www.dgt.es/inicio/";
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 animate-fade-in-up"
         >
-          {
-            services.map((service: any, index: number) => (
-              <div
-                class="service-card"
-                style={`animation-delay: ${index * 0.1}s`}
-              >
-                <ExpandableCard
-                  client:load
-                  lang={lang}
-                  buttomText={buttons.about_us}
-                  title={service.title}
-                  subtitle={service.subtitle}
-                  text={service.description}
-                  img={service.img}
-                />
-              </div>
-            ))
-          }
-        </div>
+      </div>
+      {services.map((service:any) => (
+        <CarServiceCard 
+        lang={lang}
+        title={service.title}
+        description={service.description}
+        price={service.price}
+        tax={service.tax}
+        link={service.link}
+        />
+      ))}
       </div>
     </section>
 

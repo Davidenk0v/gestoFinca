@@ -1,169 +1,179 @@
 {
   "property_management": {
-    "title": "Administración de Fincas",
-    "description": "Gestión profesional y eficiente para comunidades y propietarios exigentes.",
-    "text": "Somos administradores de fincas en Tenerife, colegiados y técnicos especializados en todo tipo de comunidades. Contamos con un equipo de profesionales altamente cualificados y con experiencia demostrable en el ámbito de la administración de fincas.",
+    "title": "Administrador de Fincas en Tenerife",
+    "description": "Gestión integral, contabilidad transparente, asesoramiento legal y atención personalizada para comunidades de propietarios.",
+    "text": "Como administradores de fincas en Tenerife, colegiados y con amplia experiencia, ofrecemos una gestión profesional, cercana y eficiente para comunidades de propietarios. Nos especializamos en la administración integral de fincas, resolviendo incidencias, optimizando recursos y garantizando el cumplimiento normativo. Nuestro equipo multidisciplinar está comprometido con la transparencia, la eficiencia y la mejora continua de cada comunidad que gestionamos.",
     "buttons": {
-      "about_us": "Saber más",
-      "contact_us": "Contáctanos"
+      "about_us": "Conoce mas sobre nosotros",
+      "learn_more": "Descubre nuestros servicios",
+      "contact_us": "Solicita información"
     },
     "services": [
       {
-        "title": "Contabilidad",
+        "title": "Contabilidad Comunitaria",
         "img": "accounting",
-        "description": "Garantizamos una gestión transparente y eficiente de los recursos financieros. Nos encargamos de la elaboración de balances, presupuestos y liquidaciones, asegurando siempre la máxima claridad y cumplimiento de las normativas vigentes."
+        "description": "Ofrecemos una contabilidad clara y detallada para comunidades de propietarios. Elaboramos presupuestos, balances y liquidaciones conforme a la normativa, garantizando una gestión financiera transparente, eficiente y sin sorpresas."
       },
       {
-        "title": "Proveedores",
+        "title": "Gestión de Proveedores",
         "img": "suppliers",
-        "description": "Gestionamos y coordinamos todos los proveedores necesarios para el correcto funcionamiento de su comunidad. Desde el mantenimiento hasta los servicios especializados, nos aseguramos de seleccionar y supervisar a los mejores profesionales, garantizando calidad, eficiencia y cumplimiento en cada trabajo realizado."
+        "description": "Coordinamos los mejores proveedores y servicios para tu comunidad: mantenimiento, limpieza, jardinería, reformas y más. Evaluamos y supervisamos su desempeño para asegurar calidad y ahorro a largo plazo."
       },
       {
-        "title": "Preparación de juntas",
+        "title": "Organización de Juntas de Propietarios",
         "img": "meetings",
-        "description": "Nos encargamos de la preparación y organización de las juntas de propietarios, asegurando una convocatoria clara y puntual. Gestionamos la elaboración del orden del día, la documentación necesaria y la correcta redacción de actas, facilitando así una comunicación efectiva y una toma de decisiones ágil y transparente."
+        "description": "Nos ocupamos de convocar y coordinar las juntas, preparando el orden del día, documentación legal y actas. Facilitamos reuniones ágiles, con información clara para una toma de decisiones informada y participativa."
       },
       {
-        "title": "Visitas a la comunidad",
+        "title": "Visitas Técnicas a la Comunidad",
         "img": "visits",
-        "description": "Realizamos visitas periódicas a las comunidades para supervisar el estado de las instalaciones y resolver cualquier incidencia de forma rápida y eficiente. Nuestra atención constante asegura que se mantenga el buen funcionamiento y la seguridad de su propiedad, ofreciendo soluciones personalizadas según las necesidades de cada comunidad."
+        "description": "Realizamos inspecciones periódicas para detectar incidencias, supervisar obras o mejoras y garantizar el buen estado de las instalaciones. Actuamos de forma proactiva para mantener la comunidad en óptimas condiciones."
       },
       {
-        "title": "Asesoramiento",
+        "title": "Asesoramiento Legal y Normativo",
         "img": "advice",
-        "description": "Brindamos asesoramiento legal especializado en cuestiones como la redacción y actualización de estatutos y la normativa de división horizontal. Garantizamos el cumplimiento de la legislación vigente y ofrecemos soluciones legales para resolver cualquier conflicto o duda que pueda surgir en su comunidad."
+        "description": "Ofrecemos asesoramiento jurídico especializado en propiedad horizontal, redacción de estatutos y resolución de conflictos. Garantizamos el cumplimiento de la normativa vigente en beneficio de la comunidad."
       },
       {
-        "title": "Custodia de documentación",
+        "title": "Gestión y Custodia de Documentación",
         "img": "documents",
-        "description": "Nos encargamos de la custodia y gestión segura de toda la documentación de su comunidad, asegurando su conservación y acceso cuando sea necesario. Garantizamos que los documentos estén organizados de manera eficiente, cumpliendo con las normativas legales y facilitando su consulta en cualquier momento."
+        "description": "Custodiamos de forma segura toda la documentación de la comunidad: actas, contratos, estatutos y más. Acceso fácil, organizado y conforme a la Ley de Protección de Datos (LOPDGDD)."
       },
       {
-        "title": "Mediadores con seguros",
+        "title": "Intermediación con Compañías de Seguros",
         "img": "mediation",
-        "description": "Actuamos como mediadores para resolver de manera amistosa y eficaz cualquier conflicto entre la comunidad, los propietarios y los seguros. Actuamos como intermediarios imparciales, facilitando la comunicación y ayudando a encontrar soluciones equitativas que favorezcan el bienestar y la armonía dentro de la comunidad."
+        "description": "Actuamos como mediadores entre la comunidad y las aseguradoras para resolver siniestros, reclamaciones y coberturas. Defendemos los intereses de los propietarios con profesionalismo y eficacia."
       },
       {
-        "title": "Elaboración de presupuestos y planificación financiera",
+        "title": "Presupuestos y Planificación Financiera",
         "img": "budgets",
-        "description": "Ayudamos a la comunidad a planificar sus gastos y a elaborar presupuestos anuales, con el fin de optimizar los recursos."
+        "description": "Diseñamos presupuestos anuales realistas y planes financieros ajustados a las necesidades de cada comunidad, fomentando el ahorro, la sostenibilidad y el control de gastos."
       }
     ],
     "phrases": [
-      "Tu comunidad, en manos expertas.",
-      "Gestión sin complicaciones, con total confianza."
+      "Administración de fincas en Tenerife con transparencia y compromiso.",
+      "Tu comunidad, en manos expertas y profesionales."
     ]
   },
   "vacation_rentals": {
-    "title": "Alquileres Vacacionales",
-    "description": "Convierte tu propiedad en una fuente de ingresos sin esfuerzo.",
-    "text": "Gestionamos tu propiedad de alquiler vacacional en Tenerife de manera integral, asegurando una experiencia excelente tanto para propietarios como para huéspedes. Confía en nosotros para optimizar tu inversión y ofrecer estancias inolvidables.",
+    "title": "Gestión de Alquiler Vacacional en Tenerife",
+    "description": "Promoción, reservas, atención al huésped, limpieza, mantenimiento y fiscalidad. Tú ganas, nosotros nos encargamos de todo.",
+    "text": "Especialistas en gestión integral de propiedades de alquiler vacacional en Tenerife. Optimizamos tu vivienda para maximizar ingresos y ofrecer una experiencia impecable a cada huésped. Nos encargamos de todo: marketing, reservas, limpieza, mantenimiento, atención 24/7 y gestión fiscal. Conviértete en anfitrión sin esfuerzo y rentabiliza tu inversión con total tranquilidad.",
     "buttons": {
-      "about_us": "Saber más",
-      "contact_us": "Contáctanos"
+      "about_us": "Conoce mas sobre nosotros",
+      "learn_more": "Descubre nuestros servicios",
+      "contact_us": "Solicita una valoración gratuita"
     },
     "services": [
       {
-        "title": "Publicidad y Promoción de la Propiedad",
+        "title": "Promoción de Propiedades en Plataformas",
         "img": "property_promotion",
-        "description": "Publicación en plataformas de alquiler (Airbnb, Booking, etc.) y promoción a través de redes sociales y otros canales."
+        "description": "Publicamos y posicionamos tu propiedad en Airbnb, Booking y otras plataformas líderes, con fotografías profesionales, descripciones optimizadas y estrategias de visibilidad en redes sociales y canales especializados."
       },
       {
-        "title": "Gestión de Reservas",
+        "title": "Gestión de Reservas Online",
         "img": "booking_management",
-        "description": "Coordinación de reservas, confirmaciones y cancelaciones, garantizando la máxima ocupación."
+        "description": "Coordinamos todo el proceso de reservas: disponibilidad, confirmaciones, cancelaciones y comunicación con los huéspedes. Maximizamos la ocupación con una gestión eficaz y automatizada."
       },
       {
-        "title": "Recepción y Bienvenida de Huéspedes",
+        "title": "Check-in y Bienvenida Personalizada",
         "img": "guest_reception",
-        "description": "Check-in y check-out de los huéspedes, proporcionando información local y asegurando una buena primera impresión."
+        "description": "Nos encargamos del recibimiento, entrega de llaves, verificación de identidad y atención personalizada a los huéspedes, mejorando su experiencia desde el primer momento."
       },
       {
-        "title": "Limpieza y Mantenimiento",
+        "title": "Limpieza Profesional y Mantenimiento",
         "img": "cleaning_maintenance",
-        "description": "Servicios de limpieza profesional entre estancias y mantenimiento general para mantener la propiedad en óptimas condiciones."
+        "description": "Supervisamos una limpieza impecable entre estancias y nos ocupamos del mantenimiento de la vivienda. Garantizamos propiedades en perfecto estado para cada reserva."
       },
       {
-        "title": "Atención al Cliente 24/7",
+        "title": "Atención al Huésped 24/7",
         "img": "customer_support",
-        "description": "Soporte continuo para los huéspedes, resolviendo cualquier duda o incidencia durante su estancia."
+        "description": "Ofrecemos soporte continuo durante toda la estancia, resolviendo dudas e incidencias al instante. Mejora la satisfacción y valoración de los huéspedes."
       },
       {
-        "title": "Gestión de Pagos y Facturación",
+        "title": "Cobros, Pagos y Facturación Transparente",
         "img": "payment_management",
-        "description": "Administración de pagos, cobros y emisión de facturas, garantizando transparencia y seguridad."
+        "description": "Gestionamos todos los aspectos económicos del alquiler: pagos seguros, cobros puntuales, emisión de facturas y reportes mensuales claros para los propietarios."
       },
       {
-        "title": "Optimización de Tarifas",
+        "title": "Ajuste Dinámico de Precios",
         "img": "pricing_optimization",
-        "description": "Análisis y ajuste dinámico de precios según la demanda, temporada y competencia para maximizar los ingresos."
+        "description": "Aplicamos herramientas inteligentes para ajustar los precios según temporada, demanda y competencia, asegurando la máxima rentabilidad de tu propiedad."
       },
       {
-        "title": "Gestión de Impuestos Locales",
+        "title": "Gestión de Licencias e Impuestos",
         "img": "tax_management",
-        "description": "Ayudamos a los propietarios a cumplir con los impuestos locales relacionados con los alquileres vacacionales, como los impuestos sobre el turismo, las licencias o las tasas de uso. Gestionar el pago y la presentación de declaraciones fiscales."
+        "description": "Asesoramos y gestionamos todos los trámites fiscales y legales: licencias turísticas, declaración de ingresos, tasas locales y obligaciones tributarias. Cumplimiento garantizado sin preocupaciones."
       }
     ],
     "phrases": [
-      "Tu propiedad generando ingresos por ti.",
-      "Nos encargamos de todo, tú solo disfruta los beneficios."
+      "Gana dinero con tu propiedad vacacional en Tenerife sin complicaciones.",
+      "Nos encargamos de todo, tú solo disfruta los beneficios mensuales."
     ]
   },
   "vehicle_procedures": {
-  "title": "Trámites de Vehículos",
-  "description": "Tramitamos todo lo relacionado con tu vehículo de forma rápida y segura.",
-  "text": "En GestoFinca sabemos que los trámites de coche pueden ser un dolor de cabeza. Por eso, estamos aquí para hacértelo fácil. Nos encargamos de todo el proceso por ti, desde el primer paso hasta el último, sin complicaciones ni pérdidas de tiempo. Realizamos todos los trámites relacionados con tu vehículo y con la DGT.",
-  "buttons": {
-    "about_us": "Saber más",
-    "contact_us": "Contáctanos"
+    "title": "Gestoría de Trámites de Vehículos en Tenerife",
+    "description": "Transferencias, matriculaciones, bajas, informes, duplicados y más. Servicio rápido, legal y sin complicaciones en Tenerife.",
+    "text": "¿Necesitas hacer una transferencia de coche, matricular un vehículo o darlo de baja? En GestoFinca gestionamos todos los trámites de vehículos en Tenerife de forma rápida, segura y sin pérdida de tiempo. Somos una gestoría autorizada por la DGT y nos encargamos de todo el proceso por ti: documentos, impuestos, plazos y más. Simplificamos tu vida y evitamos errores que pueden costarte tiempo y dinero.",
+    "buttons": {
+      "about_us": "Conoce mas sobre nosotros",
+      "learn_more": "Descubre nuestros servicios",
+      "contact_us": "Solicita tu trámite online"
+    },
+    "services": [
+      {
+        "title": "Cambio de Titularidad",
+        "price": "115",
+        "tax": "+4% impuesto valor vehículo",
+        "img": "ownership_transfer",
+        "description": "Realizamos el cambio de nombre del coche o moto de forma 100% legal, rápida y sin errores. Incluye la presentación ante la DGT y liquidación de impuestos.",
+        "link": "/es/contacto"
+      },
+      {
+        "title": "Matriculación de Vehículos Nuevos e Importados",
+        "price": "195",
+        "tax": "Sin incluir posibles impuestos según caso",
+        "img": "vehicle_registration",
+        "description": "Gestionamos la matriculación completa de tu coche nuevo, de segunda mano o importado. Nos ocupamos de la documentación técnica, tasas y placas.",
+        "link": "/es/contacto"
+      },
+      {
+        "title": "Altas y Bajas ante la DGT",
+        "price": "40",
+        "tax": "Tasas incluidas",
+        "img": "vehicle_status",
+        "description": "Realizamos la baja temporal o definitiva de tu vehículo, así como el alta tras una exportación o rehabilitación. Sin colas ni papeleos.",
+        "link": "/es/contacto"
+      },
+      {
+        "title": "Informe Oficial del Vehículo",
+        "price": "15",
+        "tax": "Tasas incluidas",
+        "img": "vehicle_report",
+        "description": "Solicitamos informes completos de la DGT con datos técnicos, cargas, embargos y antecedentes. Ideal para comprar con seguridad.",
+        "link": "/es/contacto"
+      },
+      {
+        "title": "Duplicado del Permiso de Circulación",
+        "price": "45",
+        "tax": "Tasas incluidas",
+        "img": "circulation_permit",
+        "description": "¿Has perdido o deteriorado el permiso? Te ayudamos a obtener un duplicado rápido y legal para seguir circulando sin problemas.",
+        "link": "/es/contacto"
+      },
+      {
+        "title": "Autorizaciones Especiales de Circulación",
+        "tax": "Según normativa",
+        "img": "special_authorizations",
+        "description": "Tramitamos permisos excepcionales para eventos, pruebas, vehículos especiales o transportes singulares según la normativa vigente.",
+        "link": "/es/contacto"
+      }
+    ],
+    "phrases": [
+      "Gestoría especializada en trámites con la DGT en Tenerife.",
+      "Tu vehículo en regla, sin complicaciones ni esperas."
+    ]
   },
-  "services": [
-    {
-      "title": "Transferencia de Vehículos",
-      "img": "ownership_transfer",
-      "description": "Gestionamos el cambio de titularidad de forma rápida y segura, cumpliendo todos los requisitos legales."
-    },
-    {
-      "title": "Contrato de Venta y Compra",
-      "img": "sale_contract",
-      "description": "Redactamos contratos claros y válidos para que compres o vendas con total tranquilidad."
-    },
-    {
-      "title": "Pago de Tasas e Impuesto de Transmisiones",
-      "img": "tax_payment",
-      "description": "Nos encargamos del pago y presentación de impuestos para que no tengas que preocuparte por gestiones fiscales."
-    },
-    {
-      "title": "Matriculación de Vehículos",
-      "img": "vehicle_registration",
-      "description": "Realizamos todo el proceso de matriculación, tanto para vehículos nuevos como importados."
-    },
-    {
-      "title": "Altas y Bajas de Vehículos",
-      "img": "vehicle_status",
-      "description": "Tramitamos las altas y bajas, temporales o definitivas, ante la DGT sin complicaciones."
-    },
-    {
-      "title": "Informe de Vehículos",
-      "img": "vehicle_report",
-      "description": "Solicitamos informes oficiales para que conozcas el estado legal y técnico del vehículo antes de comprar."
-    },
-    {
-      "title": "Duplicado Permiso de Circulación",
-      "img": "circulation_permit",
-      "description": "Tramitamos el duplicado en caso de pérdida, robo o deterioro del permiso original."
-    },
-    {
-      "title": "Autorizaciones Especiales de Circulación",
-      "img": "special_authorizations",
-      "description": "Gestionamos permisos específicos para circular en situaciones excepcionales o vehículos especiales."
-    }
-  ],
-  "phrases": [
-    "Gestoría autorizada por la DGT.",
-    "Nos encargamos de todo, tú solo conduce tranquilo."
-  ]
-},
   "contact": {
     "title": "Contacto",
     "description": "Estamos aquí para ayudarte. ¡Hablemos!",
@@ -192,17 +202,17 @@
     ]
   },
   "about_us": {
-    "title": "Nosotros",
-    "description": "En <strong>GestoFinca</strong> creemos que la gestión de comunidades necesita una transformación real para responder a las crecientes y cambiantes necesidades de los propietarios.",
-    "text": "Este compromiso está liderado por <strong>Marco Ackermann Méndez</strong>, graduado en <strong>Economía y Negocios Internacionales y Administrador de Fincas colegiado Nº 345</strong>, quien aporta una visión moderna, cercana y profesional a cada aspecto de la administración.& Nuestro objetivo es claro: ofrecer un servicio exclusivo, personalizado y de la más alta calidad. Nos tomamos el tiempo necesario con cada cliente para atender sus necesidades de forma integral, eficaz y transparente.& Contamos con una sólida experiencia en el sector y un equipo altamente cualificado y colegiado, lo que nos permite garantizar una gestión segura y respaldada legalmente. Apostamos por la tranquilidad de nuestros clientes, asegurando que cada acción esté alineada con la normativa vigente y los más altos estándares del sector.",
+    "title": "Quiénes Somos",
+    "description": "En GestoFinca revolucionamos la administración de fincas con un enfoque personalizado, legal y profesional. Conoce a nuestro equipo experto.",
+    "text": "En <strong>GestoFinca</strong> creemos que la <strong>gestión de comunidades y propiedades</strong> necesita un enfoque moderno, cercano y profesional. Liderados por <strong>Marco Ackermann Méndez</strong>, graduado en <strong>Economía y Negocios Internacionales</strong> y <strong>Administrador de Fincas Colegiado Nº 345</strong>, trabajamos con compromiso total por la excelencia. Nuestro objetivo es ofrecer un <strong>servicio integral, exclusivo y 100% transparente</strong>, adaptado a las necesidades reales de los propietarios. Contamos con un <strong>equipo altamente cualificado y colegiado</strong>, experiencia demostrada y un modelo de gestión legal, seguro y eficiente, alineado con la normativa vigente y los más altos estándares del sector inmobiliario en Canarias.",
     "buttons": {
-      "about_us": "Saber más",
-      "contact_us": "Contáctanos"
+      "about_us": "Descubre quiénes somos",
+      "contact_us": "Contacta con nuestro equipo"
     },
     "phrases": [
-      "Experiencia y confianza a tu servicio.",
-      "Más de 10 años de éxito gestionando propiedades.",
-      "Excelencia y compromiso en cada gestión."
+      "Experiencia y confianza para tu comunidad.",
+      "Más de 10 años de gestión eficaz en Tenerife.",
+      "Comprometidos con la excelencia inmobiliaria."
     ]
   },
   "quotes": {
@@ -370,155 +380,155 @@
       "contact": "Contacto | Administración de Fincas y Alquileres Vacacionales en Tenerife"
     }
   },
-    "cookiePolicy": {
-      "metaTitle": "Política de Cookies",
-      "metaDescription": "Consulta nuestra política sobre el uso de cookies en el sitio web de GestoFinca.",
-      "title": "Política de Cookies",
-      "intro": "En GestoFinca, usamos cookies para mejorar la experiencia de navegación de nuestros usuarios. Esta página tiene como objetivo informarte sobre cómo y por qué usamos cookies en nuestro sitio web.",
-      "section1": {
-        "title": "1. ¿Qué son las cookies?",
-        "text": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo. Permiten al sitio web recordar tus acciones y preferencias durante un tiempo determinado."
+  "cookiePolicy": {
+    "metaTitle": "Política de Cookies",
+    "metaDescription": "Consulta nuestra política sobre el uso de cookies en el sitio web de GestoFinca.",
+    "title": "Política de Cookies",
+    "intro": "En GestoFinca, usamos cookies para mejorar la experiencia de navegación de nuestros usuarios. Esta página tiene como objetivo informarte sobre cómo y por qué usamos cookies en nuestro sitio web.",
+    "section1": {
+      "title": "1. ¿Qué son las cookies?",
+      "text": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo. Permiten al sitio web recordar tus acciones y preferencias durante un tiempo determinado."
+    },
+    "section2": {
+      "title": "2. Tipos de cookies que usamos",
+      "list": [
+        "<strong>Cookies necesarias:</strong> Esenciales para el funcionamiento adecuado del sitio web.",
+        "<strong>Cookies de rendimiento:</strong> Nos ayudan a medir y mejorar el rendimiento del sitio.",
+        "<strong>Cookies funcionales:</strong> Recuerdan tus preferencias para mejorar tu experiencia.",
+        "<strong>Cookies de publicidad:</strong> Muestran anuncios más relevantes y limitan su repetición."
+      ]
+    },
+    "section3": {
+      "title": "3. ¿Cómo controlar las cookies?",
+      "text1": "Puedes gestionar las cookies desde la configuración de tu navegador.",
+      "text2": "Para más información, consulta la ayuda de tu navegador o sitios web especializados en gestión de cookies."
+    },
+    "section4": {
+      "title": "4. Consentimiento",
+      "text": "Al seguir navegando en nuestro sitio, aceptas el uso de cookies. Si no estás de acuerdo, ajusta la configuración o deja de usar el sitio."
+    },
+    "section5": {
+      "title": "5. Cambios en la política de cookies",
+      "text": "Nos reservamos el derecho de actualizar esta política en cualquier momento. Publicaremos los cambios aquí junto con la fecha de la última actualización."
+    },
+    "section6": {
+      "title": "6. Contacto",
+      "text": "Si tienes preguntas sobre esta política de cookies, contáctanos a través de los medios disponibles en nuestra página de contacto."
+    }
+  },
+  "privacyPolicy": {
+    "metaTitle": "Política de Privacidad",
+    "metaDescription": "Consulta nuestra política de privacidad sobre el tratamiento de tus datos personales.",
+    "title": "Política de Privacidad",
+    "intro": "En <strong>GestoFinca</strong>, nos comprometemos a proteger la privacidad y los datos personales de nuestros usuarios. A continuación, detallamos cómo recopilamos, usamos y protegemos tu información.",
+    "sections": [
+      {
+        "title": "1. Responsable del Tratamiento",
+        "text": "<strong>Nombre:</strong> Marco Ackermann Méndez <br/><strong>NIF:</strong> 45939143-R <br/><strong>Nombre comercial:</strong> GestoFinca<br/><strong>Dirección:</strong> 38670, Santa Cruz de Tenerife, España <br/><strong>Email:</strong> <a href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a> <br/><strong>Teléfono:</strong> +34 689 95 89 31"
       },
-      "section2": {
-        "title": "2. Tipos de cookies que usamos",
+      {
+        "title": "2. Datos que Recopilamos",
+        "text": "Recopilamos los siguientes datos personales:",
         "list": [
-          "<strong>Cookies necesarias:</strong> Esenciales para el funcionamiento adecuado del sitio web.",
-          "<strong>Cookies de rendimiento:</strong> Nos ayudan a medir y mejorar el rendimiento del sitio.",
-          "<strong>Cookies funcionales:</strong> Recuerdan tus preferencias para mejorar tu experiencia.",
-          "<strong>Cookies de publicidad:</strong> Muestran anuncios más relevantes y limitan su repetición."
+          "Información de contacto: nombre, dirección de correo electrónico, número de teléfono.",
+          "Información de navegación: dirección IP, tipo de dispositivo, sistema operativo, navegador.",
+          "Otros datos que proporciones directamente a través de formularios o comunicaciones."
         ]
       },
-      "section3": {
-        "title": "3. ¿Cómo controlar las cookies?",
-        "text1": "Puedes gestionar las cookies desde la configuración de tu navegador.",
-        "text2": "Para más información, consulta la ayuda de tu navegador o sitios web especializados en gestión de cookies."
+      {
+        "title": "3. Finalidad del Tratamiento de Datos",
+        "text": "Utilizamos tus datos para:",
+        "list": [
+          "Prestar nuestros servicios y productos.",
+          "Responder a tus consultas y solicitudes.",
+          "Mejorar nuestro sitio web y personalizar tu experiencia.",
+          "Cumplir con nuestras obligaciones legales."
+        ]
       },
-      "section4": {
-        "title": "4. Consentimiento",
-        "text": "Al seguir navegando en nuestro sitio, aceptas el uso de cookies. Si no estás de acuerdo, ajusta la configuración o deja de usar el sitio."
+      {
+        "title": "4. Base Legal para el Tratamiento",
+        "text": "El tratamiento de tus datos se basa en:",
+        "list": [
+          "Tu consentimiento explícito.",
+          "La necesidad de procesar tus datos para la ejecución de un contrato.",
+          "El cumplimiento de obligaciones legales.",
+          "Nuestro interés legítimo en mejorar nuestros servicios."
+        ]
       },
-      "section5": {
-        "title": "5. Cambios en la política de cookies",
-        "text": "Nos reservamos el derecho de actualizar esta política en cualquier momento. Publicaremos los cambios aquí junto con la fecha de la última actualización."
+      {
+        "title": "5. Derechos del Usuario",
+        "text": "Tienes derecho a:",
+        "list": [
+          "Acceder a tus datos personales.",
+          "Solicitar la corrección de datos inexactos.",
+          "Solicitar la eliminación de tus datos personales.",
+          "Oponerte al tratamiento de tus datos.",
+          "Solicitar la limitación del tratamiento de datos.",
+          "Transferir tus datos a otro proveedor."
+        ]
       },
-      "section6": {
-        "title": "6. Contacto",
-        "text": "Si tienes preguntas sobre esta política de cookies, contáctanos a través de los medios disponibles en nuestra página de contacto."
+      {
+        "title": "6. Periodo de Conservación",
+        "text": "Conservaremos tus datos personales durante el tiempo necesario para los fines descritos en esta política, salvo que la ley exija o permita un periodo más largo."
+      },
+      {
+        "title": "7. Transferencias Internacionales",
+        "text": "No transferimos tus datos fuera del Espacio Económico Europeo (EEE). En caso de hacerlo, garantizaremos la adecuada protección."
+      },
+      {
+        "title": "8. Seguridad de los Datos",
+        "text": "Implementamos medidas técnicas y organizativas para garantizar la seguridad de tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado."
+      },
+      {
+        "title": "9. Cambios en la Política",
+        "text": "Podemos actualizar esta política de vez en cuando. Publicaremos los cambios en esta página e indicaremos la fecha de la última actualización."
+      },
+      {
+        "title": "10. Contacto",
+        "text": "Si tienes preguntas sobre esta política, puedes escribirnos a <a class='text-blue-500 hover:underline' href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a>."
       }
-    },
-    "privacyPolicy":{
-      "metaTitle": "Política de Privacidad",
-      "metaDescription": "Consulta nuestra política de privacidad sobre el tratamiento de tus datos personales.",
-      "title": "Política de Privacidad",
-      "intro": "En <strong>GestoFinca</strong>, nos comprometemos a proteger la privacidad y los datos personales de nuestros usuarios. A continuación, detallamos cómo recopilamos, usamos y protegemos tu información.",
-      "sections": [
-        {
-          "title": "1. Responsable del Tratamiento",
-          "text": "<strong>Nombre:</strong> Marco Ackermann Méndez <br/><strong>NIF:</strong> 45939143-R <br/><strong>Nombre comercial:</strong> GestoFinca<br/><strong>Dirección:</strong> 38670, Santa Cruz de Tenerife, España <br/><strong>Email:</strong> <a href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a> <br/><strong>Teléfono:</strong> +34 689 95 89 31"
-        },
-        {
-          "title": "2. Datos que Recopilamos",
-          "text": "Recopilamos los siguientes datos personales:",
-          "list": [
-            "Información de contacto: nombre, dirección de correo electrónico, número de teléfono.",
-            "Información de navegación: dirección IP, tipo de dispositivo, sistema operativo, navegador.",
-            "Otros datos que proporciones directamente a través de formularios o comunicaciones."
-          ]
-        },
-        {
-          "title": "3. Finalidad del Tratamiento de Datos",
-          "text": "Utilizamos tus datos para:",
-          "list": [
-            "Prestar nuestros servicios y productos.",
-            "Responder a tus consultas y solicitudes.",
-            "Mejorar nuestro sitio web y personalizar tu experiencia.",
-            "Cumplir con nuestras obligaciones legales."
-          ]
-        },
-        {
-          "title": "4. Base Legal para el Tratamiento",
-          "text": "El tratamiento de tus datos se basa en:",
-          "list": [
-            "Tu consentimiento explícito.",
-            "La necesidad de procesar tus datos para la ejecución de un contrato.",
-            "El cumplimiento de obligaciones legales.",
-            "Nuestro interés legítimo en mejorar nuestros servicios."
-          ]
-        },
-        {
-          "title": "5. Derechos del Usuario",
-          "text": "Tienes derecho a:",
-          "list": [
-            "Acceder a tus datos personales.",
-            "Solicitar la corrección de datos inexactos.",
-            "Solicitar la eliminación de tus datos personales.",
-            "Oponerte al tratamiento de tus datos.",
-            "Solicitar la limitación del tratamiento de datos.",
-            "Transferir tus datos a otro proveedor."
-          ]
-        },
-        {
-          "title": "6. Periodo de Conservación",
-          "text": "Conservaremos tus datos personales durante el tiempo necesario para los fines descritos en esta política, salvo que la ley exija o permita un periodo más largo."
-        },
-        {
-          "title": "7. Transferencias Internacionales",
-          "text": "No transferimos tus datos fuera del Espacio Económico Europeo (EEE). En caso de hacerlo, garantizaremos la adecuada protección."
-        },
-        {
-          "title": "8. Seguridad de los Datos",
-          "text": "Implementamos medidas técnicas y organizativas para garantizar la seguridad de tus datos personales y evitar su alteración, pérdida, tratamiento o acceso no autorizado."
-        },
-        {
-          "title": "9. Cambios en la Política",
-          "text": "Podemos actualizar esta política de vez en cuando. Publicaremos los cambios en esta página e indicaremos la fecha de la última actualización."
-        },
-        {
-          "title": "10. Contacto",
-          "text": "Si tienes preguntas sobre esta política, puedes escribirnos a <a class='text-blue-500 hover:underline' href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a>."
-        }
-      ]
-    },
-    "termsAndConditions": {
-      "metaTitle": "Términos y Condiciones - GestoFinca",
-      "metaDescription": "Lee los términos y condiciones de uso para nuestros servicios de gestión de propiedades y alquileres vacacionales.",
-      "title": "Términos y Condiciones",
-      "lastUpdated": "Última actualización: 15 de marzo de 2025",
-      "sections": [
-        {
-          "content": "Bienvenido a nuestra empresa de gestión de propiedades y alquileres vacacionales. A continuación se presentan los términos y condiciones de uso que rigen el uso de nuestros servicios. Al utilizar nuestros servicios, aceptas cumplir con estos términos."
-        },
-        {
-          "title": "1. Aceptación de los Términos",
-          "content": "Al acceder o utilizar nuestros servicios, aceptas estar sujeto a estos términos y condiciones. Si no estás de acuerdo con algún aspecto de los términos, no debes usar nuestros servicios."
-        },
-        {
-          "title": "2. Servicios Ofrecidos",
-          "content": "Nuestra empresa ofrece servicios de gestión de propiedades, gestión de alquileres vacacionales y consultoría relacionada. Nos encargamos de todas las operaciones necesarias para asegurar que las propiedades se gestionen de manera eficiente y profesional."
-        },
-        {
-          "title": "3. Responsabilidad del Usuario",
-          "content": "Como usuario de nuestros servicios, es tu responsabilidad proporcionar información precisa y veraz al contratar nuestros servicios. También eres responsable de garantizar que las propiedades cumplan con todas las regulaciones legales aplicables."
-        },
-        {
-          "title": "4. Propiedad Intelectual",
-          "content": "Todo el contenido y material relacionado con nuestros servicios, incluidos textos, imágenes, logotipos y marcas registradas, son propiedad exclusiva de nuestra empresa o sus licenciantes. Queda prohibida cualquier reproducción no autorizada."
-        },
-        {
-          "title": "5. Limitación de Responsabilidad",
-          "content": "No seremos responsables de daños directos, indirectos, incidentales, especiales o consecuentes derivados del uso o la imposibilidad de usar nuestros servicios."
-        },
-        {
-          "title": "6. Modificaciones",
-          "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de la última actualización."
-        },
-        {
-          "title": "7. Contacto",
-          "content": "Si tienes alguna pregunta sobre estos términos, no dudes en contactarnos a través de los canales disponibles en nuestra página de contacto."
-        }
-      ]
-    },
-    "faq": {
+    ]
+  },
+  "termsAndConditions": {
+    "metaTitle": "Términos y Condiciones - GestoFinca",
+    "metaDescription": "Lee los términos y condiciones de uso para nuestros servicios de gestión de propiedades y alquileres vacacionales.",
+    "title": "Términos y Condiciones",
+    "lastUpdated": "Última actualización: 15 de marzo de 2025",
+    "sections": [
+      {
+        "content": "Bienvenido a nuestra empresa de gestión de propiedades y alquileres vacacionales. A continuación se presentan los términos y condiciones de uso que rigen el uso de nuestros servicios. Al utilizar nuestros servicios, aceptas cumplir con estos términos."
+      },
+      {
+        "title": "1. Aceptación de los Términos",
+        "content": "Al acceder o utilizar nuestros servicios, aceptas estar sujeto a estos términos y condiciones. Si no estás de acuerdo con algún aspecto de los términos, no debes usar nuestros servicios."
+      },
+      {
+        "title": "2. Servicios Ofrecidos",
+        "content": "Nuestra empresa ofrece servicios de gestión de propiedades, gestión de alquileres vacacionales y consultoría relacionada. Nos encargamos de todas las operaciones necesarias para asegurar que las propiedades se gestionen de manera eficiente y profesional."
+      },
+      {
+        "title": "3. Responsabilidad del Usuario",
+        "content": "Como usuario de nuestros servicios, es tu responsabilidad proporcionar información precisa y veraz al contratar nuestros servicios. También eres responsable de garantizar que las propiedades cumplan con todas las regulaciones legales aplicables."
+      },
+      {
+        "title": "4. Propiedad Intelectual",
+        "content": "Todo el contenido y material relacionado con nuestros servicios, incluidos textos, imágenes, logotipos y marcas registradas, son propiedad exclusiva de nuestra empresa o sus licenciantes. Queda prohibida cualquier reproducción no autorizada."
+      },
+      {
+        "title": "5. Limitación de Responsabilidad",
+        "content": "No seremos responsables de daños directos, indirectos, incidentales, especiales o consecuentes derivados del uso o la imposibilidad de usar nuestros servicios."
+      },
+      {
+        "title": "6. Modificaciones",
+        "content": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de la última actualización."
+      },
+      {
+        "title": "7. Contacto",
+        "content": "Si tienes alguna pregunta sobre estos términos, no dudes en contactarnos a través de los canales disponibles en nuestra página de contacto."
+      }
+    ]
+  },
+  "faq": {
     "title": "Preguntas frecuentes sobre GestoFinca",
     "questions": [
       {
