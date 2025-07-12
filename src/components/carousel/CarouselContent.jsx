@@ -47,7 +47,7 @@ export const CarouselContent = memo(
       </div>
 
       {/* Logo optimizado */}
-      <div className="mt-4 md:mt-6 flex justify-center align-middle gap-4">
+      <div className="mt-4 md:mt-6 flex justify-center items-center gap-4">
         <a
           href="https://caftenerife.org/"
           target="_blank"
@@ -56,7 +56,7 @@ export const CarouselContent = memo(
           <img
             src={logoSrc}
             alt="Colegio de Administradores de Fincas de Santa Cruz de Tenerife"
-            className="w-28 h-auto sm:w-32 md:w-40 lg:w-48"
+            className="h-12 w-auto sm:h-14 md:h-16 lg:h-20"
             loading="eager"
             width={192} // Ancho real de la imagen para evitar CLS
             height={48} // Alto real de la imagen para evitar CLS
@@ -71,7 +71,7 @@ export const CarouselContent = memo(
           <img
             src={logoSrc2}
             alt="Logo de consejo de gestores administrativos"
-            className="w-28 h-auto sm:w-32 md:w-40 lg:w-48"
+            className="h-12 w-auto sm:h-14 md:h-16 lg:h-20"
             loading="eager"
             width={92} // Ancho real de la imagen para evitar CLS
             height={48} // Alto real de la imagen para evitar CLS
