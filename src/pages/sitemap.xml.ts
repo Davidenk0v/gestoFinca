@@ -2,23 +2,24 @@
 export const prerender = false;
 
 export async function GET() {
-  const baseUrl = 'https://www.gestofinca.com';
+  const baseUrl = "https://www.gestofinca.com";
 
   // Rutas base
   const routes = [
-    '',  // Para la página index
-    'administracion-fincas',
-    'alquileres-vacacionales',
-    'contacto',
-    'nosotros',
-    'presupuestos',
-    'cookie-policy',
-    'privacy-policy',
-    'terms-conditions',
+    "", // Para la página index
+    "administracion-fincas",
+    "tramites-vehiculos",
+    "alquileres-vacacionales",
+    "contacto",
+    "nosotros",
+    "presupuestos",
+    "cookie-policy",
+    "privacy-policy",
+    "terms-conditions",
   ];
 
-  const languages = ['es', 'en', 'de'];
-  const now = new Date().toISOString().split('T')[0];
+  const languages = ["es", "en", "de"];
+  const now = new Date().toISOString().split("T")[0];
 
   let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -29,10 +30,10 @@ export async function GET() {
     for (const lang of languages) {
       // Construir la URL con el formato /{lang}/{ruta}
       const path = route ? `${lang}/${route}` : `${lang}`;
-      
+
       // Aseguramos que la URL es absoluta y válida
       const fullUrl = `${baseUrl}/${path}`;
-      
+
       sitemap += `
   <url>
     <loc>${fullUrl}</loc>
@@ -40,9 +41,11 @@ export async function GET() {
 
       // Añadir enlaces alternativos para cada idioma
       for (const alternateLang of languages) {
-        const alternatePath = route ? `${alternateLang}/${route}` : `${alternateLang}`;
+        const alternatePath = route
+          ? `${alternateLang}/${route}`
+          : `${alternateLang}`;
         const alternateUrl = `${baseUrl}/${alternatePath}`;
-        
+
         sitemap += `
     <xhtml:link 
       rel="alternate" 
@@ -58,7 +61,7 @@ export async function GET() {
       hreflang="x-default" 
       href="${baseUrl}/${defaultPath}" />
     <changefreq>weekly</changefreq>
-    <priority>${route === '' ? '1.0' : '0.8'}</priority>
+    <priority>${route === "" ? "1.0" : "0.8"}</priority>
   </url>`;
     }
   }
