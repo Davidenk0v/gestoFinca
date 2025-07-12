@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import fondoAzul from "@/assets/images/fondo-azul.webp";
 import fondoCasa from "@/assets/images/fondo-casa.webp";
 import logo from "@/assets/logos/imagen_logo_negativo.webp";
+import logoAdmin from "@/assets/logos/admin-logo.webp";
 import { NavigationButton } from "./carousel/NavigationButton";
 import { Indicators } from "./carousel/Indicators";
 import { CarouselContent } from "./carousel/CarouselContent";
@@ -185,6 +186,7 @@ const Carousel = ({ data, lang }) => {
           buttons={buttons}
           lang={lang}
           logoSrc={logo.src}
+          logoSrc2={logoAdmin.src}
         />
       </div>
     </section>

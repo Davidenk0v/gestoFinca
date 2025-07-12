@@ -1,7 +1,7 @@
 import { memo } from "react";
 
 export const CarouselContent = memo(
-  ({ title, phrase, description, buttons, lang, logoSrc }) => (
+  ({ title, phrase, description, buttons, lang, logoSrc, logoSrc2 }) => (
     <div className="relative z-10 max-w-4xl w-full text-center px-4 sm:px-6 lg:px-16">
       {/* Título optimizado con mejor estructura semántica */}
       <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">
@@ -22,8 +22,10 @@ export const CarouselContent = memo(
 
       {/* Descripción con mejor visibilidad en móviles */}
       {description && (
-        <p className="hidden sm:block mt-3 md:mt-4 text-sm sm:text-base md:text-lg font-medium text-white" dangerouslySetInnerHTML={{ __html: description }}>
-        </p>
+        <p
+          className="hidden sm:block mt-3 md:mt-4 text-sm sm:text-base md:text-lg font-medium text-white"
+          dangerouslySetInnerHTML={{ __html: description }}
+        ></p>
       )}
 
       {/* Botones con mejor accesibilidad */}
@@ -45,15 +47,34 @@ export const CarouselContent = memo(
       </div>
 
       {/* Logo optimizado */}
-      <div className="mt-4 md:mt-6 flex justify-center">
-        <a href="https://caftenerife.org/">
-        <img
-          src={logoSrc}
-          alt="Colegio de Administradores de Fincas de Santa Cruz de Tenerife"
-          className="w-28 h-auto sm:w-32 md:w-40 lg:w-48"
-          loading="eager"
-          width={192} // Ancho real de la imagen para evitar CLS
-          height={48} // Alto real de la imagen para evitar CLS
+      <div className="mt-4 md:mt-6 flex justify-center align-middle gap-4">
+        <a
+          href="https://caftenerife.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={logoSrc}
+            alt="Colegio de Administradores de Fincas de Santa Cruz de Tenerife"
+            className="w-28 h-auto sm:w-32 md:w-40 lg:w-48"
+            loading="eager"
+            width={192} // Ancho real de la imagen para evitar CLS
+            height={48} // Alto real de la imagen para evitar CLS
+          />
+        </a>
+        <a
+          href="https://www.consejogestores.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center"
+        >
+          <img
+            src={logoSrc2}
+            alt="Logo de consejo de gestores administrativos"
+            className="w-28 h-auto sm:w-32 md:w-40 lg:w-48"
+            loading="eager"
+            width={92} // Ancho real de la imagen para evitar CLS
+            height={48} // Alto real de la imagen para evitar CLS
           />
         </a>
       </div>
