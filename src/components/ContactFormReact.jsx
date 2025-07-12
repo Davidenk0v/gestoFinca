@@ -34,33 +34,91 @@ const ContactForm = ({ data, lang, title }) => {
 
   const showMessage = (message, type) => setFeedback({ message, type });
 
+  // Función para obtener mensajes según el idioma
+  const getMessages = (lang) => {
+    const messages = {
+      es: {
+        privacyRequired: "Debe aceptar la política de privacidad",
+        fieldsRequired:
+          "Los campos nombre, teléfono y mensaje son obligatorios",
+        successMessage:
+          "Mensaje enviado correctamente. Pronto nos pondremos en contacto.",
+        errorMessage: "Hubo un error. Inténtelo de nuevo más tarde.",
+        noSubject: "sin asunto",
+      },
+      en: {
+        privacyRequired: "You must accept the privacy policy",
+        fieldsRequired: "Name, phone and message fields are required",
+        successMessage: "Message sent successfully. We will contact you soon.",
+        errorMessage: "There was an error. Please try again later.",
+        noSubject: "no subject",
+      },
+      de: {
+        privacyRequired: "Sie müssen die Datenschutzrichtlinie akzeptieren",
+        fieldsRequired: "Name, Telefon und Nachricht sind Pflichtfelder",
+        successMessage:
+          "Nachricht erfolgreich gesendet. Wir werden uns bald bei Ihnen melden.",
+        errorMessage:
+          "Es gab einen Fehler. Bitte versuchen Sie es später erneut.",
+        noSubject: "kein Betreff",
+      },
+    };
+    return messages[lang] || messages.es;
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    if (!polityCheck)
-      return showMessage("Debe aceptar la política de privacidad", "error");
-    if (Object.values(formData).some((field) => !field.trim())) {
-      return showMessage("Todos los campos son obligatorios", "error");
+    const messages = getMessages(lang);
+
+    if (!polityCheck) return showMessage(messages.privacyRequired, "error");
+
+    // Validar solo campos obligatorios (name, phone, message)
+    const requiredFields = {
+      name: formData.name,
+      phone: formData.phone,
+      message: formData.message,
+    };
+    if (Object.values(requiredFields).some((field) => !field.trim())) {
+      return showMessage(messages.fieldsRequired, "error");
     }
 
     try {
+      // Preparar datos para envío, agregando "sin asunto" si no hay asunto
+      const dataToSend = {
+        ...formData,
+        subject: formData.subject.trim() || messages.noSubject,
+      };
+
       const response = await fetch("/api/send-emails", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(dataToSend),
       });
 
       if (!response.ok) throw new Error("Error al enviar el mensaje");
 
-      showMessage(
-        "Mensaje enviado correctamente. Pronto nos pondremos en contacto.",
-        "success"
-      );
+      showMessage(messages.successMessage, "success");
       setFormData(initialFormData);
       setPolityCheck(false);
     } catch {
-      showMessage("Hubo un error. Inténtelo de nuevo más tarde.", "error");
+      showMessage(messages.errorMessage, "error");
     }
+  };
+
+  // Función para determinar si un campo es obligatorio
+  const isRequiredField = (key) => {
+    return key === "name" || key === "phone" || key === "message";
+  };
+
+  // Función para obtener el texto "(opcional)" según el idioma
+  const getOptionalText = (lang) => {
+    const texts = {
+      es: "(opcional)",
+      en: "(optional)",
+      de: "(optional)",
+    };
+    return texts[lang] || texts.es;
   };
 
   return (
@@ -106,7 +164,13 @@ const ContactForm = ({ data, lang, title }) => {
                 htmlFor={key}
                 className="block text-sm font-semibold text-gray-900 mb-1"
               >
-                {fields[key]?.label || key}*
+                {fields[key]?.label || key}
+                {isRequiredField(key) && "*"}
+                {!isRequiredField(key) && (
+                  <span className="text-gray-500 text-xs ml-1">
+                    {getOptionalText(lang)}
+                  </span>
+                )}
               </label>
               {key === "message" ? (
                 <textarea
@@ -115,7 +179,11 @@ const ContactForm = ({ data, lang, title }) => {
                   value={formData[key]}
                   onChange={handleChange}
                   className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
-                  aria-invalid={formData[key] === "" ? "true" : "false"}
+                  aria-invalid={
+                    isRequiredField(key) && formData[key] === ""
+                      ? "true"
+                      : "false"
+                  }
                   placeholder={fields[key]?.placeholder || ""}
                 />
               ) : (
@@ -126,7 +194,11 @@ const ContactForm = ({ data, lang, title }) => {
                   value={formData[key]}
                   onChange={handleChange}
                   className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
-                  aria-invalid={formData[key] === "" ? "true" : "false"}
+                  aria-invalid={
+                    isRequiredField(key) && formData[key] === ""
+                      ? "true"
+                      : "false"
+                  }
                   placeholder={fields[key]?.placeholder || ""}
                 />
               )}

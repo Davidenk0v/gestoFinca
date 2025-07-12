@@ -18,7 +18,7 @@ const Header = ({ lang = "es", data }) => {
         setServicesDropdownOpen(false);
       }
     }
-    
+
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -48,6 +48,10 @@ const Header = ({ lang = "es", data }) => {
       label: header?.services || "Servicios",
       dropdownItems: [
         {
+          href: `/${lang}/tramites-vehiculos`,
+          label: header?.vehicle_procedures || "Trámites de vehículos",
+        },
+        {
           href: `/${lang}/administracion-fincas`,
           label: header?.property_management || "Administración de Fincas",
         },
@@ -55,11 +59,7 @@ const Header = ({ lang = "es", data }) => {
           href: `/${lang}/alquileres-vacacionales`,
           label: header?.vacation_rentals || "Alquileres Vacacionales",
         },
-        {
-          href: `/${lang}/tramites-vehiculos`,
-          label: header?.vehicle_procedures || "Trámites de vehículos",
-        },
-      ]
+      ],
     },
     { href: `/${lang}/nosotros`, label: header?.about_us || "Nosotros" },
     {
@@ -123,36 +123,46 @@ const Header = ({ lang = "es", data }) => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:space-x-8">
-            {navigationLinks.map((item, index) => 
+            {navigationLinks.map((item, index) =>
               item.type === "dropdown" ? (
-                <div 
-                  key={`dropdown-${index}`} 
+                <div
+                  key={`dropdown-${index}`}
                   ref={dropdownRef}
                   className="relative group"
                   onMouseEnter={() => setServicesDropdownOpen(true)}
                   onMouseLeave={() => setServicesDropdownOpen(false)}
                 >
-                  <button 
+                  <button
                     className="whitespace-nowrap text-sm font-semibold text-gray-900 hover:text-brand-blueFinca relative group py-2 flex items-center"
                     aria-expanded={servicesDropdownOpen}
-                    onClick={() => setServicesDropdownOpen(!servicesDropdownOpen)}
+                    onClick={() =>
+                      setServicesDropdownOpen(!servicesDropdownOpen)
+                    }
                   >
                     {item.label}
-                    <svg 
-                      className={`ml-1 h-4 w-4 transition-transform ${servicesDropdownOpen ? 'rotate-180' : ''}`} 
-                      xmlns="http://www.w3.org/2000/svg" 
-                      viewBox="0 0 20 20" 
+                    <svg
+                      className={`ml-1 h-4 w-4 transition-transform ${
+                        servicesDropdownOpen ? "rotate-180" : ""
+                      }`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
                       fill="currentColor"
                     >
-                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+                      <path
+                        fillRule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
                     </svg>
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-greenFinca transition-all duration-300 group-hover:w-full"></span>
                   </button>
-                  
+
                   {/* Dropdown Menu */}
-                  <div 
+                  <div
                     className={`absolute left-0 top-full mt-1 w-64 rounded-md shadow-lg bg-slate-200 ring-1 ring-black ring-opacity-5 transition-all duration-200 ${
-                      servicesDropdownOpen ? 'opacity-100 transform translate-y-0' : 'opacity-0 invisible transform -translate-y-2'
+                      servicesDropdownOpen
+                        ? "opacity-100 transform translate-y-0"
+                        : "opacity-0 invisible transform -translate-y-2"
                     }`}
                   >
                     <div className="py-1">
@@ -249,7 +259,7 @@ const Header = ({ lang = "es", data }) => {
             >
               {header?.home || "Inicio"}
             </a>
-            
+
             {/* Servicios con submenú */}
             <div className="flex flex-col">
               <div className="text-base font-medium text-gray-900 px-3 py-2">
@@ -268,7 +278,7 @@ const Header = ({ lang = "es", data }) => {
                 ))}
               </div>
             </div>
-            
+
             {/* Resto de enlaces fijos */}
             <a
               href={`/${lang}/nosotros`}
@@ -291,7 +301,7 @@ const Header = ({ lang = "es", data }) => {
             >
               {header?.contact || "Contacto"}
             </a>
-            
+
             <div className="pt-4">
               <LanguageSelector />
             </div>
