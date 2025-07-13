@@ -108,7 +108,7 @@ const seoKeywords = {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
-
+    
     <link rel="canonical" href={canonicalUrl} />
     {
       alternateUrls.map((alt) => (
@@ -170,20 +170,31 @@ const seoKeywords = {
       set:html={JSON.stringify(webpageSchema)}
     />
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17350177254"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17350177254');
+</script>
+    <!-- Final Google tag (gtag.js) -->
+
     <link rel="preload" href={logo.src} as="image" />
 
     <ClientRouter />
   </head>
   <body>
     <div class="flex flex-col min-h-screen bg-slate-100">
-      <header>
+      <div>
         <Header
           client:load
           transition:persist
           lang={lang}
           data={translations}
         />
-      </header>
+      </div>
 
       <a
         href="#main-content"
