@@ -1,5 +1,5 @@
 // src/pages/sitemap.xml.ts
-export const prerender = false;
+export const prerender = true;
 
 export async function GET() {
   const baseUrl = "https://www.gestofinca.com";
