@@ -1,12 +1,11 @@
-// src/pages/sitemap.xml.ts
+// sitemap.xml.ts
 export const prerender = true;
 
 export async function GET() {
   const baseUrl = "https://www.gestofinca.com";
 
-  // Rutas base
   const routes = [
-    "", // Para la página index
+    "", // Página principal
     "administracion-fincas",
     "tramites-vehiculos",
     "alquileres-vacacionales",
@@ -19,55 +18,39 @@ export async function GET() {
   ];
 
   const languages = ["es", "en", "de"];
-  const now = new Date().toISOString().split("T")[0];
+  const today = new Date().toISOString().split("T")[0];
 
-  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">`;
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+  sitemap += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n`;
+  sitemap += `        xmlns:xhtml="http://www.w3.org/1999/xhtml">\n`;
 
-  // Para cada ruta, generar las entradas para todos los idiomas
   for (const route of routes) {
     for (const lang of languages) {
-      // Construir la URL con el formato /{lang}/{ruta}
       const path = route ? `${lang}/${route}` : `${lang}`;
-
-      // Aseguramos que la URL es absoluta y válida
       const fullUrl = `${baseUrl}/${path}`;
 
-      sitemap += `
-  <url>
-    <loc>${fullUrl}</loc>
-    <lastmod>${now}</lastmod>`;
+      sitemap += `  <url>\n`;
+      sitemap += `    <loc>${fullUrl}</loc>\n`;
+      sitemap += `    <lastmod>${today}</lastmod>\n`;
 
-      // Añadir enlaces alternativos para cada idioma
-      for (const alternateLang of languages) {
-        const alternatePath = route
-          ? `${alternateLang}/${route}`
-          : `${alternateLang}`;
-        const alternateUrl = `${baseUrl}/${alternatePath}`;
-
-        sitemap += `
-    <xhtml:link 
-      rel="alternate" 
-      hreflang="${alternateLang}" 
-      href="${alternateUrl}" />`;
+      // Alternate language links
+      for (const altLang of languages) {
+        const altPath = route ? `${altLang}/${route}` : `${altLang}`;
+        sitemap += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${baseUrl}/${altPath}" />\n`;
       }
 
-      // Añadir enlace para el idioma "x-default"
+      // x-default (fallback to Spanish)
       const defaultPath = route ? `es/${route}` : `es`;
-      sitemap += `
-    <xhtml:link 
-      rel="alternate" 
-      hreflang="x-default" 
-      href="${baseUrl}/${defaultPath}" />
-    <changefreq>weekly</changefreq>
-    <priority>${route === "" ? "1.0" : "0.8"}</priority>
-  </url>`;
+      sitemap += `    <xhtml:link rel="alternate" hreflang="x-default" href="${baseUrl}/${defaultPath}" />\n`;
+
+      // Prioridad según tipo de página
+      sitemap += `    <changefreq>weekly</changefreq>\n`;
+      sitemap += `    <priority>${route === "" ? "1.0" : "0.8"}</priority>\n`;
+      sitemap += `  </url>\n`;
     }
   }
 
-  sitemap += `
-</urlset>`;
+  sitemap += `</urlset>`;
 
   return new Response(sitemap, {
     headers: {
