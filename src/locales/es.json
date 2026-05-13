@@ -123,7 +123,7 @@
     "services": [
       {
         "title": "Cambio de Titularidad",
-        "price": "115",
+        "price": "120",
         "tax": "+4% impuesto valor vehículo",
         "img": "ownership_transfer",
         "description": "Realizamos el cambio de nombre del coche o moto de forma 100% legal, rápida y sin errores. Incluye la presentación ante la DGT y liquidación de impuestos.",
@@ -131,7 +131,7 @@
       },
       {
         "title": "Matriculación de Vehículos Nuevos e Importados",
-        "price": "195",
+        "price": "300",
         "tax": "Sin incluir posibles impuestos según caso",
         "img": "vehicle_registration",
         "description": "Gestionamos la matriculación completa de tu coche nuevo, de segunda mano o importado. Nos ocupamos de la documentación técnica, tasas y placas.",

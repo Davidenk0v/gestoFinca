@@ -123,7 +123,7 @@
     "services": [
       {
         "title": "Fahrzeug-Ummeldung",
-        "price": "115 €",
+        "price": "120",
         "tax": "+4% Fahrzeugwertsteuer",
         "img": "ownership_transfer",
         "description": "Wir erledigen die Ummeldung Ihres Autos oder Motorrads schnell, legal und fehlerfrei. Inklusive Steuerabwicklung und Einreichung bei der DGT.",
@@ -131,7 +131,7 @@
       },
       {
         "title": "Zulassung neuer und importierter Fahrzeuge",
-        "price": "195 €",
+        "price": "300",
         "tax": "Mögliche zusätzliche Steuern je nach Fall nicht enthalten",
         "img": "vehicle_registration",
         "description": "Wir übernehmen die komplette Zulassung Ihres neuen, gebrauchten oder importierten Fahrzeugs. Wir kümmern uns um Technikunterlagen, Gebühren und Kennzeichen.",
@@ -139,7 +139,7 @@
       },
       {
         "title": "An- und Abmeldung bei der DGT",
-        "price": "40 €",
+        "price": "40",
         "tax": "Gebühren inklusive",
         "img": "vehicle_status",
         "description": "Wir erledigen die temporäre oder endgültige Abmeldung sowie die Wiederzulassung nach Export oder Instandsetzung – ohne Warteschlangen oder Bürokratie.",
@@ -147,7 +147,7 @@
       },
       {
         "title": "Offizieller Fahrzeugbericht",
-        "price": "15 €",
+        "price": "15",
         "tax": "Gebühren inklusive",
         "img": "vehicle_report",
         "description": "Wir fordern vollständige Berichte der DGT mit technischen Daten, Belastungen, Pfändungen und Vorbesitzern an – ideal für einen sicheren Kauf.",
@@ -155,7 +155,7 @@
       },
       {
         "title": "Duplikat der Zulassungsbescheinigung",
-        "price": "45 €",
+        "price": "45",
         "tax": "Gebühren inklusive",
         "img": "circulation_permit",
         "description": "Sie haben Ihre Zulassungsbescheinigung verloren oder beschädigt? Wir helfen Ihnen schnell und rechtssicher bei der Ausstellung eines Duplikats.",

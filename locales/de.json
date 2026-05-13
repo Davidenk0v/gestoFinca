@@ -1,0 +1,463 @@
+{
+  "property_management": {
+    "title": "Gemeinschaft Verwaltung",
+    "description": "Professionelles und effizientes Management für Gemeinschaften und anspruchsvolle Eigentümer.",
+    "text": "Wir sind gemeinschaft verwalterauf Teneriffa, zertifizierte und spezialisierte Fachleute für alle Arten von Gemeinschaften. Wir verfügen über ein Team hochqualifizierter Fachkräfte mit nachweislicher Erfahrung im Bereich der gemeinschaft verwaltung.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "services": [
+      {
+        "title": "Buchhaltung",
+        "img": "accounting",
+        "description": "Wir garantieren eine transparente und effiziente Verwaltung der finanziellen Ressourcen. Wir kümmern uns um die Erstellung von Bilanzen, Budgets und Abrechnungen und stellen dabei stets maximale Klarheit und die Einhaltung der geltenden Vorschriften sicher."
+      },
+      {
+        "title": "Lieferanten",
+        "img": "suppliers",
+        "description": "Wir verwalten und koordinieren alle Lieferanten, die für das ordnungsgemäße Funktionieren Ihrer Gemeinschaft erforderlich sind. Vom Wartungsservice bis hin zu spezialisierten Dienstleistungen sorgen wir dafür, dass wir die besten Fachleute auswählen und überwachen, um Qualität, Effizienz und die Einhaltung der Vorgaben bei jeder Arbeit zu gewährleisten."
+      },
+      {
+        "title": "Vorbereitung der Eigentümerversammlungen",
+        "img": "meetings",
+        "description": "Wir kümmern uns um die Vorbereitung und Organisation der Eigentümerversammlungen, um eine klare und pünktliche Einladung sicherzustellen. Wir verwalten die Erstellung der Tagesordnung, die notwendigen Unterlagen und die korrekte Protokollführung, um eine effektive Kommunikation und einen schnellen, transparenten Entscheidungsprozess zu ermöglichen."
+      },
+      {
+        "title": "Besuche in der Gemeinschaft",
+        "img": "visits",
+        "description": "Wir führen regelmäßige Besuche in den Gemeinschaften durch, um den Zustand der Einrichtungen zu überwachen und etwaige Vorfälle schnell und effizient zu lösen. Unsere kontinuierliche Betreuung stellt sicher, dass der ordnungsgemäße Betrieb und die Sicherheit Ihrer Immobilie gewährleistet sind, und wir bieten maßgeschneiderte Lösungen, die den Bedürfnissen jeder Gemeinschaft entsprechen."
+      },
+      {
+        "title": "Beratung",
+        "img": "advice",
+        "description": "Wir bieten spezialisierte rechtliche Beratung zu Themen wie der Ausarbeitung und Aktualisierung von Satzungen sowie der horizontalen Teilung von Immobilien. Wir stellen die Einhaltung der geltenden Gesetzgebung sicher und bieten rechtliche Lösungen zur Behebung von Konflikten oder Unklarheiten, die innerhalb Ihrer Gemeinschaft auftreten können."
+      },
+      {
+        "title": "Dokumentenaufbewahrung",
+        "img": "documents",
+        "description": "Wir übernehmen die sichere Aufbewahrung und Verwaltung aller Unterlagen Ihrer Gemeinschaft und sorgen dafür, dass diese bei Bedarf zugänglich sind. Wir garantieren, dass die Dokumente effizient organisiert werden, die gesetzlichen Vorschriften eingehalten werden und sie jederzeit eingesehen werden können."
+      },
+      {
+        "title": "Versicherungsvermittler",
+        "img": "mediation",
+        "description": "Wir fungieren als Vermittler, um etwaige Konflikte zwischen der Gemeinschaft, den Eigentümern und den Versicherungen auf freundliche und effektive Weise zu lösen. Als unparteiische Vermittler erleichtern wir die Kommunikation und helfen, faire Lösungen zu finden, die das Wohl und die Harmonie innerhalb der Gemeinschaft fördern."
+      },
+      {
+        "title": "Budgeterstellung und Finanzplanung",
+        "img": "budgets",
+        "description": "Wir unterstützen die Gemeinschaft bei der Planung ihrer Ausgaben und der Erstellung von Jahresbudgets, um die Ressourcen zu optimieren."
+      }
+    ],
+    "phrases": [
+      "Ihre Gemeinschaft in den besten Händen.",
+      "Effiziente und transparente Verwaltung – ganz ohne Stress."
+    ]
+  },
+  "vacation_rentals": {
+    "title": "Ferienvermietungen",
+    "description": "Machen Sie Ihre Immobilie mühelos zur Einkommensquelle.",
+    "text": "Wir verwalten Ihre Ferienvermietung in Teneriffa ganzheitlich und sorgen für ein hervorragendes Erlebnis sowohl für Eigentümer als auch für Gäste. Vertrauen Sie auf uns, um Ihre Investition zu optimieren und unvergessliche Aufenthalte zu bieten.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "services": [
+      {
+        "title": "Werbung und Promotion der Immobilie",
+        "img": "property_promotion",
+        "description": "Anzeige auf Mietplattformen (Airbnb, Booking, etc.) und Promotion über soziale Medien und andere Kanäle."
+      },
+      {
+        "title": "Buchungsmanagement",
+        "img": "booking_management",
+        "description": "Koordination von Buchungen, Bestätigungen und Stornierungen, um eine maximale Belegung zu gewährleisten."
+      },
+      {
+        "title": "Empfang und Begrüßung der Gäste",
+        "img": "guest_reception",
+        "description": "Check-in und Check-out der Gäste, Bereitstellung lokaler Informationen und Sicherstellung eines guten ersten Eindrucks."
+      },
+      {
+        "title": "Reinigung und Wartung",
+        "img": "cleaning_maintenance",
+        "description": "Professionelle Reinigungsdienste zwischen den Aufenthalten und allgemeine Wartung, um die Immobilie in optimalem Zustand zu halten."
+      },
+      {
+        "title": "24/7 Kundensupport",
+        "img": "customer_support",
+        "description": "Ständige Unterstützung für die Gäste, um Probleme oder Anliegen während ihres Aufenthalts zu lösen."
+      },
+      {
+        "title": "Zahlungs- und Rechnungsmanagement",
+        "img": "payment_management",
+        "description": "Verwaltung von Zahlungen, Inkasso und Ausstellung von Rechnungen, um Transparenz und Sicherheit zu gewährleisten."
+      },
+      {
+        "title": "Preisoptimierung",
+        "img": "pricing_optimization",
+        "description": "Dynamische Preisgestaltung und Anpassung basierend auf Nachfrage, Saison und Wettbewerb zur Maximierung der Einnahmen."
+      },
+      {
+        "title": "Verwaltung lokaler Steuern",
+        "img": "tax_management",
+        "description": "Wir helfen Immobilieneigentümern, die lokalen Steuern im Zusammenhang mit Ferienvermietungen einzuhalten, wie z. B. Tourismussteuern, Lizenzen oder Nutzungsgebühren. Verwaltung der Zahlung und Einreichung von Steuererklärungen."
+      }
+    ],
+    "phrases": [
+      "Lassen Sie Ihre Immobilie für Sie arbeiten.",
+      "Wir übernehmen die Verwaltung – Sie genießen den Gewinn."
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Wir sind für Sie da. Lassen Sie uns sprechen!",
+    "text": "Unser Team steht bereit, um Ihnen maßgeschneiderte Lösungen und kompetente Beratung anzubieten.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Wir beantworten Ihre Fragen professionell.",
+      "Ihre Zufriedenheit ist unser Ziel."
+    ]
+  },
+  "index": {
+    "title": "GestoFinca",
+    "description": "Wir verwalten mit Leidenschaft, wir kümmern uns mit Hingabe.",
+    "text": "Experten für gemeinschaft verwaltung und Verwaltungsverfahren, die effiziente und maßgeschneiderte Lösungen für Sie oder Ihre Gemeinschaft garantieren.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Ihre zuverlässigen Experten für gemeinschaft verwaltung auf Teneriffa.",
+      "Ihre Sicherheit, unser Engagement.",
+      "Professionelle Verwaltung mit garantierten Ergebnissen."
+    ]
+  },
+"about_us": {
+  "title": "Über uns",
+  "description": "Bei <strong>GestoFinca</strong> sind wir der Meinung, dass die Verwaltung von Eigentümergemeinschaften eine echte Transformation braucht, um den wachsenden und sich wandelnden Bedürfnissen der Eigentümer gerecht zu werden.",
+  "text": "Dieses Engagement wird von <strong>Marco Ackermann Méndez</strong> geleitet, einem Absolventen in <strong>Wirtschaft und Internationalem Geschäft sowie zertifizierten Hausverwalter Nr. 345</strong>, der eine moderne, nahbare und professionelle Sichtweise in jeden Aspekt der Verwaltung einbringt.& Unser Ziel ist klar: einen exklusiven, personalisierten Service von höchster Qualität anzubieten. Wir nehmen uns die nötige Zeit für jeden Kunden, um seine Bedürfnisse ganzheitlich, effizient und transparent zu erfüllen.& Wir verfügen über umfassende Erfahrung in der Branche und ein hochqualifiziertes, zertifiziertes Team, das eine sichere und rechtlich abgesicherte Verwaltung garantiert. Wir setzen auf die Ruhe und Sicherheit unserer Kunden und stellen sicher, dass jede Maßnahme den geltenden Vorschriften und höchsten Standards der Branche entspricht.",
+  "buttons": {
+    "about_us": "Mehr erfahren",
+    "contact_us": "Kontaktieren Sie uns"
+  },
+    "phrases": [
+      "Erfahrung und Vertrauen zu Ihrem Vorteil.",
+      "Über 10 Jahre erfolgreiche Verwaltung.",
+      "Exzellenz und Engagement in jedem Service."
+    ]
+  },
+  "quotes": {
+    "title": "Angebote",
+    "description": "Fordern Sie Ihr unverbindliches Angebot an.",
+    "text": "Wir passen unsere Dienstleistungen an Ihre Bedürfnisse an – mit voller Transparenz und fairen Preisen.",
+    "buttons": {
+      "about_us": "Mehr erfahren",
+      "contact_us": "Kontaktieren Sie uns"
+    },
+    "phrases": [
+      "Klare Kosten, keine Überraschungen.",
+      "Individuelle Lösungen zu wettbewerbsfähigen Preisen."
+    ]
+  },
+  "privacy_policy": {
+    "title": "Datenschutzrichtlinie",
+    "description": "Wir schützen Ihre Daten mit höchstem Engagement.",
+    "text": "Lesen Sie unsere Datenschutzrichtlinie, um zu erfahren, wie wir Ihre Daten verwalten und schützen.",
+    "buttons": {
+      "read_policy": "Richtlinie lesen",
+      "accept": "Akzeptieren"
+    },
+    "phrases": [
+      "Ihre Privatsphäre hat für uns oberste Priorität.",
+      "Wir erfüllen alle aktuellen Vorschriften."
+    ]
+  },
+  "forms": {
+    "title": "Formulare",
+    "description": "Einfache und schnelle Verwaltung mit unseren Online-Formularen.",
+    "text": "Senden Sie Ihre Anfragen schnell und unkompliziert.",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Geben Sie Ihren Namen ein"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "Geben Sie Ihre Telefonnummer ein"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Schreiben Sie Ihre Nachricht"
+      },
+      "subject": {
+        "label": "Betreff",
+        "placeholder": "Geben Sie den Betreff ein"
+      },
+      "privacy_policy": {
+        "label": "Ich habe die Datenschutzrichtlinie gelesen und akzeptiere sie",
+        "link": "/de/privacy-policy"
+      }
+    },
+    "buttons": {
+      "send_form": "Senden",
+      "learn_more": "Mehr erfahren"
+    },
+    "phrases": [
+      "Schnell, einfach und unkompliziert.",
+      "Ihre Anfrage ist nur einen Klick entfernt."
+    ]
+  },
+  "footer": {
+    "phrase": "Ihre Zufriedenheit ist unser Ziel.",
+    "pages": {
+      "title": "Seiten",
+      "links": [
+        { "name": "Über uns", "link": "/de/nosotros" },
+        {
+          "name": "Verwaltung von Immobilien",
+          "link": "/de/administracion-fincas"
+        },
+        {
+          "name": "Ferienvermietungen",
+          "link": "/de/alquileres-vacacionales"
+        },
+        { "name": "Angebote", "link": "/de/presupuestos" }
+      ]
+    },
+    "useful_links": {
+      "title": "Nützliche Links",
+      "links": [
+        { "name": "Kontaktieren Sie uns", "link": "/de/contacto" },
+        {
+          "name": "Allgemeine Geschäftsbedingungen",
+          "link": "/de/terms-conditions"
+        },
+        {
+          "name": "Datenschutzrichtlinie",
+          "link": "/de/privacy-policy"
+        },
+        { "name": "Cookie-Richtlinie", "link": "/de/cookie-policy" }
+      ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "address": { "info": "Adeje", "tag": "Adresse" },
+      "city": { "info": "38670, Santa Cruz de Tenerife", "tag": "Stadt" },
+      "phone": { "info": "+34 689 95 89 31", "tag": "Telefon" },
+      "email": { "info": "contact@gestofinca.com", "tag": "E-Mail" }
+    }
+  },
+  "values": {
+    "title": "Unsere Werte",
+    "description": "Prinzipien, die unsere Arbeit leiten und unser Unternehmen definieren.",
+    "value1": {
+      "title": "Engagement",
+      "description": "Wir setzen uns für das Wohl Ihrer Gemeinschaften ein und verwalten jedes Detail mit Verantwortung und Hingabe."
+    },
+    "value2": {
+      "title": "Transparenz",
+      "description": "Wir bauen Beziehungen auf Vertrauen auf, mit klarer und ehrlicher Verwaltung."
+    },
+    "value3": {
+      "title": "Professionalität",
+      "description": "Wir bieten einen seriösen, kompetenten und engagierten Service, der auf die Bedürfnisse jedes Kunden zugeschnitten ist."
+    },
+    "value4": {
+      "title": "Effizienz",
+      "description": "Wir optimieren Ressourcen, um schnelle, effektive und rentable Lösungen für Ihre Gemeinschaft zu bieten."
+    }
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "description": "Maßgeschneiderte Lösungen für Eigentümer und Gemeinschaften.",
+    "service1": {
+      "title": "Gemeinschaft Verwaltung",
+      "description": "Umfassende Verwaltung für Eigentümergemeinschaften mit Transparenz und Effizienz."
+    },
+    "service2": {
+      "title": "Ferienvermietung",
+      "description": "Maximieren Sie die Rentabilität Ihrer Immobilie – ohne Stress."
+    },
+    "service3": {
+      "title": "Immobilienberatung",
+      "description": "Wir begleiten Sie beim Kauf, Verkauf oder der Vermietung Ihrer Immobilie mit Fachwissen und Vertrauen."
+    }
+  },
+  "header": {
+    "home": "Startseite",
+    "about_us": "Über uns",
+    "property_management": "Gemeinschaft Verwaltung",
+    "vacation_rentals": "Ferienvermietung",
+    "quotes": "Angebote",
+    "contact": "Kontakt"
+  },
+  "seo": {
+    "title": "GestoFinca - Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
+    "description": "Experten in der gemeinschaft verwaltung und Ferienvermietung. Wir bieten umfassende, transparente und personalisierte Lösungen für Eigentümer und Gemeinschaften.",
+    "keywords": "Gemeinschaft verwaltung, Ferienvermietungen, Verwaltungsdienste, Teneriffa",
+    "tags": {
+      "about_us": "Über uns | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
+      "property_management": "Gemeinschaft verwaltung auf Teneriffa",
+      "vacation_rentals": "Ferienvermietungen auf Teneriffa",
+      "quotes": "Kostenvoranschläge | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
+      "contact": "Kontakt | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa"
+    }
+  },
+    "cookiePolicy": {
+      "metaTitle": "Cookie-Richtlinie",
+      "metaDescription": "Informiere dich über unsere Cookie-Richtlinie auf der GestoFinca-Website.",
+      "title": "Cookie-Richtlinie",
+      "intro": "Bei GestoFinca verwenden wir Cookies, um die Benutzererfahrung zu verbessern. Diese Seite informiert dich darüber, wie und warum wir Cookies verwenden.",
+      "section1": {
+        "title": "1. Was sind Cookies?",
+        "text": "Cookies sind kleine Textdateien, die auf deinem Gerät gespeichert werden. Sie ermöglichen es der Website, sich deine Aktionen und Präferenzen zu merken."
+      },
+      "section2": {
+        "title": "2. Welche Arten von Cookies wir verwenden",
+        "list": [
+          "<strong>Notwendige Cookies:</strong> Für das ordnungsgemäße Funktionieren der Website unerlässlich.",
+          "<strong>Leistungs-Cookies:</strong> Helfen uns, die Leistung der Website zu messen und zu verbessern.",
+          "<strong>Funktionale Cookies:</strong> Merken sich deine Einstellungen für ein besseres Erlebnis.",
+          "<strong>Werbe-Cookies:</strong> Zeigen relevantere Werbung und reduzieren Wiederholungen."
+        ]
+      },
+      "section3": {
+        "title": "3. Wie kann man Cookies kontrollieren?",
+        "text1": "Du kannst Cookies über die Einstellungen deines Browsers verwalten.",
+        "text2": "Weitere Informationen findest du in der Hilfe deines Browsers oder auf Webseiten zur Cookie-Verwaltung."
+      },
+      "section4": {
+        "title": "4. Zustimmung",
+        "text": "Durch das Weitersurfen auf unserer Website stimmst du der Verwendung von Cookies zu. Andernfalls kannst du die Einstellungen ändern oder die Seite nicht weiter nutzen."
+      },
+      "section5": {
+        "title": "5. Änderungen an der Cookie-Richtlinie",
+        "text": "Wir behalten uns das Recht vor, diese Richtlinie jederzeit zu ändern. Änderungen werden hier mit dem Datum der letzten Aktualisierung veröffentlicht."
+      },
+      "section6": {
+        "title": "6. Kontakt",
+        "text": "Bei Fragen zur Cookie-Richtlinie kannst du uns über die auf der Kontaktseite angegebenen Wege erreichen."
+      }
+    },
+    "privacyPolicy": {
+      "metaTitle": "Datenschutzerklärung",
+      "metaDescription": "Hier finden Sie unsere Datenschutzerklärung zur Verarbeitung Ihrer personenbezogenen Daten.",
+      "title": "Datenschutzerklärung",
+      "intro": "Bei <strong>GestoFinca</strong> legen wir großen Wert auf den Schutz der Privatsphäre und personenbezogenen Daten unserer Nutzer. Nachfolgend erläutern wir, wie wir Ihre Daten erfassen, verwenden und schützen.",
+      "sections": [
+        {
+          "title": "1. Verantwortlicher",
+          "text": "<strong>Name:</strong> Marco Ackermann Méndez <br/><strong>Steuernummer (NIF):</strong> 45939143-R <br/><strong>Firmenname:</strong> GestoFinca <br/><strong>Adresse:</strong> 38670, Santa Cruz de Tenerife, Spanien <br/><strong>Email:</strong> <a href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a> <br/><strong>Telefon:</strong> +34 689 95 89 31"
+        },
+        {
+          "title": "2. Erhobene Daten",
+          "text": "Wir erfassen folgende personenbezogene Daten:",
+          "list": [
+            "Kontaktdaten: Name, E-Mail-Adresse, Telefonnummer.",
+            "Browserinformationen: IP-Adresse, Gerätetyp, Betriebssystem, Browser.",
+            "Weitere Daten, die Sie direkt über Formulare oder Kommunikation bereitstellen."
+          ]
+        },
+        {
+          "title": "3. Zweck der Datenverarbeitung",
+          "text": "Wir verwenden Ihre Daten, um:",
+          "list": [
+            "Unsere Dienstleistungen und Produkte bereitzustellen.",
+            "Auf Ihre Anfragen und Anliegen zu antworten.",
+            "Unsere Website zu verbessern und Ihre Nutzererfahrung zu personalisieren.",
+            "Unsere gesetzlichen Verpflichtungen zu erfüllen."
+          ]
+        },
+        {
+          "title": "4. Rechtsgrundlage der Verarbeitung",
+          "text": "Die Verarbeitung Ihrer Daten basiert auf:",
+          "list": [
+            "Ihrer ausdrücklichen Einwilligung.",
+            "Der Notwendigkeit zur Vertragserfüllung.",
+            "Gesetzlichen Verpflichtungen.",
+            "Unserem berechtigten Interesse an der Verbesserung unserer Dienstleistungen."
+          ]
+        },
+        {
+          "title": "5. Rechte der Nutzer",
+          "text": "Sie haben das Recht auf:",
+          "list": [
+            "Zugriff auf Ihre personenbezogenen Daten.",
+            "Berichtigung unrichtiger Daten.",
+            "Löschung Ihrer personenbezogenen Daten.",
+            "Widerspruch gegen die Datenverarbeitung.",
+            "Einschränkung der Verarbeitung.",
+            "Datenübertragbarkeit zu einem anderen Anbieter."
+          ]
+        },
+        {
+          "title": "6. Aufbewahrungsdauer",
+          "text": "Wir speichern Ihre personenbezogenen Daten so lange, wie es für die in dieser Datenschutzerklärung beschriebenen Zwecke erforderlich ist, sofern das Gesetz keine längere Aufbewahrung verlangt oder erlaubt."
+        },
+        {
+          "title": "7. Internationale Datenübermittlungen",
+          "text": "Wir übermitteln Ihre personenbezogenen Daten nicht außerhalb des Europäischen Wirtschaftsraums (EWR). Falls doch, gewährleisten wir einen angemessenen Schutz."
+        },
+        {
+          "title": "8. Datensicherheit",
+          "text": "Wir setzen technische und organisatorische Maßnahmen ein, um die Sicherheit Ihrer personenbezogenen Daten zu gewährleisten und deren Veränderung, Verlust, unbefugte Verarbeitung oder Zugriff zu verhindern."
+        },
+        {
+          "title": "9. Änderungen der Datenschutzerklärung",
+          "text": "Wir können diese Datenschutzerklärung gelegentlich aktualisieren. Änderungen werden auf dieser Seite veröffentlicht und das Datum der letzten Aktualisierung wird angegeben."
+        },
+        {
+          "title": "10. Kontakt",
+          "text": "Bei Fragen zu dieser Datenschutzerklärung können Sie uns unter <a class='text-blue-500 hover:underline' href='mailto:contact@gestofinca.com'>contact@gestofinca.com</a> kontaktieren."
+        }
+      ]
+    },
+    "termsAndConditions":{
+      "metaTitle": "Allgemeine Geschäftsbedingungen - GestoFinca",
+      "metaDescription": "Lesen Sie die Allgemeinen Geschäftsbedingungen für die Nutzung unserer Dienstleistungen im Bereich gemeinschaft verwaltung und Ferienvermietung.",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "lastUpdated": "Letzte Aktualisierung: 15. März 2025",
+      "sections": [
+        {
+          "content": "Willkommen bei unserem Unternehmen für gemeinschaft verwaltung und Ferienvermietungsmanagement. Im Folgenden finden Sie die Allgemeinen Geschäftsbedingungen, die die Nutzung unserer Dienstleistungen regeln. Durch die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Bedingungen einverstanden."
+        },
+        {
+          "title": "1. Annahme der Bedingungen",
+          "content": "Durch den Zugriff auf oder die Nutzung unserer Dienstleistungen erklären Sie sich mit diesen Allgemeinen Geschäftsbedingungen einverstanden. Wenn Sie mit einem Aspekt der Bedingungen nicht einverstanden sind, dürfen Sie unsere Dienstleistungen nicht nutzen."
+        },
+        {
+          "title": "2. Angebotene Dienstleistungen",
+          "content": "Unser Unternehmen bietet Dienstleistungen in der gemeinschaft verwaltung, Ferienvermietungsmanagement und verwandte Beratung an. Wir übernehmen alle notwendigen Vorgänge, um sicherzustellen, dass die Immobilien effizient und professionell verwaltet werden."
+        },
+        {
+          "title": "3. Verantwortung des Nutzers",
+          "content": "Als Nutzer unserer Dienstleistungen sind Sie verantwortlich dafür, bei der Inanspruchnahme unserer Dienstleistungen genaue und wahrheitsgemäße Informationen bereitzustellen. Sie sind auch dafür verantwortlich, dass die Immobilien alle geltenden gesetzlichen Bestimmungen einhalten."
+        },
+        {
+          "title": "4. Geistiges Eigentum",
+          "content": "Alle Inhalte und Materialien im Zusammenhang mit unseren Dienstleistungen, einschließlich Texte, Bilder, Logos und Marken, sind das ausschließliche Eigentum unseres Unternehmens oder seiner Lizenzgeber. Jede unbefugte Vervielfältigung ist untersagt."
+        },
+        {
+          "title": "5. Haftungsbeschränkung",
+          "content": "Wir haften nicht für direkte, indirekte, zufällige, besondere oder Folgeschäden, die sich aus der Nutzung oder der Unfähigkeit zur Nutzung unserer Dienstleistungen ergeben."
+        },
+        {
+          "title": "6. Änderungen",
+          "content": "Wir behalten uns das Recht vor, diese Bedingungen jederzeit zu ändern. Änderungen werden auf dieser Seite mit dem Datum der letzten Aktualisierung veröffentlicht."
+        },
+        {
+          "title": "7. Kontakt",
+          "content": "Wenn Sie Fragen zu diesen Bedingungen haben, zögern Sie bitte nicht, uns über die auf unserer Kontaktseite verfügbaren Kanäle zu kontaktieren."
+        }
+      ]
+    }
+       
+}

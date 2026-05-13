@@ -123,7 +123,7 @@
     "services": [
       {
         "title": "Ownership Transfer",
-        "price": "€115",
+        "price": "120",
         "tax": "+4% vehicle value tax",
         "img": "ownership_transfer",
         "description": "We legally and quickly process the ownership transfer of your car or motorcycle, including tax settlement and submission to the DGT.",
@@ -131,7 +131,7 @@
       },
       {
         "title": "Registration of New and Imported Vehicles",
-        "price": "€195",
+        "price": "300",
         "tax": "Excludes possible taxes depending on the case",
         "img": "vehicle_registration",
         "description": "We manage the complete registration of your new, used, or imported vehicle. We handle all technical documents, fees, and license plates.",
@@ -139,7 +139,7 @@
       },
       {
         "title": "Registration and De-registration with the DGT",
-        "price": "€40",
+        "price": "40",
         "tax": "Fees included",
         "img": "vehicle_status",
         "description": "We handle temporary or permanent de-registrations, as well as re-registration after export or rehabilitation. No queues or paperwork.",
@@ -147,7 +147,7 @@
       },
       {
         "title": "Official Vehicle Report",
-        "price": "€15",
+        "price": "15",
         "tax": "Fees included",
         "img": "vehicle_report",
         "description": "We request full DGT reports with technical details, charges, embargoes, and history. Ideal for secure vehicle purchases.",
@@ -155,7 +155,7 @@
       },
       {
         "title": "Duplicate Circulation Permit",
-        "price": "€45",
+        "price": "45",
         "tax": "Fees included",
         "img": "circulation_permit",
         "description": "Lost or damaged your permit? We help you get a fast, legal duplicate so you can keep driving without issues.",
