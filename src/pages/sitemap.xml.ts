@@ -1,20 +1,22 @@
 // sitemap.xml.ts
 export const prerender = true;
 
-export async function GET() {
-  const baseUrl = "https://www.gestofinca.com";
+type RouteConfig = { path: string; priority: string; changefreq: string };
 
-  const routes = [
-    "", // Página principal
-    "administracion-fincas",
-    "tramites-vehiculos",
-    "alquileres-vacacionales",
-    "contacto",
-    "nosotros",
-    "presupuestos",
-    "cookie-policy",
-    "privacy-policy",
-    "terms-conditions",
+export async function GET() {
+  const baseUrl = "https://gestofinca.com";
+
+  const routes: RouteConfig[] = [
+    { path: "", priority: "1.0", changefreq: "weekly" },
+    { path: "administracion-fincas", priority: "0.9", changefreq: "weekly" },
+    { path: "alquileres-vacacionales", priority: "0.9", changefreq: "weekly" },
+    { path: "tramites-vehiculos", priority: "0.9", changefreq: "weekly" },
+    { path: "nosotros", priority: "0.7", changefreq: "monthly" },
+    { path: "presupuestos", priority: "0.7", changefreq: "monthly" },
+    { path: "contacto", priority: "0.6", changefreq: "monthly" },
+    { path: "cookie-policy", priority: "0.2", changefreq: "yearly" },
+    { path: "privacy-policy", priority: "0.2", changefreq: "yearly" },
+    { path: "terms-conditions", priority: "0.2", changefreq: "yearly" },
   ];
 
   const languages = ["es", "en", "de"];
@@ -26,26 +28,23 @@ export async function GET() {
 
   for (const route of routes) {
     for (const lang of languages) {
-      const path = route ? `${lang}/${route}` : `${lang}`;
+      const path = route.path ? `${lang}/${route.path}` : `${lang}`;
       const fullUrl = `${baseUrl}/${path}`;
 
       sitemap += `  <url>\n`;
       sitemap += `    <loc>${fullUrl}</loc>\n`;
       sitemap += `    <lastmod>${today}</lastmod>\n`;
 
-      // Alternate language links
       for (const altLang of languages) {
-        const altPath = route ? `${altLang}/${route}` : `${altLang}`;
+        const altPath = route.path ? `${altLang}/${route.path}` : `${altLang}`;
         sitemap += `    <xhtml:link rel="alternate" hreflang="${altLang}" href="${baseUrl}/${altPath}" />\n`;
       }
 
-      // x-default (fallback to Spanish)
-      const defaultPath = route ? `es/${route}` : `es`;
+      const defaultPath = route.path ? `es/${route.path}` : `es`;
       sitemap += `    <xhtml:link rel="alternate" hreflang="x-default" href="${baseUrl}/${defaultPath}" />\n`;
 
-      // Prioridad según tipo de página
-      sitemap += `    <changefreq>weekly</changefreq>\n`;
-      sitemap += `    <priority>${route === "" ? "1.0" : "0.8"}</priority>\n`;
+      sitemap += `    <changefreq>${route.changefreq}</changefreq>\n`;
+      sitemap += `    <priority>${route.priority}</priority>\n`;
       sitemap += `  </url>\n`;
     }
   }

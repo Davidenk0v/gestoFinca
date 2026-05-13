@@ -4,6 +4,7 @@ import CarServiceCard from "../../components/CarServiceCard.astro";
 import ContactBanner from "../../components/ContactBanner.astro";
 import ContactFormReact from "../../components/ContactFormReact";
 import ExpandableCard from "../../components/ExpandableCard";
+import FAQComponent from "../../components/FAQComponent.astro";
 import ServiceBanner from "../../components/ServiceBanner.astro";
 import TitleService from "../../components/TitleService.astro";
 import Layout from "../../layouts/Layout.astro";
@@ -17,6 +18,7 @@ const translations = await loadTranslations(lang);
 const link = translations.footer.useful_links.links[0].link;
 const { seo } = translations;
 const { services, buttons } = translations.vehicle_procedures;
+const faq = translations.faq_vehicle_procedures;
 const imgLink = "https://www.dgt.es/inicio/";
 ---
 
@@ -113,10 +115,14 @@ const imgLink = "https://www.dgt.es/inicio/";
       </div>
     </section>
 
+    <section class="container mx-auto px-4 py-8">
+      <FAQComponent lang={lang} faq={faq} />
+    </section>
+
     <!-- Sección del banner de contacto con animación -->
     <section aria-labelledby="contact-banner-section" class="animate-fade-in">
       <h2 id="contact-banner-section" class="sr-only">
-        Contáctanos para más información sobre alquileres vacacionales
+        Contáctanos para más información sobre trámites de vehículos
       </h2>
       <ContactBanner text={translations.contact.phrases[0]} />
     </section>

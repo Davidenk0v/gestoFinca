@@ -368,16 +368,16 @@
     "contact": "Contacto"
   },
   "seo": {
-    "title": "GestoFinca - Administración de Fincas y Alquileres Vacacionales en Tenerife",
+    "title": "Administración de Fincas y Alquileres Vacacionales en Tenerife",
     "description": "Expertos en administración de fincas y gestión de alquileres vacacionales. Ofrecemos soluciones integrales, transparentes y personalizadas para propietarios y comunidades.",
     "keywords": "administración de fincas, alquileres vacacionales, gestoría, Tenerife",
     "tags": {
-      "about_us": "Nosotros | Administración de Fincas y Alquileres Vacacionales en Tenerife",
+      "about_us": "Sobre Nosotros - Administradores de Fincas en Tenerife",
       "property_management": "Administración de Fincas en Tenerife",
-      "vacation_rentals": "Gestión de alquileres vacacionales en Tenerife",
-      "vehicle_procedures": "Trámites de vehículos en Tenerife",
-      "quotes": "Presupuestos | Administración de Fincas y Alquileres Vacacionales en Tenerife",
-      "contact": "Contacto | Administración de Fincas y Alquileres Vacacionales en Tenerife"
+      "vacation_rentals": "Gestión de Alquileres Vacacionales en Tenerife",
+      "vehicle_procedures": "Trámites de Vehículos en Tenerife - Gestoría DGT",
+      "quotes": "Solicitar Presupuesto - Administración de Fincas Tenerife",
+      "contact": "Contacto - Administradores de Fincas en Tenerife"
     }
   },
   "cookiePolicy": {
@@ -542,6 +542,69 @@
       {
         "question": "¿Qué incluye el servicio de tramitación de vehículos?",
         "answer": "Incluye cambio de titularidad, matriculación, baja temporal o definitiva, duplicados de documentación y gestión de impuestos relacionados con vehículos."
+      }
+    ]
+  },
+  "faq_property_management": {
+    "title": "Preguntas frecuentes sobre administración de fincas",
+    "questions": [
+      {
+        "question": "¿Cuánto cuesta contratar un administrador de fincas en Tenerife?",
+        "answer": "El coste depende del tamaño y necesidades de la comunidad. Ofrecemos presupuestos personalizados sin compromiso. Contáctanos para una valoración gratuita."
+      },
+      {
+        "question": "¿Es obligatorio que el administrador de fincas esté colegiado?",
+        "answer": "No es legalmente obligatorio, pero sí muy recomendable. Los administradores colegiados tienen formación acreditada, seguro de responsabilidad civil y están sujetos al código deontológico del Colegio de Administradores de Fincas."
+      },
+      {
+        "question": "¿Qué incluye exactamente la gestión de una comunidad de propietarios?",
+        "answer": "Incluye contabilidad comunitaria, cobro de cuotas, convocatoria y organización de juntas, gestión de proveedores, supervisión del mantenimiento, asesoramiento legal y atención a incidencias."
+      },
+      {
+        "question": "¿Cómo se realizan las juntas de propietarios con vuestro servicio?",
+        "answer": "Nos encargamos de convocar a todos los propietarios, preparar el orden del día, la documentación legal y las actas. Podemos gestionar juntas presenciales o telemáticas."
+      }
+    ]
+  },
+  "faq_vacation_rentals": {
+    "title": "Preguntas frecuentes sobre alquileres vacacionales",
+    "questions": [
+      {
+        "question": "¿Necesito una licencia para alquilar mi propiedad en Tenerife?",
+        "answer": "Sí, en Canarias es obligatorio obtener una licencia de vivienda vacacional (VV). Nosotros te asesoramos y tramitamos toda la documentación necesaria ante el Gobierno de Canarias."
+      },
+      {
+        "question": "¿Cuánto se puede ganar con un apartamento en alquiler vacacional en Tenerife?",
+        "answer": "Tenerife tiene demanda turística todo el año gracias a su clima. La rentabilidad varía según ubicación, tamaño y equipamiento. Contáctanos para una estimación personalizada de ingresos."
+      },
+      {
+        "question": "¿Qué plataformas utilizáis para publicar mi propiedad?",
+        "answer": "Publicamos en Airbnb, Booking.com y otras plataformas líderes, además de canales propios y redes sociales. Utilizamos estrategias de posicionamiento y fotografía profesional para maximizar la ocupación."
+      },
+      {
+        "question": "¿Qué ocurre si hay daños en mi propiedad tras una estancia?",
+        "answer": "Verificamos el estado de la propiedad antes y después de cada estancia. En caso de daños, gestionamos la reclamación ante la plataforma o el seguro correspondiente."
+      }
+    ]
+  },
+  "faq_vehicle_procedures": {
+    "title": "Preguntas frecuentes sobre trámites de vehículos",
+    "questions": [
+      {
+        "question": "¿Cuánto tarda el cambio de titularidad de un vehículo en Tenerife?",
+        "answer": "Normalmente entre 5 y 15 días hábiles. Como gestoría autorizada por la DGT, gestionamos el trámite de forma ágil para que recibas los documentos en el menor tiempo posible."
+      },
+      {
+        "question": "¿Qué documentos necesito para el cambio de titularidad?",
+        "answer": "Necesitas: contrato de compraventa, DNI del comprador y vendedor, permiso de circulación, ficha técnica y justificante del pago del Impuesto de Transmisiones Patrimoniales."
+      },
+      {
+        "question": "¿Podéis matricular un vehículo procedente del extranjero?",
+        "answer": "Sí, gestionamos la matriculación de vehículos procedentes de otros países, incluyendo el trámite de homologación, el pago de impuestos y toda la documentación ante la DGT."
+      },
+      {
+        "question": "¿Realizáis trámites DGT de forma online?",
+        "answer": "Sí, como gestoría autorizada por la DGT podemos realizar la mayoría de trámites de forma telemática, lo que agiliza los plazos y evita desplazamientos innecesarios."
       }
     ]
   }

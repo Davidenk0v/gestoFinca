@@ -35,13 +35,10 @@ export default defineConfig({
       changefreq: "weekly",
       priority: 0.8,
       lastmod: new Date(),
-      // Asegurando que las URLs sean absolutas agregando el dominio
       customPages: [
-        // Página de inicio para cada idioma
         "https://gestofinca.com/es/",
         "https://gestofinca.com/en/",
         "https://gestofinca.com/de/",
-        // Resto de páginas
         "https://gestofinca.com/es/administracion-fincas/",
         "https://gestofinca.com/en/administracion-fincas/",
         "https://gestofinca.com/de/administracion-fincas/",
@@ -60,15 +57,6 @@ export default defineConfig({
         "https://gestofinca.com/es/presupuestos/",
         "https://gestofinca.com/en/presupuestos/",
         "https://gestofinca.com/de/presupuestos/",
-        "https://gestofinca.com/es/privacy-policy/",
-        "https://gestofinca.com/en/privacy-policy/",
-        "https://gestofinca.com/de/privacy-policy/",
-        "https://gestofinca.com/es/terms-conditions/",
-        "https://gestofinca.com/en/terms-conditions/",
-        "https://gestofinca.com/de/terms-conditions/",
-        "https://gestofinca.com/es/cookie-policy/", // Corregido de cookies-policy a cookie-policy
-        "https://gestofinca.com/en/cookie-policy/",
-        "https://gestofinca.com/de/cookie-policy/",
       ],
     }),
   ],

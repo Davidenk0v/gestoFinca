@@ -371,16 +371,16 @@
     "contact": "Kontakt"
   },
   "seo": {
-    "title": "GestoFinca - Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
+    "title": "Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
     "description": "Experten in der gemeinschaft verwaltung und Ferienvermietung. Wir bieten umfassende, transparente und personalisierte Lösungen für Eigentümer und Gemeinschaften.",
     "keywords": "Gemeinschaft verwaltung, Ferienvermietungen, Verwaltungsdienste, Teneriffa",
     "tags": {
-      "about_us": "Über uns | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
+      "about_us": "Über uns - Hausverwaltung auf Teneriffa",
       "property_management": "Gemeinschaft verwaltung auf Teneriffa",
-      "vacation_rentals": "Ferienvermietungen auf Teneriffa",
+      "vacation_rentals": "Ferienvermietung Verwaltung auf Teneriffa",
       "vehicle_procedures": "Fahrzeugangelegenheiten auf Teneriffa",
-      "quotes": "Kostenvoranschläge | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa",
-      "contact": "Kontakt | Gemeinschaft verwaltung und Ferienvermietungen auf Teneriffa"
+      "quotes": "Angebot anfordern - Hausverwaltung Teneriffa",
+      "contact": "Kontakt - Hausverwaltung auf Teneriffa"
     }
   },
   "cookiePolicy": {
@@ -547,5 +547,69 @@
         "answer": "Er beinhaltet Eigentumsübertragungen, Zulassungen, vorübergehende oder endgültige Abmeldungen, Duplikate von Fahrzeugpapieren und die Verwaltung fahrzeugbezogener Steuern."
       }
     ]
+  },
+  "faq_property_management": {
+    "title": "Häufig gestellte Fragen zur Gemeinschaft verwaltung",
+    "questions": [
+      {
+        "question": "Was kostet ein Gemeinschaft verwalter auf Teneriffa?",
+        "answer": "Die Kosten hängen von der Größe und den Bedürfnissen der Gemeinschaft ab. Wir erstellen kostenlose, unverbindliche Angebote. Kontaktieren Sie uns für eine persönliche Bewertung."
+      },
+      {
+        "question": "Muss der Gemeinschaft verwalter zertifiziert sein?",
+        "answer": "Es ist gesetzlich nicht vorgeschrieben, aber sehr empfehlenswert. Zertifizierte Verwalter verfügen über eine anerkannte Ausbildung, eine Berufshaftpflichtversicherung und unterliegen dem Berufskodex des Verbandes."
+      },
+      {
+        "question": "Was genau umfasst die Verwaltung einer Eigentümergemeinschaft?",
+        "answer": "Dazu gehören Gemeinschaftsbuchhaltung, Einzug von Beiträgen, Einberufung und Organisation von Versammlungen, Lieferantenverwaltung, Instandhaltungsaufsicht, Rechtsberatung und Bearbeitung von Vorfällen."
+      },
+      {
+        "question": "Wie werden Eigentümerversammlungen mit Ihrem Service durchgeführt?",
+        "answer": "Wir kümmern uns um die Benachrichtigung aller Eigentümer, die Vorbereitung der Tagesordnung, der rechtlichen Unterlagen und der Protokolle. Wir können sowohl Präsenz- als auch Online-Versammlungen durchführen."
+      }
+    ]
+  },
+  "faq_vacation_rentals": {
+    "title": "Häufig gestellte Fragen zur Ferienvermietung",
+    "questions": [
+      {
+        "question": "Brauche ich eine Lizenz, um meine Immobilie auf Teneriffa zu vermieten?",
+        "answer": "Ja, auf den Kanarischen Inseln ist eine Ferienwohnungslizenz (VV) Pflicht. Wir beraten Sie und kümmern uns um alle erforderlichen Unterlagen bei der Kanarischen Regierung."
+      },
+      {
+        "question": "Wie viel kann ich mit einer Ferienwohnung auf Teneriffa verdienen?",
+        "answer": "Teneriffa hat dank seines Klimas das ganze Jahr über eine hohe Touristennachfrage. Die Rentabilität variiert je nach Lage, Größe und Ausstattung. Kontaktieren Sie uns für eine persönliche Einkommensschätzung."
+      },
+      {
+        "question": "Auf welchen Plattformen wird meine Unterkunft gelistet?",
+        "answer": "Wir inserieren auf Airbnb, Booking.com und anderen führenden Plattformen sowie über eigene Kanäle und soziale Medien. Wir nutzen Positionierungsstrategien und professionelle Fotografie, um die Auslastung zu maximieren."
+      },
+      {
+        "question": "Was passiert bei Schäden nach einem Aufenthalt?",
+        "answer": "Wir überprüfen den Zustand der Unterkunft vor und nach jedem Aufenthalt. Bei Schäden kümmern wir uns um die Schadensmeldung bei der Plattform oder der zuständigen Versicherung."
+      }
+    ]
+  },
+  "faq_vehicle_procedures": {
+    "title": "Häufig gestellte Fragen zu Fahrzeugangelegenheiten",
+    "questions": [
+      {
+        "question": "Wie lange dauert eine Fahrzeugummeldung auf Teneriffa?",
+        "answer": "In der Regel 5 bis 15 Werktage. Als von der DGT zugelassene Agentur bearbeiten wir den Vorgang effizient, damit Sie Ihre Dokumente so schnell wie möglich erhalten."
+      },
+      {
+        "question": "Welche Unterlagen benötige ich für die Fahrzeugummeldung?",
+        "answer": "Sie benötigen: Kaufvertrag, Personalausweis von Käufer und Verkäufer, Fahrzeugschein, Fahrzeugdatenblatt und Nachweis über die Zahlung der Grunderwerbsteuer."
+      },
+      {
+        "question": "Können Sie ein Fahrzeug aus dem Ausland zulassen?",
+        "answer": "Ja, wir übernehmen die Zulassung von Fahrzeugen aus anderen Ländern, einschließlich des Typgenehmigungsverfahrens, der Steuerzahlung und aller Unterlagen bei der DGT."
+      },
+      {
+        "question": "Führen Sie DGT-Vorgänge online durch?",
+        "answer": "Ja, als von der DGT zugelassene Agentur können wir die meisten Vorgänge elektronisch durchführen, was die Bearbeitungszeit verkürzt und unnötige Wege vermeidet."
+      }
+    ]
   }
+}
 }

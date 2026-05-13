@@ -7,11 +7,10 @@ const translations = await loadTranslations(lang);
 const t = translations.privacyPolicy ?? {};
 ---
 
-<Layout title={`${t.metaTitle} - GestoFinca`}>
+<Layout title={t.metaTitle} description={t.metaDescription} noindex={true}>
   <article class="py-12 px-6 max-w-4xl mx-auto bg-white shadow-lg rounded-lg my-auto">
     <header class="mb-6 p-5 text-center">
       <h2 class="text-3xl font-semibold text-brand-blueFinca mb-4">{t.title}</h2>
-      <meta name="description" content={t.metaDescription} />
     </header>
 
     <section class="space-y-8 p-5">

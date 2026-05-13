@@ -11,11 +11,10 @@ const pageTitle = t.metaTitle;
 const pageDescription = t.metaDescription;
 ---
 
-<Layout title={pageTitle}>
+<Layout title={pageTitle} description={pageDescription} noindex={true}>
   <article class="py-8 px-4 sm:px-6 max-w-4xl mx-auto bg-white shadow rounded-lg my-8">
     <header class="mb-6 text-center">
       <h1 class="text-3xl font-semibold text-brand-blueFinca mb-4">{t.title}</h1>
-      <meta name="description" content={pageDescription} />
       <p class="text-sm text-gray-500">{t.lastUpdated}</p>
     </header>
 

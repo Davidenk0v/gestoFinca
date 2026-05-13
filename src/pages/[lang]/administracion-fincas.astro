@@ -6,6 +6,7 @@ import ContactFormReact from "../../components/ContactFormReact";
 import Layout from "../../layouts/Layout.astro";
 import ServiceBanner from "../../components/ServiceBanner.astro";
 import ExpandableCard from "../../components/ExpandableCard.jsx";
+import FAQComponent from "../../components/FAQComponent.astro";
 import houseHand from "@/assets/images/vivienda.webp";
 const lang = Astro.params.lang;
 const translations = await loadTranslations(lang);
@@ -13,6 +14,7 @@ const { property_management, seo } = translations;
 const { tags } = seo;
 const { services, buttons } = property_management;
 const link = translations.footer.useful_links.links[0].link;
+const faq = translations.faq_property_management;
 ---
 
 <Layout
@@ -95,6 +97,10 @@ const link = translations.footer.useful_links.links[0].link;
           }
         </div>
       </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-8">
+      <FAQComponent lang={lang} faq={faq} />
     </section>
 
     <section aria-labelledby="contact-banner-section" class="animate-fade-in">

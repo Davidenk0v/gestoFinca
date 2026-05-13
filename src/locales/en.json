@@ -365,16 +365,16 @@
     "contact": "Contact"
   },
   "seo": {
-    "title": "GestoFinca - Property Management and Vacation Rentals in Tenerife",
+    "title": "Property Management and Vacation Rentals in Tenerife",
     "description": "Experts in property management and vacation rental management. We offer comprehensive, transparent, and personalized solutions for property owners and communities.",
     "keywords": "property management, vacation rentals, administration services, Tenerife",
     "tags": {
-      "about_us": "About Us | Property Management and Vacation Rentals in Tenerife",
+      "about_us": "About Us - Property Management in Tenerife",
       "property_management": "Property Management in Tenerife",
-      "vacation_rentals": "Vacation Rentals in Tenerife",
-      "vehicle_procedures": "Vehicle Procedures in Tenerife",
-      "quotes": "Quotes | Property Management and Vacation Rentals in Tenerife",
-      "contact": "Contact | Property Management and Vacation Rentals in Tenerife"
+      "vacation_rentals": "Vacation Rental Management in Tenerife",
+      "vehicle_procedures": "Vehicle Procedures in Tenerife - DGT Agency",
+      "quotes": "Request a Quote - Property Management Tenerife",
+      "contact": "Contact Us - Property Management Tenerife"
     }
   },
   "cookiePolicy": {
@@ -530,15 +530,78 @@
     "questions": [
       {
         "question": "What services are included in property management?",
-        "answer": "Our services include vacation rental management, property maintenance, homeowners' association administration, and management of payments and invoices."
+        "answer": "Our services include vacation rental management, property maintenance, homeowners’ association administration, and management of payments and invoices."
       },
       {
         "question": "Why do I need a property manager in Tenerife?",
-        "answer": "A professional property manager in Tenerife handles all operational aspects, maximizes your investment’s profitability, manages tenants, and solves issues while you're away — especially important for foreign property owners."
+        "answer": "A professional property manager in Tenerife handles all operational aspects, maximizes your investment’s profitability, manages tenants, and solves issues while you’re away — especially important for foreign property owners."
       },
       {
         "question": "What is included in the vehicle administration service?",
         "answer": "It includes ownership transfers, vehicle registration, temporary or permanent deregistration, document duplicates, and management of vehicle-related taxes."
+      }
+    ]
+  },
+  "faq_property_management": {
+    "title": "Frequently asked questions about property management",
+    "questions": [
+      {
+        "question": "How much does it cost to hire a property manager in Tenerife?",
+        "answer": "The cost depends on the size and needs of the community. We offer personalised quotes with no obligation. Contact us for a free assessment."
+      },
+      {
+        "question": "Does a property manager need to be professionally registered?",
+        "answer": "It is not legally required, but highly recommended. Registered property managers hold accredited qualifications, professional liability insurance, and are bound by the code of ethics of the College of Property Administrators."
+      },
+      {
+        "question": "What exactly does managing a homeowners’ community include?",
+        "answer": "It includes community accounting, fee collection, calling and organising meetings, supplier management, maintenance supervision, legal advice, and handling incidents."
+      },
+      {
+        "question": "How are owners’ meetings handled with your service?",
+        "answer": "We take care of notifying all owners, preparing the agenda, legal documentation, and minutes. We can manage both in-person and remote meetings."
+      }
+    ]
+  },
+  "faq_vacation_rentals": {
+    "title": "Frequently asked questions about vacation rentals",
+    "questions": [
+      {
+        "question": "Do I need a licence to rent my property in Tenerife?",
+        "answer": "Yes, in the Canary Islands it is mandatory to obtain a holiday rental licence (VV). We advise you and handle all the required documentation with the Canary Islands Government."
+      },
+      {
+        "question": "How much can I earn from a holiday apartment in Tenerife?",
+        "answer": "Tenerife has year-round tourist demand thanks to its climate. Profitability varies by location, size, and amenities. Contact us for a personalised income estimate."
+      },
+      {
+        "question": "Which platforms do you use to list my property?",
+        "answer": "We list on Airbnb, Booking.com, and other leading platforms, as well as our own channels and social media. We use positioning strategies and professional photography to maximise occupancy."
+      },
+      {
+        "question": "What happens if there is damage to my property after a stay?",
+        "answer": "We inspect the property before and after each stay. If there is any damage, we manage the claim with the platform or the relevant insurance."
+      }
+    ]
+  },
+  "faq_vehicle_procedures": {
+    "title": "Frequently asked questions about vehicle procedures",
+    "questions": [
+      {
+        "question": "How long does a vehicle ownership transfer take in Tenerife?",
+        "answer": "Usually between 5 and 15 working days. As a DGT-authorised agency, we handle the process efficiently so you receive your documents as quickly as possible."
+      },
+      {
+        "question": "What documents do I need for an ownership transfer?",
+        "answer": "You need: a sale and purchase contract, the buyer’s and seller’s ID, the vehicle registration document, the technical data sheet, and proof of payment of the Transfer Tax."
+      },
+      {
+        "question": "Can you register a vehicle from abroad?",
+        "answer": "Yes, we handle the registration of vehicles from other countries, including the type-approval process, tax payment, and all documentation with the DGT."
+      },
+      {
+        "question": "Do you handle DGT procedures online?",
+        "answer": "Yes, as a DGT-authorised agency we can carry out most procedures electronically, speeding up timelines and avoiding unnecessary trips."
       }
     ]
   }

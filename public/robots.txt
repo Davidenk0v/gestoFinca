@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
+Disallow: /es/privacy-policy
+Disallow: /en/privacy-policy
+Disallow: /de/privacy-policy
+Disallow: /es/terms-conditions
+Disallow: /en/terms-conditions
+Disallow: /de/terms-conditions
+Disallow: /es/cookie-policy
+Disallow: /en/cookie-policy
+Disallow: /de/cookie-policy
 
-Sitemap: https://www.gestofinca.com/sitemap.xml
+Sitemap: https://gestofinca.com/sitemap.xml
