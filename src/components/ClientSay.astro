@@ -1,8 +1,6 @@
 ---
-// Props del componente
-const { lang = "es", testimonials = [] } = Astro.props;
+const { lang = "es" } = Astro.props;
 
-// Textos traducidos según el idioma
 const translations = {
   es: {
     title: "Lo que dicen nuestros clientes",
@@ -57,81 +55,104 @@ const translations = {
   },
 };
 
-// Usar el contenido traducido según el idioma proporcionado
 const content = translations[lang] || translations.es;
-
-// Función para renderizar estrellas de manera accesible
-const renderStars = (rating: any) => {
-  const fullStars = "★".repeat(rating);
-  const emptyStars = "☆".repeat(5 - rating);
-  return `${fullStars}${emptyStars}`;
-};
 ---
 
-<section
-  class="mb-12 max-w-6xl mx-auto px-4"
-  aria-labelledby="testimonials-heading"
->
-  <h2
-    id="testimonials-heading"
-    class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl mb-8 text-center"
-  >
-    {content.title}
-  </h2>
+<section class="mb-12 max-w-6xl mx-auto px-4" aria-labelledby="testimonials-heading">
+  <div class="text-center mb-10">
+    <h2
+      id="testimonials-heading"
+      class="text-3xl font-extrabold leading-tight tracking-tight text-brand-blueFinca sm:text-4xl"
+    >
+      {content.title}
+    </h2>
+    <div class="w-16 h-1 bg-brand-greenFinca mx-auto mt-4 rounded-full"></div>
+  </div>
 
   <div class="grid md:grid-cols-2 gap-6">
     {
       content.reviews.map((review: any) => (
         <div
-          class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100 dark:border-gray-700"
+          class="relative bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 group"
           itemscope
           itemtype="https://schema.org/Review"
         >
-          <div
-            itemprop="reviewRating"
-            itemscope
-            itemtype="https://schema.org/Rating"
-          >
-            <meta itemprop="worstRating" content="1" />
-            <meta itemprop="bestRating" content="5" />
-            <meta itemprop="ratingValue" content={review.rating.toString()} />
+          <!-- Top accent bar -->
+          <div class="h-1 w-full bg-gradient-to-r from-brand-blueFinca to-brand-greenFinca" />
 
-            <div
-              class="flex text-yellow-400 mb-3"
-              aria-label={`Calificación: ${review.rating} de 5 estrellas`}
+          <div class="p-6 pt-5">
+            <!-- Quote mark decorative -->
+            <svg
+              class="w-8 h-8 text-brand-blueFinca/20 mb-3"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              aria-hidden="true"
             >
-              <span aria-hidden="true">{renderStars(review.rating)}</span>
+              <path d="M10 8C6.686 8 4 10.686 4 14v10h10V14H7c0-1.654 1.346-3 3-3V8zm18 0c-3.314 0-6 2.686-6 6v10h10V14h-7c0-1.654 1.346-3 3-3V8z" />
+            </svg>
+
+            <!-- Stars -->
+            <div
+              itemprop="reviewRating"
+              itemscope
+              itemtype="https://schema.org/Rating"
+            >
+              <meta itemprop="worstRating" content="1" />
+              <meta itemprop="bestRating" content="5" />
+              <meta itemprop="ratingValue" content={review.rating.toString()} />
+              <div
+                class="flex gap-0.5 mb-4"
+                aria-label={`${review.rating} de 5 estrellas`}
+              >
+                {Array.from({ length: review.rating }).map(() => (
+                  <svg
+                    class="w-4 h-4 text-amber-400 fill-current"
+                    viewBox="0 0 20 20"
+                    aria-hidden="true"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
             </div>
+
+            <!-- Review text -->
+            <blockquote
+              itemprop="reviewBody"
+              class="text-gray-700 leading-relaxed text-sm sm:text-base mb-5 italic"
+            >
+              "{review.text}"
+            </blockquote>
+
+            <!-- Author -->
+            <footer class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-gradient-to-br from-brand-blueFinca to-brand-greenFinca flex items-center justify-center flex-shrink-0">
+                <span class="text-white text-xs font-bold">
+                  {review.author.charAt(0)}
+                </span>
+              </div>
+              <div
+                itemprop="author"
+                itemscope
+                itemtype="https://schema.org/Person"
+              >
+                <span itemprop="name" class="font-semibold text-gray-900 text-sm">
+                  {review.author}
+                </span>
+                <meta itemprop="nationality" content={review.nationality} />
+              </div>
+            </footer>
           </div>
 
-          <blockquote
-            itemprop="reviewBody"
-            class="italic text-gray-800 dark:text-gray-200"
+          <meta itemprop="datePublished" content="2023-10-15" />
+          <div
+            itemprop="itemReviewed"
+            itemscope
+            itemtype="https://schema.org/Service"
           >
-            "{review.text}"
-          </blockquote>
-
-          <footer class="mt-4">
-            <div
-              class="font-medium text-gray-900 dark:text-gray-100"
-              itemprop="author"
-              itemscope
-              itemtype="https://schema.org/Person"
-            >
-              <span itemprop="name">{review.author}</span>
-              <meta itemprop="nationality" content={review.nationality} />
-            </div>
-
-            <meta itemprop="datePublished" content="2023-10-15" />
-            <div
-              itemprop="itemReviewed"
-              itemscope
-              itemtype="https://schema.org/Service"
-            >
-              <meta itemprop="name" content="GestoFinca Property Management" />
-              <meta itemprop="serviceType" content="Property Management" />
-            </div>
-          </footer>
+            <meta itemprop="name" content="GestoFinca Property Management" />
+            <meta itemprop="serviceType" content="Property Management" />
+          </div>
         </div>
       ))
     }
@@ -139,36 +160,9 @@ const renderStars = (rating: any) => {
 </section>
 
 <style>
-  /* Mejoras visuales para accesibilidad */
-  blockquote {
-    position: relative;
-    padding-left: 1rem;
-    border-left: 3px solid #e5e7eb;
-    margin-left: 0.5rem;
-  }
-
   @media (prefers-reduced-motion: reduce) {
-    .transition-shadow {
+    .transition-all {
       transition: none;
-    }
-  }
-
-  /* Soporte para modo de alto contraste */
-  @media (forced-colors: active) {
-    blockquote {
-      border-left: 3px solid CanvasText;
-    }
-
-    a:focus {
-      outline: 2px solid CanvasText;
-    }
-  }
-
-  /* Optimizaciones para carga */
-  @media (min-width: 768px) {
-    .grid {
-      content-visibility: auto;
-      contain-intrinsic-size: 1000px;
     }
   }
 </style>

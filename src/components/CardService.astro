@@ -3,44 +3,40 @@ import Image from "astro/components/Image.astro";
 const { link, img, title, text, button } = Astro.props;
 ---
 
-<div
-  class="w-auto h-106 mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-lg flex flex-col animate-fade-in"
->
-  <div class="flex justify-center flex-shrink-0">
-    <Image
-      src={img}
-      alt="Icono representativo"
-      loading="lazy"
-      class="w-28 h-28 transition-transform duration-300 hover:scale-105"
-    />
+<div class="service-card group flex flex-col h-full bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-gray-100">
+  <!-- Top accent bar -->
+  <div class="h-1 w-full bg-gradient-to-r from-brand-blueFinca to-brand-greenFinca"></div>
+
+  <!-- Icon area -->
+  <div class="flex justify-center pt-8 pb-2 px-6">
+    <div class="w-20 h-20 rounded-2xl bg-brand-blueFinca/8 flex items-center justify-center group-hover:bg-brand-blueFinca/12 transition-colors duration-300">
+      <Image
+        src={img}
+        alt="Icono representativo"
+        loading="lazy"
+        class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"
+      />
+    </div>
   </div>
 
-  <div
-    class="p-5 text-center flex flex-col justify-between flex-grow overflow-auto"
-  >
-    <div>
-      <h5
-        class="mb-3 text-xl font-bold tracking-tight text-gray-900 dark:text-white"
-      >
-        {title}
-      </h5>
-
-      <p
-        class="mb-5 text-sm text-gray-700 dark:text-gray-400 leading-relaxed overflow-y-auto max-h-32"
-      >
-        {text}
-      </p>
-    </div>
+  <!-- Content -->
+  <div class="flex flex-col flex-grow px-6 pb-7 pt-4 text-center">
+    <h3 class="text-xl font-bold text-gray-900 mb-3 leading-tight">
+      {title}
+    </h3>
+    <p class="text-sm text-gray-600 leading-relaxed flex-grow mb-6">
+      {text}
+    </p>
 
     <div class="mt-auto">
       <a
         href={link}
-        class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-white bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-600 hover:translate-y-[-2px] focus:ring-4 focus:outline-none focus:ring-orange-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        class="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-orange-500 rounded-xl shadow-sm transition-all duration-200 hover:bg-orange-600 hover:shadow-md hover:gap-3 focus:ring-4 focus:outline-none focus:ring-orange-300"
         aria-label={`Más información sobre ${title}`}
       >
         {button}
         <svg
-          class="w-4 h-4 ml-2 rtl:rotate-180"
+          class="w-4 h-4 flex-shrink-0"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -59,14 +55,14 @@ const { link, img, title, text, button } = Astro.props;
 </div>
 
 <style>
-  .animate-fade-in {
-    animation: fadeIn 1s ease-out forwards;
+  .service-card {
+    animation: fadeInCard 0.6s ease-out forwards;
   }
 
-  @keyframes fadeIn {
+  @keyframes fadeInCard {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(16px);
     }
     to {
       opacity: 1;

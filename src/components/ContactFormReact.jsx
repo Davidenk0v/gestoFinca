@@ -144,17 +144,24 @@ const ContactForm = ({ data, lang, title }) => {
       <div className="flex justify-center p-4 bg-slate-100 animate-fade-in">
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl"
+          className="w-full max-w-lg bg-white p-7 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300"
         >
           {feedback.message && (
             <div
-              className={`text-center p-3 mb-4 rounded ${
+              className={`flex items-start gap-3 p-4 mb-5 rounded-xl text-sm font-medium ${
                 feedback.type === "error"
-                  ? "bg-red-100 text-red-700"
-                  : "bg-green-100 text-green-700"
+                  ? "bg-red-50 text-red-700 border border-red-100"
+                  : "bg-green-50 text-green-700 border border-green-100"
               }`}
             >
-              <strong>{feedback.message}</strong>
+              <svg className="w-5 h-5 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                {feedback.type === "error" ? (
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                ) : (
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                )}
+              </svg>
+              {feedback.message}
             </div>
           )}
 
@@ -162,12 +169,14 @@ const ContactForm = ({ data, lang, title }) => {
             <div key={key} className="mb-4">
               <label
                 htmlFor={key}
-                className="block text-sm font-semibold text-gray-900 mb-1"
+                className="block text-sm font-semibold text-gray-700 mb-1.5"
               >
                 {fields[key]?.label || key}
-                {isRequiredField(key) && "*"}
+                {isRequiredField(key) && (
+                  <span className="text-orange-500 ml-0.5">*</span>
+                )}
                 {!isRequiredField(key) && (
-                  <span className="text-gray-500 text-xs ml-1">
+                  <span className="text-gray-400 font-normal text-xs ml-1.5">
                     {getOptionalText(lang)}
                   </span>
                 )}
@@ -178,7 +187,8 @@ const ContactForm = ({ data, lang, title }) => {
                   name={key}
                   value={formData[key]}
                   onChange={handleChange}
-                  className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
+                  rows={4}
+                  className="w-full px-3.5 py-2.5 border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-blueFinca/30 focus:border-brand-blueFinca transition-all duration-200 resize-none"
                   aria-invalid={
                     isRequiredField(key) && formData[key] === ""
                       ? "true"
@@ -193,7 +203,7 @@ const ContactForm = ({ data, lang, title }) => {
                   name={key}
                   value={formData[key]}
                   onChange={handleChange}
-                  className="w-full p-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 transition-all"
+                  className="w-full px-3.5 py-2.5 border border-gray-200 rounded-xl text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-blueFinca/30 focus:border-brand-blueFinca transition-all duration-200"
                   aria-invalid={
                     isRequiredField(key) && formData[key] === ""
                       ? "true"
@@ -205,26 +215,25 @@ const ContactForm = ({ data, lang, title }) => {
             </div>
           ))}
 
-          {/* Verificar que fields.privacy_policy existe antes de acceder a sus propiedades */}
-          <div className="flex items-center mb-4">
+          <div className="flex items-start gap-3 mb-5">
             <input
               id="privacy-policy"
               type="checkbox"
               checked={polityCheck}
               onChange={handleCheck}
-              className="w-4 h-4 text-orange-500 border-gray-300 rounded"
+              className="w-4 h-4 mt-0.5 accent-orange-500 border-gray-300 rounded cursor-pointer flex-shrink-0"
             />
-            <label htmlFor="privacy-policy" className="ml-2 text-sm">
+            <label htmlFor="privacy-policy" className="text-sm text-gray-600 cursor-pointer leading-relaxed">
               {fields.privacy_policy ? (
                 <a
                   href={fields.privacy_policy.link || `/${lang}/privacy-policy`}
-                  className="text-orange-500 hover:underline"
+                  className="text-brand-blueFinca hover:text-brand-blueFinca/80 underline underline-offset-2"
                 >
                   {fields.privacy_policy.label ||
                     "He leído y acepto la política de privacidad"}
                 </a>
               ) : (
-                <span className="text-orange-500">
+                <span className="text-brand-blueFinca">
                   He leído y acepto la política de privacidad
                 </span>
               )}
@@ -234,7 +243,7 @@ const ContactForm = ({ data, lang, title }) => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="px-5 py-3 text-white font-semibold bg-orange-500 rounded-lg shadow-md transition-all hover:bg-orange-600 hover:translate-y-[-2px] focus:ring-4 focus:outline-none focus:ring-orange-300"
+              className="px-8 py-3 text-white font-semibold bg-orange-500 rounded-xl shadow-sm transition-all duration-200 hover:bg-orange-600 hover:-translate-y-0.5 hover:shadow-md focus:ring-4 focus:outline-none focus:ring-orange-300"
               aria-label="Enviar formulario de contacto"
             >
               {buttons.send_form || "Enviar"}

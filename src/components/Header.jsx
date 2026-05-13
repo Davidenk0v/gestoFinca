@@ -81,7 +81,7 @@ const Header = ({ lang = "es", data }) => {
     },
     {
       href: `/${lang}/tramites-vehiculos`,
-      label: "Trámites de vehículos",
+      label: header?.vehicle_procedures || "Trámites de vehículos",
     },
   ];
 
@@ -102,8 +102,8 @@ const Header = ({ lang = "es", data }) => {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-slate-200 bg-opacity-95 shadow-md py-2"
-          : "bg-slate-200 bg-opacity-90 py-4"
+          ? "bg-slate-200 shadow-md py-2 border-b border-slate-300"
+          : "bg-slate-200 py-4"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -159,19 +159,20 @@ const Header = ({ lang = "es", data }) => {
 
                   {/* Dropdown Menu */}
                   <div
-                    className={`absolute left-0 top-full mt-1 w-64 rounded-md shadow-lg bg-slate-200 ring-1 ring-black ring-opacity-5 transition-all duration-200 ${
+                    className={`absolute left-0 top-full mt-2 w-64 rounded-xl shadow-xl bg-white border border-gray-100 transition-all duration-200 ${
                       servicesDropdownOpen
                         ? "opacity-100 transform translate-y-0"
                         : "opacity-0 invisible transform -translate-y-2"
                     }`}
                   >
-                    <div className="py-1">
+                    <div className="p-1.5">
                       {item.dropdownItems.map((subItem) => (
                         <a
                           key={subItem.href}
                           href={subItem.href}
-                          className="block px-4 py-2 text-sm text-gray-700 font-bold hover:bg-gray-100 hover:text-brand-blueFinca transition-colors"
+                          className="flex items-center gap-2 px-3 py-2.5 text-sm text-gray-700 font-semibold rounded-lg hover:bg-brand-blueFinca/8 hover:text-brand-blueFinca transition-colors"
                         >
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand-greenFinca flex-shrink-0"></span>
                           {subItem.label}
                         </a>
                       ))}
@@ -197,7 +198,7 @@ const Header = ({ lang = "es", data }) => {
             <button
               onClick={togglePhoneMenu}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-brand-blueFinca hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-greenFinca transition-colors z-50"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-brand-blueFinca hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-brand-greenFinca transition-colors relative z-[70]"
               aria-expanded={isOpenPhone}
               aria-controls="mobile-menu"
             >
@@ -244,65 +245,72 @@ const Header = ({ lang = "es", data }) => {
 
       {/* Mobile Menu con transición */}
       <div
-        className={`lg:hidden fixed inset-0 bg-slate-200 transition-transform duration-300 ease-in-out z-40 transform ${
+        className={`lg:hidden fixed inset-0 bg-white transition-transform duration-300 ease-in-out z-[60] transform ${
           isOpenPhone ? "translate-x-0" : "translate-x-full"
         }`}
         id="mobile-menu"
       >
-        <div className="pt-20 pb-3 px-4 sm:px-6">
-          <div className="flex flex-col space-y-4">
-            {/* Elementos fijos del menú móvil */}
+        <div className="h-full overflow-y-auto pt-20 pb-8 px-5 sm:px-6">
+          <div className="flex flex-col gap-1">
+            {/* Inicio */}
             <a
               href={`/${lang}/`}
-              className="text-base font-medium text-gray-900 hover:text-brand-blueFinca hover:bg-gray-100 px-3 py-2 rounded-md transition-colors"
+              className="flex items-center text-base font-semibold text-gray-800 hover:text-brand-blueFinca hover:bg-slate-50 px-4 py-3.5 rounded-xl transition-colors"
               onClick={togglePhoneMenu}
             >
               {header?.home || "Inicio"}
             </a>
 
+            <div className="h-px bg-gray-100 my-1" />
+
             {/* Servicios con submenú */}
             <div className="flex flex-col">
-              <div className="text-base font-medium text-gray-900 px-3 py-2">
+              <div className="flex items-center px-4 py-3 text-xs font-bold text-gray-400 tracking-widest uppercase">
                 {header?.services || "Servicios"}
               </div>
-              <div className="pl-6 flex flex-col space-y-2">
+              <div className="flex flex-col gap-0.5 pl-2">
                 {servicesLinks.map((service) => (
                   <a
                     key={service.href}
                     href={service.href}
-                    className="text-base font-medium text-gray-900 hover:text-brand-blueFinca hover:bg-gray-100 px-3 py-2 rounded-md transition-colors"
+                    className="flex items-center gap-3 text-base font-semibold text-gray-700 hover:text-brand-blueFinca hover:bg-slate-50 px-4 py-3 rounded-xl transition-colors"
                     onClick={togglePhoneMenu}
                   >
+                    <span className="w-1.5 h-1.5 rounded-full bg-brand-greenFinca flex-shrink-0" />
                     {service.label}
                   </a>
                 ))}
               </div>
             </div>
 
-            {/* Resto de enlaces fijos */}
+            <div className="h-px bg-gray-100 my-1" />
+
+            {/* Resto de enlaces */}
             <a
               href={`/${lang}/nosotros`}
-              className="text-base font-medium text-gray-900 hover:text-brand-blueFinca hover:bg-gray-100 px-3 py-2 rounded-md transition-colors"
+              className="flex items-center text-base font-semibold text-gray-800 hover:text-brand-blueFinca hover:bg-slate-50 px-4 py-3.5 rounded-xl transition-colors"
               onClick={togglePhoneMenu}
             >
               {header?.about_us || "Nosotros"}
             </a>
             <a
               href={`/${lang}/presupuestos`}
-              className="text-base font-medium text-gray-900 hover:text-brand-blueFinca hover:bg-gray-100 px-3 py-2 rounded-md transition-colors"
+              className="flex items-center text-base font-semibold text-gray-800 hover:text-brand-blueFinca hover:bg-slate-50 px-4 py-3.5 rounded-xl transition-colors"
               onClick={togglePhoneMenu}
             >
               {header?.quotes || "Presupuestos"}
             </a>
             <a
               href={`/${lang}/contacto`}
-              className="text-base font-medium text-gray-900 hover:text-brand-blueFinca hover:bg-gray-100 px-3 py-2 rounded-md transition-colors"
+              className="flex items-center text-base font-semibold text-gray-800 hover:text-brand-blueFinca hover:bg-slate-50 px-4 py-3.5 rounded-xl transition-colors"
               onClick={togglePhoneMenu}
             >
               {header?.contact || "Contacto"}
             </a>
 
-            <div className="pt-4">
+            <div className="h-px bg-gray-100 my-1" />
+
+            <div className="px-4 pt-2">
               <LanguageSelector />
             </div>
           </div>
