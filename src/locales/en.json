@@ -114,7 +114,7 @@
   "vehicle_procedures": {
     "title": "Vehicle Paperwork Services in Tenerife",
     "description": "Transfers, registrations, de-registrations, reports, duplicates, and more. Fast, legal, and hassle-free service in Tenerife.",
-    "text": "Need to transfer ownership, register a vehicle, or de-register one? At GestoFinca, we handle all vehicle procedures in Tenerife quickly, securely, and without wasting your time. We are an agency authorized by the Spanish Traffic Authority (DGT) and manage the entire process for you: documents, taxes, deadlines, and more. We simplify your life and avoid costly mistakes.",
+    "text": "Need to transfer ownership, register a vehicle, or de-register one? At GestoFinca, we handle all vehicle procedures in Tenerife quickly, securely, and without wasting your time. We are a specialised agency in vehicle procedures and manage the entire process for you: documents, taxes, deadlines, and more. We simplify your life and avoid costly mistakes.",
     "buttons": {
       "about_us": "Learn more about us",
       "learn_more": "Explore our services",
@@ -126,7 +126,7 @@
         "price": "120",
         "tax": "+4% vehicle value tax",
         "img": "ownership_transfer",
-        "description": "We legally and quickly process the ownership transfer of your car or motorcycle, including tax settlement and submission to the DGT.",
+        "description": "We legally and quickly process the ownership transfer of your car or motorcycle, including tax settlement and all required documentation.",
         "link": "/en/contacto"
       },
       {
@@ -138,7 +138,7 @@
         "link": "/en/contacto"
       },
       {
-        "title": "Registration and De-registration with the DGT",
+        "title": "Vehicle Registration and De-registration",
         "price": "40",
         "tax": "Fees included",
         "img": "vehicle_status",
@@ -150,7 +150,7 @@
         "price": "15",
         "tax": "Fees included",
         "img": "vehicle_report",
-        "description": "We request full DGT reports with technical details, charges, embargoes, and history. Ideal for secure vehicle purchases.",
+        "description": "We request full official vehicle reports with technical details, charges, embargoes, and history. Ideal for secure vehicle purchases.",
         "link": "/en/contacto"
       },
       {
@@ -170,7 +170,7 @@
       }
     ],
     "phrases": [
-      "Specialized agency for vehicle paperwork with the DGT in Tenerife.",
+      "Specialized agency for vehicle paperwork in Tenerife.",
       "Your vehicle paperwork done, without hassle or waiting."
     ]
   },
@@ -372,7 +372,7 @@
       "about_us": "About Us - Property Management in Tenerife",
       "property_management": "Property Management in Tenerife",
       "vacation_rentals": "Vacation Rental Management in Tenerife",
-      "vehicle_procedures": "Vehicle Procedures in Tenerife - DGT Agency",
+      "vehicle_procedures": "Vehicle Procedures in Tenerife - GestoFinca",
       "quotes": "Request a Quote - Property Management Tenerife",
       "contact": "Contact Us - Property Management Tenerife"
     }
@@ -589,7 +589,7 @@
     "questions": [
       {
         "question": "How long does a vehicle ownership transfer take in Tenerife?",
-        "answer": "Usually between 5 and 15 working days. As a DGT-authorised agency, we handle the process efficiently so you receive your documents as quickly as possible."
+        "answer": "Usually between 5 and 15 working days. We handle the process efficiently so you receive your documents as quickly as possible."
       },
       {
         "question": "What documents do I need for an ownership transfer?",
@@ -597,11 +597,11 @@
       },
       {
         "question": "Can you register a vehicle from abroad?",
-        "answer": "Yes, we handle the registration of vehicles from other countries, including the type-approval process, tax payment, and all documentation with the DGT."
+        "answer": "Yes, we handle the registration of vehicles from other countries, including the type-approval process, tax payment, and all required documentation."
       },
       {
-        "question": "Do you handle DGT procedures online?",
-        "answer": "Yes, as a DGT-authorised agency we can carry out most procedures electronically, speeding up timelines and avoiding unnecessary trips."
+        "question": "Do you handle vehicle procedures online?",
+        "answer": "Yes, we can carry out most procedures electronically, speeding up timelines and avoiding unnecessary trips."
       }
     ]
   }

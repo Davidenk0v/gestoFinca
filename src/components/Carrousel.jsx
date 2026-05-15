@@ -1,7 +1,6 @@
 import { useEffect, useState, useCallback, memo, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// Importación optimizada de imágenes
 import fondoAzul from "@/assets/images/fondo-azul.webp";
 import fondoCasa from "@/assets/images/fondo-casa.webp";
 import logo from "@/assets/logos/imagen_logo_negativo.webp";
@@ -10,13 +9,12 @@ import { NavigationButton } from "./carousel/NavigationButton";
 import { Indicators } from "./carousel/Indicators";
 import { CarouselContent } from "./carousel/CarouselContent";
 
-// Definir imágenes y constantes
 const IMAGES = [
   { src: fondoCasa.src, alt: "Fondo Casa" },
   { src: fondoAzul.src, alt: "Fondo Azul" },
 ];
-const SLIDE_DURATION = 10000; // 10 segundos entre diapositivas
-const TRANSITION_DURATION = 0.6;
+const SLIDE_DURATION = 10000;
+const TRANSITION_DURATION = 0.7;
 
 const Carousel = ({ data, lang }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,24 +24,20 @@ const Carousel = ({ data, lang }) => {
 
   const { title, description, buttons, phrases = [] } = data || {};
 
-  // Detectar dispositivo móvil con vanilla JS en lugar de hook personalizado
   useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 640);
-    };
-
-    // Comprobar en el montaje
+    const checkIsMobile = () => setIsMobile(window.innerWidth < 640);
     checkIsMobile();
-
-    // Comprobar en cambios de tamaño
     window.addEventListener("resize", checkIsMobile);
-
-    return () => {
-      window.removeEventListener("resize", checkIsMobile);
-    };
+    return () => window.removeEventListener("resize", checkIsMobile);
   }, []);
 
-  // Optimización del control del carrusel
+  // Preload next image for imperceptible transitions
+  useEffect(() => {
+    const nextIndex = (currentIndex + 1) % IMAGES.length;
+    const img = new Image();
+    img.src = IMAGES[nextIndex].src;
+  }, [currentIndex]);
+
   const goToSlide = useCallback(
     (index) => {
       setDirection(index > currentIndex ? 1 : -1);
@@ -53,25 +47,18 @@ const Carousel = ({ data, lang }) => {
   );
 
   const nextSlide = useCallback(() => {
-    const newIndex = (currentIndex + 1) % IMAGES.length;
-    goToSlide(newIndex);
+    goToSlide((currentIndex + 1) % IMAGES.length);
   }, [currentIndex, goToSlide]);
 
   const prevSlide = useCallback(() => {
-    const newIndex = (currentIndex - 1 + IMAGES.length) % IMAGES.length;
-    goToSlide(newIndex);
+    goToSlide((currentIndex - 1 + IMAGES.length) % IMAGES.length);
   }, [currentIndex, goToSlide]);
 
-  // Configuración del intervalo automático optimizado
   useEffect(() => {
     intervalRef.current = setInterval(nextSlide, SLIDE_DURATION);
-
-    return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
+    return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
   }, [nextSlide]);
 
-  // Pausar el carrusel cuando la página está en segundo plano
   useEffect(() => {
     const handleVisibilityChange = () => {
       if (document.hidden && intervalRef.current) {
@@ -81,27 +68,19 @@ const Carousel = ({ data, lang }) => {
         intervalRef.current = setInterval(nextSlide, SLIDE_DURATION);
       }
     };
-
     document.addEventListener("visibilitychange", handleVisibilityChange);
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
+    return () => document.removeEventListener("visibilitychange", handleVisibilityChange);
   }, [nextSlide]);
 
-  // Manejador de eventos de teclado para accesibilidad
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "ArrowLeft") prevSlide();
       if (e.key === "ArrowRight") nextSlide();
     };
-
     document.addEventListener("keydown", handleKeyDown);
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-    };
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, [nextSlide, prevSlide]);
 
-  // Implementación de gestos táctiles para dispositivos móviles
   const touchStartX = useRef(0);
   const handleTouchStart = useCallback((e) => {
     touchStartX.current = e.touches[0].clientX;
@@ -109,16 +88,10 @@ const Carousel = ({ data, lang }) => {
 
   const handleTouchEnd = useCallback(
     (e) => {
-      const touchEndX = e.changedTouches[0].clientX;
-      const diff = touchStartX.current - touchEndX;
-
+      const diff = touchStartX.current - e.changedTouches[0].clientX;
       if (Math.abs(diff) > 50) {
-        // Umbral mínimo para considerar un deslizamiento
-        if (diff > 0) {
-          nextSlide(); // Deslizar a la izquierda -> Siguiente slide
-        } else {
-          prevSlide(); // Deslizar a la derecha -> Slide anterior
-        }
+        if (diff > 0) nextSlide();
+        else prevSlide();
       }
     },
     [nextSlide, prevSlide]
@@ -132,52 +105,50 @@ const Carousel = ({ data, lang }) => {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Contenedor de imágenes animadas */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden bg-slate-100">
+      {/* Animated background slides with Ken Burns zoom */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden bg-slate-900">
         <AnimatePresence custom={direction} mode="popLayout">
           <motion.div
             key={`slide-${currentIndex}`}
             className="absolute inset-0 w-full h-full bg-cover bg-center"
             style={{ backgroundImage: `url(${IMAGES[currentIndex].src})` }}
-            initial={{ x: direction > 0 ? "100%" : "-100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: direction > 0 ? "-100%" : "100%" }}
-            transition={{ duration: TRANSITION_DURATION, ease: "easeInOut" }}
+            initial={{ x: direction > 0 ? "100%" : "-100%", scale: 1.04 }}
+            animate={{ x: 0, scale: 1.12 }}
+            exit={{
+              x: direction > 0 ? "-100%" : "100%",
+              transition: { duration: TRANSITION_DURATION * 0.85, ease: [0.55, 0, 1, 0.45] },
+            }}
+            transition={{
+              x: { duration: TRANSITION_DURATION, ease: [0.22, 1, 0.36, 1] },
+              scale: { duration: SLIDE_DURATION / 1000, ease: "linear" },
+            }}
             role="group"
-            aria-label={`Slide ${currentIndex + 1} de ${IMAGES.length}: ${
-              IMAGES[currentIndex].alt
-            }`}
+            aria-label={`Slide ${currentIndex + 1} de ${IMAGES.length}: ${IMAGES[currentIndex].alt}`}
           />
         </AnimatePresence>
 
-        {/* Overlay oscuro con mejor contraste para legibilidad */}
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        {/* Layered gradient overlays for cinematic depth */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/20" />
       </div>
 
-      {/* Controles de navegación solo visibles en pantallas más grandes, centrados verticalmente */}
+      {/* Navigation buttons — desktop only */}
       {!isMobile && (
         <>
-          <NavigationButton
-            direction="prev"
-            onClick={prevSlide}
-            ariaLabel="Diapositiva anterior"
-          />
-          <NavigationButton
-            direction="next"
-            onClick={nextSlide}
-            ariaLabel="Siguiente diapositiva"
-          />
+          <NavigationButton direction="prev" onClick={prevSlide} ariaLabel="Diapositiva anterior" />
+          <NavigationButton direction="next" onClick={nextSlide} ariaLabel="Siguiente diapositiva" />
         </>
       )}
 
-      {/* Indicadores de posición optimizados */}
+      {/* Progress bar indicators */}
       <Indicators
         images={IMAGES}
         currentIndex={currentIndex}
         onChange={goToSlide}
+        slideDuration={SLIDE_DURATION}
       />
 
-      {/* Contenido */}
+      {/* Content overlay */}
       <div className="absolute inset-0 flex items-center justify-center px-4">
         <CarouselContent
           title={title}

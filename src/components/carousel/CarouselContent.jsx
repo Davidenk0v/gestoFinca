@@ -1,10 +1,39 @@
 import { memo } from "react";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.11, delayChildren: 0.1 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 22 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] },
+  },
+};
 
 export const CarouselContent = memo(
   ({ title, phrase, description, buttons, lang, logoSrc, logoSrc2 }) => (
-    <div className="relative z-10 max-w-4xl w-full text-center px-4 sm:px-6 lg:px-16">
-      {/* Título optimizado con mejor estructura semántica */}
-      <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">
+    <motion.div
+      className="relative z-10 max-w-4xl w-full text-center px-4 sm:px-6 lg:px-16"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      {/* Decorative accent line */}
+      <motion.div
+        variants={itemVariants}
+        className="mx-auto mb-4 sm:mb-5 h-[2px] w-10 sm:w-12 bg-brand-greenFinca rounded-full"
+      />
+
+      {/* Title */}
+      <motion.h1
+        variants={itemVariants}
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-none"
+      >
         {title !== "GestoFinca" ? (
           <span className="text-brand-blueFinca">{title}</span>
         ) : (
@@ -13,71 +42,82 @@ export const CarouselContent = memo(
             <span className="text-brand-greenFinca">Finca.</span>
           </>
         )}
-      </h1>
+      </motion.h1>
 
-      {/* Frase principal */}
-      <p className="mt-3 md:mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-white">
+      {/* Phrase */}
+      <motion.p
+        variants={itemVariants}
+        className="mt-3 sm:mt-4 text-sm sm:text-base md:text-lg lg:text-xl text-white/90 font-light tracking-wide"
+      >
         {phrase}
-      </p>
+      </motion.p>
 
-      {/* Descripción con mejor visibilidad en móviles */}
+      {/* Description */}
       {description && (
-        <p
-          className="hidden sm:block mt-3 md:mt-4 text-sm sm:text-base md:text-lg font-medium text-white"
+        <motion.p
+          variants={itemVariants}
+          className="hidden sm:block mt-2 sm:mt-3 text-xs sm:text-sm md:text-base font-medium text-white/70"
           dangerouslySetInnerHTML={{ __html: description }}
-        ></p>
+        />
       )}
 
-      {/* Botones con mejor accesibilidad */}
-      <div className="mt-4 md:mt-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+      {/* Buttons */}
+      <motion.div
+        variants={itemVariants}
+        className="mt-5 sm:mt-6 flex flex-col sm:flex-row justify-center gap-3 sm:gap-4"
+      >
         <a
           href={`/${lang}/contacto`}
-          className="border-2 border-brand-greenFinca rounded-md bg-brand-greenFinca px-4 sm:px-6 py-2 text-sm font-semibold text-black shadow-sm hover:bg-transparent hover:text-brand-greenFinca transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-brand-greenFinca"
+          className="border-2 border-brand-greenFinca rounded-md bg-brand-greenFinca px-5 sm:px-7 py-2.5 text-xs sm:text-sm font-semibold text-black shadow-md hover:bg-transparent hover:text-brand-greenFinca transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-greenFinca focus:ring-offset-1 focus:ring-offset-transparent"
           aria-label="Contactar con nosotros"
         >
           {buttons?.contact_us || "Contacto"}
         </a>
         <a
           href={`/${lang}/nosotros`}
-          className="border-2 border-brand-greenFinca rounded-md px-4 sm:px-6 py-2 text-sm font-semibold text-brand-greenFinca shadow-sm hover:text-black hover:bg-brand-greenFinca transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-brand-greenFinca"
+          className="border-2 border-white/40 rounded-md px-5 sm:px-7 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-md hover:border-brand-greenFinca hover:text-brand-greenFinca transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-greenFinca focus:ring-offset-1 focus:ring-offset-transparent"
           aria-label="Conocer más sobre nosotros"
         >
           {buttons?.about_us || "Sobre Nosotros"}
         </a>
-      </div>
+      </motion.div>
 
-      {/* Logo optimizado */}
-      <div className="mt-4 md:mt-6 flex justify-center items-center gap-4">
+      {/* Partner logos */}
+      <motion.div
+        variants={itemVariants}
+        className="mt-5 sm:mt-6 flex justify-center items-center gap-4 sm:gap-6"
+      >
         <a
           href="https://caftenerife.org/"
           target="_blank"
           rel="noopener noreferrer"
+          className="opacity-75 hover:opacity-100 transition-opacity duration-300"
         >
           <img
             src={logoSrc}
             alt="Colegio de Administradores de Fincas de Santa Cruz de Tenerife"
-            className="h-12 w-auto sm:h-14 md:h-16 lg:h-20"
+            className="h-10 w-auto sm:h-14 md:h-16 lg:h-20"
             loading="eager"
-            width={192} // Ancho real de la imagen para evitar CLS
-            height={48} // Alto real de la imagen para evitar CLS
+            width={192}
+            height={48}
           />
         </a>
         <a
           href="https://www.consejogestores.org/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center"
+          className="opacity-75 hover:opacity-100 transition-opacity duration-300 flex items-center"
         >
           <img
             src={logoSrc2}
             alt="Logo de consejo de gestores administrativos"
-            className="h-12 w-auto sm:h-14 md:h-16 lg:h-20"
+            className="h-10 w-auto sm:h-14 md:h-16 lg:h-20"
             loading="eager"
-            width={92} // Ancho real de la imagen para evitar CLS
-            height={48} // Alto real de la imagen para evitar CLS
+            width={92}
+            height={48}
           />
         </a>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 );
