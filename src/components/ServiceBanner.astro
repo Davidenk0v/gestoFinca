@@ -1,7 +1,7 @@
 ---
 import Image from "astro/components/Image.astro";
 
-const { data, image, link, imgLink } = Astro.props;
+const { data, image, link, imgLink, alt = "Imagen de servicio" } = Astro.props;
 const { description, text, buttons } = data;
 ---
 
@@ -38,7 +38,7 @@ const { description, text, buttons } = data;
               id="vivienda"
               class="transition-all duration-300 ease-in-out hover:scale-95 md:mx-0 md:w-full"
               src={image}
-              alt="Imagen de vivienda moderna"
+              alt={alt}
               loading="lazy"
               width="600"
               height="400"
@@ -49,7 +49,7 @@ const { description, text, buttons } = data;
             id="vivienda"
             class="transition-all duration-300 ease-in-out hover:scale-95 md:mx-0 md:w-full"
             src={image}
-            alt="Imagen de vivienda moderna"
+            alt={alt}
             loading="lazy"
             width="600"
             height="400"

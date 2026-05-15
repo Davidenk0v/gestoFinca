@@ -9,8 +9,7 @@ import ServiceBanner from "../../components/ServiceBanner.astro";
 import TitleService from "../../components/TitleService.astro";
 import Layout from "../../layouts/Layout.astro";
 import { loadTranslations } from "../../utils/i18n";
-import holiday from "@/assets/images/holiday.webp";
-import vivienda from "@/assets/images/vivienda.webp";
+import tramitesVehiculos from "@/assets/images/tramites-vehiculos.webp";
 
 const url = new URL(Astro.request.url);
 const lang = Astro.params.lang;
@@ -55,7 +54,8 @@ const faq = translations.faq_vehicle_procedures;
       </h2>
       <ServiceBanner
         data={translations.vehicle_procedures}
-        image={vivienda}
+        image={tramitesVehiculos}
+        alt="Tramitación de vehículos"
         link={link}
       />
     </section>
