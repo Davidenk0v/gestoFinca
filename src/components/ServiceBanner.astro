@@ -1,8 +1,7 @@
 ---
-import Image from "astro/components/Image.astro";
-
 const { data, image, link, imgLink, alt = "Imagen de servicio" } = Astro.props;
 const { description, text, buttons } = data;
+const imgSrc = typeof image === "string" ? image : image.src;
 ---
 
 <section
@@ -34,10 +33,10 @@ const { description, text, buttons } = data;
       {
         imgLink ? (
           <a href={imgLink} target="_blank" rel="noopener noreferrer">
-            <Image
+            <img
               id="vivienda"
               class="transition-all duration-300 ease-in-out hover:scale-95 md:mx-0 md:w-full"
-              src={image}
+              src={imgSrc}
               alt={alt}
               loading="lazy"
               width="600"
@@ -45,10 +44,10 @@ const { description, text, buttons } = data;
             />
           </a>
         ) : (
-          <Image
+          <img
             id="vivienda"
             class="transition-all duration-300 ease-in-out hover:scale-95 md:mx-0 md:w-full"
-            src={image}
+            src={imgSrc}
             alt={alt}
             loading="lazy"
             width="600"
