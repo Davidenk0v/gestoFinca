@@ -18,7 +18,7 @@ export default defineConfig({
     },
   },
   output: "server",
-  adapter: vercelAdapter(),
+  adapter: vercelAdapter({ imageService: false }),
   site: "https://gestofinca.com",
   integrations: [
     tailwind(),
