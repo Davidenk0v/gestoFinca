@@ -114,7 +114,7 @@
   "vehicle_procedures": {
     "title": "Gestoría de Trámites de Vehículos en Tenerife",
     "description": "Transferencias, matriculaciones, bajas, informes, duplicados y más. Servicio rápido, legal y sin complicaciones en Tenerife.",
-    "text": "¿Necesitas hacer una transferencia de coche, matricular un vehículo o darlo de baja? En GestoFinca gestionamos todos los trámites de vehículos en Tenerife de forma rápida, segura y sin pérdida de tiempo. Somos una gestoría autorizada por la DGT y nos encargamos de todo el proceso por ti: documentos, impuestos, plazos y más. Simplificamos tu vida y evitamos errores que pueden costarte tiempo y dinero.",
+    "text": "¿Necesitas hacer una transferencia de coche, matricular un vehículo o darlo de baja? En GestoFinca gestionamos todos los trámites de vehículos en Tenerife de forma rápida, segura y sin pérdida de tiempo. Somos una gestoría especializada en trámites de vehículos y nos encargamos de todo el proceso por ti: documentos, impuestos, plazos y más. Simplificamos tu vida y evitamos errores que pueden costarte tiempo y dinero.",
     "buttons": {
       "about_us": "Conoce mas sobre nosotros",
       "learn_more": "Descubre nuestros servicios",
@@ -126,7 +126,7 @@
         "price": "120",
         "tax": "+4% impuesto valor vehículo",
         "img": "ownership_transfer",
-        "description": "Realizamos el cambio de nombre del coche o moto de forma 100% legal, rápida y sin errores. Incluye la presentación ante la DGT y liquidación de impuestos.",
+        "description": "Realizamos el cambio de nombre del coche o moto de forma 100% legal, rápida y sin errores. Incluye la liquidación de impuestos y toda la gestión documental necesaria.",
         "link": "/es/contacto"
       },
       {
@@ -138,7 +138,7 @@
         "link": "/es/contacto"
       },
       {
-        "title": "Altas y Bajas ante la DGT",
+        "title": "Altas y Bajas de Vehículos",
         "price": "40",
         "tax": "Tasas incluidas",
         "img": "vehicle_status",
@@ -150,7 +150,7 @@
         "price": "15",
         "tax": "Tasas incluidas",
         "img": "vehicle_report",
-        "description": "Solicitamos informes completos de la DGT con datos técnicos, cargas, embargos y antecedentes. Ideal para comprar con seguridad.",
+        "description": "Solicitamos informes oficiales completos con datos técnicos, cargas, embargos y antecedentes. Ideal para comprar con seguridad.",
         "link": "/es/contacto"
       },
       {
@@ -170,7 +170,7 @@
       }
     ],
     "phrases": [
-      "Gestoría especializada en trámites con la DGT en Tenerife.",
+      "Gestoría especializada en trámites de vehículos en Tenerife.",
       "Tu vehículo en regla, sin complicaciones ni esperas."
     ]
   },
@@ -354,7 +354,7 @@
     },
     "service3": {
       "title": "Tramitación de Vehículos",
-      "description": "Realizamos todos los trámites relacionados con tu vehículo y con la DGT. GESTORÍA AUTORIZADA POR LA DGT."
+      "description": "Realizamos todos los trámites relacionados con tu vehículo de forma rápida, legal y sin complicaciones."
     }
   },
   "header": {
@@ -375,7 +375,7 @@
       "about_us": "Sobre Nosotros - Administradores de Fincas en Tenerife",
       "property_management": "Administración de Fincas en Tenerife",
       "vacation_rentals": "Gestión de Alquileres Vacacionales en Tenerife",
-      "vehicle_procedures": "Trámites de Vehículos en Tenerife - Gestoría DGT",
+      "vehicle_procedures": "Trámites de Vehículos en Tenerife - GestoFinca",
       "quotes": "Solicitar Presupuesto - Administración de Fincas Tenerife",
       "contact": "Contacto - Administradores de Fincas en Tenerife"
     }
@@ -592,7 +592,7 @@
     "questions": [
       {
         "question": "¿Cuánto tarda el cambio de titularidad de un vehículo en Tenerife?",
-        "answer": "Normalmente entre 5 y 15 días hábiles. Como gestoría autorizada por la DGT, gestionamos el trámite de forma ágil para que recibas los documentos en el menor tiempo posible."
+        "answer": "Normalmente entre 5 y 15 días hábiles. Gestionamos el trámite de forma ágil para que recibas los documentos en el menor tiempo posible."
       },
       {
         "question": "¿Qué documentos necesito para el cambio de titularidad?",
@@ -600,11 +600,11 @@
       },
       {
         "question": "¿Podéis matricular un vehículo procedente del extranjero?",
-        "answer": "Sí, gestionamos la matriculación de vehículos procedentes de otros países, incluyendo el trámite de homologación, el pago de impuestos y toda la documentación ante la DGT."
+        "answer": "Sí, gestionamos la matriculación de vehículos procedentes de otros países, incluyendo el trámite de homologación, el pago de impuestos y toda la documentación necesaria."
       },
       {
-        "question": "¿Realizáis trámites DGT de forma online?",
-        "answer": "Sí, como gestoría autorizada por la DGT podemos realizar la mayoría de trámites de forma telemática, lo que agiliza los plazos y evita desplazamientos innecesarios."
+        "question": "¿Realizáis trámites de vehículos de forma online?",
+        "answer": "Sí, podemos realizar la mayoría de trámites de forma telemática, lo que agiliza los plazos y evita desplazamientos innecesarios."
       }
     ]
   }

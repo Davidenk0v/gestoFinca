@@ -10,7 +10,7 @@ import TitleService from "../../components/TitleService.astro";
 import Layout from "../../layouts/Layout.astro";
 import { loadTranslations } from "../../utils/i18n";
 import holiday from "@/assets/images/holiday.webp";
-import DGT from "@/assets/logos/DGT_logo.webp";
+import vivienda from "@/assets/images/vivienda.webp";
 
 const url = new URL(Astro.request.url);
 const lang = Astro.params.lang;
@@ -19,7 +19,6 @@ const link = translations.footer.useful_links.links[0].link;
 const { seo } = translations;
 const { services, buttons } = translations.vehicle_procedures;
 const faq = translations.faq_vehicle_procedures;
-const imgLink = "https://www.dgt.es/inicio/";
 ---
 
 <Layout
@@ -56,9 +55,8 @@ const imgLink = "https://www.dgt.es/inicio/";
       </h2>
       <ServiceBanner
         data={translations.vehicle_procedures}
-        image={DGT}
+        image={vivienda}
         link={link}
-        imgLink={imgLink}
       />
     </section>
 

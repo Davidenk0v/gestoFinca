@@ -114,7 +114,7 @@
   "vehicle_procedures": {
     "title": "Fahrzeugzulassungsdienste auf Teneriffa",
     "description": "Ummeldungen, Zulassungen, Abmeldungen, Berichte, Duplikate und mehr. Schneller, legaler und unkomplizierter Service auf Teneriffa.",
-    "text": "Müssen Sie ein Auto ummelden, ein Fahrzeug zulassen oder abmelden? Bei GestoFinca übernehmen wir alle Fahrzeugangelegenheiten auf Teneriffa – schnell, sicher und ohne Zeitverlust. Wir sind eine von der DGT autorisierte Gestoría und kümmern uns um den gesamten Prozess: Dokumente, Steuern, Fristen und mehr. Wir vereinfachen Ihr Leben und vermeiden Fehler, die Zeit und Geld kosten können.",
+    "text": "Müssen Sie ein Auto ummelden, ein Fahrzeug zulassen oder abmelden? Bei GestoFinca übernehmen wir alle Fahrzeugangelegenheiten auf Teneriffa – schnell, sicher und ohne Zeitverlust. Wir sind eine spezialisierte Gestoría für Fahrzeugangelegenheiten und kümmern uns um den gesamten Prozess: Dokumente, Steuern, Fristen und mehr. Wir vereinfachen Ihr Leben und vermeiden Fehler, die Zeit und Geld kosten können.",
     "buttons": {
       "about_us": "Mehr über uns erfahren",
       "learn_more": "Unsere Leistungen entdecken",
@@ -126,7 +126,7 @@
         "price": "120",
         "tax": "+4% Fahrzeugwertsteuer",
         "img": "ownership_transfer",
-        "description": "Wir erledigen die Ummeldung Ihres Autos oder Motorrads schnell, legal und fehlerfrei. Inklusive Steuerabwicklung und Einreichung bei der DGT.",
+        "description": "Wir erledigen die Ummeldung Ihres Autos oder Motorrads schnell, legal und fehlerfrei. Inklusive Steuerabwicklung und vollständiger Dokumentenbearbeitung.",
         "link": "/de/contacto"
       },
       {
@@ -138,7 +138,7 @@
         "link": "/de/contacto"
       },
       {
-        "title": "An- und Abmeldung bei der DGT",
+        "title": "An- und Abmeldung von Fahrzeugen",
         "price": "40",
         "tax": "Gebühren inklusive",
         "img": "vehicle_status",
@@ -150,7 +150,7 @@
         "price": "15",
         "tax": "Gebühren inklusive",
         "img": "vehicle_report",
-        "description": "Wir fordern vollständige Berichte der DGT mit technischen Daten, Belastungen, Pfändungen und Vorbesitzern an – ideal für einen sicheren Kauf.",
+        "description": "Wir fordern vollständige offizielle Fahrzeugberichte mit technischen Daten, Belastungen, Pfändungen und Vorbesitzern an – ideal für einen sicheren Kauf.",
         "link": "/de/contacto"
       },
       {
@@ -170,7 +170,7 @@
       }
     ],
     "phrases": [
-      "Spezialisierte Gestoría für Fahrzeugangelegenheiten mit der DGT auf Teneriffa.",
+      "Spezialisierte Gestoría für Fahrzeugangelegenheiten auf Teneriffa.",
       "Ihre Fahrzeugpapiere schnell und problemlos erledigt."
     ]
   },
@@ -595,7 +595,7 @@
     "questions": [
       {
         "question": "Wie lange dauert eine Fahrzeugummeldung auf Teneriffa?",
-        "answer": "In der Regel 5 bis 15 Werktage. Als von der DGT zugelassene Agentur bearbeiten wir den Vorgang effizient, damit Sie Ihre Dokumente so schnell wie möglich erhalten."
+        "answer": "In der Regel 5 bis 15 Werktage. Wir bearbeiten den Vorgang effizient, damit Sie Ihre Dokumente so schnell wie möglich erhalten."
       },
       {
         "question": "Welche Unterlagen benötige ich für die Fahrzeugummeldung?",
@@ -603,11 +603,11 @@
       },
       {
         "question": "Können Sie ein Fahrzeug aus dem Ausland zulassen?",
-        "answer": "Ja, wir übernehmen die Zulassung von Fahrzeugen aus anderen Ländern, einschließlich des Typgenehmigungsverfahrens, der Steuerzahlung und aller Unterlagen bei der DGT."
+        "answer": "Ja, wir übernehmen die Zulassung von Fahrzeugen aus anderen Ländern, einschließlich des Typgenehmigungsverfahrens, der Steuerzahlung und aller erforderlichen Unterlagen."
       },
       {
-        "question": "Führen Sie DGT-Vorgänge online durch?",
-        "answer": "Ja, als von der DGT zugelassene Agentur können wir die meisten Vorgänge elektronisch durchführen, was die Bearbeitungszeit verkürzt und unnötige Wege vermeidet."
+        "question": "Führen Sie Fahrzeugvorgänge online durch?",
+        "answer": "Ja, wir können die meisten Vorgänge elektronisch durchführen, was die Bearbeitungszeit verkürzt und unnötige Wege vermeidet."
       }
     ]
   }
