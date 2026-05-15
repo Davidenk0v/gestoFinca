@@ -6,7 +6,8 @@
       "Bash(Get-ChildItem *)",
       "WebSearch",
       "WebFetch(domain:unsplash.com)",
-      "Bash(curl -L \"https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1200&q=80&fm=webp\" -o /home/david/Proyectos/gestoFinca/src/assets/images/vehiculo.webp)"
+      "Bash(curl -L \"https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1200&q=80&fm=webp\" -o /home/david/Proyectos/gestoFinca/src/assets/images/vehiculo.webp)",
+      "Skill(frontend-design)"
     ]
   }
 }
